@@ -266,3 +266,70 @@ button, input, select, textarea { font: inherit; }
   animation: spin 0.6s linear infinite;
 }
 @keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---- Pathway explorer ----
+ * Each stage is a layer: a card with a horizontal tab row. Picking a tab
+ * grows a connector down and drops the next layer in under it.
+ * prefers-reduced-motion is handled by the global rule above.
+ */
+.pw-notice {
+  padding: var(--space-2) var(--space-3); margin-bottom: var(--space-4);
+  border-left: 3px solid var(--color-warning); background: var(--color-surface);
+  border-radius: var(--radius-control);
+}
+.pw-stack { display: flex; flex-direction: column; }
+.pw-layer { scroll-margin-top: var(--space-4); }
+.pw-connector {
+  width: 2px; height: var(--space-6); margin-left: var(--space-6);
+  background: var(--color-primary); transform-origin: top;
+}
+.pw-card {
+  border: 1px solid var(--color-border); border-radius: var(--radius-card);
+  background: var(--color-surface); padding: var(--space-4);
+}
+.pw-end .pw-card { border-color: var(--color-primary); }
+.pw-stage { text-transform: uppercase; letter-spacing: 0.04em; }
+.pw-prompt { margin-bottom: var(--space-3); }
+
+/* At most three options, so every tab fits on screen; none hides off the edge. */
+.pw-tabs { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.pw-tab {
+  position: relative; flex: 1 1 30%; min-width: min-content; min-height: 56px;
+  padding: var(--space-3) var(--space-2);
+  border: 1px solid var(--color-border); border-radius: var(--radius-control);
+  background: var(--color-background); color: var(--color-text);
+  font-size: var(--type-body-strong-size); font-weight: var(--type-body-strong-weight);
+  cursor: pointer; text-align: center;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+.pw-tab::after {
+  content: ''; position: absolute; left: var(--space-3); right: var(--space-3); bottom: 5px;
+  height: 3px; border-radius: 2px; background: var(--color-primary);
+  transform: scaleX(0); transition: transform 0.25s ease-out;
+}
+.pw-tab:hover:not(.is-selected) { background: var(--color-surface-alt); }
+.pw-tab:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
+.pw-tab.is-selected {
+  border-color: var(--color-primary); background: var(--color-surface-alt); color: var(--color-primary);
+}
+.pw-tab.is-selected::after { transform: scaleX(1); }
+@media (min-width: 600px) {
+  .pw-tab { padding: var(--space-3) var(--space-4); }
+}
+
+.pw-panel { margin-top: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--color-border); }
+.pw-panel[hidden] { display: none; }
+.pw-facts, .pw-summary { padding-left: var(--space-6); margin: var(--space-2) 0; }
+.pw-facts li, .pw-summary li { margin-bottom: var(--space-1); }
+.pw-keeps, .pw-note, .pw-source { margin-top: var(--space-2); }
+.pw-source a { color: var(--color-primary); }
+.pw-continue { margin-top: var(--space-3); }
+.pw-continue[hidden] { display: none; }
+.pw-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-3); }
+
+.pw-enter .pw-connector { animation: pw-grow 0.28s ease-out both; }
+.pw-enter .pw-card { animation: pw-drop 0.42s cubic-bezier(0.2, 0.8, 0.2, 1) 0.18s both; }
+.pw-panel.pw-reveal { animation: pw-fade 0.26s ease-out both; }
+@keyframes pw-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+@keyframes pw-drop { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
+@keyframes pw-fade { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }

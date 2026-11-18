@@ -98,6 +98,7 @@ When shipping any user-facing feature:
 
 | Feature | Web | iOS | macOS | tvOS | Android | Notes |
 |---|---|---|---|---|---|---|
+| Pathway explorer (stage tabs, next layer only, path in URL) | 🚧 | ⏳ | ⏳ | ⏳ | ⏳ | Web demo on illustrative data (`data/pathways.json`); native waits on the platform-set decision. Max 3 options per choice, checked by `js/pathways.test.js` |
 
 ---
 
