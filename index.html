@@ -30,7 +30,10 @@
   <!-- <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID"> -->
 
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- ?v= forces a fresh copy of every script and stylesheet: bump it
+       whenever a file in css/ or js/ changes, or browsers can pair a new
+       index.html with an old app.js for up to 10 minutes. -->
+  <link rel="stylesheet" href="css/styles.css?v=2026-11-18">
 </head>
 <body>
 
@@ -67,15 +70,15 @@
 
   </div>
 
-  <script src="js/compat.js"></script>
-  <script src="js/api.js"></script>
-  <script src="js/pathways.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/compat.js?v=2026-11-18"></script>
+  <script src="js/api.js?v=2026-11-18"></script>
+  <script src="js/pathways.js?v=2026-11-18"></script>
+  <script src="js/app.js?v=2026-11-18"></script>
   <!-- Additive smart-TV layer + Cast sender: both self-disable off-TV
        (tv.js adds html.tv only on a TV runtime; cast-sender no-ops when the
        Cast framework never loads). See docs/TV-PLATFORMS.md. -->
-  <link rel="stylesheet" href="tv.css">
-  <script src="tv.js"></script>
-  <script src="js/cast-sender.js"></script>
+  <link rel="stylesheet" href="tv.css?v=2026-11-18">
+  <script src="tv.js?v=2026-11-18"></script>
+  <script src="js/cast-sender.js?v=2026-11-18"></script>
 </body>
 </html>
