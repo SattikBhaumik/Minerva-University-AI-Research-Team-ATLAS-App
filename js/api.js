@@ -57,9 +57,15 @@ const API = (() => {
     // FILL IN: check session expiry, call your auth refresh if needed
   }
 
+  // The ?v= tag index.html put on this script; reused so data/ busts the
+  // browser cache together with the code.
+  const ASSET_VERSION = typeof document !== 'undefined' && document.currentScript
+    ? new URL(document.currentScript.src).searchParams.get('v')
+    : null;
+
   // Static pathway data shipped with the site; no applicant data goes out.
   async function getPathways() {
-    return get('data/pathways.json');
+    return get('data/pathways.json', { v: ASSET_VERSION });
   }
 
   return {

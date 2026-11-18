@@ -42,7 +42,7 @@ test('negative control: a cycle is rejected', () => {
 
 test('negative control: a dangling next is rejected', () => {
   const bad = clone(data);
-  bad.nodes['y2-cs'].next = 'nowhere';
+  bad.nodes['y2-cs-core'].next = 'nowhere';
   assert(Pathways.validate(bad).some((e) => e.includes('does not exist')), 'dangling next slipped through');
 });
 
