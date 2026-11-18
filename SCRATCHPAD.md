@@ -19,14 +19,16 @@
 - **Status**: web prototype. ATLAS: a pathway explorer for Minerva
   applicants (major, then year by year, then after Minerva)
 - **Active milestone**: M0 / first prototype
-- **Last session**: 2026-11-18. Built the web pathway explorer
-  (`js/pathways.js`, `data/pathways.json`) on illustrative data from
-  `docs/research/atlas-pathway-research.md`. Removed the sign-in screen
-  (no applicant data). Verified in headless Chromium at 320, 375 and
-  1280 px, light and dark; not yet seen on a real phone.
+- **Last session**: 2026-11-18. Round 2 research read Minerva's pages
+  directly (session env now allows minerva.edu and the Pages site).
+  Research doc and `data/pathways.json` rebuilt from them: real course
+  lists for all 9 NS/CS concentrations, cities per year, Year 2
+  electives as the real choice, "More concentrations" tab to hold the
+  3-option cap. Assets and data are cache-busted by `?v=` in index.html.
+  Verified in headless Chromium; owner verified the live site on a phone.
 - **Next actions**:
-  1. Owner checks the open conflicts in the research doc section 5
-     against the live Minerva catalog
+  1. Owner checks the still-open conflicts in research doc section 5
+     (NS110L vs NS110U; NS152 prerequisites; 50% vs 43.5%)
   2. Decide the platform set → DECISIONS.md (web only for now?)
   3. Fill in AGENTS.md project identity sections
   4. Manifest `start_url` is `/`; should be `./` for the Pages subpath
