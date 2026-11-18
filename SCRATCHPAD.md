@@ -16,24 +16,22 @@
 
 ## Current state
 
-- **Status**: NOT STARTED
-- **Active milestone**: M0
-- **Last session**: none yet
+- **Status**: web prototype. ATLAS: a pathway explorer for Minerva
+  applicants (major, then year by year, then after Minerva)
+- **Active milestone**: M0 / first prototype
+- **Last session**: 2026-11-18. Built the web pathway explorer
+  (`js/pathways.js`, `data/pathways.json`) on illustrative data from
+  `docs/research/atlas-pathway-research.md`. Removed the sign-in screen
+  (no applicant data). Verified in headless Chromium at 320, 375 and
+  1280 px, light and dark; not yet seen on a real phone.
 - **Next actions**:
-  1. Read `docs/path/00-why-we-build.md` and
-     `docs/path/01-first-prototype.md`
-  2. Decide the platform set (all five? skip tvOS? add Windows?)
-     → DECISIONS.md
-  3. Fill in AGENTS.md project identity sections (CLAUDE.md imports it)
-  4. Rename the app in `project.yml`, then the agent runs
-     `xcodegen generate` and builds iOS, tvOS, and macOS unsigned,
-     per apple/README.md
-  5. Open `android/` in Android Studio, rename `com.example.appname`
-  6. Enable GitHub Pages on main branch (+ `.nojekyll` if serving
-     `/.well-known/`)
-  7. Drop verification files in `/.well-known/` once the
-     `appID` / `package_name` / fingerprints are known
-- **Open questions**: none yet
+  1. Owner checks the open conflicts in the research doc section 5
+     against the live Minerva catalog
+  2. Decide the platform set → DECISIONS.md (web only for now?)
+  3. Fill in AGENTS.md project identity sections
+  4. Manifest `start_url` is `/`; should be `./` for the Pages subpath
+- **Open questions**: launch with Natural and Computational Sciences
+  only, or all five majors?
 
 ---
 

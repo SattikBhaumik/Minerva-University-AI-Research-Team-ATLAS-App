@@ -57,19 +57,17 @@ const API = (() => {
     // FILL IN: check session expiry, call your auth refresh if needed
   }
 
-  // FILL IN: Add your specific API methods here
-  // Example:
-  // async function getTimeline(limit = 50, cursor) {
-  //   await refreshIfNeeded();
-  //   return get('/app.bsky.feed.getTimeline', { limit, cursor });
-  // }
+  // Static pathway data shipped with the site; no applicant data goes out.
+  async function getPathways() {
+    return get('data/pathways.json');
+  }
 
   return {
     get,
     post,
     getAuthHeaders,
     refreshIfNeeded,
-    // Export your API methods here
+    getPathways,
   };
 })();
 

@@ -36,11 +36,8 @@
   function hideLoading() { /* TODO: hide global loading indicator */ }
 
   /* ---- DOM Refs ---- */
-  const authScreen = $('auth-screen');
-  const appScreen  = $('app-screen');
-  // Add more DOM refs as views are created:
-  // const viewHome = $('view-home');
-  // const navHomeBtn = $('nav-home-btn');
+  const viewHome = $('view-home');
+  const navHomeBtn = $('nav-home-btn');
 
   /* ---- State ---- */
   let currentView = 'home';
@@ -81,10 +78,10 @@
 
     // Define your views and nav buttons here:
     const views = {
-      // home: viewHome,
+      home: viewHome,
     };
     const navBtns = {
-      // home: navHomeBtn,
+      home: navHomeBtn,
     };
 
     Object.entries(views).forEach(([n, el]) => {
@@ -102,7 +99,7 @@
     $('channels-sidebar')?.classList.remove('open');
 
     if (!fromHistory) {
-      const url = name === 'home' ? '?' : `?view=${name}`;
+      const url = name === 'home' ? `?${location.hash}` : `?view=${name}${location.hash}`;
       history.pushState({ view: name }, '', url);
       document.title = name === 'home' ? 'ATLAS' : `ATLAS — ${name}`;
     }
@@ -132,13 +129,34 @@
   // });
 
   /* ================================================================
+     PATHWAYS
+  ================================================================ */
+
+  async function loadPathways() {
+    const root = $('pathways-root');
+    try {
+      const data = await API.getPathways();
+      const errors = Pathways.validate(data);
+      if (errors.length) throw new Error(errors[0]);
+      Pathways.mount(root, data);
+    } catch (err) {
+      console.log('pathways load failed', err);
+      root.textContent = '';
+      const banner = document.createElement('div');
+      banner.className = 'error-banner';
+      banner.setAttribute('role', 'alert');
+      banner.textContent = 'Could not load the pathways. Reload the page to try again.';
+      root.append(banner);
+    }
+  }
+
+  /* ================================================================
      INITIALIZATION
   ================================================================ */
 
   async function init() {
-    // Check for saved session
-    // If authenticated: hide auth, show app, load first view
-    // If not: show auth screen
+    navHomeBtn.addEventListener('click', () => showView('home'));
+    loadPathways();
 
     // URL routing (deep links / bookmarks). The URL is the web's door — the
     // twin of the native harness hooks in tools/app_config.py:
@@ -147,12 +165,9 @@
     //   ?mute=1              APP_MUTE
     //   ?door_seconds=<n>    APP_DOOR_SECONDS  (return home after n seconds)
     const params = new URLSearchParams(window.location.search);
-    const urlView = params.get('view');
-    if (urlView) {
-      showView(urlView, true);
-    } else {
-      showView('home', true);
-    }
+    // First render swaps instantly: a view transition here cross-fades the
+    // page against itself while a #path= link scrolls to its last layer.
+    applyViewSwap(params.get('view') || 'home', true);
     const urlItem = params.get('item');
     if (urlItem) currentItem = urlItem; // FILL IN: open the item's detail view
     if (params.get('mute') === '1') playerMuted = true;

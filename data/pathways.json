@@ -1,0 +1,260 @@
+{
+  "asOf": "2026-11-04",
+  "notice": "Illustrative example built from ATLAS research. Course names come from Minerva's catalog as found on 4 Nov 2026 and are not yet checked against the live catalog. Not admissions advice.",
+  "start": "start",
+  "nodes": {
+    "start": {
+      "kind": "choice",
+      "stage": "Start",
+      "prompt": "Which part of Minerva pulls you in?",
+      "options": [
+        {
+          "id": "ns",
+          "label": "Natural Sciences",
+          "whatYouDo": "Study how the physical and living world works, from particles to planets.",
+          "facts": ["Physics lives here, as the Matter and Energy concentration. Minerva has no separate physics major."],
+          "keepsOpen": "Calculus and other Computational Sciences courses come along for the physics track.",
+          "source": { "label": "Majors and concentrations", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/" },
+          "next": "y1-ns"
+        },
+        {
+          "id": "cs",
+          "label": "Computational Sciences",
+          "whatYouDo": "Study computation, mathematics and data as tools for hard problems.",
+          "facts": ["Math lives here, as the Mathematics concentration. Minerva has no separate math major."],
+          "keepsOpen": "Minors let you keep a science interest alongside.",
+          "source": { "label": "Majors and concentrations", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/" },
+          "next": "y1-cs"
+        }
+      ]
+    },
+
+    "y1-ns": {
+      "kind": "step",
+      "stage": "Year 1",
+      "prompt": "Four Cornerstone courses",
+      "items": ["Multimodal Communications", "Formal Analyses", "Empirical Analyses", "Complex Systems"],
+      "note": "Everyone takes these. No choice yet.",
+      "source": { "label": "Four-year curriculum", "url": "https://www.minerva.edu/undergraduate/4-year-curriculum/" },
+      "continueLabel": "On to Year 2",
+      "next": "y2-ns"
+    },
+    "y1-cs": {
+      "kind": "step",
+      "stage": "Year 1",
+      "prompt": "Four Cornerstone courses",
+      "items": ["Multimodal Communications", "Formal Analyses", "Empirical Analyses", "Complex Systems"],
+      "note": "Everyone takes these. No choice yet.",
+      "source": { "label": "Four-year curriculum", "url": "https://www.minerva.edu/undergraduate/4-year-curriculum/" },
+      "continueLabel": "On to Year 2",
+      "next": "y2-cs"
+    },
+
+    "y2-ns": {
+      "kind": "choice",
+      "stage": "Year 2",
+      "prompt": "Your core starts with one physics course. Which lean?",
+      "options": [
+        {
+          "id": "ns110u",
+          "label": "Physics of the Universe",
+          "whatYouDo": "Physics at the scale of stars and galaxies.",
+          "facts": ["NS110U Physics of the Universe", "Then the shared core: NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity"],
+          "keepsOpen": "Either physics course counts toward the Matter and Energy prerequisites.",
+          "source": { "label": "Matter and Energy", "url": "https://www.minerva.edu/concentrations/matter-and-energy/" },
+          "next": "y3-ns"
+        },
+        {
+          "id": "ns110l",
+          "label": "Physics of Life",
+          "whatYouDo": "Physics applied to living systems.",
+          "facts": ["NS110L Physics of Life", "Then the shared core: NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity"],
+          "keepsOpen": "Either physics course counts toward the Matter and Energy prerequisites.",
+          "source": { "label": "Matter and Energy", "url": "https://www.minerva.edu/concentrations/matter-and-energy/" },
+          "next": "y3-ns"
+        }
+      ]
+    },
+    "y2-cs": {
+      "kind": "step",
+      "stage": "Year 2",
+      "prompt": "Computational Sciences core",
+      "items": [
+        "CS110 Problem Solving with Data Structures and Algorithms",
+        "CS111 Single and Multivariable Calculus",
+        "CS113 Theory and Applications of Linear Algebra",
+        "CS114 Probability and Statistics and the Structure of Randomness"
+      ],
+      "note": "No choice here: these four set up every concentration.",
+      "source": { "label": "Majors and concentrations", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/" },
+      "continueLabel": "On to Year 3",
+      "next": "y3-cs"
+    },
+
+    "y3-ns": {
+      "kind": "choice",
+      "stage": "Year 3",
+      "prompt": "Pick a concentration. Your capstone starts this year too.",
+      "options": [
+        {
+          "id": "matter-energy",
+          "label": "Matter and Energy",
+          "whatYouDo": "The physics track: quantum behavior, molecules, statistical mechanics.",
+          "facts": ["NS142 Quantum Nature of Matter", "NS152 Analyzing Matter and Molecules", "NS162 Statistical Mechanics (needs CS111 calculus)"],
+          "keepsOpen": "Physics-heavy graduate study, research, computational science.",
+          "source": { "label": "Matter and Energy", "url": "https://www.minerva.edu/concentrations/matter-and-energy/" },
+          "next": "y4-ns"
+        },
+        {
+          "id": "chemistry",
+          "label": "Chemistry Across Scales",
+          "whatYouDo": "Chemistry from single molecules up to materials.",
+          "facts": ["Course list not yet researched for ATLAS", "Careers the catalog lists nearby: analytical chemist, biochemist, biophysicist, pharmaceutical scientist, research scientist"],
+          "keepsOpen": "Lab science, health science, materials work.",
+          "source": { "label": "Chemistry Across Scales", "url": "https://www.minerva.edu/concentrations/chemistry-across-scales/" },
+          "next": "y4-ns"
+        },
+        {
+          "id": "earth",
+          "label": "Earth and Environmental Systems",
+          "whatYouDo": "How the planet's systems interact and change.",
+          "facts": ["Course list not yet researched for ATLAS"],
+          "keepsOpen": "Climate, environment and sustainability work.",
+          "source": { "label": "Earth and Environmental Systems", "url": "https://www.minerva.edu/concentrations/earth-and-environmental-systems/" },
+          "next": "y4-ns"
+        }
+      ]
+    },
+    "y3-cs": {
+      "kind": "choice",
+      "stage": "Year 3",
+      "prompt": "Pick a concentration. Your capstone starts this year too.",
+      "options": [
+        {
+          "id": "mathematics",
+          "label": "Mathematics",
+          "whatYouDo": "Proof, analysis and the math behind modeling.",
+          "facts": ["CS144 Real Analysis (rigorous proof writing)", "CS154 Analytical and Numerical Methods in Differential Equations", "CS164 Optimization Methods", "Careers the catalog lists: engineer, financial forecaster, game developer, high-tech entrepreneur, product designer"],
+          "keepsOpen": "Graduate study in math or theory, quantitative roles.",
+          "source": { "label": "Mathematics", "url": "https://www.minerva.edu/concentrations/mathematics/" },
+          "next": "y4-cs"
+        },
+        {
+          "id": "data-science",
+          "label": "Data Science and Statistics",
+          "whatYouDo": "Learning from data, and knowing when not to trust it.",
+          "facts": ["Course list not yet researched for ATLAS", "Careers the catalog lists: analytics officer, bioinformatics scientist, data scientist, government analyst, statistician"],
+          "keepsOpen": "Data work in almost any field.",
+          "source": { "label": "Computational Sciences course explorer", "url": "https://my.minerva.edu/academics/course_catalog/computational_sciences/" },
+          "next": "y4-cs"
+        },
+        {
+          "id": "applied",
+          "label": "Applied Problem Solving",
+          "whatYouDo": "Computation pointed at messy real-world problems.",
+          "facts": ["Course list not yet researched for ATLAS", "Careers the catalog lists: corporate strategist, engineer, high-tech entrepreneur, product designer, software developer"],
+          "keepsOpen": "Engineering, product and strategy roles.",
+          "source": { "label": "Applied Problem Solving", "url": "https://www.minerva.edu/concentrations/applied-problem-solving/" },
+          "next": "y4-cs"
+        }
+      ]
+    },
+
+    "y4-ns": {
+      "kind": "step",
+      "stage": "Year 4",
+      "prompt": "Capstone and Manifest",
+      "items": ["Finish your capstone: a sustained, independent project begun in Year 3", "Present it at Manifest, a month-long term in San Francisco after spring"],
+      "note": "Before you go on: what question would your capstone chase?",
+      "source": { "label": "Four-year curriculum", "url": "https://www.minerva.edu/undergraduate/4-year-curriculum/" },
+      "continueLabel": "After Minerva",
+      "next": "after-ns"
+    },
+    "y4-cs": {
+      "kind": "step",
+      "stage": "Year 4",
+      "prompt": "Capstone and Manifest",
+      "items": ["Finish your capstone: a sustained, independent project begun in Year 3", "Present it at Manifest, a month-long term in San Francisco after spring"],
+      "note": "Before you go on: what question would your capstone chase?",
+      "source": { "label": "Four-year curriculum", "url": "https://www.minerva.edu/undergraduate/4-year-curriculum/" },
+      "continueLabel": "After Minerva",
+      "next": "after-cs"
+    },
+
+    "after-ns": {
+      "kind": "choice",
+      "stage": "After Minerva",
+      "prompt": "Where might you head next?",
+      "options": [
+        {
+          "id": "grad",
+          "label": "Graduate study",
+          "whatYouDo": "A master's or Ph.D., often in research.",
+          "facts": ["43.5% of Natural Sciences graduates were in an advanced degree six months out (n = 46, classes of 2019 to 2025)", "Example: a Natural Sciences and Computational Sciences graduate went on to a Ph.D. in Geochemistry at Caltech"],
+          "keepsOpen": "Research, teaching, specialist science roles.",
+          "source": { "label": "Undergraduate degrees and outcomes", "url": "https://www.minerva.edu/undergraduatedegrees/" },
+          "next": "end"
+        },
+        {
+          "id": "work",
+          "label": "Work",
+          "whatYouDo": "Straight into a science or science-adjacent job.",
+          "facts": ["41.3% were in full-time work six months out (n = 46)", "Roles the majors page names: researcher, lab technician, science consultant, computational biologist, bioinformatician, environmental educator"],
+          "keepsOpen": "Graduate study later, with work experience behind you.",
+          "source": { "label": "Majors and concentrations", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/" },
+          "next": "end"
+        },
+        {
+          "id": "undecided",
+          "label": "Not sure yet",
+          "whatYouDo": "That is a fine place to be as an applicant.",
+          "facts": ["85% were working or studying six months out (n = 46). The other 15% are not broken down in what we found"],
+          "keepsOpen": "A minor can hold a second interest: Minerva lists a Matter and Energy minor and a Mathematics minor.",
+          "source": { "label": "Undergraduate degrees and outcomes", "url": "https://www.minerva.edu/undergraduatedegrees/" },
+          "next": "end"
+        }
+      ]
+    },
+    "after-cs": {
+      "kind": "choice",
+      "stage": "After Minerva",
+      "prompt": "Where might you head next?",
+      "options": [
+        {
+          "id": "grad",
+          "label": "Graduate study",
+          "whatYouDo": "A master's or Ph.D. in math, computing or a field that uses them.",
+          "facts": ["10.3% of Computational Sciences graduates were in an advanced degree six months out (n = 256, classes of 2019 to 2025)", "17.6% worked in academia and research", "Example: a Computational Sciences graduate in a Planetary Science Ph.D. at CU Boulder"],
+          "keepsOpen": "Research, teaching, specialist technical roles.",
+          "source": { "label": "Undergraduate degrees and outcomes", "url": "https://www.minerva.edu/undergraduatedegrees/" },
+          "next": "end"
+        },
+        {
+          "id": "work",
+          "label": "Work",
+          "whatYouDo": "Straight into a technical job.",
+          "facts": ["74.2% were in full-time work six months out (n = 256)", "44.5% worked in Big Tech and software", "Example: a Computational Sciences and Business double major joined World Bank Treasury as a quantitative and financial technology analyst"],
+          "keepsOpen": "Graduate study later, with work experience behind you.",
+          "source": { "label": "Undergraduate degrees and outcomes", "url": "https://www.minerva.edu/undergraduatedegrees/" },
+          "next": "end"
+        },
+        {
+          "id": "undecided",
+          "label": "Not sure yet",
+          "whatYouDo": "That is a fine place to be as an applicant.",
+          "facts": ["95.6% were working or studying six months out (n = 256). The rest are not broken down in what we found"],
+          "keepsOpen": "A minor can hold a second interest: Minerva lists a Matter and Energy minor and a Mathematics minor.",
+          "source": { "label": "Undergraduate degrees and outcomes", "url": "https://www.minerva.edu/undergraduatedegrees/" },
+          "next": "end"
+        }
+      ]
+    },
+
+    "end": {
+      "kind": "end",
+      "stage": "Your sketch",
+      "prompt": "One possible path, not a plan",
+      "note": "If you could ask a Minerva student one question about this path, what would it be?"
+    }
+  }
+}

@@ -38,6 +38,7 @@ test('API exposes the core surface', () => {
   assert(typeof API.get === 'function', 'API.get should be a function');
   assert(typeof API.post === 'function', 'API.post should be a function');
   assert(typeof API.refreshIfNeeded === 'function', 'API.refreshIfNeeded should be a function');
+  assert(typeof API.getPathways === 'function', 'API.getPathways should be a function');
 });
 
 test('shareTarget is exposed as an async function', () => {
