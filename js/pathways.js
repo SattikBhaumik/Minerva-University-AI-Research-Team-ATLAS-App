@@ -246,10 +246,13 @@ const Pathways = (() => {
     function buildEnd(card, node) {
       const ol = el('ol', 'pw-summary');
       layers.slice(0, -1).forEach((l, i) => {
+        if (path[i] === 'more') return;
         const n = nodes[l.nodeId];
-        const label = n.kind === 'choice' ? n.options.find((o) => o.id === path[i]).label : n.prompt;
+        const opt = n.kind === 'choice' ? n.options.find((o) => o.id === path[i]) : n;
+        const label = n.kind === 'choice' ? opt.label : n.prompt;
         const li = el('li', 'body');
         li.append(el('span', 'caption', `${n.stage}: `), label);
+        if (opt.plan && opt.plan !== label) li.append(el('span', 'caption', ` · ${opt.plan}`));
         ol.append(li);
       });
       card.append(ol, el('p', 'body-strong pw-note', node.note));

@@ -1,6 +1,50 @@
 # ATLAS pathway research
 
-Status: research round 2, 2026-11-18. Nothing here is final product copy.
+Status: research round 3, 2026-11-21. Nothing here is final product copy.
+
+## Round 3 (2026-11-21): the official course catalog
+
+Source: Minerva University Course Catalog, Revision 2026.v410 (published
+2026-11-16; latest at https://minerva.edu/academics/course-catalog-pdf/).
+It is newer than the website and wins where they disagree.
+
+- **Pipeline.** `tools/parse_catalog.py` turns the PDF text into
+  `data/catalog/catalog-2026.v410.json` (5 majors, 28 concentrations, 17
+  minors, 203 courses). `tools/build_pathways.py` builds the site's
+  `data/pathways.json` and the full per-college tables in
+  `docs/research/atlas-catalog-2026.md` from it, plus
+  `data/catalog/outcomes.json` (each college's published outcomes,
+  transcribed verbatim) and `data/catalog/editorial.json` (the only
+  hand-written words: the preference questions, for the owner to approve).
+- **Checked.** Five independent per-college checks against the catalog text
+  found every core course, concentration, course list, prerequisite and
+  minor correct; three wording fixes were applied (CS111 *and* CS113 for
+  NS142, B110/B111 as corequisites, the "3 concentration courses" rule).
+  `js/pathways.test.js` now fails if the site shows any course code that is
+  not in the catalog.
+- **Resolved from round 2.** Natural Sciences majors take *either* NS110U
+  or NS110L. NS152 needs NS110L or NS110U, plus NS113. CS144 needs CS111
+  (the website said CS114). NS156 is now "Modeling and Measuring
+  Environmental Systems"; NS146 and NS156 have their correct descriptions.
+- **New rules that shape the design.** Declaring a concentration is
+  optional in Business, Computational, Natural and Social Sciences: every
+  major takes 3 concentration courses either way. Arts and Humanities takes
+  3 of 4 core courses and at least one course from each of three tracks.
+  Every major takes at least 20 credits from other colleges. A degree holds
+  one or two majors and up to two minors.
+- **New codes.** Cornerstones are year-long pairs: FA50/51, EA50/51,
+  CX50/51, MC50/51 (formerly CS, NS, SS, AH 50/51). Integrated Learning
+  IL91 to IL98 runs across four years. Capstone: CP191, CP192 seminars,
+  CP193, CP194 directed study, CP196 Manifest.
+- **Counts.** Concentrations per college: Arts and Humanities 6, Business
+  6, Computational Sciences 6 (new: Intelligent Software Systems, which has
+  no catalog description), Natural Sciences 4, Social Sciences 6.
+- **Site design now.** The applicant answers two preference questions
+  (three options, then two), which point to a likely college; real courses
+  show at every step. Longer lists (other colleges for electives, six
+  concentrations) are staged three at a time behind "More", in catalog
+  order, except that a college whose courses your major needs comes first.
+  The plan at the end lists the course codes picked.
 
 **How the facts were gathered.** Round 1 (2026-11-04) used web-search
 summaries because `minerva.edu` was blocked. Round 2 read Minerva's pages
@@ -214,11 +258,7 @@ Resolved in round 2:
 - Full course lists for all nine NS and CS concentrations (tables above).
 - Manifest still exists (four-year page).
 
-Still open:
-- **NS110L versus NS110U.** Current page lists both as core; 2023 catalog
-  said one of the two.
-- **NS152 prerequisites** list NS110L, NS110U and NS113 with no "or";
-  unclear whether both physics courses are required.
+Still open (round 3 resolved the NS110L/NS110U and NS152 questions; see top):
 - **Graduate Education 50% versus 43.5% advanced degree** for Natural
   Sciences; different measures, unexplained.
 

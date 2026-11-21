@@ -1,108 +1,921 @@
 {
-  "asOf": "2026-11-18",
-  "notice": "Example path. Course names, numbers and examples come from Minerva's own pages as read on 18 Nov 2026; the short plain descriptions are ATLAS's. Cities and courses can change. Not admissions advice.",
+  "asOf": "2026-11-21",
+  "notice": "Example plan. Courses, rules and outcomes come from Minerva's Course Catalog (2026.v410) and website as read on 21 Nov 2026; the questions are ATLAS's own. Courses and cities can change. Not admissions advice.",
   "start": "start",
   "nodes": {
     "start": {
       "kind": "choice",
       "stage": "Start",
-      "prompt": "Which part of Minerva pulls you in?",
+      "prompt": "What do you want to spend your time on?",
+      "options": [
+        {
+          "id": "world",
+          "label": "How the natural world works",
+          "whatYouDo": "Physics, chemistry, life and Earth, or the math and data that describe them.",
+          "facts": [
+            "Leads toward: Natural Sciences, Computational Sciences"
+          ],
+          "keepsOpen": "Every major takes at least 20 credits from other colleges, so nothing here closes a door.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "q-world"
+        },
+        {
+          "id": "people",
+          "label": "How people think and live",
+          "whatYouDo": "Minds, economies, politics, history, art and ethics.",
+          "facts": [
+            "Leads toward: Social Sciences, Arts & Humanities"
+          ],
+          "keepsOpen": "Every major takes at least 20 credits from other colleges, so nothing here closes a door.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "q-people"
+        },
+        {
+          "id": "build",
+          "label": "Building products or companies",
+          "whatYouDo": "Software and AI, or markets, products and finance.",
+          "facts": [
+            "Leads toward: Computational Sciences, Business"
+          ],
+          "keepsOpen": "Every major takes at least 20 credits from other colleges, so nothing here closes a door.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "q-build"
+        }
+      ]
+    },
+    "q-world": {
+      "kind": "choice",
+      "stage": "Your interests",
+      "prompt": "Which way in appeals more?",
       "options": [
         {
           "id": "ns",
-          "label": "Natural Sciences",
-          "whatYouDo": "How the physical and living world works, from particles to planets.",
-          "facts": ["Physics lives here, as the Matter and Energy concentration. Minerva has no separate physics major."],
-          "keepsOpen": "Four concentrations: Matter and Energy, Chemistry Across Scales, Cells and Organisms, Earth and Environmental Systems.",
-          "source": { "label": "Natural Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
-          "next": "y1-ns"
+          "label": "Experiments and the physical world",
+          "whatYouDo": "Natural sciences provide the foundations for understanding the natural world and for using that knowledge to solve practical problems.",
+          "facts": [
+            "Sample courses: NS110L Physics of Life, NS110U Physics of the Universe, NS111 Implications of Earth's Cycles"
+          ],
+          "keepsOpen": "Points to Natural Sciences.",
+          "source": {
+            "label": "Natural Sciences",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+          },
+          "next": "college-NS"
         },
         {
           "id": "cs",
-          "label": "Computational Sciences",
-          "whatYouDo": "Computation, mathematics and data as tools for hard problems.",
-          "facts": ["Math lives here, as the Mathematics concentration. Minerva has no separate math major."],
-          "keepsOpen": "Five concentrations: Mathematics, Computer Science and Artificial Intelligence, Data Science and Statistics, Applied Problem Solving, Contemporary Knowledge Discovery.",
-          "source": { "label": "Computational Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
-          "next": "y1-cs"
+          "label": "Math, data and code",
+          "whatYouDo": "Computational sciences provide the foundations for making sense of natural, human-mediated, and social phenomena through analytics, computational methods, and modeling.",
+          "facts": [
+            "Sample courses: CS110 Problem Solving with Data Structures and Algorithms, CS111 Single and Multivariable Calculus, CS113 Theory and Applications of Linear Algebra"
+          ],
+          "keepsOpen": "Points to Computational Sciences.",
+          "source": {
+            "label": "Computational Sciences",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+          },
+          "next": "college-CS"
         }
       ]
     },
-
-    "y1-ns": {
-      "kind": "step",
-      "stage": "Year 1 · Foundation · San Francisco",
-      "prompt": "Four Cornerstone courses",
-      "items": [
-        "Formal Analyses (CS51): logic, statistics, algorithmic thinking",
-        "Empirical Analyses (NS51): framing problems, testing hypotheses, designing studies",
-        "Multimodal Communications: writing, speaking, visual design, debate",
-        "Complex Systems: collaboration, negotiation, leadership"
-      ],
-      "note": "Everyone takes these, alongside civic projects with San Francisco partners. Later courses list CS51 and NS51 as prerequisites.",
-      "source": { "label": "Four-year curriculum", "url": "https://www.minerva.edu/undergraduate/4-year-curriculum/" },
-      "continueLabel": "On to Year 2",
-      "next": "y2-ns-core"
-    },
-    "y1-cs": {
-      "kind": "step",
-      "stage": "Year 1 · Foundation · San Francisco",
-      "prompt": "Four Cornerstone courses",
-      "items": [
-        "Formal Analyses (CS51): logic, statistics, algorithmic thinking",
-        "Empirical Analyses (NS51): framing problems, testing hypotheses, designing studies",
-        "Multimodal Communications: writing, speaking, visual design, debate",
-        "Complex Systems: collaboration, negotiation, leadership"
-      ],
-      "note": "Everyone takes these, alongside civic projects with San Francisco partners. Later courses list CS51 and NS51 as prerequisites.",
-      "source": { "label": "Four-year curriculum", "url": "https://www.minerva.edu/undergraduate/4-year-curriculum/" },
-      "continueLabel": "On to Year 2",
-      "next": "y2-cs-core"
-    },
-
-    "y2-ns-core": {
-      "kind": "step",
-      "stage": "Year 2 · Direction · Tokyo",
-      "prompt": "Natural Sciences core",
-      "items": [
-        "NS110L Physics of Life",
-        "NS110U Physics of the Universe (needs CS111 calculus)",
-        "NS111 Implications of Earth's Cycles",
-        "NS112 Evolution Across Multiple Scales",
-        "NS113 Chemical Structure and Reactivity"
-      ],
-      "note": "Summers can go to research internships; past ones include the Harvard Stem Cell Institute, MD Anderson Cancer Center and San Diego Zoo Wildlife Alliance.",
-      "source": { "label": "Natural Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
-      "continueLabel": "Choose Year 2 electives",
-      "next": "y2-ns-elect"
-    },
-    "y2-ns-elect": {
+    "q-people": {
       "kind": "choice",
-      "stage": "Year 2 · Direction · Tokyo",
-      "prompt": "Your electives come from another major's core. Which one?",
+      "stage": "Your interests",
+      "prompt": "Which way in appeals more?",
       "options": [
         {
-          "id": "cs-core",
-          "label": "Computational Sciences core",
-          "whatYouDo": "Algorithms, calculus, linear algebra, probability.",
-          "facts": ["CS110, CS111 Single and Multivariable Calculus, CS113 Theory and Applications of Linear Algebra, CS114 Probability and Statistics", "Physics courses lean on these: NS110U needs CS111; NS142 needs CS111 and CS113; NS162 recommends CS114"],
-          "keepsOpen": "The whole Matter and Energy track.",
-          "source": { "label": "Matter and Energy", "url": "https://www.minerva.edu/concentrations/matter-and-energy/" },
-          "next": "y3-ns"
+          "id": "ss",
+          "label": "Evidence about minds, economies and politics",
+          "whatYouDo": "The social sciences apply the methods of science to understand the way people think and act -- individually, in groups, and in societies -- and the way that biology and the environment interact to make each of us unique.",
+          "facts": [
+            "Sample courses: SS110 Psychology: From Neurons to Society, SS111 Modern Economic Thought, SS112 Political Science and Social Change"
+          ],
+          "keepsOpen": "Points to Social Sciences.",
+          "source": {
+            "label": "Social Sciences",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "college-SS"
         },
         {
-          "id": "other-core",
-          "label": "Another major's core",
-          "whatYouDo": "Arts and Humanities, Business or Social Sciences.",
-          "facts": ["Course lists for these majors are not yet researched for ATLAS", "Physics courses list CS111 calculus as a prerequisite, so a physics plan still needs it somewhere"],
-          "keepsOpen": "Range beyond science; Chemistry Across Scales, Cells and Organisms, and Earth and Environmental Systems lean less on CS courses.",
-          "source": { "label": "Natural Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
-          "next": "y3-ns"
+          "id": "ah",
+          "label": "History, art, philosophy and design",
+          "whatYouDo": "The arts and humanities take the history of human creative thought and expression and apply it to understanding and contextualizing events, ideas, policies, and human relationships.",
+          "facts": [
+            "Sample courses: AH110 Global History, AH111 Morality, Identity, and Justice, AH112 The Arts and Social Change"
+          ],
+          "keepsOpen": "Points to Arts & Humanities.",
+          "source": {
+            "label": "Arts & Humanities",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "college-AH"
         }
       ]
     },
-
-    "y2-cs-core": {
+    "q-build": {
+      "kind": "choice",
+      "stage": "Your interests",
+      "prompt": "Which way in appeals more?",
+      "options": [
+        {
+          "id": "cs",
+          "label": "Software, AI and models",
+          "whatYouDo": "Computational sciences provide the foundations for making sense of natural, human-mediated, and social phenomena through analytics, computational methods, and modeling.",
+          "facts": [
+            "Sample courses: CS110 Problem Solving with Data Structures and Algorithms, CS111 Single and Multivariable Calculus, CS113 Theory and Applications of Linear Algebra"
+          ],
+          "keepsOpen": "Points to Computational Sciences.",
+          "source": {
+            "label": "Computational Sciences",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+          },
+          "next": "college-CS"
+        },
+        {
+          "id": "b",
+          "label": "Markets, products and finance",
+          "whatYouDo": "Private enterprise is a global driver of wealth, employment, technological advancements, and social innovations.",
+          "facts": [
+            "Sample courses: B110 Market Dynamics and Product Analytics, B111 Financial Planning, Budgeting and Modeling, B112 Doing Business"
+          ],
+          "keepsOpen": "Points to Business.",
+          "source": {
+            "label": "Business",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "college-B"
+        }
+      ]
+    },
+    "college-AH": {
+      "kind": "step",
+      "stage": "Your likely college",
+      "prompt": "Arts & Humanities",
+      "items": [
+        "Core courses: AH110 Global History, AH111 Morality, Identity, and Justice, AH112 The Arts and Social Change, AH113 Dynamics of Design",
+        "A degree holds one or two majors and up to two minors.",
+        "At least 20 credits come from other colleges."
+      ],
+      "note": "Not your fit? Change an answer above.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "Start Year 1",
+      "next": "y1-AH",
+      "plan": "Arts & Humanities"
+    },
+    "y1-AH": {
+      "kind": "step",
+      "stage": "Year 1 · Foundation · San Francisco",
+      "prompt": "Four Cornerstone courses, all year",
+      "items": [
+        "Formal Analyses (FA50, FA51): logic, statistics, algorithmic thinking",
+        "Empirical Analyses (EA50, EA51): research design, hypotheses, evidence",
+        "Complex Systems (CX50, CX51): systems, collaboration, negotiation, leadership",
+        "Multimodal Communications (MC50, MC51): writing, speaking, visual design, debate",
+        "Integrated Learning I to VIII (IL91 to IL98) runs across the four years"
+      ],
+      "note": "Everyone takes these. Older course pages call the Cornerstones CS51, NS51, SS51 and AH51.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "On to Year 2",
+      "next": "y2-AH",
+      "plan": "FA, EA, CX, MC Cornerstones"
+    },
+    "y2-AH": {
+      "kind": "step",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "Arts & Humanities core",
+      "items": [
+        "AH110 Global History",
+        "AH111 Morality, Identity, and Justice",
+        "AH112 The Arts and Social Change",
+        "AH113 Dynamics of Design"
+      ],
+      "note": "Take at least 3 of these 4. Academic and Career Exploration (AC81) also starts this year.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "Choose Year 2 electives",
+      "next": "y2e-AH-1",
+      "plan": "AH110, AH111, AH112, AH113"
+    },
+    "y2e-AH-1": {
+      "kind": "choice",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
+      "options": [
+        {
+          "id": "ss",
+          "label": "Social Sciences core",
+          "whatYouDo": "The social sciences apply the methods of science to understand the way people think and act -- individually, in groups, and in societies -- and the way that biology and the environment interact to make each of us unique.",
+          "facts": [
+            "Core: SS110 Psychology: From Neurons to Society, SS111 Modern Economic Thought, SS112 Political Science and Social Change",
+            "Your Arts & Humanities courses that need these: AH164 needs SS112; AH152 needs SS112"
+          ],
+          "keepsOpen": "Social Sciences minors: Cognition, Brain, and Behavior, Economics and Society, Politics, Government, and Society.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-AH-1",
+          "plan": "electives from Social Sciences"
+        },
+        {
+          "id": "b",
+          "label": "Business core",
+          "whatYouDo": "Private enterprise is a global driver of wealth, employment, technological advancements, and social innovations.",
+          "facts": [
+            "Core: B110 Market Dynamics and Product Analytics, B111 Financial Planning, Budgeting and Modeling, B112 Doing Business, B113 Enterprise, Design and Optimization"
+          ],
+          "keepsOpen": "Business minors: Business.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-AH-1",
+          "plan": "electives from Business"
+        },
+        {
+          "id": "more",
+          "label": "More colleges",
+          "whatYouDo": "2 more: Computational Sciences and Natural Sciences.",
+          "keepsOpen": "Electives can come from any college.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y2e-AH-2"
+        }
+      ]
+    },
+    "y2e-AH-2": {
+      "kind": "choice",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "More colleges",
+      "options": [
+        {
+          "id": "cs",
+          "label": "Computational Sciences core",
+          "whatYouDo": "Computational sciences provide the foundations for making sense of natural, human-mediated, and social phenomena through analytics, computational methods, and modeling.",
+          "facts": [
+            "Core: CS110 Problem Solving with Data Structures and Algorithms, CS111 Single and Multivariable Calculus, CS113 Theory and Applications of Linear Algebra, CS114 Probability and Statistics and the Structure of Randomness"
+          ],
+          "keepsOpen": "Computational Sciences minors: Computer Science and Artificial Intelligence, Data Science and Statistics, Mathematics.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-AH-1",
+          "plan": "electives from Computational Sciences"
+        },
+        {
+          "id": "ns",
+          "label": "Natural Sciences core",
+          "whatYouDo": "Natural sciences provide the foundations for understanding the natural world and for using that knowledge to solve practical problems.",
+          "facts": [
+            "Core: NS110L Physics of Life, NS110U Physics of the Universe, NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity"
+          ],
+          "keepsOpen": "Natural Sciences minors: Cells and Organisms, Earth and Environmental Systems, Matter and Energy.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-AH-1",
+          "plan": "electives from Natural Sciences"
+        }
+      ]
+    },
+    "y3-AH-1": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "Pick a track to lean into. Every AH major takes at least one course from Arts and Literature, Historical Forces, and Philosophy, Ethics, and the Law.",
+      "options": [
+        {
+          "id": "arts-and-literature",
+          "label": "Arts and Literature",
+          "whatYouDo": "Acquire a variety of analytical tools to interpret works of art and literature.",
+          "facts": [
+            "AH146 Decoding Art and Literature · needs AH112 or AH156 or AH166 or AH144",
+            "AH156 Socioeconomic Influences on Art and Literature · needs AH110 or AH112 or AH142 or AH146 or AH152 or AH162 or AH166",
+            "AH166 Artistic Communication from Page to Practice · needs MC51 or AH51 or AH112"
+          ],
+          "keepsOpen": "Shares AH166 with Design Across the Humanities; AH156 with Global and Comparative Humanities; AH146 with Interpretation and Meaning. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-AH",
+          "plan": "AH146, AH156, AH166"
+        },
+        {
+          "id": "design-across-the-humanities",
+          "label": "Design Across the Humanities",
+          "whatYouDo": "Explore how design and our built environment intersects with history, ethics, and artistic practices.",
+          "facts": [
+            "AH162 Public and Applied History · needs AH110 or AH113 or AH142 or AH152",
+            "AH164 Social and Political Philosophy · needs AH111 or AH113 or AH144 or AH154 or SS112",
+            "AH166 Artistic Communication from Page to Practice · needs MC51 or AH51 or AH112"
+          ],
+          "keepsOpen": "Shares AH166 with Arts and Literature; AH162 with Historical Forces; AH164 with Philosophy, Ethics, and the Law. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-AH",
+          "plan": "AH162, AH164, AH166"
+        },
+        {
+          "id": "more",
+          "label": "More concentrations",
+          "whatYouDo": "4 more: Global and Comparative Humanities, Historical Forces, Interpretation and Meaning and Philosophy, Ethics, and the Law.",
+          "keepsOpen": "Students may also design a custom concentration with faculty guidance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-AH-2"
+        }
+      ]
+    },
+    "y3-AH-2": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "More Arts & Humanities concentrations",
+      "options": [
+        {
+          "id": "global-and-comparative-humanities",
+          "label": "Global and Comparative Humanities",
+          "whatYouDo": "Examine the humanities by putting them into their social, cultural, political, and economic contexts.",
+          "facts": [
+            "AH152 Comparing Societies and Histories: The Impact of Time and Place · needs AH110 or AH142 or AH162 or SS112",
+            "AH154 Law and Ethics from a Global Perspective · needs AH111 or AH144 or AH164 or SS166",
+            "AH156 Socioeconomic Influences on Art and Literature · needs AH110 or AH112 or AH142 or AH146 or AH152 or AH162 or AH166"
+          ],
+          "keepsOpen": "Shares AH156 with Arts and Literature; AH152 with Historical Forces; AH154 with Philosophy, Ethics, and the Law.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-AH",
+          "plan": "AH152, AH154, AH156"
+        },
+        {
+          "id": "historical-forces",
+          "label": "Historical Forces",
+          "whatYouDo": "Understand the impact of historical forces by acquiring the analytical tools of historians to solve the challenges posed by a wide range of historical problems; learn about comparative methods to analyze the effects of various forces on different societies; and apply what you have learned as a historian to use history as an instrument to inform public debates on contemporary issues.",
+          "facts": [
+            "AH142 The Craft of Historical Analysis · needs AH110 or AH152 or AH162",
+            "AH152 Comparing Societies and Histories: The Impact of Time and Place · needs AH110 or AH142 or AH162 or SS112",
+            "AH162 Public and Applied History · needs AH110 or AH113 or AH142 or AH152"
+          ],
+          "keepsOpen": "Shares AH162 with Design Across the Humanities; AH152 with Global and Comparative Humanities; AH142 with Interpretation and Meaning. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-AH",
+          "plan": "AH142, AH152, AH162"
+        },
+        {
+          "id": "more",
+          "label": "More concentrations",
+          "whatYouDo": "2 more: Interpretation and Meaning and Philosophy, Ethics, and the Law.",
+          "keepsOpen": "Students may also design a custom concentration with faculty guidance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-AH-3"
+        }
+      ]
+    },
+    "y3-AH-3": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "More Arts & Humanities concentrations",
+      "options": [
+        {
+          "id": "interpretation-and-meaning",
+          "label": "Interpretation and Meaning",
+          "whatYouDo": "Approach the arts, literature, history, ethics, law, and philosophy from an analytical perspective.",
+          "facts": [
+            "AH142 The Craft of Historical Analysis · needs AH110 or AH152 or AH162",
+            "AH144 Ethical Worldviews, Moral Dilemmas · needs CX51 or SS51 or AH111",
+            "AH146 Decoding Art and Literature · needs AH112 or AH156 or AH166 or AH144"
+          ],
+          "keepsOpen": "Shares AH146 with Arts and Literature; AH142 with Historical Forces; AH144 with Philosophy, Ethics, and the Law.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-AH",
+          "plan": "AH142, AH144, AH146"
+        },
+        {
+          "id": "philosophy-ethics-and-the-law",
+          "label": "Philosophy, Ethics, and the Law",
+          "whatYouDo": "Examine the origins of moral beliefs, the relationship of ethics, philosophy, and law to one another, and the relevance of all three to decision-making.",
+          "facts": [
+            "AH144 Ethical Worldviews, Moral Dilemmas · needs CX51 or SS51 or AH111",
+            "AH154 Law and Ethics from a Global Perspective · needs AH111 or AH144 or AH164 or SS166",
+            "AH164 Social and Political Philosophy · needs AH111 or AH113 or AH144 or AH154 or SS112"
+          ],
+          "keepsOpen": "Shares AH164 with Design Across the Humanities; AH154 with Global and Comparative Humanities; AH144 with Interpretation and Meaning. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-AH",
+          "plan": "AH144, AH154, AH164"
+        }
+      ]
+    },
+    "y4-AH": {
+      "kind": "step",
+      "stage": "Year 4 · Synthesis",
+      "prompt": "Capstone, tutorials, Manifest",
+      "items": [
+        "Capstone Seminars (CP191, CP192) begin in Year 3; Capstone Directed Study I and II (CP193, CP194) finish it",
+        "Manifest (CP196): present your capstone",
+        "Senior Tutorials listed for this major: Digital Humanities, Mission Critical or Mission Impossible? Creating Safe, Sustainable Cities, Science of Teaching and Learning"
+      ],
+      "note": "Past capstones can involve analyzing how documentary film making can be used as a political weapon or even creating a fictional novel, blending creativity with practical experience. What would yours chase?",
+      "source": {
+        "label": "Arts & Humanities outcomes",
+        "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+      },
+      "continueLabel": "After Minerva",
+      "next": "after-AH",
+      "plan": "CP191 to CP196"
+    },
+    "after-AH": {
+      "kind": "choice",
+      "stage": "After Minerva",
+      "prompt": "Where might you head next?",
+      "options": [
+        {
+          "id": "grad",
+          "label": "Graduate study",
+          "whatYouDo": "A master's or Ph.D.",
+          "facts": [
+            "18% of AH graduates are pursuing advanced degrees within six months of graduation",
+            "Data collected from 104 AH college graduates from 2019 to 2023"
+          ],
+          "keepsOpen": "Research, teaching and specialist roles.",
+          "source": {
+            "label": "Arts & Humanities outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "end"
+        },
+        {
+          "id": "work",
+          "label": "Work",
+          "whatYouDo": "Straight into a job.",
+          "facts": [
+            "82% of AH graduates are employed in various industries within six months of graduation",
+            "Industries: Business 28%, Graduate School 18%, Education 18%, Government, Law, and Public Policy 12%, Media and Journalism 12%, Engineering and Data Science 12%",
+            "Fields named: Writing, Journalism, Film writer/Filmmaker, UX Designer, Art Instructor, Game Designer, Media Producer, Production Coordinator, Museum Curator, Policy Specialist, Artist Relations Specialist",
+            "Data collected from 104 AH college graduates from 2019 to 2023"
+          ],
+          "keepsOpen": "Graduate study later, with work experience behind you.",
+          "source": {
+            "label": "Arts & Humanities outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "end"
+        },
+        {
+          "id": "undecided",
+          "label": "Not sure yet",
+          "whatYouDo": "A fine place to be as an applicant.",
+          "facts": [
+            "82% of AH graduates are employed in various industries within six months of graduation",
+            "Data collected from 104 AH college graduates from 2019 to 2023"
+          ],
+          "keepsOpen": "Electives from every college keep a second interest alive; up to two minors are allowed.",
+          "source": {
+            "label": "Arts & Humanities outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "end"
+        }
+      ]
+    },
+    "college-B": {
+      "kind": "step",
+      "stage": "Your likely college",
+      "prompt": "Business",
+      "items": [
+        "Core courses: B110 Market Dynamics and Product Analytics, B111 Financial Planning, Budgeting and Modeling, B112 Doing Business, B113 Enterprise, Design and Optimization",
+        "A degree holds one or two majors and up to two minors.",
+        "At least 20 credits come from other colleges."
+      ],
+      "note": "Not your fit? Change an answer above.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "Start Year 1",
+      "next": "y1-B",
+      "plan": "Business"
+    },
+    "y1-B": {
+      "kind": "step",
+      "stage": "Year 1 · Foundation · San Francisco",
+      "prompt": "Four Cornerstone courses, all year",
+      "items": [
+        "Formal Analyses (FA50, FA51): logic, statistics, algorithmic thinking",
+        "Empirical Analyses (EA50, EA51): research design, hypotheses, evidence",
+        "Complex Systems (CX50, CX51): systems, collaboration, negotiation, leadership",
+        "Multimodal Communications (MC50, MC51): writing, speaking, visual design, debate",
+        "Integrated Learning I to VIII (IL91 to IL98) runs across the four years"
+      ],
+      "note": "Everyone takes these. Older course pages call the Cornerstones CS51, NS51, SS51 and AH51.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "On to Year 2",
+      "next": "y2-B",
+      "plan": "FA, EA, CX, MC Cornerstones"
+    },
+    "y2-B": {
+      "kind": "step",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "Business core",
+      "items": [
+        "B110 Market Dynamics and Product Analytics · needs B111 (taken together)",
+        "B111 Financial Planning, Budgeting and Modeling · needs B110 (taken together)",
+        "B112 Doing Business · needs B110, B111",
+        "B113 Enterprise, Design and Optimization · needs B110, B111"
+      ],
+      "note": "All of these. Academic and Career Exploration (AC81) also starts this year.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "Choose Year 2 electives",
+      "next": "y2e-B-1",
+      "plan": "B110, B111, B112, B113"
+    },
+    "y2e-B-1": {
+      "kind": "choice",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
+      "options": [
+        {
+          "id": "ah",
+          "label": "Arts & Humanities core",
+          "whatYouDo": "The arts and humanities take the history of human creative thought and expression and apply it to understanding and contextualizing events, ideas, policies, and human relationships.",
+          "facts": [
+            "Core: AH110 Global History, AH111 Morality, Identity, and Justice, AH112 The Arts and Social Change, AH113 Dynamics of Design"
+          ],
+          "keepsOpen": "Arts & Humanities minors: Arts and Literature, Design Across the Humanities, Historical Forces, Philosophy, Ethics, and the Law.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-B-1",
+          "plan": "electives from Arts & Humanities"
+        },
+        {
+          "id": "cs",
+          "label": "Computational Sciences core",
+          "whatYouDo": "Computational sciences provide the foundations for making sense of natural, human-mediated, and social phenomena through analytics, computational methods, and modeling.",
+          "facts": [
+            "Core: CS110 Problem Solving with Data Structures and Algorithms, CS111 Single and Multivariable Calculus, CS113 Theory and Applications of Linear Algebra, CS114 Probability and Statistics and the Structure of Randomness"
+          ],
+          "keepsOpen": "Computational Sciences minors: Computer Science and Artificial Intelligence, Data Science and Statistics, Mathematics.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-B-1",
+          "plan": "electives from Computational Sciences"
+        },
+        {
+          "id": "more",
+          "label": "More colleges",
+          "whatYouDo": "2 more: Natural Sciences and Social Sciences.",
+          "keepsOpen": "Electives can come from any college.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y2e-B-2"
+        }
+      ]
+    },
+    "y2e-B-2": {
+      "kind": "choice",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "More colleges",
+      "options": [
+        {
+          "id": "ns",
+          "label": "Natural Sciences core",
+          "whatYouDo": "Natural sciences provide the foundations for understanding the natural world and for using that knowledge to solve practical problems.",
+          "facts": [
+            "Core: NS110L Physics of Life, NS110U Physics of the Universe, NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity"
+          ],
+          "keepsOpen": "Natural Sciences minors: Cells and Organisms, Earth and Environmental Systems, Matter and Energy.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-B-1",
+          "plan": "electives from Natural Sciences"
+        },
+        {
+          "id": "ss",
+          "label": "Social Sciences core",
+          "whatYouDo": "The social sciences apply the methods of science to understand the way people think and act -- individually, in groups, and in societies -- and the way that biology and the environment interact to make each of us unique.",
+          "facts": [
+            "Core: SS110 Psychology: From Neurons to Society, SS111 Modern Economic Thought, SS112 Political Science and Social Change"
+          ],
+          "keepsOpen": "Social Sciences minors: Cognition, Brain, and Behavior, Economics and Society, Politics, Government, and Society.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-B-1",
+          "plan": "electives from Social Sciences"
+        }
+      ]
+    },
+    "y3-B-1": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "Pick a concentration. Declaring one is optional: every major takes 3 concentration courses either way.",
+      "options": [
+        {
+          "id": "brand-management",
+          "label": "Brand Management",
+          "whatYouDo": "Master the processes, tactics, and tools that businesses utilize through various stages of growth, from the general manager's perspective.",
+          "facts": [
+            "B144 Needs Identification and Product Development · needs B113",
+            "B154 Strategic Brand Leadership · needs B113",
+            "B164 Brand Evolution and Reinvention · needs B112, B113"
+          ],
+          "keepsOpen": "Shares B164 with Enterprise Management; B144 with New Business Ventures; B154 with Scalable Growth.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-B",
+          "plan": "B144, B154, B164"
+        },
+        {
+          "id": "enterprise-management",
+          "label": "Enterprise Management",
+          "whatYouDo": "Engage with the complexity of running a multinational corporation in the maturity phase of the life cycle.",
+          "facts": [
+            "B164 Brand Evolution and Reinvention · needs B112, B113",
+            "B165 Global Financial Strategy · needs B112, B113",
+            "B166 Business Optimization · needs B112, B113"
+          ],
+          "keepsOpen": "Shares B164 with Brand Management; B166 with Managing Operational Complexity; B165 with Strategic Finance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-B",
+          "plan": "B164, B165, B166"
+        },
+        {
+          "id": "more",
+          "label": "More concentrations",
+          "whatYouDo": "4 more: Managing Operational Complexity, New Business Ventures, Scalable Growth and Strategic Finance.",
+          "keepsOpen": "Students may also design a custom concentration with faculty guidance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-B-2"
+        }
+      ]
+    },
+    "y3-B-2": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "More Business concentrations",
+      "options": [
+        {
+          "id": "managing-operational-complexity",
+          "label": "Managing Operational Complexity",
+          "whatYouDo": "Study how to balance an intricate array of constituents, systems, and environmental factors when growing a business.",
+          "facts": [
+            "B146 Business Operations · needs B113",
+            "B156 Business Systems · needs B113",
+            "B166 Business Optimization · needs B112, B113"
+          ],
+          "keepsOpen": "Shares B166 with Enterprise Management; B146 with New Business Ventures; B156 with Scalable Growth.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-B",
+          "plan": "B146, B156, B166"
+        },
+        {
+          "id": "new-business-ventures",
+          "label": "New Business Ventures",
+          "whatYouDo": "Delve into the processes required to successfully pitch new ventures and move start-ups through the initial phase of the life cycle.",
+          "facts": [
+            "B144 Needs Identification and Product Development · needs B113",
+            "B145 Venture Initiation and Valuation · needs B113",
+            "B146 Business Operations · needs B113"
+          ],
+          "keepsOpen": "Shares B144 with Brand Management; B146 with Managing Operational Complexity; B145 with Strategic Finance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-B",
+          "plan": "B144, B145, B146"
+        },
+        {
+          "id": "more",
+          "label": "More concentrations",
+          "whatYouDo": "2 more: Scalable Growth and Strategic Finance.",
+          "keepsOpen": "Students may also design a custom concentration with faculty guidance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-B-3"
+        }
+      ]
+    },
+    "y3-B-3": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "More Business concentrations",
+      "options": [
+        {
+          "id": "scalable-growth",
+          "label": "Scalable Growth",
+          "whatYouDo": "Examine how to navigate businesses during the growth phase of the life cycle.",
+          "facts": [
+            "B154 Strategic Brand Leadership · needs B113",
+            "B155 Capital Allocation and Value Creation · needs B113",
+            "B156 Business Systems · needs B113"
+          ],
+          "keepsOpen": "Shares B154 with Brand Management; B156 with Managing Operational Complexity; B155 with Strategic Finance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-B",
+          "plan": "B154, B155, B156"
+        },
+        {
+          "id": "strategic-finance",
+          "label": "Strategic Finance",
+          "whatYouDo": "Learn how to allocate and preserve funds to make informed decisions; understand how to utilize financial instruments to manage a growing private enterprise successfully.",
+          "facts": [
+            "B145 Venture Initiation and Valuation · needs B113",
+            "B155 Capital Allocation and Value Creation · needs B113",
+            "B165 Global Financial Strategy · needs B112, B113"
+          ],
+          "keepsOpen": "Shares B165 with Enterprise Management; B145 with New Business Ventures; B155 with Scalable Growth.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-B",
+          "plan": "B145, B155, B165"
+        }
+      ]
+    },
+    "y4-B": {
+      "kind": "step",
+      "stage": "Year 4 · Synthesis",
+      "prompt": "Capstone, tutorials, Manifest",
+      "items": [
+        "Capstone Seminars (CP191, CP192) begin in Year 3; Capstone Directed Study I and II (CP193, CP194) finish it",
+        "Manifest (CP196): present your capstone",
+        "Business Practicum (B199)"
+      ],
+      "note": "At the end of your four years at Minerva, you will write a business plan or even open your own startup as your Capstone Project. What would yours chase?",
+      "source": {
+        "label": "Business outcomes",
+        "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+      },
+      "continueLabel": "After Minerva",
+      "next": "after-B",
+      "plan": "CP191 to CP196"
+    },
+    "after-B": {
+      "kind": "choice",
+      "stage": "After Minerva",
+      "prompt": "Where might you head next?",
+      "options": [
+        {
+          "id": "grad",
+          "label": "Graduate study",
+          "whatYouDo": "A master's or Ph.D.",
+          "facts": [
+            "1% enrolled in advanced degree programs",
+            "Those students who pursued graduate studies have done so at institutions such as Brown University, King's College London, New York University, Oxford University, the University of Rochester, and more.",
+            "Data collected from 97 BZ college graduates from 2019 to 2025"
+          ],
+          "keepsOpen": "Research, teaching and specialist roles.",
+          "source": {
+            "label": "Business outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "end"
+        },
+        {
+          "id": "work",
+          "label": "Work",
+          "whatYouDo": "Straight into a job.",
+          "facts": [
+            "75.3% employed full-time",
+            "18.6% completing internships",
+            "Fields named: Entrepreneurship, Brand Management and Marketing, Consulting, Growth & Strategy and Business Development, Business Operations, Product Management, Investment Banking, Financial Operations, Financial Planning and Analysis / Strategic Finance, Data Science, Continuing Studies",
+            "Data collected from 97 BZ college graduates from 2019 to 2025"
+          ],
+          "keepsOpen": "Graduate study later, with work experience behind you.",
+          "source": {
+            "label": "Business outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "end"
+        },
+        {
+          "id": "undecided",
+          "label": "Not sure yet",
+          "whatYouDo": "A fine place to be as an applicant.",
+          "facts": [
+            "94.8% of Business graduates are employed full-time or completing internships within six months of graduation.",
+            "Data collected from 97 BZ college graduates from 2019 to 2025"
+          ],
+          "keepsOpen": "Electives from every college keep a second interest alive; up to two minors are allowed.",
+          "source": {
+            "label": "Business outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "end"
+        }
+      ]
+    },
+    "college-CS": {
+      "kind": "step",
+      "stage": "Your likely college",
+      "prompt": "Computational Sciences",
+      "items": [
+        "Core courses: CS110 Problem Solving with Data Structures and Algorithms, CS111 Single and Multivariable Calculus, CS113 Theory and Applications of Linear Algebra, CS114 Probability and Statistics and the Structure of Randomness",
+        "A degree holds one or two majors and up to two minors.",
+        "At least 20 credits come from other colleges."
+      ],
+      "note": "Not your fit? Change an answer above.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "Start Year 1",
+      "next": "y1-CS",
+      "plan": "Computational Sciences"
+    },
+    "y1-CS": {
+      "kind": "step",
+      "stage": "Year 1 · Foundation · San Francisco",
+      "prompt": "Four Cornerstone courses, all year",
+      "items": [
+        "Formal Analyses (FA50, FA51): logic, statistics, algorithmic thinking",
+        "Empirical Analyses (EA50, EA51): research design, hypotheses, evidence",
+        "Complex Systems (CX50, CX51): systems, collaboration, negotiation, leadership",
+        "Multimodal Communications (MC50, MC51): writing, speaking, visual design, debate",
+        "Integrated Learning I to VIII (IL91 to IL98) runs across the four years"
+      ],
+      "note": "Everyone takes these. Older course pages call the Cornerstones CS51, NS51, SS51 and AH51.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "On to Year 2",
+      "next": "y2-CS",
+      "plan": "FA, EA, CX, MC Cornerstones"
+    },
+    "y2-CS": {
       "kind": "step",
       "stage": "Year 2 · Direction · Tokyo",
       "prompt": "Computational Sciences core",
@@ -110,198 +923,266 @@
         "CS110 Problem Solving with Data Structures and Algorithms",
         "CS111 Single and Multivariable Calculus",
         "CS113 Theory and Applications of Linear Algebra",
-        "CS114 Probability and Statistics and the Structure of Randomness"
+        "CS114 Probability and Statistics and the Structure of Randomness · needs CS111"
       ],
-      "note": "Summers can go to internships or Minerva lab programs; past ones include the AI Lab in Tokyo and an AI and Machine Learning exchange with Landshut University.",
-      "source": { "label": "Computational Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
+      "note": "All of these. Academic and Career Exploration (AC81) also starts this year.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
       "continueLabel": "Choose Year 2 electives",
-      "next": "y2-cs-elect"
+      "next": "y2e-CS-1",
+      "plan": "CS110, CS111, CS113, CS114"
     },
-    "y2-cs-elect": {
+    "y2e-CS-1": {
       "kind": "choice",
       "stage": "Year 2 · Direction · Tokyo",
-      "prompt": "Your electives come from another major's core. Which one?",
+      "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
       "options": [
         {
-          "id": "ns-core",
-          "label": "Natural Sciences core",
-          "whatYouDo": "Physics, Earth, evolution and chemistry.",
-          "facts": ["NS110U Physics of the Universe (needs CS111, which you take anyway)", "NS110L Physics of Life, NS111, NS112, NS113 Chemical Structure and Reactivity"],
-          "keepsOpen": "Physics and chemistry electives in Year 3 and 4, such as NS142 Quantum Nature of Matter.",
-          "source": { "label": "Natural Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
-          "next": "y3-cs"
+          "id": "ah",
+          "label": "Arts & Humanities core",
+          "whatYouDo": "The arts and humanities take the history of human creative thought and expression and apply it to understanding and contextualizing events, ideas, policies, and human relationships.",
+          "facts": [
+            "Core: AH110 Global History, AH111 Morality, Identity, and Justice, AH112 The Arts and Social Change, AH113 Dynamics of Design"
+          ],
+          "keepsOpen": "Arts & Humanities minors: Arts and Literature, Design Across the Humanities, Historical Forces, Philosophy, Ethics, and the Law.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-CS-1",
+          "plan": "electives from Arts & Humanities"
         },
         {
-          "id": "other-core",
-          "label": "Another major's core",
-          "whatYouDo": "Arts and Humanities, Business or Social Sciences.",
-          "facts": ["Course lists for these majors are not yet researched for ATLAS"],
-          "keepsOpen": "Pairings such as computation with business or policy.",
-          "source": { "label": "Computational Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
-          "next": "y3-cs"
+          "id": "b",
+          "label": "Business core",
+          "whatYouDo": "Private enterprise is a global driver of wealth, employment, technological advancements, and social innovations.",
+          "facts": [
+            "Core: B110 Market Dynamics and Product Analytics, B111 Financial Planning, Budgeting and Modeling, B112 Doing Business, B113 Enterprise, Design and Optimization"
+          ],
+          "keepsOpen": "Business minors: Business.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-CS-1",
+          "plan": "electives from Business"
+        },
+        {
+          "id": "more",
+          "label": "More colleges",
+          "whatYouDo": "2 more: Natural Sciences and Social Sciences.",
+          "keepsOpen": "Electives can come from any college.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y2e-CS-2"
         }
       ]
     },
-
-    "y3-ns": {
+    "y2e-CS-2": {
       "kind": "choice",
-      "stage": "Year 3 · Focus · Buenos Aires and Europe",
-      "prompt": "Pick a concentration. Your capstone starts this year too.",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "More colleges",
       "options": [
         {
-          "id": "matter-energy",
-          "label": "Matter and Energy",
-          "whatYouDo": "The physics track: quantum mechanics, molecules, statistical mechanics.",
-          "facts": ["NS142 Quantum Nature of Matter: Theory and Applications (needs NS110U, CS111, CS113)", "NS152 Analyzing Matter and Molecules", "NS162 Statistical Mechanics: Theory and Applications (needs CS111)"],
-          "keepsOpen": "Physics-heavy graduate study and research.",
-          "source": { "label": "Matter and Energy", "url": "https://www.minerva.edu/concentrations/matter-and-energy/" },
-          "next": "y4-ns"
+          "id": "ns",
+          "label": "Natural Sciences core",
+          "whatYouDo": "Natural sciences provide the foundations for understanding the natural world and for using that knowledge to solve practical problems.",
+          "facts": [
+            "Core: NS110L Physics of Life, NS110U Physics of the Universe, NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity"
+          ],
+          "keepsOpen": "Natural Sciences minors: Cells and Organisms, Earth and Environmental Systems, Matter and Energy.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-CS-1",
+          "plan": "electives from Natural Sciences"
         },
         {
-          "id": "chemistry",
-          "label": "Chemistry Across Scales",
-          "whatYouDo": "Chemistry from molecules to cells to Earth systems.",
-          "facts": ["NS152 Analyzing Matter and Molecules", "NS154 Life's Chemistry", "NS156 Monitoring and Modeling Earth's Systems"],
-          "keepsOpen": "Shares NS152 with Matter and Energy, so the two sit close together.",
-          "source": { "label": "Natural Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
-          "next": "y4-ns"
+          "id": "ss",
+          "label": "Social Sciences core",
+          "whatYouDo": "The social sciences apply the methods of science to understand the way people think and act -- individually, in groups, and in societies -- and the way that biology and the environment interact to make each of us unique.",
+          "facts": [
+            "Core: SS110 Psychology: From Neurons to Society, SS111 Modern Economic Thought, SS112 Political Science and Social Change"
+          ],
+          "keepsOpen": "Social Sciences minors: Cognition, Brain, and Behavior, Economics and Society, Politics, Government, and Society.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-CS-1",
+          "plan": "electives from Social Sciences"
+        }
+      ]
+    },
+    "y3-CS-1": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "Pick a concentration. Declaring one is optional: every major takes 3 concentration courses either way.",
+      "options": [
+        {
+          "id": "applied-problem-solving",
+          "label": "Applied Problem Solving",
+          "whatYouDo": "Apply computational and quantitative methods to solve many of the daunting problems the world faces in the 21st Century.",
+          "facts": [
+            "CS162 Software Engineering: Building Powerful Applications · needs CS110",
+            "CS164 Optimization Methods · needs CS111, CS113",
+            "CS166 Modeling and Analysis of Complex Systems · needs CS110, CS114 or CS130"
+          ],
+          "keepsOpen": "Shares CS162 with Computer Science and Artificial Intelligence; CS166 with Data Science and Statistics; CS162 with Intelligent Software Systems; CS164 with Mathematics.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-CS",
+          "plan": "CS162, CS164, CS166"
+        },
+        {
+          "id": "computer-science-and-artificial-intelligence",
+          "label": "Computer Science and Artificial Intelligence",
+          "whatYouDo": "Learn the theory and practice of computer science, from the foundations of computation to the engineering of large scale software projects.",
+          "facts": [
+            "CS142 Theory of Computation · needs CS110",
+            "CS152 Theory and Applications of Artificial Intelligence · needs CS110",
+            "CS162 Software Engineering: Building Powerful Applications · needs CS110"
+          ],
+          "keepsOpen": "Shares CS162 with Applied Problem Solving; CS152 with Contemporary Knowledge Discovery; CS152, CS162 with Intelligent Software Systems. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-CS",
+          "plan": "CS142, CS152, CS162"
         },
         {
           "id": "more",
           "label": "More concentrations",
-          "whatYouDo": "Two more: Cells and Organisms, and Earth and Environmental Systems.",
-          "facts": ["Students may also design a custom concentration with faculty guidance"],
-          "keepsOpen": "Year 3 electives can come from any concentration.",
-          "source": { "label": "Four-year curriculum", "url": "https://www.minerva.edu/undergraduate/4-year-curriculum/" },
-          "next": "y3-ns-more"
+          "whatYouDo": "4 more: Contemporary Knowledge Discovery, Data Science and Statistics, Intelligent Software Systems and Mathematics.",
+          "keepsOpen": "Students may also design a custom concentration with faculty guidance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-CS-2"
         }
       ]
     },
-    "y3-ns-more": {
+    "y3-CS-2": {
       "kind": "choice",
       "stage": "Year 3 · Focus · Buenos Aires and Europe",
-      "prompt": "Two more Natural Sciences concentrations",
+      "prompt": "More Computational Sciences concentrations",
       "options": [
         {
-          "id": "cells",
-          "label": "Cells and Organisms",
-          "whatYouDo": "How cells and organisms work, and what biotechnology can do with that.",
-          "facts": ["NS144 Genes to Organisms", "NS154 Life's Chemistry", "NS164 Solutions From and For Life"],
-          "keepsOpen": "Biology, health and biotech paths.",
-          "source": { "label": "Natural Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
-          "next": "y4-ns"
+          "id": "contemporary-knowledge-discovery",
+          "label": "Contemporary Knowledge Discovery",
+          "whatYouDo": "Specialize in applying computational and quantitative methods to identify and model the structures and systems shaping the world around us.",
+          "facts": [
+            "CS152 Theory and Applications of Artificial Intelligence · needs CS110",
+            "CS154 Analytical and Numerical Methods in Differential Equations · needs CS111, CS113",
+            "CS156 Finding Patterns in Data with Machine Learning · needs CS113, CS114"
+          ],
+          "keepsOpen": "Shares CS152 with Computer Science and Artificial Intelligence; CS156 with Data Science and Statistics; CS152, CS156 with Intelligent Software Systems; CS154 with Mathematics.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-CS",
+          "plan": "CS152, CS154, CS156"
         },
         {
-          "id": "earth",
-          "label": "Earth and Environmental Systems",
-          "whatYouDo": "How the atmosphere, land, oceans and life interact, and how we model change.",
-          "facts": ["NS146 Integrating Earth's Systems", "NS156 Monitoring and Modeling Earth's Systems", "NS166 Keeping Earth Habitable"],
-          "keepsOpen": "Climate and environment work; NS166 also counts toward the Sustainability minor.",
-          "source": { "label": "Natural Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
-          "next": "y4-ns"
+          "id": "data-science-and-statistics",
+          "label": "Data Science and Statistics",
+          "whatYouDo": "Acquire the skills necessary to analyze, interpret, and exploit massive amounts of data.",
+          "facts": [
+            "CS146 Computational Methods for Bayesian Statistics · needs CS114",
+            "CS156 Finding Patterns in Data with Machine Learning · needs CS113, CS114",
+            "CS166 Modeling and Analysis of Complex Systems · needs CS110, CS114 or CS130"
+          ],
+          "keepsOpen": "Shares CS166 with Applied Problem Solving; CS156 with Contemporary Knowledge Discovery; CS156 with Intelligent Software Systems. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-CS",
+          "plan": "CS146, CS156, CS166"
+        },
+        {
+          "id": "more",
+          "label": "More concentrations",
+          "whatYouDo": "2 more: Intelligent Software Systems and Mathematics.",
+          "keepsOpen": "Students may also design a custom concentration with faculty guidance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-CS-3"
         }
       ]
     },
-
-    "y3-cs": {
+    "y3-CS-3": {
       "kind": "choice",
       "stage": "Year 3 · Focus · Buenos Aires and Europe",
-      "prompt": "Pick a concentration. Your capstone starts this year too.",
+      "prompt": "More Computational Sciences concentrations",
       "options": [
+        {
+          "id": "intelligent-software-systems",
+          "label": "Intelligent Software Systems",
+          "whatYouDo": "The catalog gives no description; its three courses are below.",
+          "facts": [
+            "CS152 Theory and Applications of Artificial Intelligence · needs CS110",
+            "CS156 Finding Patterns in Data with Machine Learning · needs CS113, CS114",
+            "CS162 Software Engineering: Building Powerful Applications · needs CS110"
+          ],
+          "keepsOpen": "Shares CS162 with Applied Problem Solving; CS152, CS162 with Computer Science and Artificial Intelligence; CS152, CS156 with Contemporary Knowledge Discovery; CS156 with Data Science and Statistics.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-CS",
+          "plan": "CS152, CS156, CS162"
+        },
         {
           "id": "mathematics",
           "label": "Mathematics",
-          "whatYouDo": "Proof, analysis, and the math behind modeling.",
-          "facts": ["CS144 Real Analysis (needs CS114)", "CS154 Analytical and Numerical Methods in Differential Equations", "CS164 Optimization Methods"],
-          "keepsOpen": "Graduate study in math or theory, and quantitative roles.",
-          "source": { "label": "Mathematics", "url": "https://www.minerva.edu/concentrations/mathematics/" },
-          "next": "y4-cs"
-        },
-        {
-          "id": "cs-ai",
-          "label": "Computer Science and Artificial Intelligence",
-          "whatYouDo": "What computers can do in principle, and building systems that do it.",
-          "facts": ["CS142 Theory of Computation", "CS152 Theory and Applications of Artificial Intelligence", "CS162 Software Engineering: Building Powerful Applications"],
-          "keepsOpen": "Software, AI and research paths.",
-          "source": { "label": "Computational Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
-          "next": "y4-cs"
-        },
-        {
-          "id": "more",
-          "label": "More concentrations",
-          "whatYouDo": "Three more: Data Science and Statistics, Applied Problem Solving, Contemporary Knowledge Discovery.",
-          "facts": ["Students may also design a custom concentration with faculty guidance"],
-          "keepsOpen": "Year 3 electives can come from any concentration.",
-          "source": { "label": "Four-year curriculum", "url": "https://www.minerva.edu/undergraduate/4-year-curriculum/" },
-          "next": "y3-cs-more"
+          "whatYouDo": "Investigate ways in which different fields of mathematics are used to analyze and address complex questions.",
+          "facts": [
+            "CS144 Real Analysis · needs CS111",
+            "CS154 Analytical and Numerical Methods in Differential Equations · needs CS111, CS113",
+            "CS164 Optimization Methods · needs CS111, CS113"
+          ],
+          "keepsOpen": "Shares CS164 with Applied Problem Solving; CS154 with Contemporary Knowledge Discovery. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-CS",
+          "plan": "CS144, CS154, CS164"
         }
       ]
     },
-    "y3-cs-more": {
-      "kind": "choice",
-      "stage": "Year 3 · Focus · Buenos Aires and Europe",
-      "prompt": "Three more Computational Sciences concentrations",
-      "options": [
-        {
-          "id": "data-science",
-          "label": "Data Science and Statistics",
-          "whatYouDo": "Learning from data, and knowing when not to trust it.",
-          "facts": ["CS146 Computational Methods for Bayesian Statistics", "CS156 Finding Patterns in Data with Machine Learning", "CS166 Modeling and Analysis of Complex Systems"],
-          "keepsOpen": "Data work in almost any field.",
-          "source": { "label": "Computational Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
-          "next": "y4-cs"
-        },
-        {
-          "id": "applied",
-          "label": "Applied Problem Solving",
-          "whatYouDo": "Computation and quantitative methods pointed at big real-world problems.",
-          "facts": ["CS162 Software Engineering", "CS164 Optimization Methods", "CS166 Modeling and Analysis of Complex Systems"],
-          "keepsOpen": "Engineering, product and startup paths.",
-          "source": { "label": "Computational Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
-          "next": "y4-cs"
-        },
-        {
-          "id": "knowledge",
-          "label": "Contemporary Knowledge Discovery",
-          "whatYouDo": "AI, differential equations and machine learning together.",
-          "facts": ["CS152 Theory and Applications of Artificial Intelligence", "CS154 Analytical and Numerical Methods in Differential Equations", "CS156 Finding Patterns in Data with Machine Learning"],
-          "keepsOpen": "Research that mixes modeling and machine learning.",
-          "source": { "label": "Computational Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
-          "next": "y4-cs"
-        }
-      ]
-    },
-
-    "y4-ns": {
+    "y4-CS": {
       "kind": "step",
       "stage": "Year 4 · Synthesis",
-      "prompt": "Capstone, senior tutorials, Manifest",
+      "prompt": "Capstone, tutorials, Manifest",
       "items": [
-        "Finish your capstone, a sustained independent project begun in Year 3",
-        "Senior tutorials in your major, plus electives inside or outside it",
-        "Present your capstone at Manifest"
+        "Capstone Seminars (CP191, CP192) begin in Year 3; Capstone Directed Study I and II (CP193, CP194) finish it",
+        "Manifest (CP196): present your capstone",
+        "Senior Tutorials listed for this major: Digital Humanities, AI Lab, Deep Learning, Distributed Systems, Science of Teaching and Learning"
       ],
-      "note": "Past Natural Sciences capstones: a computational pipeline manual for biologists, stem cell delivery for neural tissue repair, sustainable sunscreens. What question would yours chase?",
-      "source": { "label": "Natural Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
+      "note": "Past capstones can involve building a set of optimal strategies for winning a game of Monopoly, a web-based platform that uses interactive simulations to teach personal finance, or creating a 3D video game with polygon racers. What would yours chase?",
+      "source": {
+        "label": "Computational Sciences outcomes",
+        "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+      },
       "continueLabel": "After Minerva",
-      "next": "after-ns"
+      "next": "after-CS",
+      "plan": "CP191 to CP196"
     },
-    "y4-cs": {
-      "kind": "step",
-      "stage": "Year 4 · Synthesis",
-      "prompt": "Capstone, senior tutorials, Manifest",
-      "items": [
-        "Finish your capstone, a sustained independent project begun in Year 3",
-        "Senior tutorials in your major, plus electives inside or outside it",
-        "Present your capstone at Manifest"
-      ],
-      "note": "Past Computational Sciences capstones: optimal strategies for winning Monopoly, a web platform that teaches personal finance through simulations, a 3D racing game. What would yours build or find out?",
-      "source": { "label": "Computational Sciences", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
-      "continueLabel": "After Minerva",
-      "next": "after-cs"
-    },
-
-    "after-ns": {
+    "after-CS": {
       "kind": "choice",
       "stage": "After Minerva",
       "prompt": "Where might you head next?",
@@ -309,33 +1190,329 @@
         {
           "id": "grad",
           "label": "Graduate study",
-          "whatYouDo": "A master's or Ph.D., often in research.",
-          "facts": ["43.5% of Natural Sciences graduates were pursuing an advanced degree six months out (n = 46, classes of 2019 to 2025)", "Schools named: Harvard, Caltech, Cambridge, Karolinska Institute, Oxford, Johns Hopkins, Princeton"],
-          "keepsOpen": "Research, teaching, specialist science roles.",
-          "source": { "label": "Natural Sciences outcomes", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
+          "whatYouDo": "A master's or Ph.D.",
+          "facts": [
+            "10.3% pursued advanced degrees",
+            "Minerva students who pursued graduate studies have done so at institutions such as Brown University, Caltech, Cambridge University, Cornell University, Duke University, Stanford, Princeton, Harvard University, UC Berkeley, Johns Hopkins, and more!",
+            "Data collected from 256 CS college graduates from 2019 to 2025"
+          ],
+          "keepsOpen": "Research, teaching and specialist roles.",
+          "source": {
+            "label": "Computational Sciences outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+          },
           "next": "end"
         },
         {
           "id": "work",
           "label": "Work",
           "whatYouDo": "Straight into a job.",
-          "facts": ["41.3% were employed full-time six months out (n = 46)", "Industries: consulting and entrepreneurship 17.4%, education 15.2%, healthcare and biotech 6.5%", "Roles named: researcher, lab technician, science consultant, computational biologist, bioinformatician"],
+          "facts": [
+            "74.2% entered full-time employment directly",
+            "11.1% pursued internships",
+            "Industries: Big Tech and Software 44.5%, Academia and Research 17.6%, Startups and Entrepreneurship 14.5%, Finance and Consulting 10.9%, Social Impact and Government 8.2%",
+            "Fields named: Entrepreneurship, Software Engineering / Software Development, Tech Consultancy, Machine Learning Engineering, Technical Product Management, Ethical AI Research, CTO, Data Science",
+            "Data collected from 256 CS college graduates from 2019 to 2025"
+          ],
           "keepsOpen": "Graduate study later, with work experience behind you.",
-          "source": { "label": "Natural Sciences outcomes", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
+          "source": {
+            "label": "Computational Sciences outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+          },
           "next": "end"
         },
         {
           "id": "undecided",
           "label": "Not sure yet",
           "whatYouDo": "A fine place to be as an applicant.",
-          "facts": ["85% were working full-time or pursuing an advanced degree six months out (n = 46). The page does not break down the other 15%"],
-          "keepsOpen": "Year 3 and 4 electives can come from any major, so a second interest can stay alive.",
-          "source": { "label": "Natural Sciences outcomes", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences" },
+          "facts": [
+            "95.6% of CS graduates are actively working or enrolled in advanced degree programs within six months of graduation.",
+            "Data collected from 256 CS college graduates from 2019 to 2025"
+          ],
+          "keepsOpen": "Electives from every college keep a second interest alive; up to two minors are allowed.",
+          "source": {
+            "label": "Computational Sciences outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+          },
           "next": "end"
         }
       ]
     },
-    "after-cs": {
+    "college-NS": {
+      "kind": "step",
+      "stage": "Your likely college",
+      "prompt": "Natural Sciences",
+      "items": [
+        "Core courses: NS110L Physics of Life, NS110U Physics of the Universe, NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity",
+        "A degree holds one or two majors and up to two minors.",
+        "At least 20 credits come from other colleges."
+      ],
+      "note": "Not your fit? Change an answer above.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "Start Year 1",
+      "next": "y1-NS",
+      "plan": "Natural Sciences"
+    },
+    "y1-NS": {
+      "kind": "step",
+      "stage": "Year 1 · Foundation · San Francisco",
+      "prompt": "Four Cornerstone courses, all year",
+      "items": [
+        "Formal Analyses (FA50, FA51): logic, statistics, algorithmic thinking",
+        "Empirical Analyses (EA50, EA51): research design, hypotheses, evidence",
+        "Complex Systems (CX50, CX51): systems, collaboration, negotiation, leadership",
+        "Multimodal Communications (MC50, MC51): writing, speaking, visual design, debate",
+        "Integrated Learning I to VIII (IL91 to IL98) runs across the four years"
+      ],
+      "note": "Everyone takes these. Older course pages call the Cornerstones CS51, NS51, SS51 and AH51.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "On to Year 2",
+      "next": "y2-NS",
+      "plan": "FA, EA, CX, MC Cornerstones"
+    },
+    "y2-NS": {
+      "kind": "choice",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "Your core includes one of two physics courses. Which one?",
+      "options": [
+        {
+          "id": "ns110u",
+          "label": "Physics of the Universe",
+          "whatYouDo": "We use gravitational and electromagnetic interactions as representatives for how physics takes experimental evidence and then encodes it into a theoretical framework that can be used to make predictions and draw inferences about new phenomena.",
+          "facts": [
+            "NS110U Physics of the Universe · needs CS111",
+            "Plus the shared core: NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity"
+          ],
+          "keepsOpen": "Required by NS142; accepted as one option by NS152, NS162.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y2e-NS-1",
+          "plan": "NS110U, NS111, NS112, NS113"
+        },
+        {
+          "id": "ns110l",
+          "label": "Physics of Life",
+          "whatYouDo": "We explore how physics, ranging from mechanics through atomic physics, can be applied to the life sciences.",
+          "facts": [
+            "NS110L Physics of Life",
+            "Plus the shared core: NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity"
+          ],
+          "keepsOpen": "Accepted as one option by NS152, NS162.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y2e-NS-1",
+          "plan": "NS110L, NS111, NS112, NS113"
+        }
+      ]
+    },
+    "y2e-NS-1": {
+      "kind": "choice",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
+      "options": [
+        {
+          "id": "cs",
+          "label": "Computational Sciences core",
+          "whatYouDo": "Computational sciences provide the foundations for making sense of natural, human-mediated, and social phenomena through analytics, computational methods, and modeling.",
+          "facts": [
+            "Core: CS110 Problem Solving with Data Structures and Algorithms, CS111 Single and Multivariable Calculus, CS113 Theory and Applications of Linear Algebra, CS114 Probability and Statistics and the Structure of Randomness",
+            "Your Natural Sciences courses that need these: NS110U needs CS111; NS142 needs CS111, CS113; NS162 needs CS111"
+          ],
+          "keepsOpen": "Computational Sciences minors: Computer Science and Artificial Intelligence, Data Science and Statistics, Mathematics.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-NS-1",
+          "plan": "electives from Computational Sciences"
+        },
+        {
+          "id": "ah",
+          "label": "Arts & Humanities core",
+          "whatYouDo": "The arts and humanities take the history of human creative thought and expression and apply it to understanding and contextualizing events, ideas, policies, and human relationships.",
+          "facts": [
+            "Core: AH110 Global History, AH111 Morality, Identity, and Justice, AH112 The Arts and Social Change, AH113 Dynamics of Design"
+          ],
+          "keepsOpen": "Arts & Humanities minors: Arts and Literature, Design Across the Humanities, Historical Forces, Philosophy, Ethics, and the Law.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-NS-1",
+          "plan": "electives from Arts & Humanities"
+        },
+        {
+          "id": "more",
+          "label": "More colleges",
+          "whatYouDo": "2 more: Business and Social Sciences.",
+          "keepsOpen": "Electives can come from any college.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y2e-NS-2"
+        }
+      ]
+    },
+    "y2e-NS-2": {
+      "kind": "choice",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "More colleges",
+      "options": [
+        {
+          "id": "b",
+          "label": "Business core",
+          "whatYouDo": "Private enterprise is a global driver of wealth, employment, technological advancements, and social innovations.",
+          "facts": [
+            "Core: B110 Market Dynamics and Product Analytics, B111 Financial Planning, Budgeting and Modeling, B112 Doing Business, B113 Enterprise, Design and Optimization"
+          ],
+          "keepsOpen": "Business minors: Business.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-NS-1",
+          "plan": "electives from Business"
+        },
+        {
+          "id": "ss",
+          "label": "Social Sciences core",
+          "whatYouDo": "The social sciences apply the methods of science to understand the way people think and act -- individually, in groups, and in societies -- and the way that biology and the environment interact to make each of us unique.",
+          "facts": [
+            "Core: SS110 Psychology: From Neurons to Society, SS111 Modern Economic Thought, SS112 Political Science and Social Change"
+          ],
+          "keepsOpen": "Social Sciences minors: Cognition, Brain, and Behavior, Economics and Society, Politics, Government, and Society.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-NS-1",
+          "plan": "electives from Social Sciences"
+        }
+      ]
+    },
+    "y3-NS-1": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "Pick a concentration. Declaring one is optional: every major takes 3 concentration courses either way.",
+      "options": [
+        {
+          "id": "cells-and-organisms",
+          "label": "Cells and Organisms",
+          "whatYouDo": "Dig deeply into the complexity of how cells and organisms function and learn sophisticated approaches for examining life.",
+          "facts": [
+            "NS144 Genes to Organisms · needs NS112",
+            "NS154 Life's Chemistry · needs NS112, NS113",
+            "NS164 Solutions From and For Life · needs NS112"
+          ],
+          "keepsOpen": "Shares NS154 with Chemistry Across Scales. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-NS",
+          "plan": "NS144, NS154, NS164"
+        },
+        {
+          "id": "chemistry-across-scales",
+          "label": "Chemistry Across Scales",
+          "whatYouDo": "Explore in detail how the principles of chemistry apply across the molecular, cellular and Earth systems levels.",
+          "facts": [
+            "NS152 Analyzing Matter and Molecules · needs NS110L or NS110U, NS113",
+            "NS154 Life's Chemistry · needs NS112, NS113",
+            "NS156 Modeling and Measuring Environmental Systems · needs NS111 or NS113"
+          ],
+          "keepsOpen": "Shares NS154 with Cells and Organisms; NS156 with Earth and Environmental Systems; NS152 with Matter and Energy.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-NS",
+          "plan": "NS152, NS154, NS156"
+        },
+        {
+          "id": "more",
+          "label": "More concentrations",
+          "whatYouDo": "2 more: Earth and Environmental Systems and Matter and Energy.",
+          "keepsOpen": "Students may also design a custom concentration with faculty guidance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-NS-2"
+        }
+      ]
+    },
+    "y3-NS-2": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "More Natural Sciences concentrations",
+      "options": [
+        {
+          "id": "earth-and-environmental-systems",
+          "label": "Earth and Environmental Systems",
+          "whatYouDo": "Investigate the interactions among Earth's systems, including the atmosphere, terrestrial, and marine components and how the Earth's biome (including humans) interfaces with the physical, chemical and geological aspects of the environment.",
+          "facts": [
+            "NS146 Integrating Earth's Systems · needs NS111",
+            "NS156 Modeling and Measuring Environmental Systems · needs NS111 or NS113",
+            "NS166 Keeping Earth Habitable · needs NS111 or NS112"
+          ],
+          "keepsOpen": "Shares NS156 with Chemistry Across Scales. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-NS",
+          "plan": "NS146, NS156, NS166"
+        },
+        {
+          "id": "matter-and-energy",
+          "label": "Matter and Energy",
+          "whatYouDo": "Dig deeply into the chemistry and physics of matter, from particles to atoms and molecules.",
+          "facts": [
+            "NS142 Quantum Nature of Matter: Theory and Applications · needs NS110U, CS111, CS113",
+            "NS152 Analyzing Matter and Molecules · needs NS110L or NS110U, NS113",
+            "NS162 Statistical Mechanics: Theory and Applications · needs CS111, NS110L or NS110U or NS113"
+          ],
+          "keepsOpen": "Shares NS152 with Chemistry Across Scales. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-NS",
+          "plan": "NS142, NS152, NS162"
+        }
+      ]
+    },
+    "y4-NS": {
+      "kind": "step",
+      "stage": "Year 4 · Synthesis",
+      "prompt": "Capstone, tutorials, Manifest",
+      "items": [
+        "Capstone Seminars (CP191, CP192) begin in Year 3; Capstone Directed Study I and II (CP193, CP194) finish it",
+        "Manifest (CP196): present your capstone",
+        "Senior Tutorials listed for this major: Molecular Immunology, Science of Teaching and Learning"
+      ],
+      "note": "Past capstones can involve building a computational pipeline manual for biologists, improving stem cell delivery for neural tissue repair using nanomaterial scaffolds, or formulating sustainable sunscreens. What would yours chase?",
+      "source": {
+        "label": "Natural Sciences outcomes",
+        "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+      },
+      "continueLabel": "After Minerva",
+      "next": "after-NS",
+      "plan": "CP191 to CP196"
+    },
+    "after-NS": {
       "kind": "choice",
       "stage": "After Minerva",
       "prompt": "Where might you head next?",
@@ -343,38 +1520,416 @@
         {
           "id": "grad",
           "label": "Graduate study",
-          "whatYouDo": "A master's or Ph.D. in math, computing, or a field that uses them.",
-          "facts": ["10.3% of Computational Sciences graduates were pursuing advanced degrees six months out (n = 256, classes of 2019 to 2025)", "17.6% work in academia and research", "Schools named: Brown, Caltech, Cambridge, Cornell, Duke, Stanford, Princeton, Harvard, UC Berkeley, Johns Hopkins"],
-          "keepsOpen": "Research, teaching, specialist technical roles.",
-          "source": { "label": "Computational Sciences outcomes", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
+          "whatYouDo": "A master's or Ph.D.",
+          "facts": [
+            "43.5% are pursuing an advanced degree",
+            "Minerva students who pursued graduate studies have done so at institutions such as Harvard University, Caltech, Cambridge University, Karolinska Institute, Oxford University, Johns Hopkins University, Princeton University, and many others.",
+            "Data collected from 46 NS college graduates from 2019 to 2025"
+          ],
+          "keepsOpen": "Research, teaching and specialist roles.",
+          "source": {
+            "label": "Natural Sciences outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+          },
           "next": "end"
         },
         {
           "id": "work",
           "label": "Work",
-          "whatYouDo": "Straight into a technical job.",
-          "facts": ["74.2% entered full-time employment directly; 11.1% took internships (n = 256)", "Industries: Big Tech and software 44.5%, startups 14.5%, finance and consulting 10.9%, social impact and government 8.2%"],
+          "whatYouDo": "Straight into a job.",
+          "facts": [
+            "41.3% are employed full-time",
+            "Industries: Graduate Education 50%, Consulting and Entrepreneurship 17.4%, Education 15.2%, Healthcare and Biotech 6.5%",
+            "Fields named: Researcher, Lab Technician, Science Consultant, Computational Biologist, Bioinformatician, Environmental Educator, Conservation Specialist, Medical Technologist",
+            "Data collected from 46 NS college graduates from 2019 to 2025"
+          ],
           "keepsOpen": "Graduate study later, with work experience behind you.",
-          "source": { "label": "Computational Sciences outcomes", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
+          "source": {
+            "label": "Natural Sciences outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+          },
           "next": "end"
         },
         {
           "id": "undecided",
           "label": "Not sure yet",
           "whatYouDo": "A fine place to be as an applicant.",
-          "facts": ["95.6% were working or in advanced degree programs six months out (n = 256). The page does not break down the rest"],
-          "keepsOpen": "Year 3 and 4 electives can come from any major, so a second interest can stay alive.",
-          "source": { "label": "Computational Sciences outcomes", "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences" },
+          "facts": [
+            "85% of Natural Sciences graduates are pursuing an advanced degree or employed full-time within six months of graduation.",
+            "Data collected from 46 NS college graduates from 2019 to 2025"
+          ],
+          "keepsOpen": "Electives from every college keep a second interest alive; up to two minors are allowed.",
+          "source": {
+            "label": "Natural Sciences outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+          },
           "next": "end"
         }
       ]
     },
-
+    "college-SS": {
+      "kind": "step",
+      "stage": "Your likely college",
+      "prompt": "Social Sciences",
+      "items": [
+        "Core courses: SS110 Psychology: From Neurons to Society, SS111 Modern Economic Thought, SS112 Political Science and Social Change",
+        "A degree holds one or two majors and up to two minors.",
+        "At least 20 credits come from other colleges."
+      ],
+      "note": "Not your fit? Change an answer above.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "Start Year 1",
+      "next": "y1-SS",
+      "plan": "Social Sciences"
+    },
+    "y1-SS": {
+      "kind": "step",
+      "stage": "Year 1 · Foundation · San Francisco",
+      "prompt": "Four Cornerstone courses, all year",
+      "items": [
+        "Formal Analyses (FA50, FA51): logic, statistics, algorithmic thinking",
+        "Empirical Analyses (EA50, EA51): research design, hypotheses, evidence",
+        "Complex Systems (CX50, CX51): systems, collaboration, negotiation, leadership",
+        "Multimodal Communications (MC50, MC51): writing, speaking, visual design, debate",
+        "Integrated Learning I to VIII (IL91 to IL98) runs across the four years"
+      ],
+      "note": "Everyone takes these. Older course pages call the Cornerstones CS51, NS51, SS51 and AH51.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "On to Year 2",
+      "next": "y2-SS",
+      "plan": "FA, EA, CX, MC Cornerstones"
+    },
+    "y2-SS": {
+      "kind": "step",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "Social Sciences core",
+      "items": [
+        "SS110 Psychology: From Neurons to Society",
+        "SS111 Modern Economic Thought",
+        "SS112 Political Science and Social Change"
+      ],
+      "note": "All of these. Academic and Career Exploration (AC81) also starts this year.",
+      "source": {
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "continueLabel": "Choose Year 2 electives",
+      "next": "y2e-SS-1",
+      "plan": "SS110, SS111, SS112"
+    },
+    "y2e-SS-1": {
+      "kind": "choice",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
+      "options": [
+        {
+          "id": "ah",
+          "label": "Arts & Humanities core",
+          "whatYouDo": "The arts and humanities take the history of human creative thought and expression and apply it to understanding and contextualizing events, ideas, policies, and human relationships.",
+          "facts": [
+            "Core: AH110 Global History, AH111 Morality, Identity, and Justice, AH112 The Arts and Social Change, AH113 Dynamics of Design"
+          ],
+          "keepsOpen": "Arts & Humanities minors: Arts and Literature, Design Across the Humanities, Historical Forces, Philosophy, Ethics, and the Law.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-SS-1",
+          "plan": "electives from Arts & Humanities"
+        },
+        {
+          "id": "b",
+          "label": "Business core",
+          "whatYouDo": "Private enterprise is a global driver of wealth, employment, technological advancements, and social innovations.",
+          "facts": [
+            "Core: B110 Market Dynamics and Product Analytics, B111 Financial Planning, Budgeting and Modeling, B112 Doing Business, B113 Enterprise, Design and Optimization"
+          ],
+          "keepsOpen": "Business minors: Business.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-SS-1",
+          "plan": "electives from Business"
+        },
+        {
+          "id": "more",
+          "label": "More colleges",
+          "whatYouDo": "2 more: Computational Sciences and Natural Sciences.",
+          "keepsOpen": "Electives can come from any college.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y2e-SS-2"
+        }
+      ]
+    },
+    "y2e-SS-2": {
+      "kind": "choice",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "More colleges",
+      "options": [
+        {
+          "id": "cs",
+          "label": "Computational Sciences core",
+          "whatYouDo": "Computational sciences provide the foundations for making sense of natural, human-mediated, and social phenomena through analytics, computational methods, and modeling.",
+          "facts": [
+            "Core: CS110 Problem Solving with Data Structures and Algorithms, CS111 Single and Multivariable Calculus, CS113 Theory and Applications of Linear Algebra, CS114 Probability and Statistics and the Structure of Randomness"
+          ],
+          "keepsOpen": "Computational Sciences minors: Computer Science and Artificial Intelligence, Data Science and Statistics, Mathematics.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-SS-1",
+          "plan": "electives from Computational Sciences"
+        },
+        {
+          "id": "ns",
+          "label": "Natural Sciences core",
+          "whatYouDo": "Natural sciences provide the foundations for understanding the natural world and for using that knowledge to solve practical problems.",
+          "facts": [
+            "Core: NS110L Physics of Life, NS110U Physics of the Universe, NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity"
+          ],
+          "keepsOpen": "Natural Sciences minors: Cells and Organisms, Earth and Environmental Systems, Matter and Energy.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-SS-1",
+          "plan": "electives from Natural Sciences"
+        }
+      ]
+    },
+    "y3-SS-1": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "Pick a concentration. Declaring one is optional: every major takes 3 concentration courses either way.",
+      "options": [
+        {
+          "id": "cognition-brain-and-behavior",
+          "label": "Cognition, Brain, and Behavior",
+          "whatYouDo": "Learn how to use cognitive science to illuminate questions about the mind, including the nature of thinking and emotion and how the two interact in human beings.",
+          "facts": [
+            "SS142 Theory, Research, and Innovation in the Psychological Sciences · needs SS110",
+            "SS152 Cognitive Neuroscience · needs SS110",
+            "SS162 Personal and Social Motivation · needs SS110"
+          ],
+          "keepsOpen": "Shares SS162 with Designing Societies; SS152 with Empirical Approaches to the Social Sciences; SS142 with Theory and Analysis in the Social Sciences. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-SS",
+          "plan": "SS142, SS152, SS162"
+        },
+        {
+          "id": "designing-societies",
+          "label": "Designing Societies",
+          "whatYouDo": "Devise ways to improve society, based on the science of influence and motivation, the challenges facing developing and developed economies, and the central components of government constitutions.",
+          "facts": [
+            "SS162 Personal and Social Motivation · needs SS110",
+            "SS164 Global Development and Applied Economics · needs SS111",
+            "SS166 Comparative Constitutional Law: Designing Societies · needs SS112"
+          ],
+          "keepsOpen": "Shares SS162 with Cognition, Brain, and Behavior; SS164 with Economics and Society; SS166 with Politics, Government, and Society.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-SS",
+          "plan": "SS162, SS164, SS166"
+        },
+        {
+          "id": "more",
+          "label": "More concentrations",
+          "whatYouDo": "4 more: Economics and Society, Empirical Approaches to the Social Sciences, Politics, Government, and Society and Theory and Analysis in the Social Sciences.",
+          "keepsOpen": "Students may also design a custom concentration with faculty guidance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-SS-2"
+        }
+      ]
+    },
+    "y3-SS-2": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "More Social Sciences concentrations",
+      "options": [
+        {
+          "id": "economics-and-society",
+          "label": "Economics and Society",
+          "whatYouDo": "Study the nature of capital, trade, taxation, economic growth, and the scientific analysis of economies.",
+          "facts": [
+            "SS144 Intermediate Economic Theory and Tools · needs SS111",
+            "SS154 Econometrics and Economic Systems · needs SS111",
+            "SS164 Global Development and Applied Economics · needs SS111"
+          ],
+          "keepsOpen": "Shares SS164 with Designing Societies; SS154 with Empirical Approaches to the Social Sciences; SS144 with Theory and Analysis in the Social Sciences. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-SS",
+          "plan": "SS144, SS154, SS164"
+        },
+        {
+          "id": "empirical-approaches-to-the-social-sciences",
+          "label": "Empirical Approaches to the Social Sciences",
+          "whatYouDo": "Learn fundamental concepts and methods across a range of topics in social science, including human cognition, group behavior, economics, and global political systems.",
+          "facts": [
+            "SS152 Cognitive Neuroscience · needs SS110",
+            "SS154 Econometrics and Economic Systems · needs SS111",
+            "SS156 Comparative Politics in Practice · needs SS112"
+          ],
+          "keepsOpen": "Shares SS152 with Cognition, Brain, and Behavior; SS154 with Economics and Society; SS156 with Politics, Government, and Society.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-SS",
+          "plan": "SS152, SS154, SS156"
+        },
+        {
+          "id": "more",
+          "label": "More concentrations",
+          "whatYouDo": "2 more: Politics, Government, and Society and Theory and Analysis in the Social Sciences.",
+          "keepsOpen": "Students may also design a custom concentration with faculty guidance.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-SS-3"
+        }
+      ]
+    },
+    "y3-SS-3": {
+      "kind": "choice",
+      "stage": "Year 3 · Focus · Buenos Aires and Europe",
+      "prompt": "More Social Sciences concentrations",
+      "options": [
+        {
+          "id": "politics-government-and-society",
+          "label": "Politics, Government, and Society",
+          "whatYouDo": "Investigate the factors that influence and define successful governments.",
+          "facts": [
+            "SS146 Practice of Governance · needs SS112",
+            "SS156 Comparative Politics in Practice · needs SS112",
+            "SS166 Comparative Constitutional Law: Designing Societies · needs SS112"
+          ],
+          "keepsOpen": "Shares SS166 with Designing Societies; SS156 with Empirical Approaches to the Social Sciences; SS146 with Theory and Analysis in the Social Sciences. Also offered as a minor.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-SS",
+          "plan": "SS146, SS156, SS166"
+        },
+        {
+          "id": "theory-and-analysis-in-the-social-sciences",
+          "label": "Theory and Analysis in the Social Sciences",
+          "whatYouDo": "Understand the various theoretical approaches in social science and learn how to use these approaches to analyze the individual mind and emotions, the community, and interconnected global economies and governments.",
+          "facts": [
+            "SS142 Theory, Research, and Innovation in the Psychological Sciences · needs SS110",
+            "SS144 Intermediate Economic Theory and Tools · needs SS111",
+            "SS146 Practice of Governance · needs SS112"
+          ],
+          "keepsOpen": "Shares SS142 with Cognition, Brain, and Behavior; SS144 with Economics and Society; SS146 with Politics, Government, and Society.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y4-SS",
+          "plan": "SS142, SS144, SS146"
+        }
+      ]
+    },
+    "y4-SS": {
+      "kind": "step",
+      "stage": "Year 4 · Synthesis",
+      "prompt": "Capstone, tutorials, Manifest",
+      "items": [
+        "Capstone Seminars (CP191, CP192) begin in Year 3; Capstone Directed Study I and II (CP193, CP194) finish it",
+        "Manifest (CP196): present your capstone",
+        "Senior Tutorials listed for this major: Mission Critical or Mission Impossible? Creating Safe, Sustainable Cities, Politics, Philosophy, and Economics, Science of Teaching and Learning"
+      ],
+      "note": "Past capstones can involve analyzing the dynamics and complexities of global waste trade, recommending policies to mitigate Japan's fertility fall, or studying the impact of author gender, ethnicity, and university affiliation on perceived credibility, for example. What would yours chase?",
+      "source": {
+        "label": "Social Sciences outcomes",
+        "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+      },
+      "continueLabel": "After Minerva",
+      "next": "after-SS",
+      "plan": "CP191 to CP196"
+    },
+    "after-SS": {
+      "kind": "choice",
+      "stage": "After Minerva",
+      "prompt": "Where might you head next?",
+      "options": [
+        {
+          "id": "grad",
+          "label": "Graduate study",
+          "whatYouDo": "A master's or Ph.D.",
+          "facts": [
+            "20% enrolled in graduate school",
+            "Amoung the 105 surveryed graduates with Social Sciences as their sole major, from 2019 to 2025"
+          ],
+          "keepsOpen": "Research, teaching and specialist roles.",
+          "source": {
+            "label": "Social Sciences outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "end"
+        },
+        {
+          "id": "work",
+          "label": "Work",
+          "whatYouDo": "Straight into a job.",
+          "facts": [
+            "74% entered full-time employment directly",
+            "7% pursued internships",
+            "Fields named: Policy Associate / Policy Specialist, Legal Associate, Social Sciences Researcher, Counselor, Editorial Producer",
+            "Amoung the 105 surveryed graduates with Social Sciences as their sole major, from 2019 to 2025"
+          ],
+          "keepsOpen": "Graduate study later, with work experience behind you.",
+          "source": {
+            "label": "Social Sciences outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "end"
+        },
+        {
+          "id": "undecided",
+          "label": "Not sure yet",
+          "whatYouDo": "A fine place to be as an applicant.",
+          "facts": [
+            "93% of Social Science graduates are employed full-time or enrolled in advanced degree programs within six months of graduation.",
+            "Amoung the 105 surveryed graduates with Social Sciences as their sole major, from 2019 to 2025"
+          ],
+          "keepsOpen": "Electives from every college keep a second interest alive; up to two minors are allowed.",
+          "source": {
+            "label": "Social Sciences outcomes",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "end"
+        }
+      ]
+    },
     "end": {
       "kind": "end",
-      "stage": "Your sketch",
-      "prompt": "One possible path, not a plan",
-      "note": "If you could ask a Minerva student one question about this path, what would it be?"
+      "stage": "Your plan",
+      "prompt": "One possible plan, not a promise",
+      "note": "If you could ask a Minerva student one question about this plan, what would it be?"
     }
   }
 }
