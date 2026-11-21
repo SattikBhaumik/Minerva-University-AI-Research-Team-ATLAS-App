@@ -59,16 +59,27 @@ def course_line(code, with_needs=True):
     return line
 
 
-def prereq_codes(code):
-    """Prerequisites as codes, keeping 'or' groups: 'NS110L or NS110U, NS113'.
-    Cornerstone alternatives (FA51 or CS51 ...) are dropped: everyone takes them."""
+def is_foundation(c):
+    """Cornerstones (and their old codes) and Year 1 programming: everyone has them."""
+    return COURSE[c]['type'].startswith(('Cornerstone', 'Non Degree', 'Structure')) or c in ('CS51B', 'PR51')
+
+
+def prereq_groups(code):
+    """Prerequisite clauses as lists of alternative codes, foundations removed."""
     groups = []
     for clause in re.split(r', (?=[A-Z]{1,3}\d)', COURSE[code]['prerequisites']):
-        codes = [c for c in CODE_RE.findall(clause) if c in COURSE]
-        if not codes or all(COURSE[c]['type'].startswith(('Cornerstone', 'Non Degree', 'Structure')) or c in ('CS51B', 'PR51') for c in codes):
-            continue
-        group = ' or '.join(dict.fromkeys(codes))
-        groups.append(group + ' (taken together)' if 'corequisite' in clause else group)
+        codes = list(dict.fromkeys(c for c in CODE_RE.findall(clause) if c in COURSE and not is_foundation(c)))
+        if codes:
+            groups.append((codes, 'corequisite' in clause))
+    return groups
+
+
+def prereq_codes(code):
+    """Prerequisites as codes, keeping 'or' groups: 'NS110L or NS110U, NS113'."""
+    groups = []
+    for codes, coreq in prereq_groups(code):
+        group = ' or '.join(codes)
+        groups.append(group + ' (taken together)' if coreq else group)
     return ', '.join(dict.fromkeys(groups))
 
 
@@ -99,7 +110,8 @@ def depends_on(col, other):
     mine = core(col) + [x['code'] for c in concentrations(col) for x in c['courses']]
     hits = {}
     for code in dict.fromkeys(mine):
-        need = [x for x in CODE_RE.findall(COURSE[code]['prerequisites']) if x in other_core]
+        # Only hard needs: a clause whose every alternative is in other's core.
+        need = [x for codes, _ in prereq_groups(code) if all(c in other_core for c in codes) for x in codes]
         if need:
             hits[code] = sorted(set(need))
     return hits
@@ -160,7 +172,9 @@ def build():
         nodes[f'college-{col}'] = {
             'kind': 'step', 'stage': 'Your likely college', 'prompt': name,
             'items': [
-                'Core courses: ' + ', '.join(f"{c} {COURSE[c]['title']}" for c in core(col)),
+                'Core courses: ' + ', '.join(
+                    'NS110U or NS110L (Physics of the Universe or of Life)' if c == 'NS110U' else f"{c} {COURSE[c]['title']}"
+                    for c in core(col) if c != 'NS110L'),
                 'A degree holds one or two majors and up to two minors.',
                 'At least 20 credits come from other colleges.',
             ],
@@ -281,7 +295,8 @@ def build():
         if col == 'B':
             items.append('Business Practicum (B199)')
         cap = OUT['colleges'][col]['capstones']
-        note = (f"Past capstones can involve {cap.rstrip('.')}." if col != 'B' else cap) + ' What would yours chase?'
+        cap = re.sub(r',? for example\.?$', '', cap.strip()).rstrip('.')
+        note = (f"Past capstones can involve {cap}." if col != 'B' else cap + '.') + ' What would yours chase?'
         nodes[f'y4-{col}'] = {
             'kind': 'step', 'stage': y['y4'], 'prompt': 'Capstone, tutorials, Manifest',
             'items': items, 'note': note, 'source': outcome_source(col),

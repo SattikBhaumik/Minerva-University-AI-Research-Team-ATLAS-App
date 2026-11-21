@@ -220,22 +220,6 @@
       "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
       "options": [
         {
-          "id": "ss",
-          "label": "Social Sciences core",
-          "whatYouDo": "The social sciences apply the methods of science to understand the way people think and act -- individually, in groups, and in societies -- and the way that biology and the environment interact to make each of us unique.",
-          "facts": [
-            "Core: SS110 Psychology: From Neurons to Society, SS111 Modern Economic Thought, SS112 Political Science and Social Change",
-            "Your Arts & Humanities courses that need these: AH164 needs SS112; AH152 needs SS112"
-          ],
-          "keepsOpen": "Social Sciences minors: Cognition, Brain, and Behavior, Economics and Society, Politics, Government, and Society.",
-          "source": {
-            "label": "Course Catalog 2026.v410",
-            "url": "https://minerva.edu/academics/course-catalog-pdf/"
-          },
-          "next": "y3-AH-1",
-          "plan": "electives from Social Sciences"
-        },
-        {
           "id": "b",
           "label": "Business core",
           "whatYouDo": "Private enterprise is a global driver of wealth, employment, technological advancements, and social innovations.",
@@ -250,24 +234,6 @@
           "next": "y3-AH-1",
           "plan": "electives from Business"
         },
-        {
-          "id": "more",
-          "label": "More colleges",
-          "whatYouDo": "2 more: Computational Sciences and Natural Sciences.",
-          "keepsOpen": "Electives can come from any college.",
-          "source": {
-            "label": "Course Catalog 2026.v410",
-            "url": "https://minerva.edu/academics/course-catalog-pdf/"
-          },
-          "next": "y2e-AH-2"
-        }
-      ]
-    },
-    "y2e-AH-2": {
-      "kind": "choice",
-      "stage": "Year 2 · Direction · Tokyo",
-      "prompt": "More colleges",
-      "options": [
         {
           "id": "cs",
           "label": "Computational Sciences core",
@@ -284,6 +250,24 @@
           "plan": "electives from Computational Sciences"
         },
         {
+          "id": "more",
+          "label": "More colleges",
+          "whatYouDo": "2 more: Natural Sciences and Social Sciences.",
+          "keepsOpen": "Electives can come from any college.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y2e-AH-2"
+        }
+      ]
+    },
+    "y2e-AH-2": {
+      "kind": "choice",
+      "stage": "Year 2 · Direction · Tokyo",
+      "prompt": "More colleges",
+      "options": [
+        {
           "id": "ns",
           "label": "Natural Sciences core",
           "whatYouDo": "Natural sciences provide the foundations for understanding the natural world and for using that knowledge to solve practical problems.",
@@ -297,6 +281,21 @@
           },
           "next": "y3-AH-1",
           "plan": "electives from Natural Sciences"
+        },
+        {
+          "id": "ss",
+          "label": "Social Sciences core",
+          "whatYouDo": "The social sciences apply the methods of science to understand the way people think and act -- individually, in groups, and in societies -- and the way that biology and the environment interact to make each of us unique.",
+          "facts": [
+            "Core: SS110 Psychology: From Neurons to Society, SS111 Modern Economic Thought, SS112 Political Science and Social Change"
+          ],
+          "keepsOpen": "Social Sciences minors: Cognition, Brain, and Behavior, Economics and Society, Politics, Government, and Society.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "y3-AH-1",
+          "plan": "electives from Social Sciences"
         }
       ]
     },
@@ -312,7 +311,7 @@
           "facts": [
             "AH146 Decoding Art and Literature · needs AH112 or AH156 or AH166 or AH144",
             "AH156 Socioeconomic Influences on Art and Literature · needs AH110 or AH112 or AH142 or AH146 or AH152 or AH162 or AH166",
-            "AH166 Artistic Communication from Page to Practice · needs MC51 or AH51 or AH112"
+            "AH166 Artistic Communication from Page to Practice · needs AH112"
           ],
           "keepsOpen": "Shares AH166 with Design Across the Humanities; AH156 with Global and Comparative Humanities; AH146 with Interpretation and Meaning. Also offered as a minor.",
           "source": {
@@ -329,7 +328,7 @@
           "facts": [
             "AH162 Public and Applied History · needs AH110 or AH113 or AH142 or AH152",
             "AH164 Social and Political Philosophy · needs AH111 or AH113 or AH144 or AH154 or SS112",
-            "AH166 Artistic Communication from Page to Practice · needs MC51 or AH51 or AH112"
+            "AH166 Artistic Communication from Page to Practice · needs AH112"
           ],
           "keepsOpen": "Shares AH166 with Arts and Literature; AH162 with Historical Forces; AH164 with Philosophy, Ethics, and the Law. Also offered as a minor.",
           "source": {
@@ -415,7 +414,7 @@
           "whatYouDo": "Approach the arts, literature, history, ethics, law, and philosophy from an analytical perspective.",
           "facts": [
             "AH142 The Craft of Historical Analysis · needs AH110 or AH152 or AH162",
-            "AH144 Ethical Worldviews, Moral Dilemmas · needs CX51 or SS51 or AH111",
+            "AH144 Ethical Worldviews, Moral Dilemmas · needs AH111",
             "AH146 Decoding Art and Literature · needs AH112 or AH156 or AH166 or AH144"
           ],
           "keepsOpen": "Shares AH146 with Arts and Literature; AH142 with Historical Forces; AH144 with Philosophy, Ethics, and the Law.",
@@ -431,7 +430,7 @@
           "label": "Philosophy, Ethics, and the Law",
           "whatYouDo": "Examine the origins of moral beliefs, the relationship of ethics, philosophy, and law to one another, and the relevance of all three to decision-making.",
           "facts": [
-            "AH144 Ethical Worldviews, Moral Dilemmas · needs CX51 or SS51 or AH111",
+            "AH144 Ethical Worldviews, Moral Dilemmas · needs AH111",
             "AH154 Law and Ethics from a Global Perspective · needs AH111 or AH144 or AH164 or SS166",
             "AH164 Social and Political Philosophy · needs AH111 or AH113 or AH144 or AH154 or SS112"
           ],
@@ -1243,7 +1242,7 @@
       "stage": "Your likely college",
       "prompt": "Natural Sciences",
       "items": [
-        "Core courses: NS110L Physics of Life, NS110U Physics of the Universe, NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity",
+        "Core courses: NS110U or NS110L (Physics of the Universe or of Life), NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity",
         "A degree holds one or two majors and up to two minors.",
         "At least 20 credits come from other colleges."
       ],
@@ -1862,7 +1861,7 @@
         "Manifest (CP196): present your capstone",
         "Senior Tutorials listed for this major: Mission Critical or Mission Impossible? Creating Safe, Sustainable Cities, Politics, Philosophy, and Economics, Science of Teaching and Learning"
       ],
-      "note": "Past capstones can involve analyzing the dynamics and complexities of global waste trade, recommending policies to mitigate Japan's fertility fall, or studying the impact of author gender, ethnicity, and university affiliation on perceived credibility, for example. What would yours chase?",
+      "note": "Past capstones can involve analyzing the dynamics and complexities of global waste trade, recommending policies to mitigate Japan's fertility fall, or studying the impact of author gender, ethnicity, and university affiliation on perceived credibility. What would yours chase?",
       "source": {
         "label": "Social Sciences outcomes",
         "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
