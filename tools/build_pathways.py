@@ -267,16 +267,16 @@ def build():
                     'whatYouDo': first_sentence(MAJOR[COLLEGE[o][0]]['description']),
                     'facts': facts, 'keepsOpen': keeps, 'source': CATALOG_SRC,
                     'next': f'y3-{col}-1', 'plan': 'electives from ' + COLLEGE[o][0]}
-        layers = staged([{'name': COLLEGE[o][0], 'o': o} for o in others], lambda x: elective(x['o']),
-                        'More colleges', 'Electives can come from any college.', f'y2e-{col}', None)
-        for i, opts in enumerate(layers, 1):
-            for o in opts:
-                o.pop('name', None)
-            nodes[f'y2e-{col}-{i}'] = {
-                'kind': 'choice', 'stage': y['y2'],
-                'prompt': 'At least 20 credits come from other colleges. Where would your Year 2 electives come from?' if i == 1 else 'More colleges',
-                'options': opts,
-            }
+        # Owner exception to the three-tab rule: all four other colleges in one row.
+        opts = [elective(o) for o in others]
+        for o in opts:
+            o.pop('name', None)
+        nodes[f'y2e-{col}-1'] = {
+            'kind': 'choice', 'stage': y['y2'],
+            'prompt': 'At least 20 credits come from other colleges. Where would your Year 2 electives come from?',
+            'ownerException': ED['electivesException'],
+            'options': opts,
+        }
 
         # Year 3 concentrations, catalog order
         concs = concentrations(col)
