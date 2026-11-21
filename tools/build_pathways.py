@@ -46,7 +46,7 @@ def prefix(code):
 
 
 def first_sentence(text):
-    m = re.match(r'(.+?[.!?])(\s|$)', text.strip())
+    m = re.match(r'(.+?(?<!\b[A-Z])[.!?])(\s|$)', text.strip())
     return (m.group(1) if m else text).strip()
 
 
@@ -361,7 +361,7 @@ def build():
                 for code in codes:
                     c = COURSE[code]
                     desc = re.sub(r'^Previously [A-Z0-9]+\.\s*', '', c['description'])
-                    sentences = re.split(r'(?<=[.!?])\s+', desc)
+                    sentences = re.split(r'(?<![\s“"(][A-Z][.!?])(?<=[.!?])\s+', desc)
                     short = ' '.join(sentences[:2])
                     if len(short) > 320:
                         short = sentences[0]
