@@ -168,13 +168,95 @@
     }
   }
 
+  /* ================================================================
+     SAVED PATHS (this browser only; see js/saved.js)
+  ================================================================ */
+
+  const sidebar = $('channels-sidebar');
+  const menuBtn = $('menu-btn');
+
+  function setMenu(open) {
+    sidebar?.classList.toggle('open', open);
+    menuBtn?.setAttribute('aria-expanded', String(open));
+  }
+
+  function setSavedOpen(role, open) {
+    const toggle = document.querySelector(`[data-saved-toggle="${role}"]`);
+    const list = document.querySelector(`[data-saved-list="${role}"]`);
+    toggle.setAttribute('aria-expanded', String(open));
+    list.hidden = !open;
+  }
+
+  function renderSaved() {
+    const entries = SavedPaths.list();
+    ['applicant', 'minervan'].forEach((role) => {
+      const mine = entries.filter((e) => e.role === role);
+      document.querySelector(`[data-saved-count="${role}"]`).textContent = String(mine.length);
+      const list = document.querySelector(`[data-saved-list="${role}"]`);
+      list.textContent = '';
+      if (!mine.length) {
+        const empty = document.createElement('li');
+        empty.className = 'caption saved-empty';
+        empty.textContent = 'None saved yet';
+        list.append(empty);
+      }
+      mine.forEach((entry) => {
+        const li = document.createElement('li');
+        li.className = 'saved-item';
+        const open = document.createElement('button');
+        open.type = 'button';
+        open.className = 'saved-open';
+        const name = document.createElement('span');
+        name.className = 'saved-name';
+        name.textContent = entry.name;
+        const when = document.createElement('span');
+        when.className = 'caption';
+        when.textContent = new Date(entry.savedAt).toLocaleDateString(undefined, { day: 'numeric', month: 'short', year: 'numeric' });
+        open.append(name, when);
+        open.addEventListener('click', () => {
+          pathways?.startWith(entry.path, true);
+          setMenu(false);
+        });
+        const del = document.createElement('button');
+        del.type = 'button';
+        del.className = 'saved-delete';
+        del.setAttribute('aria-label', `Delete saved plan ${entry.name}`);
+        del.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>';
+        del.addEventListener('click', () => {
+          if (!window.confirm(`Delete "${entry.name}"?`)) return;
+          SavedPaths.remove(entry.id);
+          renderSaved();
+        });
+        li.append(open, del);
+        list.append(li);
+      });
+    });
+  }
+
   async function init() {
+    renderSaved();
+    document.querySelectorAll('[data-saved-toggle]').forEach((toggle) => {
+      toggle.addEventListener('click', () => {
+        const role = toggle.dataset.savedToggle;
+        setSavedOpen(role, toggle.getAttribute('aria-expanded') !== 'true');
+      });
+    });
+    window.addEventListener('pathways:save', (e) => {
+      e.detail.ok = SavedPaths.save(e.detail.path, e.detail.name);
+      renderSaved();
+      if (e.detail.ok) setSavedOpen(e.detail.path[0], true);
+    });
+    menuBtn?.addEventListener('click', () => setMenu(!sidebar.classList.contains('open')));
+    // Phones: a tap outside the open sidebar closes it.
+    document.addEventListener('click', (e) => {
+      if (sidebar?.classList.contains('open') && !sidebar.contains(e.target) && !menuBtn.contains(e.target)) setMenu(false);
+    });
     checkForNewVersion();
     // Sidebar roles start a fresh path with that answer picked; the active
     // role follows whatever the first answer in the path is.
     roleBtns.forEach((btn) => btn.addEventListener('click', () => {
       pathways?.startWith([btn.dataset.role], true);
-      $('channels-sidebar')?.classList.remove('open');
+      setMenu(false);
     }));
     window.addEventListener('pathways:change', (e) => {
       roleBtns.forEach((btn) => {

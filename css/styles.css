@@ -367,3 +367,34 @@ button, input, select, textarea { font: inherit; }
 @keyframes pw-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
 @keyframes pw-drop { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
 @keyframes pw-fade { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+
+/* ---- Sidebar: role tabs with saved-plan dropdowns ---- */
+.sidebar-nav { padding: var(--space-2); }
+.nav-row { display: flex; align-items: center; gap: var(--space-1); }
+.nav-row .sidebar-nav-item { flex: 1; }
+.saved-toggle {
+  display: inline-flex; align-items: center; gap: var(--space-1);
+  padding: 8px; border: none; background: none; cursor: pointer;
+  border-radius: var(--radius-control); color: var(--color-text-muted);
+}
+.saved-toggle:hover { background: var(--color-surface-alt); }
+.saved-toggle svg { transition: transform 0.2s; }
+.saved-toggle[aria-expanded="true"] svg { transform: rotate(180deg); }
+.saved-count { font-size: var(--type-caption-size); font-variant-numeric: tabular-nums; }
+.saved-list { list-style: none; margin: var(--space-1) 0 var(--space-2) var(--space-6); }
+.saved-list[hidden] { display: none; }
+.saved-empty { padding: var(--space-1) var(--space-2); }
+.saved-item { display: flex; align-items: center; }
+.saved-open {
+  flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: flex-start;
+  padding: 6px var(--space-2); border: none; background: none; cursor: pointer; text-align: left;
+  border-radius: var(--radius-control); color: var(--color-text);
+}
+.saved-open:hover, .saved-delete:hover { background: var(--color-surface-alt); }
+.saved-name { font-size: var(--type-tabular-size); font-weight: var(--type-body-strong-weight); overflow-wrap: anywhere; }
+.saved-delete { padding: 6px; border: none; background: none; cursor: pointer; border-radius: var(--radius-control); color: var(--color-text-muted); }
+.saved-toggle:focus-visible, .saved-open:focus-visible, .saved-delete:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 1px; }
+
+/* Phones: the sidebar is off-canvas, so the header gets a button to open it. */
+.view-head { display: flex; align-items: flex-start; justify-content: space-between; gap: var(--space-3); }
+@media (min-width: 768px) { .menu-btn { display: none; } }
