@@ -68,12 +68,23 @@ const API = (() => {
     return get('data/pathways.json', { v: ASSET_VERSION });
   }
 
+  // GitHub Pages lets browsers reuse index.html for ten minutes, so a visit
+  // right after a deploy can run the previous version. version.json is
+  // fetched past every cache and compared with the version this page loaded.
+  async function getLatestVersion() {
+    const resp = await fetch(new URL(`version.json?t=${Date.now()}`, window.location.href), { cache: 'no-store' });
+    if (!resp.ok) throw new Error(`API ${resp.status}: ${resp.statusText}`);
+    return (await resp.json()).v;
+  }
+
   return {
     get,
     post,
     getAuthHeaders,
     refreshIfNeeded,
     getPathways,
+    getLatestVersion,
+    version: ASSET_VERSION,
   };
 })();
 
