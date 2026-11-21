@@ -686,6 +686,7 @@
       "kind": "choice",
       "stage": "Year 2 · Direction · Tokyo",
       "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
+      "ownerException": "2026-11-23, owner: \"please remove this option of 'More Colleges' that is present anywhere and just give all the options in that row, if there is no space, you can expand the row to the next line\".",
       "options": [
         {
           "id": "b",
@@ -729,24 +730,6 @@
             "CS114"
           ]
         },
-        {
-          "id": "more",
-          "label": "More colleges",
-          "whatYouDo": "2 more: Natural Sciences and Social Sciences.",
-          "keepsOpen": "Electives can come from any college.",
-          "source": {
-            "label": "Course Catalog 2026.v410",
-            "url": "https://minerva.edu/academics/course-catalog-pdf/"
-          },
-          "next": "y2e-AH-2"
-        }
-      ]
-    },
-    "y2e-AH-2": {
-      "kind": "choice",
-      "stage": "Year 2 · Direction · Tokyo",
-      "prompt": "More colleges",
-      "options": [
         {
           "id": "ns",
           "label": "Natural Sciences core",
@@ -1103,6 +1086,7 @@
       "kind": "choice",
       "stage": "Year 2 · Direction · Tokyo",
       "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
+      "ownerException": "2026-11-23, owner: \"please remove this option of 'More Colleges' that is present anywhere and just give all the options in that row, if there is no space, you can expand the row to the next line\".",
       "options": [
         {
           "id": "ah",
@@ -1146,24 +1130,6 @@
             "CS114"
           ]
         },
-        {
-          "id": "more",
-          "label": "More colleges",
-          "whatYouDo": "2 more: Natural Sciences and Social Sciences.",
-          "keepsOpen": "Electives can come from any college.",
-          "source": {
-            "label": "Course Catalog 2026.v410",
-            "url": "https://minerva.edu/academics/course-catalog-pdf/"
-          },
-          "next": "y2e-B-2"
-        }
-      ]
-    },
-    "y2e-B-2": {
-      "kind": "choice",
-      "stage": "Year 2 · Direction · Tokyo",
-      "prompt": "More colleges",
-      "options": [
         {
           "id": "ns",
           "label": "Natural Sciences core",
@@ -1521,6 +1487,7 @@
       "kind": "choice",
       "stage": "Year 2 · Direction · Tokyo",
       "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
+      "ownerException": "2026-11-23, owner: \"please remove this option of 'More Colleges' that is present anywhere and just give all the options in that row, if there is no space, you can expand the row to the next line\".",
       "options": [
         {
           "id": "ah",
@@ -1564,24 +1531,6 @@
             "B113"
           ]
         },
-        {
-          "id": "more",
-          "label": "More colleges",
-          "whatYouDo": "2 more: Natural Sciences and Social Sciences.",
-          "keepsOpen": "Electives can come from any college.",
-          "source": {
-            "label": "Course Catalog 2026.v410",
-            "url": "https://minerva.edu/academics/course-catalog-pdf/"
-          },
-          "next": "y2e-CS-2"
-        }
-      ]
-    },
-    "y2e-CS-2": {
-      "kind": "choice",
-      "stage": "Year 2 · Direction · Tokyo",
-      "prompt": "More colleges",
-      "options": [
         {
           "id": "ns",
           "label": "Natural Sciences core",
@@ -1972,6 +1921,7 @@
       "kind": "choice",
       "stage": "Year 2 · Direction · Tokyo",
       "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
+      "ownerException": "2026-11-23, owner: \"please remove this option of 'More Colleges' that is present anywhere and just give all the options in that row, if there is no space, you can expand the row to the next line\".",
       "options": [
         {
           "id": "cs",
@@ -2016,24 +1966,6 @@
             "AH113"
           ]
         },
-        {
-          "id": "more",
-          "label": "More colleges",
-          "whatYouDo": "2 more: Business and Social Sciences.",
-          "keepsOpen": "Electives can come from any college.",
-          "source": {
-            "label": "Course Catalog 2026.v410",
-            "url": "https://minerva.edu/academics/course-catalog-pdf/"
-          },
-          "next": "y2e-NS-2"
-        }
-      ]
-    },
-    "y2e-NS-2": {
-      "kind": "choice",
-      "stage": "Year 2 · Direction · Tokyo",
-      "prompt": "More colleges",
-      "options": [
         {
           "id": "b",
           "label": "Business core",
@@ -2327,6 +2259,7 @@
       "kind": "choice",
       "stage": "Year 2 · Direction · Tokyo",
       "prompt": "At least 20 credits come from other colleges. Where would your Year 2 electives come from?",
+      "ownerException": "2026-11-23, owner: \"please remove this option of 'More Colleges' that is present anywhere and just give all the options in that row, if there is no space, you can expand the row to the next line\".",
       "options": [
         {
           "id": "ah",
@@ -2370,24 +2303,6 @@
             "B113"
           ]
         },
-        {
-          "id": "more",
-          "label": "More colleges",
-          "whatYouDo": "2 more: Computational Sciences and Natural Sciences.",
-          "keepsOpen": "Electives can come from any college.",
-          "source": {
-            "label": "Course Catalog 2026.v410",
-            "url": "https://minerva.edu/academics/course-catalog-pdf/"
-          },
-          "next": "y2e-SS-2"
-        }
-      ]
-    },
-    "y2e-SS-2": {
-      "kind": "choice",
-      "stage": "Year 2 · Direction · Tokyo",
-      "prompt": "More colleges",
-      "options": [
         {
           "id": "cs",
           "label": "Computational Sciences core",
