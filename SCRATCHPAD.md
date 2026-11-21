@@ -19,16 +19,17 @@
 - **Status**: web prototype. ATLAS: a pathway explorer for Minerva
   applicants (major, then year by year, then after Minerva)
 - **Active milestone**: M0 / first prototype
-- **Last session**: 2026-11-18. Round 2 research read Minerva's pages
-  directly (session env now allows minerva.edu and the Pages site).
-  Research doc and `data/pathways.json` rebuilt from them: real course
-  lists for all 9 NS/CS concentrations, cities per year, Year 2
-  electives as the real choice, "More concentrations" tab to hold the
-  3-option cap. Assets and data are cache-busted by `?v=` in index.html.
-  Verified in headless Chromium; owner verified the live site on a phone.
+- **Last session**: 2026-11-21. Parsed the official Course Catalog
+  2026.v410 (PDF from owner) into `data/catalog/`; `tools/build_pathways.py`
+  now generates `data/pathways.json` for all five colleges: two preference
+  questions point to a likely college, then Years 1 to 4 and After
+  Minerva, ending in a plan with course codes. Five Haiku agents checked
+  each college against the catalog (all correct, 3 wording fixes); a
+  Sonnet agent transcribed outcomes. Rerun the generator after any edit
+  to data/catalog/, then bump ?v= in index.html.
 - **Next actions**:
-  1. Owner checks the still-open conflicts in research doc section 5
-     (NS110L vs NS110U; NS152 prerequisites; 50% vs 43.5%)
+  1. Owner reviews `data/catalog/editorial.json` (the only ATLAS-written
+     words: preference questions) and the one open conflict (50% vs 43.5%)
   2. Decide the platform set → DECISIONS.md (web only for now?)
   3. Fill in AGENTS.md project identity sections
   4. Manifest `start_url` is `/`; should be `./` for the Pages subpath

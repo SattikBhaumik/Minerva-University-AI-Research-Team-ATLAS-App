@@ -98,7 +98,7 @@ When shipping any user-facing feature:
 
 | Feature | Web | iOS | macOS | tvOS | Android | Notes |
 |---|---|---|---|---|---|---|
-| Pathway explorer (stage tabs, next layer only, path in URL) | 🚧 | ⏳ | ⏳ | ⏳ | ⏳ | Web demo on illustrative data (`data/pathways.json`); native waits on the platform-set decision. Max 3 options per choice, checked by `js/pathways.test.js` |
+| Pathway explorer (stage tabs, next layer only, path in URL) | 🚧 | ⏳ | ⏳ | ⏳ | ⏳ | Web: all five colleges, generated from the 2026.v410 course catalog by `tools/build_pathways.py`; native waits on the platform-set decision. Max 3 options per choice and catalog-only course codes, checked by `js/pathways.test.js` |
 
 ---
 
