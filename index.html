@@ -34,7 +34,7 @@
        whenever a file in css/, js/ or data/ changes (api.js passes it on to
        data/pathways.json), or browsers can pair a new
        index.html with an old app.js for up to 10 minutes. -->
-  <link rel="stylesheet" href="css/styles.css?v=2026-11-22.5">
+  <link rel="stylesheet" href="css/styles.css?v=2026-11-22.6">
 </head>
 <body>
 
@@ -50,9 +50,13 @@
         <h2 class="sidebar-title">ATLAS</h2>
       </div>
       <nav class="sidebar-nav" aria-label="Main navigation">
-        <button class="sidebar-nav-item active" id="nav-home-btn" data-view="home" aria-current="page">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="12" r="2"/><circle cx="6" cy="19" r="2"/><path d="M6 7v10M8 5h4a4 4 0 0 1 4 4v1"/></svg>
-          <span>Pathways</span>
+        <button class="sidebar-nav-item" data-role="applicant">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+          <span>Applicant</span>
+        </button>
+        <button class="sidebar-nav-item" data-role="minervan">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          <span>Minervan</span>
         </button>
       </nav>
     </aside>
@@ -71,15 +75,15 @@
 
   </div>
 
-  <script src="js/compat.js?v=2026-11-22.5"></script>
-  <script src="js/api.js?v=2026-11-22.5"></script>
-  <script src="js/pathways.js?v=2026-11-22.5"></script>
-  <script src="js/app.js?v=2026-11-22.5"></script>
+  <script src="js/compat.js?v=2026-11-22.6"></script>
+  <script src="js/api.js?v=2026-11-22.6"></script>
+  <script src="js/pathways.js?v=2026-11-22.6"></script>
+  <script src="js/app.js?v=2026-11-22.6"></script>
   <!-- Additive smart-TV layer + Cast sender: both self-disable off-TV
        (tv.js adds html.tv only on a TV runtime; cast-sender no-ops when the
        Cast framework never loads). See docs/TV-PLATFORMS.md. -->
-  <link rel="stylesheet" href="tv.css?v=2026-11-22.5">
-  <script src="tv.js?v=2026-11-22.5"></script>
-  <script src="js/cast-sender.js?v=2026-11-22.5"></script>
+  <link rel="stylesheet" href="tv.css?v=2026-11-22.6">
+  <script src="tv.js?v=2026-11-22.6"></script>
+  <script src="js/cast-sender.js?v=2026-11-22.6"></script>
 </body>
 </html>

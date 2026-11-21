@@ -142,10 +142,34 @@ def build():
     nodes = {}
     y = ED['years']
 
+    # Who is this for: an applicant, or a Minervan who has just started
+    role = ED['role']
+    nodes['start'] = {
+        'kind': 'choice', 'stage': 'Start', 'prompt': role['prompt'],
+        'options': [dict(o, facts=[], source=CATALOG_SRC) for o in role['options']],
+    }
+    mv = ED['minervan']
+    nodes['m-major'] = {
+        'kind': 'choice', 'stage': 'Your major', 'prompt': mv['prompt'],
+        'options': [dict(o, facts=[], source=CATALOG_SRC) for o in mv['options']],
+    }
+    def college_option(col):
+        return {'id': col.lower(), 'name': COLLEGE[col][0], 'label': COLLEGE[col][0],
+                'whatYouDo': first_sentence(MAJOR[COLLEGE[col][0]]['description']),
+                'facts': ['Core: ' + ', '.join(f"{c} {COURSE[c]['title']}" for c in core(col))],
+                'keepsOpen': f"{len(concentrations(col))} concentrations; at least 20 credits come from other colleges.",
+                'source': major_source(col), 'next': f'college-{col}'}
+    for i, opts in enumerate(staged([{'name': COLLEGE[c][0], 'c': c} for c in ORDER], lambda x: college_option(x['c']),
+                                    'More colleges', 'Every college is open to you.', 'm-college', None), 1):
+        for o in opts:
+            o.pop('name', None)
+        nodes[f'm-college-{i}'] = {'kind': 'choice', 'stage': 'Your major',
+                                   'prompt': mv['collegePrompt'] if i == 1 else 'More colleges', 'options': opts}
+
     # Preference funnel -> likely college
     start = ED['start']
-    nodes['start'] = {
-        'kind': 'choice', 'stage': 'Start', 'prompt': start['prompt'],
+    nodes['interest'] = {
+        'kind': 'choice', 'stage': 'Your interests', 'prompt': start['prompt'],
         'options': [{
             'id': o['id'], 'label': o['label'], 'whatYouDo': o['whatYouDo'],
             'facts': [f"Leads toward: {', '.join(COLLEGE[q['college']][0] for q in ED['questions'][o['next']]['options'])}"],
@@ -169,14 +193,14 @@ def build():
         name = COLLEGE[col][0]
         major = MAJOR[name]
         nodes[f'college-{col}'] = {
-            'kind': 'step', 'stage': 'Your likely college', 'prompt': name,
+            'kind': 'step', 'stage': 'Your college', 'prompt': name,
             'items': [
                 'Core courses: ' + ', '.join(
                     'NS110U or NS110L (Physics of the Universe or of Life)' if c == 'NS110U' else f"{c} {COURSE[c]['title']}"
                     for c in core(col) if c != 'NS110L'),
                 'A degree holds one or two majors and up to two minors.',
                 'At least 20 credits come from other colleges.',
-            ],
+            ] + ([f"Minors here: {', '.join(m['name'].split(' - ')[-1] for m in minors(col))}"] if minors(col) else []),
             'note': 'Not your fit? Change an answer above.',
             'source': CATALOG_SRC, 'continueLabel': 'Start Year 1', 'next': f'y1-{col}',
             'plan': name,
@@ -370,7 +394,7 @@ def build():
     return {
         'courseInfo': info,
         'asOf': AS_OF,
-        'notice': "Example plan. Courses, rules and outcomes come from Minerva's Course Catalog (2026.v410) and website as read on 21 Nov 2026; the questions are ATLAS's own. Courses and cities can change. Not admissions advice.",
+        'notice': "For applicants and new Minervans. Example plan. Courses, rules and outcomes come from Minerva's Course Catalog (2026.v410) and website as read on 21 Nov 2026; the questions are ATLAS's own. Courses and cities can change. Not admissions or academic advice; Minervans, check with your advisor.",
         'start': 'start',
         'nodes': nodes,
     }

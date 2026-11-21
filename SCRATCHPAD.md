@@ -27,6 +27,11 @@
   each college against the catalog (all correct, 3 wording fixes); a
   Sonnet agent transcribed outcomes. Rerun the generator after any edit
   to data/catalog/, then bump ?v= in index.html.
+- **2026-11-22**: two audiences. Sidebar tabs Applicant / Minervan and
+  a first question "Which describes you?". Applicants: interest funnel.
+  Minervans: "settled on a major?" -> pick a college directly, or the
+  interest funnel. Course box shows shared courses once. Wording lives in
+  `data/catalog/editorial.json` (role, minervan).
 - **Next actions**:
   1. Owner reviews `data/catalog/editorial.json` (the only ATLAS-written
      words: preference questions) and the one open conflict (50% vs 43.5%)
