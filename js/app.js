@@ -37,7 +37,8 @@
 
   /* ---- DOM Refs ---- */
   const viewHome = $('view-home');
-  const navHomeBtn = $('nav-home-btn');
+  const roleBtns = document.querySelectorAll('[data-role]');
+  let pathways = null;
 
   /* ---- State ---- */
   let currentView = 'home';
@@ -81,7 +82,6 @@
       home: viewHome,
     };
     const navBtns = {
-      home: navHomeBtn,
     };
 
     Object.entries(views).forEach(([n, el]) => {
@@ -138,7 +138,7 @@
       const data = await API.getPathways();
       const errors = Pathways.validate(data);
       if (errors.length) throw new Error(errors[0]);
-      Pathways.mount(root, data);
+      pathways = Pathways.mount(root, data);
     } catch (err) {
       console.log('pathways load failed', err);
       root.textContent = '';
@@ -155,7 +155,19 @@
   ================================================================ */
 
   async function init() {
-    navHomeBtn.addEventListener('click', () => showView('home'));
+    // Sidebar roles start a fresh path with that answer picked; the active
+    // role follows whatever the first answer in the path is.
+    roleBtns.forEach((btn) => btn.addEventListener('click', () => {
+      pathways?.startWith([btn.dataset.role], true);
+      $('channels-sidebar')?.classList.remove('open');
+    }));
+    window.addEventListener('pathways:change', (e) => {
+      roleBtns.forEach((btn) => {
+        const on = btn.dataset.role === e.detail[0];
+        btn.classList.toggle('active', on);
+        if (on) btn.setAttribute('aria-current', 'true'); else btn.removeAttribute('aria-current');
+      });
+    });
     loadPathways();
 
     // URL routing (deep links / bookmarks). The URL is the web's door — the

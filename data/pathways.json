@@ -327,12 +327,169 @@
     }
   },
   "asOf": "2026-11-21",
-  "notice": "Example plan. Courses, rules and outcomes come from Minerva's Course Catalog (2026.v410) and website as read on 21 Nov 2026; the questions are ATLAS's own. Courses and cities can change. Not admissions advice.",
+  "notice": "For applicants and new Minervans. Example plan. Courses, rules and outcomes come from Minerva's Course Catalog (2026.v410) and website as read on 21 Nov 2026; the questions are ATLAS's own. Courses and cities can change. Not admissions or academic advice; Minervans, check with your advisor.",
   "start": "start",
   "nodes": {
     "start": {
       "kind": "choice",
       "stage": "Start",
+      "prompt": "Which describes you?",
+      "options": [
+        {
+          "id": "applicant",
+          "label": "Applicant",
+          "whatYouDo": "You are thinking about applying to Minerva.",
+          "keepsOpen": "Explore by interest first; a likely college follows from your answers.",
+          "next": "interest",
+          "facts": [],
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          }
+        },
+        {
+          "id": "minervan",
+          "label": "Minervan",
+          "whatYouDo": "You have just started at Minerva.",
+          "keepsOpen": "Go straight to your major, or explore by interest if you are still deciding.",
+          "next": "m-major",
+          "facts": [],
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          }
+        }
+      ]
+    },
+    "m-major": {
+      "kind": "choice",
+      "stage": "Your major",
+      "prompt": "Have you settled on a major?",
+      "options": [
+        {
+          "id": "know",
+          "label": "Yes, I know my major",
+          "whatYouDo": "Pick it from Minerva's five colleges.",
+          "keepsOpen": "You can change your pick at any time here.",
+          "next": "m-college-1",
+          "facts": [],
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          }
+        },
+        {
+          "id": "deciding",
+          "label": "Still deciding",
+          "whatYouDo": "Explore by what you want to spend your time on.",
+          "keepsOpen": "The same questions applicants answer, leading to a likely college.",
+          "next": "interest",
+          "facts": [],
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          }
+        }
+      ]
+    },
+    "m-college-1": {
+      "kind": "choice",
+      "stage": "Your major",
+      "prompt": "Which college is your major in?",
+      "options": [
+        {
+          "id": "ah",
+          "label": "Arts & Humanities",
+          "whatYouDo": "The arts and humanities take the history of human creative thought and expression and apply it to understanding and contextualizing events, ideas, policies, and human relationships.",
+          "facts": [
+            "Core: AH110 Global History, AH111 Morality, Identity, and Justice, AH112 The Arts and Social Change, AH113 Dynamics of Design"
+          ],
+          "keepsOpen": "6 concentrations; at least 20 credits come from other colleges.",
+          "source": {
+            "label": "Arts & Humanities",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "college-AH"
+        },
+        {
+          "id": "b",
+          "label": "Business",
+          "whatYouDo": "Private enterprise is a global driver of wealth, employment, technological advancements, and social innovations.",
+          "facts": [
+            "Core: B110 Market Dynamics and Product Analytics, B111 Financial Planning, Budgeting and Modeling, B112 Doing Business, B113 Enterprise, Design and Optimization"
+          ],
+          "keepsOpen": "6 concentrations; at least 20 credits come from other colleges.",
+          "source": {
+            "label": "Business",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "college-B"
+        },
+        {
+          "id": "more",
+          "label": "More colleges",
+          "whatYouDo": "3 more: Computational Sciences, Natural Sciences and Social Sciences.",
+          "keepsOpen": "Every college is open to you.",
+          "source": {
+            "label": "Course Catalog 2026.v410",
+            "url": "https://minerva.edu/academics/course-catalog-pdf/"
+          },
+          "next": "m-college-2"
+        }
+      ]
+    },
+    "m-college-2": {
+      "kind": "choice",
+      "stage": "Your major",
+      "prompt": "More colleges",
+      "options": [
+        {
+          "id": "cs",
+          "label": "Computational Sciences",
+          "whatYouDo": "Computational sciences provide the foundations for making sense of natural, human-mediated, and social phenomena through analytics, computational methods, and modeling.",
+          "facts": [
+            "Core: CS110 Problem Solving with Data Structures and Algorithms, CS111 Single and Multivariable Calculus, CS113 Theory and Applications of Linear Algebra, CS114 Probability and Statistics and the Structure of Randomness"
+          ],
+          "keepsOpen": "6 concentrations; at least 20 credits come from other colleges.",
+          "source": {
+            "label": "Computational Sciences",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+          },
+          "next": "college-CS"
+        },
+        {
+          "id": "ns",
+          "label": "Natural Sciences",
+          "whatYouDo": "Natural sciences provide the foundations for understanding the natural world and for using that knowledge to solve practical problems.",
+          "facts": [
+            "Core: NS110L Physics of Life, NS110U Physics of the Universe, NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity"
+          ],
+          "keepsOpen": "4 concentrations; at least 20 credits come from other colleges.",
+          "source": {
+            "label": "Natural Sciences",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+          },
+          "next": "college-NS"
+        },
+        {
+          "id": "ss",
+          "label": "Social Sciences",
+          "whatYouDo": "The social sciences apply the methods of science to understand the way people think and act -- individually, in groups, and in societies -- and the way that biology and the environment interact to make each of us unique.",
+          "facts": [
+            "Core: SS110 Psychology: From Neurons to Society, SS111 Modern Economic Thought, SS112 Political Science and Social Change"
+          ],
+          "keepsOpen": "6 concentrations; at least 20 credits come from other colleges.",
+          "source": {
+            "label": "Social Sciences",
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          },
+          "next": "college-SS"
+        }
+      ]
+    },
+    "interest": {
+      "kind": "choice",
+      "stage": "Your interests",
       "prompt": "What do you want to spend your time on?",
       "options": [
         {
@@ -486,12 +643,13 @@
     },
     "college-AH": {
       "kind": "step",
-      "stage": "Your likely college",
+      "stage": "Your college",
       "prompt": "Arts & Humanities",
       "items": [
         "Core courses: AH110 Global History, AH111 Morality, Identity, and Justice, AH112 The Arts and Social Change, AH113 Dynamics of Design",
         "A degree holds one or two majors and up to two minors.",
-        "At least 20 credits come from other colleges."
+        "At least 20 credits come from other colleges.",
+        "Minors here: Arts and Literature, Design Across the Humanities, Historical Forces, Philosophy, Ethics, and the Law"
       ],
       "note": "Not your fit? Change an answer above.",
       "source": {
@@ -902,12 +1060,13 @@
     },
     "college-B": {
       "kind": "step",
-      "stage": "Your likely college",
+      "stage": "Your college",
       "prompt": "Business",
       "items": [
         "Core courses: B110 Market Dynamics and Product Analytics, B111 Financial Planning, Budgeting and Modeling, B112 Doing Business, B113 Enterprise, Design and Optimization",
         "A degree holds one or two majors and up to two minors.",
-        "At least 20 credits come from other colleges."
+        "At least 20 credits come from other colleges.",
+        "Minors here: Business"
       ],
       "note": "Not your fit? Change an answer above.",
       "source": {
@@ -1319,12 +1478,13 @@
     },
     "college-CS": {
       "kind": "step",
-      "stage": "Your likely college",
+      "stage": "Your college",
       "prompt": "Computational Sciences",
       "items": [
         "Core courses: CS110 Problem Solving with Data Structures and Algorithms, CS111 Single and Multivariable Calculus, CS113 Theory and Applications of Linear Algebra, CS114 Probability and Statistics and the Structure of Randomness",
         "A degree holds one or two majors and up to two minors.",
-        "At least 20 credits come from other colleges."
+        "At least 20 credits come from other colleges.",
+        "Minors here: Computer Science and Artificial Intelligence, Data Science and Statistics, Mathematics"
       ],
       "note": "Not your fit? Change an answer above.",
       "source": {
@@ -1737,12 +1897,13 @@
     },
     "college-NS": {
       "kind": "step",
-      "stage": "Your likely college",
+      "stage": "Your college",
       "prompt": "Natural Sciences",
       "items": [
         "Core courses: NS110U or NS110L (Physics of the Universe or of Life), NS111 Implications of Earth's Cycles, NS112 Evolution Across Multiple Scales, NS113 Chemical Structure and Reactivity",
         "A degree holds one or two majors and up to two minors.",
-        "At least 20 credits come from other colleges."
+        "At least 20 credits come from other colleges.",
+        "Minors here: Cells and Organisms, Earth and Environmental Systems, Matter and Energy"
       ],
       "note": "Not your fit? Change an answer above.",
       "source": {
@@ -2124,12 +2285,13 @@
     },
     "college-SS": {
       "kind": "step",
-      "stage": "Your likely college",
+      "stage": "Your college",
       "prompt": "Social Sciences",
       "items": [
         "Core courses: SS110 Psychology: From Neurons to Society, SS111 Modern Economic Thought, SS112 Political Science and Social Change",
         "A degree holds one or two majors and up to two minors.",
-        "At least 20 credits come from other colleges."
+        "At least 20 credits come from other colleges.",
+        "Minors here: Cognition, Brain, and Behavior, Economics and Society, Politics, Government, and Society"
       ],
       "note": "Not your fit? Change an answer above.",
       "source": {

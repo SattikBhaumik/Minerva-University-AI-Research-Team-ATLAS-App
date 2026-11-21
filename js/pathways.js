@@ -81,6 +81,7 @@ const Pathways = (() => {
       ? `#path=${path.map(encodeURIComponent).join('.')}`
       : window.location.pathname + window.location.search;
     history.replaceState(history.state, '', url);
+    window.dispatchEvent(new CustomEvent('pathways:change', { detail: path.slice() }));
   }
 
   /* ---- DOM helpers ---- */
@@ -341,25 +342,31 @@ const Pathways = (() => {
       });
       const restart = el('button', 'btn btn-ghost', 'Start over');
       restart.type = 'button';
-      restart.addEventListener('click', () => {
-        cutBelow(0);
-        layers[0].section.remove();
-        layers = [];
-        path = [];
-        writePath(path);
-        addLayer(data.start, true);
-      });
+      restart.addEventListener('click', () => startWith([], true));
       actions.append(share, restart);
       card.append(actions);
     }
 
-    // Build the first layer, then replay any path from the URL without animation.
-    addLayer(data.start, false);
-    for (const value of readPath()) {
-      const layer = layers[layers.length - 1];
-      if (!layer.select || !layer.select(value)) break;
+    // Start over from the first layer, replaying picks without animation.
+    function startWith(values, animate) {
+      stack.textContent = '';
+      layers = [];
+      path = [];
+      addLayer(data.start, false);
+      for (const value of values) {
+        const layer = layers[layers.length - 1];
+        if (!layer.select || !layer.select(value)) break;
+      }
+      writePath(path);
+      if (animate) {
+        const last = layers[layers.length - 1].section;
+        last.classList.add('pw-enter');
+        last.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+      }
     }
-    writePath(path);
+
+    startWith(readPath(), false);
+    return { startWith };
   }
 
   return { validate, mount, MAX_OPTIONS };

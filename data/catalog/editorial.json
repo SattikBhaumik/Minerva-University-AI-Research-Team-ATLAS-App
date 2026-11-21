@@ -3,21 +3,66 @@
   "start": {
     "prompt": "What do you want to spend your time on?",
     "options": [
-      { "id": "world", "label": "How the natural world works", "whatYouDo": "Physics, chemistry, life and Earth, or the math and data that describe them.", "next": "q-world" },
-      { "id": "people", "label": "How people think and live", "whatYouDo": "Minds, economies, politics, history, art and ethics.", "next": "q-people" },
-      { "id": "build", "label": "Building products or companies", "whatYouDo": "Software and AI, or markets, products and finance.", "next": "q-build" }
+      {
+        "id": "world",
+        "label": "How the natural world works",
+        "whatYouDo": "Physics, chemistry, life and Earth, or the math and data that describe them.",
+        "next": "q-world"
+      },
+      {
+        "id": "people",
+        "label": "How people think and live",
+        "whatYouDo": "Minds, economies, politics, history, art and ethics.",
+        "next": "q-people"
+      },
+      {
+        "id": "build",
+        "label": "Building products or companies",
+        "whatYouDo": "Software and AI, or markets, products and finance.",
+        "next": "q-build"
+      }
     ]
   },
   "questions": {
-    "q-world": { "prompt": "Which way in appeals more?", "options": [
-      { "college": "NS", "label": "Experiments and the physical world" },
-      { "college": "CS", "label": "Math, data and code" } ] },
-    "q-people": { "prompt": "Which way in appeals more?", "options": [
-      { "college": "SS", "label": "Evidence about minds, economies and politics" },
-      { "college": "AH", "label": "History, art, philosophy and design" } ] },
-    "q-build": { "prompt": "Which way in appeals more?", "options": [
-      { "college": "CS", "label": "Software, AI and models" },
-      { "college": "B", "label": "Markets, products and finance" } ] }
+    "q-world": {
+      "prompt": "Which way in appeals more?",
+      "options": [
+        {
+          "college": "NS",
+          "label": "Experiments and the physical world"
+        },
+        {
+          "college": "CS",
+          "label": "Math, data and code"
+        }
+      ]
+    },
+    "q-people": {
+      "prompt": "Which way in appeals more?",
+      "options": [
+        {
+          "college": "SS",
+          "label": "Evidence about minds, economies and politics"
+        },
+        {
+          "college": "AH",
+          "label": "History, art, philosophy and design"
+        }
+      ]
+    },
+    "q-build": {
+      "prompt": "Which way in appeals more?",
+      "options": [
+        {
+          "college": "CS",
+          "label": "Software, AI and models"
+        },
+        {
+          "college": "B",
+          "label": "Markets, products and finance"
+        }
+      ]
+    }
   },
   "years": {
     "y1": "Year 1 · Foundation · San Francisco",
@@ -25,5 +70,44 @@
     "y3": "Year 3 · Focus · Buenos Aires and Europe",
     "y4": "Year 4 · Synthesis"
   },
-  "closingQuestion": "If you could ask a Minerva student one question about this plan, what would it be?"
+  "closingQuestion": "If you could ask a Minerva student one question about this plan, what would it be?",
+  "role": {
+    "prompt": "Which describes you?",
+    "options": [
+      {
+        "id": "applicant",
+        "label": "Applicant",
+        "whatYouDo": "You are thinking about applying to Minerva.",
+        "keepsOpen": "Explore by interest first; a likely college follows from your answers.",
+        "next": "interest"
+      },
+      {
+        "id": "minervan",
+        "label": "Minervan",
+        "whatYouDo": "You have just started at Minerva.",
+        "keepsOpen": "Go straight to your major, or explore by interest if you are still deciding.",
+        "next": "m-major"
+      }
+    ]
+  },
+  "minervan": {
+    "prompt": "Have you settled on a major?",
+    "options": [
+      {
+        "id": "know",
+        "label": "Yes, I know my major",
+        "whatYouDo": "Pick it from Minerva's five colleges.",
+        "keepsOpen": "You can change your pick at any time here.",
+        "next": "m-college-1"
+      },
+      {
+        "id": "deciding",
+        "label": "Still deciding",
+        "whatYouDo": "Explore by what you want to spend your time on.",
+        "keepsOpen": "The same questions applicants answer, leading to a likely college.",
+        "next": "interest"
+      }
+    ],
+    "collegePrompt": "Which college is your major in?"
+  }
 }
