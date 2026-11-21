@@ -15,6 +15,8 @@ const Pathways = (() => {
   'use strict';
 
   const MAX_OPTIONS = 3;
+  // A choice the owner approved by name may show up to five (ownerException).
+  const MAX_WITH_EXCEPTION = 5;
   const MIN_OPTIONS = 2;
   const CONTINUE = 'ok';
 
@@ -32,8 +34,9 @@ const Pathways = (() => {
       if (!node.stage || !node.prompt) errors.push(`${id}: needs stage and prompt`);
       if (node.kind === 'choice') {
         const opts = node.options || [];
-        if (opts.length < MIN_OPTIONS || opts.length > MAX_OPTIONS) {
-          errors.push(`${id}: has ${opts.length} options; must be ${MIN_OPTIONS} to ${MAX_OPTIONS}`);
+        const max = typeof node.ownerException === 'string' && node.ownerException ? MAX_WITH_EXCEPTION : MAX_OPTIONS;
+        if (opts.length < MIN_OPTIONS || opts.length > max) {
+          errors.push(`${id}: has ${opts.length} options; must be ${MIN_OPTIONS} to ${max}`);
         }
         const seen = new Set();
         for (const o of opts) {

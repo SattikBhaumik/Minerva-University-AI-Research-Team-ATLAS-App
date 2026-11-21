@@ -159,12 +159,12 @@ def build():
                 'facts': ['Core: ' + ', '.join(f"{c} {COURSE[c]['title']}" for c in core(col))],
                 'keepsOpen': f"{len(concentrations(col))} concentrations; at least 20 credits come from other colleges.",
                 'source': major_source(col), 'next': f'college-{col}'}
-    for i, opts in enumerate(staged([{'name': COLLEGE[c][0], 'c': c} for c in ORDER], lambda x: college_option(x['c']),
-                                    'More colleges', 'Every college is open to you.', 'm-college', None), 1):
-        for o in opts:
-            o.pop('name', None)
-        nodes[f'm-college-{i}'] = {'kind': 'choice', 'stage': 'Your major',
-                                   'prompt': mv['collegePrompt'] if i == 1 else 'More colleges', 'options': opts}
+    # Owner exception to the three-tab rule: all five colleges on one screen.
+    opts = [college_option(c) for c in ORDER]
+    for o in opts:
+        o.pop('name', None)
+    nodes['m-college-1'] = {'kind': 'choice', 'stage': 'Your major', 'prompt': mv['collegePrompt'],
+                            'ownerException': mv['collegeException'], 'options': opts}
 
     # Preference funnel -> likely college
     start = ED['start']

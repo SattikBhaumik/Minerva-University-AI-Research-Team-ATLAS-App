@@ -396,6 +396,7 @@
       "kind": "choice",
       "stage": "Your major",
       "prompt": "Which college is your major in?",
+      "ownerException": "2026-11-22, owner: \"display all five options instead of this branching here\" (Minervans already know Minerva's five colleges by name).",
       "options": [
         {
           "id": "ah",
@@ -425,24 +426,6 @@
           },
           "next": "college-B"
         },
-        {
-          "id": "more",
-          "label": "More colleges",
-          "whatYouDo": "3 more: Computational Sciences, Natural Sciences and Social Sciences.",
-          "keepsOpen": "Every college is open to you.",
-          "source": {
-            "label": "Course Catalog 2026.v410",
-            "url": "https://minerva.edu/academics/course-catalog-pdf/"
-          },
-          "next": "m-college-2"
-        }
-      ]
-    },
-    "m-college-2": {
-      "kind": "choice",
-      "stage": "Your major",
-      "prompt": "More colleges",
-      "options": [
         {
           "id": "cs",
           "label": "Computational Sciences",
