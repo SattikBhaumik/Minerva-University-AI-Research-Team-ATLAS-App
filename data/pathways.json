@@ -1,19 +1,24 @@
 {
   "courseInfo": {
-    "NS110L": {
-      "title": "Physics of Life",
-      "description": "We explore how physics, ranging from mechanics through atomic physics, can be applied to the life sciences. Examples of applications are: fluid flow and heat regulation in biological organisms, electrostatics in the nervous system, and wave phenomena in hearing and vision.",
-      "needs": ""
+    "B110": {
+      "title": "Market Dynamics and Product Analytics",
+      "description": "Business is a powerful driver of economic growth and stability; to do well in business, you must understand consumers, products, and markets.",
+      "needs": "B111 (taken together)"
     },
-    "NS110U": {
-      "title": "Physics of the Universe",
-      "description": "We use gravitational and electromagnetic interactions as representatives for how physics takes experimental evidence and then encodes it into a theoretical framework that can be used to make predictions and draw inferences about new phenomena.",
-      "needs": "CS111"
+    "B111": {
+      "title": "Financial Planning, Budgeting and Modeling",
+      "description": "This Core course provides a foundation for all Business majors and is a prerequisite for all Business Concentration courses. Students learn about the financial and strategic tools managers use to track, evaluate, and improve their business operations for achieving business objectives.",
+      "needs": "B110 (taken together)"
     },
-    "NS111": {
-      "title": "Implications of Earth's Cycles",
-      "description": "The Earth system is investigated from its origin to its functioning today. Beginning with the origin of the Universe and the creation of elements in stars, the course progresses to an understanding of solar systems and the conditions that gave rise to habitable planets.",
-      "needs": ""
+    "B112": {
+      "title": "Doing Business",
+      "description": "This Core course provides foundations for Business majors and is a prerequisite for all junior-level Concentration courses in this major. We analyze the political, regulatory, and societal contexts in which business gets done from a global perspective.",
+      "needs": "B110, B111"
+    },
+    "B113": {
+      "title": "Enterprise, Design and Optimization",
+      "description": "This Core course provides foundations for all Business Majors and is a prerequisite for all junior-level Concentration Courses. Students will explore the inner workings of the business enterprise in context of its environment.",
+      "needs": "B110, B111"
     },
     "CS110": {
       "title": "Problem Solving with Data Structures and Algorithms",
@@ -30,6 +35,36 @@
       "description": "This course develops the tools necessary for the analysis of linear systems. The emphases are both on abstract notions such as vectors spaces, linear maps between them and their matrix representations, and concrete applications such as Markov chains and graphical network analysis.",
       "needs": ""
     },
+    "CS114": {
+      "title": "Probability and Statistics and the Structure of Randomness",
+      "description": "When can you find patterns in seemingly random noise? Or determine when an observed pattern is likely due to chance?",
+      "needs": "CS111"
+    },
+    "NS110L": {
+      "title": "Physics of Life",
+      "description": "We explore how physics, ranging from mechanics through atomic physics, can be applied to the life sciences. Examples of applications are: fluid flow and heat regulation in biological organisms, electrostatics in the nervous system, and wave phenomena in hearing and vision.",
+      "needs": ""
+    },
+    "NS110U": {
+      "title": "Physics of the Universe",
+      "description": "We use gravitational and electromagnetic interactions as representatives for how physics takes experimental evidence and then encodes it into a theoretical framework that can be used to make predictions and draw inferences about new phenomena.",
+      "needs": "CS111"
+    },
+    "NS111": {
+      "title": "Implications of Earth's Cycles",
+      "description": "The Earth system is investigated from its origin to its functioning today. Beginning with the origin of the Universe and the creation of elements in stars, the course progresses to an understanding of solar systems and the conditions that gave rise to habitable planets.",
+      "needs": ""
+    },
+    "NS112": {
+      "title": "Evolution Across Multiple Scales",
+      "description": "“Nothing in biology makes sense, except in the light of evolution” – T. Dobzhansky.",
+      "needs": ""
+    },
+    "NS113": {
+      "title": "Chemical Structure and Reactivity",
+      "description": "This course explores the physical and chemical properties of nature based on molecular, atomic, and sub- atomic structures, with an emphasis on how structure determines reactivity.",
+      "needs": ""
+    },
     "SS110": {
       "title": "Psychology: From Neurons to Society",
       "description": "In this course we learn about the mind by looking at (1) multiple levels of analysis, from neurons to social systems, (2) multiple methodologies used in research, and (3) how multiple types of explanation (mechanism, function, ontogeny, phylogeny) shed light on each other.",
@@ -43,91 +78,6 @@
     "SS112": {
       "title": "Political Science and Social Change",
       "description": "Governments greatly affect their citizens and, in turn, citizens may greatly affect government and their society. The course has four units to examine these influences.",
-      "needs": ""
-    },
-    "AH110": {
-      "title": "Global History",
-      "description": "From prehistoric times, human populations have moved across the globe. Driven by environmental, economic, political, and social forces, they have carried with them and have been exposed to new customs, new technologies, and new ideas for structuring societies and interacting with other peoples.",
-      "needs": ""
-    },
-    "AH111": {
-      "title": "Morality, Identity, and Justice",
-      "description": "What’s ethically significant about being human, or about our identities as members of various social groups? What do we owe to animals, to ecosystems, to future generations, to AI, and how do our answers to these questions rely on theories of identity?",
-      "needs": ""
-    },
-    "AH112": {
-      "title": "The Arts and Social Change",
-      "description": "A fundamental characteristic of the arts is that they are transformative. They lead us to see ourselves in new ways, to re-conceptualize our world, and to rethink our relationship to it.",
-      "needs": ""
-    },
-    "B110": {
-      "title": "Market Dynamics and Product Analytics",
-      "description": "Business is a powerful driver of economic growth and stability; to do well in business, you must understand consumers, products, and markets.",
-      "needs": "B111 (taken together)"
-    },
-    "B111": {
-      "title": "Financial Planning, Budgeting and Modeling",
-      "description": "This Core course provides a foundation for all Business majors and is a prerequisite for all Business Concentration courses. Students learn about the financial and strategic tools managers use to track, evaluate, and improve their business operations for achieving business objectives.",
-      "needs": "B110 (taken together)"
-    },
-    "B112": {
-      "title": "Doing Business",
-      "description": "This Core course provides foundations for Business majors and is a prerequisite for all junior-level Concentration courses in this major. We analyze the political, regulatory, and societal contexts in which business gets done from a global perspective.",
-      "needs": "B110, B111"
-    },
-    "AH113": {
-      "title": "Dynamics of Design",
-      "description": "Design affects the objects, spaces, and ideas of everyday life, from door handles and physical spaces to laws and the virtual spaces in which we experience our lives.",
-      "needs": ""
-    },
-    "FA50": {
-      "title": "Formal Analyses",
-      "description": "Focus on thinking critically through in-depth training in logic, statistics, and algorithmic thinking. Use formal, computational, and quantitative approaches to formulate, analyze, and tackle problems.",
-      "needs": ""
-    },
-    "EA50": {
-      "title": "Empirical Analyses",
-      "description": "Develop your creative thinking skills and familiarize yourself with methods used in social and natural sciences. These methods teach you to effectively frame problems, identify solutions, develop and test hypotheses, design research studies, and reach plausible conclusions.",
-      "needs": ""
-    },
-    "CX50": {
-      "title": "Complex Systems",
-      "description": "Explore how humans function as members of various systems, using concepts such as multiple causality and multi-factor integrations. You will develop your ability to interact effectively by participating in group project collaboration, negotiation, leadership, and formal debate.",
-      "needs": ""
-    },
-    "MC50": {
-      "title": "Multimodal Communications",
-      "description": "Learn to communicate effectively at a high level and deeply analyze communications of various forms. You will form the skills and practical experience to speak publicly, communicate visually, design, debate, and express yourself artistically.",
-      "needs": ""
-    },
-    "IL91": {
-      "title": "Integrated Learning I: Managing Complexity of a Global World",
-      "description": "This course is the first semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society.",
-      "needs": ""
-    },
-    "IL98": {
-      "title": "Integrated Learning VIII: Managing Complexity of a Global World",
-      "description": "This course is the final semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society.",
-      "needs": "IL97"
-    },
-    "B113": {
-      "title": "Enterprise, Design and Optimization",
-      "description": "This Core course provides foundations for all Business Majors and is a prerequisite for all junior-level Concentration Courses. Students will explore the inner workings of the business enterprise in context of its environment.",
-      "needs": "B110, B111"
-    },
-    "CS114": {
-      "title": "Probability and Statistics and the Structure of Randomness",
-      "description": "When can you find patterns in seemingly random noise? Or determine when an observed pattern is likely due to chance?",
-      "needs": "CS111"
-    },
-    "NS112": {
-      "title": "Evolution Across Multiple Scales",
-      "description": "“Nothing in biology makes sense, except in the light of evolution” – T. Dobzhansky.",
-      "needs": ""
-    },
-    "NS113": {
-      "title": "Chemical Structure and Reactivity",
-      "description": "This course explores the physical and chemical properties of nature based on molecular, atomic, and sub- atomic structures, with an emphasis on how structure determines reactivity.",
       "needs": ""
     },
     "AH146": {
@@ -175,30 +125,25 @@
       "description": "Normative ethics is the study of ethical systems that provide answers to the question of how one ought to act in situations of moral significance. Moral dilemmas involve choices between mutually exclusive alternatives, each of which carries significant burdens.",
       "needs": "AH111"
     },
-    "CP191": {
-      "title": "Capstone Seminar",
-      "description": "Explore several topics of interest, focusing on the potential of each one to develop into a high-quality Capstone project.",
-      "needs": "IL123 or GL93"
+    "AH110": {
+      "title": "Global History",
+      "description": "From prehistoric times, human populations have moved across the globe. Driven by environmental, economic, political, and social forces, they have carried with them and have been exposed to new customs, new technologies, and new ideas for structuring societies and interacting with other peoples.",
+      "needs": ""
     },
-    "CP192": {
-      "title": "Capstone Seminar",
-      "description": "Revise and complete a professional proposal for the Capstone project. Engage in peer review of written work as well as presentations to receive critiques and suggestions from other students.",
-      "needs": "CP19101 or CP19102 or CP19103 or CP19104 or CP19105 or IL124 or IL14001 or IL14002 or IL14003"
+    "AH111": {
+      "title": "Morality, Identity, and Justice",
+      "description": "What’s ethically significant about being human, or about our identities as members of various social groups? What do we owe to animals, to ecosystems, to future generations, to AI, and how do our answers to these questions rely on theories of identity?",
+      "needs": ""
     },
-    "CP193": {
-      "title": "Capstone Directed Study I",
-      "description": "Conduct an original piece of research or creation of a project under the guidance of a faculty advisor. At the end of the course, you will submit an initial draft of your Capstone work along with clear plans for achieving the remaining project goals.",
-      "needs": "CP192"
+    "AH112": {
+      "title": "The Arts and Social Change",
+      "description": "A fundamental characteristic of the arts is that they are transformative. They lead us to see ourselves in new ways, to re-conceptualize our world, and to rethink our relationship to it.",
+      "needs": ""
     },
-    "CP194": {
-      "title": "Capstone Directed Study II",
-      "description": "Building on CP193, continue developing an original piece of research or project under the guidance of a faculty advisor.",
-      "needs": "CP193"
-    },
-    "CP196": {
-      "title": "Manifest-2 credits",
-      "description": "",
-      "needs": "CP194"
+    "AH113": {
+      "title": "Dynamics of Design",
+      "description": "Design affects the objects, spaces, and ideas of everyday life, from door handles and physical spaces to laws and the virtual spaces in which we experience our lives.",
+      "needs": ""
     },
     "B144": {
       "title": "Needs Identification and Product Development",
@@ -244,11 +189,6 @@
       "title": "Capital Allocation and Value Creation",
       "description": "Investigate how growing enterprises use their balance sheets to execute growth strategies. Apply discounted cash flow and real options to select among opportunities that create business value.",
       "needs": "B113"
-    },
-    "B199": {
-      "title": "Business Practicum",
-      "description": "The Business Practicum is a residential course in the summer between the third and fourth years. Students combine Learning Outcomes from two or more major core or concentration courses in the Business College.",
-      "needs": "B112, B113"
     },
     "CS162": {
       "title": "Software Engineering: Building Powerful Applications",
@@ -456,12 +396,7 @@
             "label": "Natural Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
           },
-          "next": "college-NS",
-          "courses": [
-            "NS110L",
-            "NS110U",
-            "NS111"
-          ]
+          "next": "college-NS"
         },
         {
           "id": "cs",
@@ -475,12 +410,7 @@
             "label": "Computational Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
           },
-          "next": "college-CS",
-          "courses": [
-            "CS110",
-            "CS111",
-            "CS113"
-          ]
+          "next": "college-CS"
         }
       ]
     },
@@ -501,12 +431,7 @@
             "label": "Social Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
           },
-          "next": "college-SS",
-          "courses": [
-            "SS110",
-            "SS111",
-            "SS112"
-          ]
+          "next": "college-SS"
         },
         {
           "id": "ah",
@@ -520,12 +445,7 @@
             "label": "Arts & Humanities",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
           },
-          "next": "college-AH",
-          "courses": [
-            "AH110",
-            "AH111",
-            "AH112"
-          ]
+          "next": "college-AH"
         }
       ]
     },
@@ -546,12 +466,7 @@
             "label": "Computational Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
           },
-          "next": "college-CS",
-          "courses": [
-            "CS110",
-            "CS111",
-            "CS113"
-          ]
+          "next": "college-CS"
         },
         {
           "id": "b",
@@ -565,12 +480,7 @@
             "label": "Business",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
           },
-          "next": "college-B",
-          "courses": [
-            "B110",
-            "B111",
-            "B112"
-          ]
+          "next": "college-B"
         }
       ]
     },
@@ -590,13 +500,7 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-AH",
-      "plan": "Arts & Humanities",
-      "courses": [
-        "AH110",
-        "AH111",
-        "AH112",
-        "AH113"
-      ]
+      "plan": "Arts & Humanities"
     },
     "y1-AH": {
       "kind": "step",
@@ -616,15 +520,7 @@
       },
       "continueLabel": "On to Year 2",
       "next": "y2-AH",
-      "plan": "FA, EA, CX, MC Cornerstones",
-      "courses": [
-        "FA50",
-        "EA50",
-        "CX50",
-        "MC50",
-        "IL91",
-        "IL98"
-      ]
+      "plan": "FA, EA, CX, MC Cornerstones"
     },
     "y2-AH": {
       "kind": "step",
@@ -643,13 +539,7 @@
       },
       "continueLabel": "Choose Year 2 electives",
       "next": "y2e-AH-1",
-      "plan": "AH110, AH111, AH112, AH113",
-      "courses": [
-        "AH110",
-        "AH111",
-        "AH112",
-        "AH113"
-      ]
+      "plan": "AH110, AH111, AH112, AH113"
     },
     "y2e-AH-1": {
       "kind": "choice",
@@ -951,14 +841,7 @@
       },
       "continueLabel": "After Minerva",
       "next": "after-AH",
-      "plan": "CP191 to CP196",
-      "courses": [
-        "CP191",
-        "CP192",
-        "CP193",
-        "CP194",
-        "CP196"
-      ]
+      "plan": "CP191 to CP196"
     },
     "after-AH": {
       "kind": "choice",
@@ -1033,13 +916,7 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-B",
-      "plan": "Business",
-      "courses": [
-        "B110",
-        "B111",
-        "B112",
-        "B113"
-      ]
+      "plan": "Business"
     },
     "y1-B": {
       "kind": "step",
@@ -1059,15 +936,7 @@
       },
       "continueLabel": "On to Year 2",
       "next": "y2-B",
-      "plan": "FA, EA, CX, MC Cornerstones",
-      "courses": [
-        "FA50",
-        "EA50",
-        "CX50",
-        "MC50",
-        "IL91",
-        "IL98"
-      ]
+      "plan": "FA, EA, CX, MC Cornerstones"
     },
     "y2-B": {
       "kind": "step",
@@ -1086,13 +955,7 @@
       },
       "continueLabel": "Choose Year 2 electives",
       "next": "y2e-B-1",
-      "plan": "B110, B111, B112, B113",
-      "courses": [
-        "B110",
-        "B111",
-        "B112",
-        "B113"
-      ]
+      "plan": "B110, B111, B112, B113"
     },
     "y2e-B-1": {
       "kind": "choice",
@@ -1394,15 +1257,7 @@
       },
       "continueLabel": "After Minerva",
       "next": "after-B",
-      "plan": "CP191 to CP196",
-      "courses": [
-        "CP191",
-        "CP192",
-        "CP193",
-        "CP194",
-        "CP196",
-        "B199"
-      ]
+      "plan": "CP191 to CP196"
     },
     "after-B": {
       "kind": "choice",
@@ -1478,13 +1333,7 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-CS",
-      "plan": "Computational Sciences",
-      "courses": [
-        "CS110",
-        "CS111",
-        "CS113",
-        "CS114"
-      ]
+      "plan": "Computational Sciences"
     },
     "y1-CS": {
       "kind": "step",
@@ -1504,15 +1353,7 @@
       },
       "continueLabel": "On to Year 2",
       "next": "y2-CS",
-      "plan": "FA, EA, CX, MC Cornerstones",
-      "courses": [
-        "FA50",
-        "EA50",
-        "CX50",
-        "MC50",
-        "IL91",
-        "IL98"
-      ]
+      "plan": "FA, EA, CX, MC Cornerstones"
     },
     "y2-CS": {
       "kind": "step",
@@ -1531,13 +1372,7 @@
       },
       "continueLabel": "Choose Year 2 electives",
       "next": "y2e-CS-1",
-      "plan": "CS110, CS111, CS113, CS114",
-      "courses": [
-        "CS110",
-        "CS111",
-        "CS113",
-        "CS114"
-      ]
+      "plan": "CS110, CS111, CS113, CS114"
     },
     "y2e-CS-1": {
       "kind": "choice",
@@ -1839,14 +1674,7 @@
       },
       "continueLabel": "After Minerva",
       "next": "after-CS",
-      "plan": "CP191 to CP196",
-      "courses": [
-        "CP191",
-        "CP192",
-        "CP193",
-        "CP194",
-        "CP196"
-      ]
+      "plan": "CP191 to CP196"
     },
     "after-CS": {
       "kind": "choice",
@@ -1923,14 +1751,7 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-NS",
-      "plan": "Natural Sciences",
-      "courses": [
-        "NS110U",
-        "NS110L",
-        "NS111",
-        "NS112",
-        "NS113"
-      ]
+      "plan": "Natural Sciences"
     },
     "y1-NS": {
       "kind": "step",
@@ -1950,15 +1771,7 @@
       },
       "continueLabel": "On to Year 2",
       "next": "y2-NS",
-      "plan": "FA, EA, CX, MC Cornerstones",
-      "courses": [
-        "FA50",
-        "EA50",
-        "CX50",
-        "MC50",
-        "IL91",
-        "IL98"
-      ]
+      "plan": "FA, EA, CX, MC Cornerstones"
     },
     "y2-NS": {
       "kind": "choice",
@@ -2249,14 +2062,7 @@
       },
       "continueLabel": "After Minerva",
       "next": "after-NS",
-      "plan": "CP191 to CP196",
-      "courses": [
-        "CP191",
-        "CP192",
-        "CP193",
-        "CP194",
-        "CP196"
-      ]
+      "plan": "CP191 to CP196"
     },
     "after-NS": {
       "kind": "choice",
@@ -2332,12 +2138,7 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-SS",
-      "plan": "Social Sciences",
-      "courses": [
-        "SS110",
-        "SS111",
-        "SS112"
-      ]
+      "plan": "Social Sciences"
     },
     "y1-SS": {
       "kind": "step",
@@ -2357,15 +2158,7 @@
       },
       "continueLabel": "On to Year 2",
       "next": "y2-SS",
-      "plan": "FA, EA, CX, MC Cornerstones",
-      "courses": [
-        "FA50",
-        "EA50",
-        "CX50",
-        "MC50",
-        "IL91",
-        "IL98"
-      ]
+      "plan": "FA, EA, CX, MC Cornerstones"
     },
     "y2-SS": {
       "kind": "step",
@@ -2383,12 +2176,7 @@
       },
       "continueLabel": "Choose Year 2 electives",
       "next": "y2e-SS-1",
-      "plan": "SS110, SS111, SS112",
-      "courses": [
-        "SS110",
-        "SS111",
-        "SS112"
-      ]
+      "plan": "SS110, SS111, SS112"
     },
     "y2e-SS-1": {
       "kind": "choice",
@@ -2691,14 +2479,7 @@
       },
       "continueLabel": "After Minerva",
       "next": "after-SS",
-      "plan": "CP191 to CP196",
-      "courses": [
-        "CP191",
-        "CP192",
-        "CP193",
-        "CP194",
-        "CP196"
-      ]
+      "plan": "CP191 to CP196"
     },
     "after-SS": {
       "kind": "choice",

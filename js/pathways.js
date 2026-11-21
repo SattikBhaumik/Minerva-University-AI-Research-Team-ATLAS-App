@@ -111,7 +111,10 @@ const Pathways = (() => {
     // Wide screens show "About these courses" open beside each layer;
     // phones keep it collapsed under the card.
     const wide = window.matchMedia('(min-width: 1100px)');
+    // Phones: the box lives inside the card, so the line runs card to card.
+    const placeAbout = (l) => (wide.matches ? l.row : l.card).append(l.about.box);
     wide.addEventListener('change', () => {
+      layers.forEach(placeAbout);
       root.querySelectorAll('.pw-about').forEach((d) => { d.open = wide.matches; });
     });
     let path = [];          // one entry per layer: option id, or 'ok' for steps
@@ -155,15 +158,18 @@ const Pathways = (() => {
       const heading = el('h3', 'section-header pw-prompt', node.prompt);
       card.append(heading);
       const about = aboutBox();
-      row.append(card, about.box);
+      const main = el('div', 'pw-main');
+      main.append(card);
+      row.append(main);
       section.append(row);
       stack.append(section);
-      layers.push({ nodeId, section, about });
+      layers.push({ nodeId, section, about, row, card });
 
       if (node.kind === 'choice' && node.note) card.append(el('p', 'caption pw-choice-note', node.note));
       if (node.kind === 'choice') buildChoice(card, node, index, heading);
       else if (node.kind === 'step') buildStep(card, node, index);
       else buildEnd(card, node);
+      placeAbout(layers[index]);
 
       if (animate) {
         section.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
@@ -286,7 +292,6 @@ const Pathways = (() => {
     }
 
     function buildStep(card, node, index) {
-      layers[index].about.show(node.courses, false);
       const ul = el('ul', 'pw-facts');
       node.items.forEach((t) => ul.append(el('li', 'body', t)));
       card.append(ul);
