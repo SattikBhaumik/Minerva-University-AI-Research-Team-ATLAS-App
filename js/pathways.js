@@ -219,6 +219,7 @@ const Pathways = (() => {
       }
 
       card.append(tabs, panel);
+      layers[index].about.preview(node.options, false);
       layers[index].select = (optId) => {
         const i = node.options.findIndex((o) => o.id === optId);
         if (i < 0) return false;
@@ -247,20 +248,41 @@ const Pathways = (() => {
       box.append(el('summary', 'body-strong', 'About these courses'));
       const list = el('ul', 'pw-about-list');
       box.append(list);
+      const known = (codes) => (codes || []).filter((c) => data.courseInfo && data.courseInfo[c]);
+      const firstSentence = (t) => (t.match(/^.+?[.!?](\s|$)/) || [t])[0].trim();
+      function item(code, brief) {
+        const c = data.courseInfo[code];
+        const li = el('li', 'pw-about-item');
+        li.append(el('p', 'body-strong', `${code} ${c.title}`),
+          el('p', 'body pw-about-desc', brief ? firstSentence(c.description) : c.description));
+        return li;
+      }
+      function reveal(animate, any) {
+        box.hidden = !any;
+        box.classList.remove('pw-reveal');
+        if (animate && any) { void box.offsetWidth; box.classList.add('pw-reveal'); }
+      }
+      // One tab picked: its courses in full.
       function show(codes, animate) {
         list.textContent = '';
-        const known = (codes || []).filter((c) => data.courseInfo && data.courseInfo[c]);
-        box.hidden = known.length === 0;
-        known.forEach((code) => {
-          const c = data.courseInfo[code];
-          const li = el('li', 'pw-about-item');
-          li.append(el('p', 'body-strong', `${code} ${c.title}`), el('p', 'body pw-about-desc', c.description));
-          list.append(li);
-        });
-        box.classList.remove('pw-reveal');
-        if (animate && known.length) { void box.offsetWidth; box.classList.add('pw-reveal'); }
+        const k = known(codes);
+        k.forEach((code) => list.append(item(code, false)));
+        reveal(animate, k.length > 0);
       }
-      return { box, show };
+      // Nothing picked yet: every tab's courses, grouped under the tab's name.
+      function preview(options, animate) {
+        list.textContent = '';
+        let any = false;
+        options.forEach((opt) => {
+          const k = known(opt.courses);
+          if (!k.length) return;
+          any = true;
+          list.append(el('li', 'caption pw-about-group', opt.label));
+          k.forEach((code) => list.append(item(code, true)));
+        });
+        reveal(animate, any);
+      }
+      return { box, show, preview };
     }
 
     function buildStep(card, node, index) {
