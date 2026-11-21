@@ -1,4 +1,391 @@
 {
+  "courseInfo": {
+    "NS110L": {
+      "title": "Physics of Life",
+      "description": "We explore how physics, ranging from mechanics through atomic physics, can be applied to the life sciences. Examples of applications are: fluid flow and heat regulation in biological organisms, electrostatics in the nervous system, and wave phenomena in hearing and vision.",
+      "needs": ""
+    },
+    "NS110U": {
+      "title": "Physics of the Universe",
+      "description": "We use gravitational and electromagnetic interactions as representatives for how physics takes experimental evidence and then encodes it into a theoretical framework that can be used to make predictions and draw inferences about new phenomena.",
+      "needs": "CS111"
+    },
+    "NS111": {
+      "title": "Implications of Earth's Cycles",
+      "description": "The Earth system is investigated from its origin to its functioning today. Beginning with the origin of the Universe and the creation of elements in stars, the course progresses to an understanding of solar systems and the conditions that gave rise to habitable planets.",
+      "needs": ""
+    },
+    "CS110": {
+      "title": "Problem Solving with Data Structures and Algorithms",
+      "description": "Apply core concepts in design and analysis of algorithms, data structures, and computational problem-solving techniques to address complex problems.",
+      "needs": ""
+    },
+    "CS111": {
+      "title": "Single and Multivariable Calculus",
+      "description": "Learn to utilize principles of single and multivariable calculus to solve relevant problems from across STEM. Traditional calculus courses focus on the techniques needed to perform complex computations by hand, and evaluate students primarily on their ability to do so quickly.",
+      "needs": ""
+    },
+    "CS113": {
+      "title": "Theory and Applications of Linear Algebra",
+      "description": "This course develops the tools necessary for the analysis of linear systems. The emphases are both on abstract notions such as vectors spaces, linear maps between them and their matrix representations, and concrete applications such as Markov chains and graphical network analysis.",
+      "needs": ""
+    },
+    "SS110": {
+      "title": "Psychology: From Neurons to Society",
+      "description": "In this course we learn about the mind by looking at (1) multiple levels of analysis, from neurons to social systems, (2) multiple methodologies used in research, and (3) how multiple types of explanation (mechanism, function, ontogeny, phylogeny) shed light on each other.",
+      "needs": ""
+    },
+    "SS111": {
+      "title": "Modern Economic Thought",
+      "description": "Are economic agents really rational? Should governments interfere with markets?",
+      "needs": ""
+    },
+    "SS112": {
+      "title": "Political Science and Social Change",
+      "description": "Governments greatly affect their citizens and, in turn, citizens may greatly affect government and their society. The course has four units to examine these influences.",
+      "needs": ""
+    },
+    "AH110": {
+      "title": "Global History",
+      "description": "From prehistoric times, human populations have moved across the globe. Driven by environmental, economic, political, and social forces, they have carried with them and have been exposed to new customs, new technologies, and new ideas for structuring societies and interacting with other peoples.",
+      "needs": ""
+    },
+    "AH111": {
+      "title": "Morality, Identity, and Justice",
+      "description": "What’s ethically significant about being human, or about our identities as members of various social groups? What do we owe to animals, to ecosystems, to future generations, to AI, and how do our answers to these questions rely on theories of identity?",
+      "needs": ""
+    },
+    "AH112": {
+      "title": "The Arts and Social Change",
+      "description": "A fundamental characteristic of the arts is that they are transformative. They lead us to see ourselves in new ways, to re-conceptualize our world, and to rethink our relationship to it.",
+      "needs": ""
+    },
+    "B110": {
+      "title": "Market Dynamics and Product Analytics",
+      "description": "Business is a powerful driver of economic growth and stability; to do well in business, you must understand consumers, products, and markets.",
+      "needs": "B111 (taken together)"
+    },
+    "B111": {
+      "title": "Financial Planning, Budgeting and Modeling",
+      "description": "This Core course provides a foundation for all Business majors and is a prerequisite for all Business Concentration courses. Students learn about the financial and strategic tools managers use to track, evaluate, and improve their business operations for achieving business objectives.",
+      "needs": "B110 (taken together)"
+    },
+    "B112": {
+      "title": "Doing Business",
+      "description": "This Core course provides foundations for Business majors and is a prerequisite for all junior-level Concentration courses in this major. We analyze the political, regulatory, and societal contexts in which business gets done from a global perspective.",
+      "needs": "B110, B111"
+    },
+    "AH113": {
+      "title": "Dynamics of Design",
+      "description": "Design affects the objects, spaces, and ideas of everyday life, from door handles and physical spaces to laws and the virtual spaces in which we experience our lives.",
+      "needs": ""
+    },
+    "FA50": {
+      "title": "Formal Analyses",
+      "description": "Focus on thinking critically through in-depth training in logic, statistics, and algorithmic thinking. Use formal, computational, and quantitative approaches to formulate, analyze, and tackle problems.",
+      "needs": ""
+    },
+    "EA50": {
+      "title": "Empirical Analyses",
+      "description": "Develop your creative thinking skills and familiarize yourself with methods used in social and natural sciences. These methods teach you to effectively frame problems, identify solutions, develop and test hypotheses, design research studies, and reach plausible conclusions.",
+      "needs": ""
+    },
+    "CX50": {
+      "title": "Complex Systems",
+      "description": "Explore how humans function as members of various systems, using concepts such as multiple causality and multi-factor integrations. You will develop your ability to interact effectively by participating in group project collaboration, negotiation, leadership, and formal debate.",
+      "needs": ""
+    },
+    "MC50": {
+      "title": "Multimodal Communications",
+      "description": "Learn to communicate effectively at a high level and deeply analyze communications of various forms. You will form the skills and practical experience to speak publicly, communicate visually, design, debate, and express yourself artistically.",
+      "needs": ""
+    },
+    "IL91": {
+      "title": "Integrated Learning I: Managing Complexity of a Global World",
+      "description": "This course is the first semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society.",
+      "needs": ""
+    },
+    "IL98": {
+      "title": "Integrated Learning VIII: Managing Complexity of a Global World",
+      "description": "This course is the final semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society.",
+      "needs": "IL97"
+    },
+    "B113": {
+      "title": "Enterprise, Design and Optimization",
+      "description": "This Core course provides foundations for all Business Majors and is a prerequisite for all junior-level Concentration Courses. Students will explore the inner workings of the business enterprise in context of its environment.",
+      "needs": "B110, B111"
+    },
+    "CS114": {
+      "title": "Probability and Statistics and the Structure of Randomness",
+      "description": "When can you find patterns in seemingly random noise? Or determine when an observed pattern is likely due to chance?",
+      "needs": "CS111"
+    },
+    "NS112": {
+      "title": "Evolution Across Multiple Scales",
+      "description": "“Nothing in biology makes sense, except in the light of evolution” – T. Dobzhansky.",
+      "needs": ""
+    },
+    "NS113": {
+      "title": "Chemical Structure and Reactivity",
+      "description": "This course explores the physical and chemical properties of nature based on molecular, atomic, and sub- atomic structures, with an emphasis on how structure determines reactivity.",
+      "needs": ""
+    },
+    "AH146": {
+      "title": "Decoding Art and Literature",
+      "description": "We can gain a deeper appreciation of any work of art, music, or literature by delving into issues of form, structure, and function. In this course students acquire the tools to understand different artistic genres through close analysis of individual works.",
+      "needs": "AH112 or AH156 or AH166 or AH144"
+    },
+    "AH156": {
+      "title": "Socioeconomic Influences on Art and Literature",
+      "description": "For several centuries artistic and literary works were considered the product of the individual creative genius of artists and writers. More recently, scholars have argued that these works are also social products, that they are shaped by the economic, social, and cultural forces of their societies.",
+      "needs": "AH110 or AH112 or AH142 or AH146 or AH152 or AH162 or AH166"
+    },
+    "AH166": {
+      "title": "Artistic Communication from Page to Practice",
+      "description": "This course examines various modes of artistic expression and communication—including protest, propaganda and humor.",
+      "needs": "AH112"
+    },
+    "AH162": {
+      "title": "Public and Applied History",
+      "description": "\"The past is never dead. It's not even past,\" wrote William Faulkner.",
+      "needs": "AH110 or AH113 or AH142 or AH152"
+    },
+    "AH164": {
+      "title": "Social and Political Philosophy",
+      "description": "As individuals, we lead both private and public lives. Political and social institutions provide the framework within which we interact with others and pursue our personal goals and ambitions.",
+      "needs": "AH111 or AH113 or AH144 or AH154 or SS112"
+    },
+    "AH152": {
+      "title": "Comparing Societies and Histories: The Impact of Time and Place",
+      "description": "Historical narratives often rely on implicit comparisons between time periods and societies. In this course, students make these comparisons explicit in order to illuminate differences and similarities in the ways societies have responded to political, economic, social, and environmental challenges.",
+      "needs": "AH110 or AH142 or AH162 or SS112"
+    },
+    "AH154": {
+      "title": "Law and Ethics from a Global Perspective",
+      "description": "What is the law, why should we obey it, and what constitutes an ethical legal system? Are human rights universal or culturally relative?",
+      "needs": "AH111 or AH144 or AH164 or SS166"
+    },
+    "AH142": {
+      "title": "The Craft of Historical Analysis",
+      "description": "History as a field of study is based on a set of methods to analyze the past, understand the foundations of the present, and at times anticipate the future.",
+      "needs": "AH110 or AH152 or AH162"
+    },
+    "AH144": {
+      "title": "Ethical Worldviews, Moral Dilemmas",
+      "description": "Normative ethics is the study of ethical systems that provide answers to the question of how one ought to act in situations of moral significance. Moral dilemmas involve choices between mutually exclusive alternatives, each of which carries significant burdens.",
+      "needs": "AH111"
+    },
+    "CP191": {
+      "title": "Capstone Seminar",
+      "description": "Explore several topics of interest, focusing on the potential of each one to develop into a high-quality Capstone project.",
+      "needs": "IL123 or GL93"
+    },
+    "CP192": {
+      "title": "Capstone Seminar",
+      "description": "Revise and complete a professional proposal for the Capstone project. Engage in peer review of written work as well as presentations to receive critiques and suggestions from other students.",
+      "needs": "CP19101 or CP19102 or CP19103 or CP19104 or CP19105 or IL124 or IL14001 or IL14002 or IL14003"
+    },
+    "CP193": {
+      "title": "Capstone Directed Study I",
+      "description": "Conduct an original piece of research or creation of a project under the guidance of a faculty advisor. At the end of the course, you will submit an initial draft of your Capstone work along with clear plans for achieving the remaining project goals.",
+      "needs": "CP192"
+    },
+    "CP194": {
+      "title": "Capstone Directed Study II",
+      "description": "Building on CP193, continue developing an original piece of research or project under the guidance of a faculty advisor.",
+      "needs": "CP193"
+    },
+    "CP196": {
+      "title": "Manifest-2 credits",
+      "description": "",
+      "needs": "CP194"
+    },
+    "B144": {
+      "title": "Needs Identification and Product Development",
+      "description": "In this course, we will explore different approaches to need identification, product design and development, and market introduction. We will learn how to understand our customers and their needs and learn how to identify the new market potential of existing products.",
+      "needs": "B113"
+    },
+    "B154": {
+      "title": "Strategic Brand Leadership",
+      "description": "In this course, we build on your knowledge of market research, consumer psychology, and creative problem- solving to understand and explore different approaches to growth.",
+      "needs": "B113"
+    },
+    "B164": {
+      "title": "Brand Evolution and Reinvention",
+      "description": "Powerful brands can enhance customer relationships, generate profitability, and produce shareholder value. Yet, enterprise growth often begins to slows down as brands get older and approach maturity.",
+      "needs": "B112, B113"
+    },
+    "B165": {
+      "title": "Global Financial Strategy",
+      "description": "Global investing requires sophisticated tools to select among risk/return scenarios. Learn to apply these tools, which include diversification and hedging for risk reduction, appropriate capital structuring to fund growth, and dividend/share repurchase strategies to drive shareholder value.",
+      "needs": "B112, B113"
+    },
+    "B166": {
+      "title": "Business Optimization",
+      "description": "In this class we study ways to optimize organizational structure, processes, and systems that support key business functions in large enterprises.",
+      "needs": "B112, B113"
+    },
+    "B146": {
+      "title": "Business Operations",
+      "description": "Study the entrepreneurial process from inception through early growth stages and the unique operational challenges of competing with highly constrained resources.",
+      "needs": "B113"
+    },
+    "B156": {
+      "title": "Business Systems",
+      "description": "Learn strategic and tactical decision-making for the design and operation of product and service delivery systems. Consider strategies to increase competitiveness while managing risk.",
+      "needs": "B113"
+    },
+    "B145": {
+      "title": "Venture Initiation and Valuation",
+      "description": "The overall goal of this course is to bolster your ability to work with scarce resources while balancing growth and profitability. Relying on skills developed in B111, you will build “muscle memory” so you can raise capital and effectively interface with stakeholders in future business creation and growth.",
+      "needs": "B113"
+    },
+    "B155": {
+      "title": "Capital Allocation and Value Creation",
+      "description": "Investigate how growing enterprises use their balance sheets to execute growth strategies. Apply discounted cash flow and real options to select among opportunities that create business value.",
+      "needs": "B113"
+    },
+    "B199": {
+      "title": "Business Practicum",
+      "description": "The Business Practicum is a residential course in the summer between the third and fourth years. Students combine Learning Outcomes from two or more major core or concentration courses in the Business College.",
+      "needs": "B112, B113"
+    },
+    "CS162": {
+      "title": "Software Engineering: Building Powerful Applications",
+      "description": "This course is organized around the principle that the only way to learn software development is to develop software. Work together as a team to develop a significant web application.",
+      "needs": "CS110"
+    },
+    "CS164": {
+      "title": "Optimization Methods",
+      "description": "Learn to use and analyze optimization techniques such as linear, quadratic, semidefinite and mixed-integer programming. Explore optimization algorithms such as Newton’s method, interior point methods and branch and bound methods.",
+      "needs": "CS111, CS113"
+    },
+    "CS166": {
+      "title": "Modeling and Analysis of Complex Systems",
+      "description": "Learn how to apply advanced modeling techniques to analyze and predict the behavior of social, physical and economic systems. You will learn from specific examples applied to portfolio management, traffic flow management, and analyzing social networks.",
+      "needs": "CS110, CS114 or CS130"
+    },
+    "CS142": {
+      "title": "Theory of Computation",
+      "description": "Students learn about models of computation that provide the theoretical basis for modern computer science. Topics include deterministic and nondeterministic finite state machines, Turing machines, formal language theory, computational complexity and the classification of algorithms.",
+      "needs": "CS110"
+    },
+    "CS152": {
+      "title": "Theory and Applications of Artificial Intelligence",
+      "description": "Apply methods and algorithms from Artificial Intelligence (AI) — such as propositional logic, logic programming, predicate calculus, and computational reasoning — to a diverse range of applications from robot navigation to restaurant selection with expert systems.",
+      "needs": "CS110"
+    },
+    "CS154": {
+      "title": "Analytical and Numerical Methods in Differential Equations",
+      "description": "Methods are explored to interpolate data, solve linear and non-linear systems of equations, and model dynamical systems with the use of ordinary and partial differential equations. Additionally, Fourier Analysis is applied to model and process signals.",
+      "needs": "CS111, CS113"
+    },
+    "CS156": {
+      "title": "Finding Patterns in Data with Machine Learning",
+      "description": "Students learn to apply core machine learning techniques — such as classification, perceptron, neural networks, support vector machines, hidden Markov models, and nonparametric models of clustering — as well as fundamental concepts such as feature selection, cross-validation and over-fitting.",
+      "needs": "CS113, CS114"
+    },
+    "CS146": {
+      "title": "Computational Methods for Bayesian Statistics",
+      "description": "Learn to apply Bayesian inference which is the mathematical framework for using observed data to update the information we have about a system.",
+      "needs": "CS114"
+    },
+    "CS144": {
+      "title": "Real Analysis",
+      "description": "Students learn how to read, write, and evaluate rigorous mathematical arguments. These skills are practiced on foundational material that forms a bridge to topics in advanced mathematics—both applied and pure.",
+      "needs": "CS111"
+    },
+    "NS144": {
+      "title": "Genes to Organisms",
+      "description": "Investigate how biological traits are determined. Examine how genetic and environmental influences are translated through cellular and developmental mechanisms to determine the properties of cells, organisms, and species.",
+      "needs": "NS112"
+    },
+    "NS154": {
+      "title": "Life's Chemistry",
+      "description": "Investigate biological systems from the cellular and molecular levels of analysis. Learn how the physical and chemical properties of molecular interactions within and between cells give rise to the emergent properties of life.",
+      "needs": "NS112, NS113"
+    },
+    "NS164": {
+      "title": "Solutions From and For Life",
+      "description": "Explore cutting-edge solutions to difficult problems in human health. Learn the process by which drugs are discovered and designed, how stem cells are engineered to form tissues, and how genes can be engineered for a multitude of purposes.",
+      "needs": "NS112"
+    },
+    "NS152": {
+      "title": "Analyzing Matter and Molecules",
+      "description": "Understanding what matter is, how matter and small molecules are studied, and how they can be manipulated is the gateway to technological solutions to many world challenges.",
+      "needs": "NS110L or NS110U, NS113"
+    },
+    "NS156": {
+      "title": "Modeling and Measuring Environmental Systems",
+      "description": "Explore how researchers study and monitor earth systems, including the latest methods for climate, pollution, and ocean monitoring. Delve into how models are used to understand and predict earth systems and how to construct your own models of environmental systems.",
+      "needs": "NS111 or NS113"
+    },
+    "NS146": {
+      "title": "Integrating Earth's Systems",
+      "description": "Explore key Earth systems, with an emphasis on how solid Earth components interact with living organisms, the hydrosphere and the atmosphere. Consider the effects of volcanism, mountain-building, earthquakes, weathering and erosion on biotic and abiotic domains.",
+      "needs": "NS111"
+    },
+    "NS166": {
+      "title": "Keeping Earth Habitable",
+      "description": "Examine environmental and natural resource issues such as pollution, deforestation, climate change impacts, habitat loss, agricultural impacts, and the potential impact of human population growth and consumption.",
+      "needs": "NS111 or NS112"
+    },
+    "NS142": {
+      "title": "Quantum Nature of Matter: Theory and Applications",
+      "description": "Study the nature of matter from a quantitative standpoint using the tools provided by quantum mechanics. Starting from experiments that led the way to the discovery of quantum mechanics, we first establish its mathematical foundations.",
+      "needs": "NS110U, CS111, CS113"
+    },
+    "NS162": {
+      "title": "Statistical Mechanics: Theory and Applications",
+      "description": "Statistical Mechanics describes how macroscopic systems and the macroscopic physical laws that govern them emerge from the aggregated behavior of many microscopic components.",
+      "needs": "CS111, NS110L or NS110U or NS113"
+    },
+    "SS142": {
+      "title": "Theory, Research, and Innovation in the Psychological Sciences",
+      "description": "We explore broad theories of cognition and emotion through the lens of psychology, also drawing on philosophy and artificial intelligence.",
+      "needs": "SS110"
+    },
+    "SS152": {
+      "title": "Cognitive Neuroscience",
+      "description": "Explore how the brain gives rise to the mind through the lens of cognitive neuroscience. Learn about the anatomy, physiology, and chemistry of the brain and consider the role of this physical substrate in neural computation.",
+      "needs": "SS110"
+    },
+    "SS162": {
+      "title": "Personal and Social Motivation",
+      "description": "How can we effectively change our own habits and behaviors? What is the best way to motivate and persuade others?",
+      "needs": "SS110"
+    },
+    "SS164": {
+      "title": "Global Development and Applied Economics",
+      "description": "Examine important challenges facing both developing and developed economies. Explore the development of societies through the analysis of access to education and healthcare as well as sustainable mechanisms for economic growth.",
+      "needs": "SS111"
+    },
+    "SS166": {
+      "title": "Comparative Constitutional Law: Designing Societies",
+      "description": "This course is an overview of comparative constitution-making and implementation. What distinguishes a constitution from other types of law?",
+      "needs": "SS112"
+    },
+    "SS144": {
+      "title": "Intermediate Economic Theory and Tools",
+      "description": "SS144 equips students with a broad set of analytical tools that economists use to study behavior from the macro to micro level. We begin with a broad overview of why some economies grow faster than others, and use mathematical tools to illustrate growth dynamics.",
+      "needs": "SS111"
+    },
+    "SS154": {
+      "title": "Econometrics and Economic Systems",
+      "description": "Learn how to use core econometric and statistical methods to construct and validate economic and social models. Students will learn methods to conduct and critique empirical studies in economics as well as other social sciences.",
+      "needs": "SS111"
+    },
+    "SS156": {
+      "title": "Comparative Politics in Practice",
+      "description": "This course examines and compares how political systems operate in practice and why they have different outcomes, such as corruption/transparency, racism, political stability/instability, low/high inequality, security/insecurity, and low/high socio-economic standards.",
+      "needs": "SS112"
+    },
+    "SS146": {
+      "title": "Practice of Governance",
+      "description": "What makes good governance? How can governments pursue worthy public policy aims successfully?",
+      "needs": "SS112"
+    }
+  },
   "asOf": "2026-11-21",
   "notice": "Example plan. Courses, rules and outcomes come from Minerva's Course Catalog (2026.v410) and website as read on 21 Nov 2026; the questions are ATLAS's own. Courses and cities can change. Not admissions advice.",
   "start": "start",
@@ -69,7 +456,12 @@
             "label": "Natural Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
           },
-          "next": "college-NS"
+          "next": "college-NS",
+          "courses": [
+            "NS110L",
+            "NS110U",
+            "NS111"
+          ]
         },
         {
           "id": "cs",
@@ -83,7 +475,12 @@
             "label": "Computational Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
           },
-          "next": "college-CS"
+          "next": "college-CS",
+          "courses": [
+            "CS110",
+            "CS111",
+            "CS113"
+          ]
         }
       ]
     },
@@ -104,7 +501,12 @@
             "label": "Social Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
           },
-          "next": "college-SS"
+          "next": "college-SS",
+          "courses": [
+            "SS110",
+            "SS111",
+            "SS112"
+          ]
         },
         {
           "id": "ah",
@@ -118,7 +520,12 @@
             "label": "Arts & Humanities",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
           },
-          "next": "college-AH"
+          "next": "college-AH",
+          "courses": [
+            "AH110",
+            "AH111",
+            "AH112"
+          ]
         }
       ]
     },
@@ -139,7 +546,12 @@
             "label": "Computational Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
           },
-          "next": "college-CS"
+          "next": "college-CS",
+          "courses": [
+            "CS110",
+            "CS111",
+            "CS113"
+          ]
         },
         {
           "id": "b",
@@ -153,7 +565,12 @@
             "label": "Business",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
           },
-          "next": "college-B"
+          "next": "college-B",
+          "courses": [
+            "B110",
+            "B111",
+            "B112"
+          ]
         }
       ]
     },
@@ -173,7 +590,13 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-AH",
-      "plan": "Arts & Humanities"
+      "plan": "Arts & Humanities",
+      "courses": [
+        "AH110",
+        "AH111",
+        "AH112",
+        "AH113"
+      ]
     },
     "y1-AH": {
       "kind": "step",
@@ -193,7 +616,15 @@
       },
       "continueLabel": "On to Year 2",
       "next": "y2-AH",
-      "plan": "FA, EA, CX, MC Cornerstones"
+      "plan": "FA, EA, CX, MC Cornerstones",
+      "courses": [
+        "FA50",
+        "EA50",
+        "CX50",
+        "MC50",
+        "IL91",
+        "IL98"
+      ]
     },
     "y2-AH": {
       "kind": "step",
@@ -212,7 +643,13 @@
       },
       "continueLabel": "Choose Year 2 electives",
       "next": "y2e-AH-1",
-      "plan": "AH110, AH111, AH112, AH113"
+      "plan": "AH110, AH111, AH112, AH113",
+      "courses": [
+        "AH110",
+        "AH111",
+        "AH112",
+        "AH113"
+      ]
     },
     "y2e-AH-1": {
       "kind": "choice",
@@ -232,7 +669,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-AH-1",
-          "plan": "electives from Business"
+          "plan": "electives from Business",
+          "courses": [
+            "B110",
+            "B111",
+            "B112",
+            "B113"
+          ]
         },
         {
           "id": "cs",
@@ -247,7 +690,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-AH-1",
-          "plan": "electives from Computational Sciences"
+          "plan": "electives from Computational Sciences",
+          "courses": [
+            "CS110",
+            "CS111",
+            "CS113",
+            "CS114"
+          ]
         },
         {
           "id": "more",
@@ -280,7 +729,14 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-AH-1",
-          "plan": "electives from Natural Sciences"
+          "plan": "electives from Natural Sciences",
+          "courses": [
+            "NS110L",
+            "NS110U",
+            "NS111",
+            "NS112",
+            "NS113"
+          ]
         },
         {
           "id": "ss",
@@ -295,7 +751,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-AH-1",
-          "plan": "electives from Social Sciences"
+          "plan": "electives from Social Sciences",
+          "courses": [
+            "SS110",
+            "SS111",
+            "SS112"
+          ]
         }
       ]
     },
@@ -319,7 +780,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-AH",
-          "plan": "AH146, AH156, AH166"
+          "plan": "AH146, AH156, AH166",
+          "courses": [
+            "AH146",
+            "AH156",
+            "AH166"
+          ]
         },
         {
           "id": "design-across-the-humanities",
@@ -336,7 +802,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-AH",
-          "plan": "AH162, AH164, AH166"
+          "plan": "AH162, AH164, AH166",
+          "courses": [
+            "AH162",
+            "AH164",
+            "AH166"
+          ]
         },
         {
           "id": "more",
@@ -371,7 +842,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-AH",
-          "plan": "AH152, AH154, AH156"
+          "plan": "AH152, AH154, AH156",
+          "courses": [
+            "AH152",
+            "AH154",
+            "AH156"
+          ]
         },
         {
           "id": "historical-forces",
@@ -388,7 +864,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-AH",
-          "plan": "AH142, AH152, AH162"
+          "plan": "AH142, AH152, AH162",
+          "courses": [
+            "AH142",
+            "AH152",
+            "AH162"
+          ]
         },
         {
           "id": "more",
@@ -423,7 +904,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-AH",
-          "plan": "AH142, AH144, AH146"
+          "plan": "AH142, AH144, AH146",
+          "courses": [
+            "AH142",
+            "AH144",
+            "AH146"
+          ]
         },
         {
           "id": "philosophy-ethics-and-the-law",
@@ -440,7 +926,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-AH",
-          "plan": "AH144, AH154, AH164"
+          "plan": "AH144, AH154, AH164",
+          "courses": [
+            "AH144",
+            "AH154",
+            "AH164"
+          ]
         }
       ]
     },
@@ -460,7 +951,14 @@
       },
       "continueLabel": "After Minerva",
       "next": "after-AH",
-      "plan": "CP191 to CP196"
+      "plan": "CP191 to CP196",
+      "courses": [
+        "CP191",
+        "CP192",
+        "CP193",
+        "CP194",
+        "CP196"
+      ]
     },
     "after-AH": {
       "kind": "choice",
@@ -535,7 +1033,13 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-B",
-      "plan": "Business"
+      "plan": "Business",
+      "courses": [
+        "B110",
+        "B111",
+        "B112",
+        "B113"
+      ]
     },
     "y1-B": {
       "kind": "step",
@@ -555,7 +1059,15 @@
       },
       "continueLabel": "On to Year 2",
       "next": "y2-B",
-      "plan": "FA, EA, CX, MC Cornerstones"
+      "plan": "FA, EA, CX, MC Cornerstones",
+      "courses": [
+        "FA50",
+        "EA50",
+        "CX50",
+        "MC50",
+        "IL91",
+        "IL98"
+      ]
     },
     "y2-B": {
       "kind": "step",
@@ -574,7 +1086,13 @@
       },
       "continueLabel": "Choose Year 2 electives",
       "next": "y2e-B-1",
-      "plan": "B110, B111, B112, B113"
+      "plan": "B110, B111, B112, B113",
+      "courses": [
+        "B110",
+        "B111",
+        "B112",
+        "B113"
+      ]
     },
     "y2e-B-1": {
       "kind": "choice",
@@ -594,7 +1112,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-B-1",
-          "plan": "electives from Arts & Humanities"
+          "plan": "electives from Arts & Humanities",
+          "courses": [
+            "AH110",
+            "AH111",
+            "AH112",
+            "AH113"
+          ]
         },
         {
           "id": "cs",
@@ -609,7 +1133,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-B-1",
-          "plan": "electives from Computational Sciences"
+          "plan": "electives from Computational Sciences",
+          "courses": [
+            "CS110",
+            "CS111",
+            "CS113",
+            "CS114"
+          ]
         },
         {
           "id": "more",
@@ -642,7 +1172,14 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-B-1",
-          "plan": "electives from Natural Sciences"
+          "plan": "electives from Natural Sciences",
+          "courses": [
+            "NS110L",
+            "NS110U",
+            "NS111",
+            "NS112",
+            "NS113"
+          ]
         },
         {
           "id": "ss",
@@ -657,7 +1194,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-B-1",
-          "plan": "electives from Social Sciences"
+          "plan": "electives from Social Sciences",
+          "courses": [
+            "SS110",
+            "SS111",
+            "SS112"
+          ]
         }
       ]
     },
@@ -681,7 +1223,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-B",
-          "plan": "B144, B154, B164"
+          "plan": "B144, B154, B164",
+          "courses": [
+            "B144",
+            "B154",
+            "B164"
+          ]
         },
         {
           "id": "enterprise-management",
@@ -698,7 +1245,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-B",
-          "plan": "B164, B165, B166"
+          "plan": "B164, B165, B166",
+          "courses": [
+            "B164",
+            "B165",
+            "B166"
+          ]
         },
         {
           "id": "more",
@@ -733,7 +1285,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-B",
-          "plan": "B146, B156, B166"
+          "plan": "B146, B156, B166",
+          "courses": [
+            "B146",
+            "B156",
+            "B166"
+          ]
         },
         {
           "id": "new-business-ventures",
@@ -750,7 +1307,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-B",
-          "plan": "B144, B145, B146"
+          "plan": "B144, B145, B146",
+          "courses": [
+            "B144",
+            "B145",
+            "B146"
+          ]
         },
         {
           "id": "more",
@@ -785,7 +1347,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-B",
-          "plan": "B154, B155, B156"
+          "plan": "B154, B155, B156",
+          "courses": [
+            "B154",
+            "B155",
+            "B156"
+          ]
         },
         {
           "id": "strategic-finance",
@@ -802,7 +1369,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-B",
-          "plan": "B145, B155, B165"
+          "plan": "B145, B155, B165",
+          "courses": [
+            "B145",
+            "B155",
+            "B165"
+          ]
         }
       ]
     },
@@ -822,7 +1394,15 @@
       },
       "continueLabel": "After Minerva",
       "next": "after-B",
-      "plan": "CP191 to CP196"
+      "plan": "CP191 to CP196",
+      "courses": [
+        "CP191",
+        "CP192",
+        "CP193",
+        "CP194",
+        "CP196",
+        "B199"
+      ]
     },
     "after-B": {
       "kind": "choice",
@@ -898,7 +1478,13 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-CS",
-      "plan": "Computational Sciences"
+      "plan": "Computational Sciences",
+      "courses": [
+        "CS110",
+        "CS111",
+        "CS113",
+        "CS114"
+      ]
     },
     "y1-CS": {
       "kind": "step",
@@ -918,7 +1504,15 @@
       },
       "continueLabel": "On to Year 2",
       "next": "y2-CS",
-      "plan": "FA, EA, CX, MC Cornerstones"
+      "plan": "FA, EA, CX, MC Cornerstones",
+      "courses": [
+        "FA50",
+        "EA50",
+        "CX50",
+        "MC50",
+        "IL91",
+        "IL98"
+      ]
     },
     "y2-CS": {
       "kind": "step",
@@ -937,7 +1531,13 @@
       },
       "continueLabel": "Choose Year 2 electives",
       "next": "y2e-CS-1",
-      "plan": "CS110, CS111, CS113, CS114"
+      "plan": "CS110, CS111, CS113, CS114",
+      "courses": [
+        "CS110",
+        "CS111",
+        "CS113",
+        "CS114"
+      ]
     },
     "y2e-CS-1": {
       "kind": "choice",
@@ -957,7 +1557,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-CS-1",
-          "plan": "electives from Arts & Humanities"
+          "plan": "electives from Arts & Humanities",
+          "courses": [
+            "AH110",
+            "AH111",
+            "AH112",
+            "AH113"
+          ]
         },
         {
           "id": "b",
@@ -972,7 +1578,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-CS-1",
-          "plan": "electives from Business"
+          "plan": "electives from Business",
+          "courses": [
+            "B110",
+            "B111",
+            "B112",
+            "B113"
+          ]
         },
         {
           "id": "more",
@@ -1005,7 +1617,14 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-CS-1",
-          "plan": "electives from Natural Sciences"
+          "plan": "electives from Natural Sciences",
+          "courses": [
+            "NS110L",
+            "NS110U",
+            "NS111",
+            "NS112",
+            "NS113"
+          ]
         },
         {
           "id": "ss",
@@ -1020,7 +1639,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-CS-1",
-          "plan": "electives from Social Sciences"
+          "plan": "electives from Social Sciences",
+          "courses": [
+            "SS110",
+            "SS111",
+            "SS112"
+          ]
         }
       ]
     },
@@ -1044,7 +1668,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-CS",
-          "plan": "CS162, CS164, CS166"
+          "plan": "CS162, CS164, CS166",
+          "courses": [
+            "CS162",
+            "CS164",
+            "CS166"
+          ]
         },
         {
           "id": "computer-science-and-artificial-intelligence",
@@ -1061,7 +1690,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-CS",
-          "plan": "CS142, CS152, CS162"
+          "plan": "CS142, CS152, CS162",
+          "courses": [
+            "CS142",
+            "CS152",
+            "CS162"
+          ]
         },
         {
           "id": "more",
@@ -1096,7 +1730,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-CS",
-          "plan": "CS152, CS154, CS156"
+          "plan": "CS152, CS154, CS156",
+          "courses": [
+            "CS152",
+            "CS154",
+            "CS156"
+          ]
         },
         {
           "id": "data-science-and-statistics",
@@ -1113,7 +1752,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-CS",
-          "plan": "CS146, CS156, CS166"
+          "plan": "CS146, CS156, CS166",
+          "courses": [
+            "CS146",
+            "CS156",
+            "CS166"
+          ]
         },
         {
           "id": "more",
@@ -1148,7 +1792,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-CS",
-          "plan": "CS152, CS156, CS162"
+          "plan": "CS152, CS156, CS162",
+          "courses": [
+            "CS152",
+            "CS156",
+            "CS162"
+          ]
         },
         {
           "id": "mathematics",
@@ -1165,7 +1814,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-CS",
-          "plan": "CS144, CS154, CS164"
+          "plan": "CS144, CS154, CS164",
+          "courses": [
+            "CS144",
+            "CS154",
+            "CS164"
+          ]
         }
       ]
     },
@@ -1185,7 +1839,14 @@
       },
       "continueLabel": "After Minerva",
       "next": "after-CS",
-      "plan": "CP191 to CP196"
+      "plan": "CP191 to CP196",
+      "courses": [
+        "CP191",
+        "CP192",
+        "CP193",
+        "CP194",
+        "CP196"
+      ]
     },
     "after-CS": {
       "kind": "choice",
@@ -1262,7 +1923,14 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-NS",
-      "plan": "Natural Sciences"
+      "plan": "Natural Sciences",
+      "courses": [
+        "NS110U",
+        "NS110L",
+        "NS111",
+        "NS112",
+        "NS113"
+      ]
     },
     "y1-NS": {
       "kind": "step",
@@ -1282,7 +1950,15 @@
       },
       "continueLabel": "On to Year 2",
       "next": "y2-NS",
-      "plan": "FA, EA, CX, MC Cornerstones"
+      "plan": "FA, EA, CX, MC Cornerstones",
+      "courses": [
+        "FA50",
+        "EA50",
+        "CX50",
+        "MC50",
+        "IL91",
+        "IL98"
+      ]
     },
     "y2-NS": {
       "kind": "choice",
@@ -1303,7 +1979,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y2e-NS-1",
-          "plan": "NS110U, NS111, NS112, NS113"
+          "plan": "NS110U, NS111, NS112, NS113",
+          "courses": [
+            "NS110U",
+            "NS111",
+            "NS112",
+            "NS113"
+          ]
         },
         {
           "id": "ns110l",
@@ -1319,7 +2001,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y2e-NS-1",
-          "plan": "NS110L, NS111, NS112, NS113"
+          "plan": "NS110L, NS111, NS112, NS113",
+          "courses": [
+            "NS110L",
+            "NS111",
+            "NS112",
+            "NS113"
+          ]
         }
       ]
     },
@@ -1342,7 +2030,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-NS-1",
-          "plan": "electives from Computational Sciences"
+          "plan": "electives from Computational Sciences",
+          "courses": [
+            "CS110",
+            "CS111",
+            "CS113",
+            "CS114"
+          ]
         },
         {
           "id": "ah",
@@ -1357,7 +2051,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-NS-1",
-          "plan": "electives from Arts & Humanities"
+          "plan": "electives from Arts & Humanities",
+          "courses": [
+            "AH110",
+            "AH111",
+            "AH112",
+            "AH113"
+          ]
         },
         {
           "id": "more",
@@ -1390,7 +2090,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-NS-1",
-          "plan": "electives from Business"
+          "plan": "electives from Business",
+          "courses": [
+            "B110",
+            "B111",
+            "B112",
+            "B113"
+          ]
         },
         {
           "id": "ss",
@@ -1405,7 +2111,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-NS-1",
-          "plan": "electives from Social Sciences"
+          "plan": "electives from Social Sciences",
+          "courses": [
+            "SS110",
+            "SS111",
+            "SS112"
+          ]
         }
       ]
     },
@@ -1429,7 +2140,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-NS",
-          "plan": "NS144, NS154, NS164"
+          "plan": "NS144, NS154, NS164",
+          "courses": [
+            "NS144",
+            "NS154",
+            "NS164"
+          ]
         },
         {
           "id": "chemistry-across-scales",
@@ -1446,7 +2162,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-NS",
-          "plan": "NS152, NS154, NS156"
+          "plan": "NS152, NS154, NS156",
+          "courses": [
+            "NS152",
+            "NS154",
+            "NS156"
+          ]
         },
         {
           "id": "more",
@@ -1481,7 +2202,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-NS",
-          "plan": "NS146, NS156, NS166"
+          "plan": "NS146, NS156, NS166",
+          "courses": [
+            "NS146",
+            "NS156",
+            "NS166"
+          ]
         },
         {
           "id": "matter-and-energy",
@@ -1498,7 +2224,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-NS",
-          "plan": "NS142, NS152, NS162"
+          "plan": "NS142, NS152, NS162",
+          "courses": [
+            "NS142",
+            "NS152",
+            "NS162"
+          ]
         }
       ]
     },
@@ -1518,7 +2249,14 @@
       },
       "continueLabel": "After Minerva",
       "next": "after-NS",
-      "plan": "CP191 to CP196"
+      "plan": "CP191 to CP196",
+      "courses": [
+        "CP191",
+        "CP192",
+        "CP193",
+        "CP194",
+        "CP196"
+      ]
     },
     "after-NS": {
       "kind": "choice",
@@ -1594,7 +2332,12 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-SS",
-      "plan": "Social Sciences"
+      "plan": "Social Sciences",
+      "courses": [
+        "SS110",
+        "SS111",
+        "SS112"
+      ]
     },
     "y1-SS": {
       "kind": "step",
@@ -1614,7 +2357,15 @@
       },
       "continueLabel": "On to Year 2",
       "next": "y2-SS",
-      "plan": "FA, EA, CX, MC Cornerstones"
+      "plan": "FA, EA, CX, MC Cornerstones",
+      "courses": [
+        "FA50",
+        "EA50",
+        "CX50",
+        "MC50",
+        "IL91",
+        "IL98"
+      ]
     },
     "y2-SS": {
       "kind": "step",
@@ -1632,7 +2383,12 @@
       },
       "continueLabel": "Choose Year 2 electives",
       "next": "y2e-SS-1",
-      "plan": "SS110, SS111, SS112"
+      "plan": "SS110, SS111, SS112",
+      "courses": [
+        "SS110",
+        "SS111",
+        "SS112"
+      ]
     },
     "y2e-SS-1": {
       "kind": "choice",
@@ -1652,7 +2408,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-SS-1",
-          "plan": "electives from Arts & Humanities"
+          "plan": "electives from Arts & Humanities",
+          "courses": [
+            "AH110",
+            "AH111",
+            "AH112",
+            "AH113"
+          ]
         },
         {
           "id": "b",
@@ -1667,7 +2429,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-SS-1",
-          "plan": "electives from Business"
+          "plan": "electives from Business",
+          "courses": [
+            "B110",
+            "B111",
+            "B112",
+            "B113"
+          ]
         },
         {
           "id": "more",
@@ -1700,7 +2468,13 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-SS-1",
-          "plan": "electives from Computational Sciences"
+          "plan": "electives from Computational Sciences",
+          "courses": [
+            "CS110",
+            "CS111",
+            "CS113",
+            "CS114"
+          ]
         },
         {
           "id": "ns",
@@ -1715,7 +2489,14 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y3-SS-1",
-          "plan": "electives from Natural Sciences"
+          "plan": "electives from Natural Sciences",
+          "courses": [
+            "NS110L",
+            "NS110U",
+            "NS111",
+            "NS112",
+            "NS113"
+          ]
         }
       ]
     },
@@ -1739,7 +2520,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-SS",
-          "plan": "SS142, SS152, SS162"
+          "plan": "SS142, SS152, SS162",
+          "courses": [
+            "SS142",
+            "SS152",
+            "SS162"
+          ]
         },
         {
           "id": "designing-societies",
@@ -1756,7 +2542,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-SS",
-          "plan": "SS162, SS164, SS166"
+          "plan": "SS162, SS164, SS166",
+          "courses": [
+            "SS162",
+            "SS164",
+            "SS166"
+          ]
         },
         {
           "id": "more",
@@ -1791,7 +2582,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-SS",
-          "plan": "SS144, SS154, SS164"
+          "plan": "SS144, SS154, SS164",
+          "courses": [
+            "SS144",
+            "SS154",
+            "SS164"
+          ]
         },
         {
           "id": "empirical-approaches-to-the-social-sciences",
@@ -1808,7 +2604,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-SS",
-          "plan": "SS152, SS154, SS156"
+          "plan": "SS152, SS154, SS156",
+          "courses": [
+            "SS152",
+            "SS154",
+            "SS156"
+          ]
         },
         {
           "id": "more",
@@ -1843,7 +2644,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-SS",
-          "plan": "SS146, SS156, SS166"
+          "plan": "SS146, SS156, SS166",
+          "courses": [
+            "SS146",
+            "SS156",
+            "SS166"
+          ]
         },
         {
           "id": "theory-and-analysis-in-the-social-sciences",
@@ -1860,7 +2666,12 @@
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
           "next": "y4-SS",
-          "plan": "SS142, SS144, SS146"
+          "plan": "SS142, SS144, SS146",
+          "courses": [
+            "SS142",
+            "SS144",
+            "SS146"
+          ]
         }
       ]
     },
@@ -1880,7 +2691,14 @@
       },
       "continueLabel": "After Minerva",
       "next": "after-SS",
-      "plan": "CP191 to CP196"
+      "plan": "CP191 to CP196",
+      "courses": [
+        "CP191",
+        "CP192",
+        "CP193",
+        "CP194",
+        "CP196"
+      ]
     },
     "after-SS": {
       "kind": "choice",

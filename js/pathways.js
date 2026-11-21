@@ -108,6 +108,12 @@ const Pathways = (() => {
   function mount(root, data) {
     const nodes = data.nodes;
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    // Wide screens show "About these courses" open beside each layer;
+    // phones keep it collapsed under the card.
+    const wide = window.matchMedia('(min-width: 1100px)');
+    wide.addEventListener('change', () => {
+      root.querySelectorAll('.pw-about').forEach((d) => { d.open = wide.matches; });
+    });
     let path = [];          // one entry per layer: option id, or 'ok' for steps
     let layers = [];        // [{ nodeId, section }]
     let uid = 0;
@@ -143,13 +149,16 @@ const Pathways = (() => {
       section.setAttribute('aria-label', node.stage);
       if (index > 0) section.append(el('div', 'pw-connector'));
 
+      const row = el('div', 'pw-row');
       const card = el('div', 'pw-card');
       card.append(el('p', 'caption pw-stage', node.stage));
       const heading = el('h3', 'section-header pw-prompt', node.prompt);
       card.append(heading);
-      section.append(card);
+      const about = aboutBox();
+      row.append(card, about.box);
+      section.append(row);
       stack.append(section);
-      layers.push({ nodeId, section });
+      layers.push({ nodeId, section, about });
 
       if (node.kind === 'choice' && node.note) card.append(el('p', 'caption pw-choice-note', node.note));
       if (node.kind === 'choice') buildChoice(card, node, index, heading);
@@ -202,6 +211,7 @@ const Pathways = (() => {
         });
         panel.setAttribute('aria-labelledby', button.id);
         fillPanel(panel, opt);
+        layers[index].about.show(opt.courses, animate);
         panel.hidden = false;
         panel.classList.remove('pw-reveal');
         if (animate) { void panel.offsetWidth; panel.classList.add('pw-reveal'); }
@@ -230,7 +240,31 @@ const Pathways = (() => {
       panel.append(keeps, sourceLine(opt.source, data.asOf));
     }
 
+    function aboutBox() {
+      const box = el('details', 'pw-about');
+      box.open = wide.matches;
+      box.hidden = true;
+      box.append(el('summary', 'body-strong', 'About these courses'));
+      const list = el('ul', 'pw-about-list');
+      box.append(list);
+      function show(codes, animate) {
+        list.textContent = '';
+        const known = (codes || []).filter((c) => data.courseInfo && data.courseInfo[c]);
+        box.hidden = known.length === 0;
+        known.forEach((code) => {
+          const c = data.courseInfo[code];
+          const li = el('li', 'pw-about-item');
+          li.append(el('p', 'body-strong', `${code} ${c.title}`), el('p', 'body pw-about-desc', c.description));
+          list.append(li);
+        });
+        box.classList.remove('pw-reveal');
+        if (animate && known.length) { void box.offsetWidth; box.classList.add('pw-reveal'); }
+      }
+      return { box, show };
+    }
+
     function buildStep(card, node, index) {
+      layers[index].about.show(node.courses, false);
       const ul = el('ul', 'pw-facts');
       node.items.forEach((t) => ul.append(el('li', 'body', t)));
       card.append(ul);

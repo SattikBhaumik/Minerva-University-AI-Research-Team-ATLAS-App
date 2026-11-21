@@ -331,7 +331,41 @@ def build():
         }
 
     nodes['end'] = {'kind': 'end', 'stage': 'Your plan', 'prompt': 'One possible plan, not a promise', 'note': ED['closingQuestion']}
+    # Courses behind each tab or step, for the "About these courses" box.
+    # Codes after "needs" and in "courses that need these" lines are
+    # prerequisites, not the option's own courses.
+    info = {}
+    def own_codes(lines):
+        codes = []
+        for line in lines:
+            if 'that need these' in line:
+                continue
+            for code in CODE_RE.findall(line.split(' · needs ')[0]):
+                if code in COURSE and code not in codes:
+                    codes.append(code)
+        seen, out = set(), []
+        for code in codes:
+            key = (COURSE[code]['title'], re.sub(r'^Previously [A-Z0-9]+\.\s*', '', COURSE[code]['description'])[:80])
+            if key not in seen:
+                seen.add(key)
+                out.append(code)
+        return out
+    for n in nodes.values():
+        for holder in (n.get('options') or [n]):
+            codes = own_codes(holder.get('facts') or holder.get('items') or [])
+            if codes:
+                holder['courses'] = codes
+                for code in codes:
+                    c = COURSE[code]
+                    desc = re.sub(r'^Previously [A-Z0-9]+\.\s*', '', c['description'])
+                    sentences = re.split(r'(?<=[.!?])\s+', desc)
+                    short = ' '.join(sentences[:2])
+                    if len(short) > 320:
+                        short = sentences[0]
+                    info[code] = {'title': c['title'], 'description': short, 'needs': prereq_codes(code)}
+
     return {
+        'courseInfo': info,
         'asOf': AS_OF,
         'notice': "Example plan. Courses, rules and outcomes come from Minerva's Course Catalog (2026.v410) and website as read on 21 Nov 2026; the questions are ATLAS's own. Courses and cities can change. Not admissions advice.",
         'start': 'start',

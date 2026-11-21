@@ -328,8 +328,28 @@ button, input, select, textarea { font: inherit; }
 .pw-continue[hidden] { display: none; }
 .pw-actions { display: flex; flex-wrap: wrap; gap: var(--space-2); margin-top: var(--space-3); }
 
+/* "About these courses": under the card on phones, beside it on wide screens. */
+.pw-about {
+  margin-top: var(--space-2); padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border); border-radius: var(--radius-card);
+  background: var(--color-background);
+}
+.pw-about[hidden] { display: none; }
+.pw-about summary { cursor: pointer; }
+.pw-about-list { list-style: none; margin-top: var(--space-2); }
+.pw-about-item + .pw-about-item { margin-top: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--color-border); }
+.pw-about-desc { margin-top: var(--space-1); }
+.pw-about.pw-reveal { animation: pw-fade 0.26s ease-out both; }
+@media (min-width: 1100px) {
+  .view-inner:has(#pathways-root) { max-width: 1040px; }
+  .pw-row { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: var(--space-4); align-items: start; }
+  .pw-about { margin-top: 0; max-height: 70vh; overflow-y: auto; }
+  .pw-about summary { pointer-events: none; list-style: none; }
+  .pw-about summary::-webkit-details-marker { display: none; }
+}
+
 .pw-enter .pw-connector { animation: pw-grow 0.28s ease-out both; }
-.pw-enter .pw-card { animation: pw-drop 0.42s cubic-bezier(0.2, 0.8, 0.2, 1) 0.18s both; }
+.pw-enter .pw-row { animation: pw-drop 0.42s cubic-bezier(0.2, 0.8, 0.2, 1) 0.18s both; }
 .pw-panel.pw-reveal { animation: pw-fade 0.26s ease-out both; }
 @keyframes pw-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
 @keyframes pw-drop { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
