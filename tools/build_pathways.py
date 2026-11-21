@@ -350,8 +350,11 @@ def build():
                 seen.add(key)
                 out.append(code)
         return out
-    for n in nodes.values():
-        for holder in (n.get('options') or [n]):
+    # Only rows whose tabs are courses get the box: physics, electives, concentrations.
+    for nid, n in nodes.items():
+        if n['kind'] != 'choice' or not re.match(r'(y2-|y2e-|y3-)', nid):
+            continue
+        for holder in n['options']:
             codes = own_codes(holder.get('facts') or holder.get('items') or [])
             if codes:
                 holder['courses'] = codes
