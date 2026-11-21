@@ -343,11 +343,33 @@ const Pathways = (() => {
           share.textContent = 'Could not copy. Use the address bar.';
         }
       });
+      const save = el('button', 'btn btn-primary', 'Save this plan');
+      save.type = 'button';
+      save.addEventListener('click', () => {
+        const detail = { path: path.slice(), name: planName(), ok: false };
+        window.dispatchEvent(new CustomEvent('pathways:save', { detail }));
+        save.textContent = detail.ok ? 'Saved' : 'Could not save in this browser';
+        save.disabled = detail.ok;
+      });
       const restart = el('button', 'btn btn-ghost', 'Start over');
       restart.type = 'button';
       restart.addEventListener('click', () => startWith([], true));
-      actions.append(share, restart);
-      card.append(actions);
+      actions.append(save, share, restart);
+      card.append(actions, el('p', 'caption', 'Saved plans stay in this browser only.'));
+    }
+
+    // A saved plan is named from the catalog's own labels: college, then
+    // the concentration picked (if any).
+    function planName() {
+      const parts = [];
+      layers.forEach((l, i) => {
+        const n = nodes[l.nodeId];
+        if (n.stage === 'Your college') parts.push(n.prompt);
+        if (l.nodeId.startsWith('y3-') && path[i] && path[i] !== 'more') {
+          parts.push(n.options.find((o) => o.id === path[i]).label);
+        }
+      });
+      return parts.join(' · ') || 'Untitled plan';
     }
 
     // Start over from the first layer, replaying picks without animation.
@@ -369,6 +391,9 @@ const Pathways = (() => {
     }
 
     startWith(readPath(), false);
+    // A link pasted into an open tab changes only the hash; rebuild from it.
+    // (writePath uses replaceState, which fires no hashchange, so no loop.)
+    window.addEventListener('hashchange', () => startWith(readPath(), false));
     return { startWith };
   }
 
