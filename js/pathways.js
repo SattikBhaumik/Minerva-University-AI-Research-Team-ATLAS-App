@@ -151,6 +151,7 @@ const Pathways = (() => {
       stack.append(section);
       layers.push({ nodeId, section });
 
+      if (node.kind === 'choice' && node.note) card.append(el('p', 'caption pw-choice-note', node.note));
       if (node.kind === 'choice') buildChoice(card, node, index, heading);
       else if (node.kind === 'step') buildStep(card, node, index);
       else buildEnd(card, node);

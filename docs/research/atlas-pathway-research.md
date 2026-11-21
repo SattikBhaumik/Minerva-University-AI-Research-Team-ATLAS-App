@@ -39,6 +39,12 @@ It is newer than the website and wins where they disagree.
 - **Counts.** Concentrations per college: Arts and Humanities 6, Business
   6, Computational Sciences 6 (new: Intelligent Software Systems, which has
   no catalog description), Natural Sciences 4, Social Sciences 6.
+- **Outcomes (2026-11-21).** `reports/Minerva graduate outcome numbers.md`
+  traces every per-college figure to Minerva's "[MARCH 2026] Grads after
+  Graduation" brochures (classes 2019 to 2025; AH 2019 to 2023). The site
+  cites those brochures, says no outside source has checked the figures,
+  flags where Minerva's own numbers do not add up (SS 101%, NS 50% vs
+  43.5%), and shows the 83.76% six-year completion rate (Nov 2025).
 - **Site design now.** The applicant answers two preference questions
   (three options, then two), which point to a likely college; real courses
   show at every step. Longer lists (other colleges for electives, six

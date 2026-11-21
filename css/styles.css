@@ -290,6 +290,7 @@ button, input, select, textarea { font: inherit; }
 .pw-end .pw-card { border-color: var(--color-primary); }
 .pw-stage { text-transform: uppercase; letter-spacing: 0.04em; }
 .pw-prompt { margin-bottom: var(--space-3); }
+.pw-choice-note { margin: calc(-1 * var(--space-2)) 0 var(--space-3); }
 
 /* At most three options, so every tab fits on screen; none hides off the edge. */
 .pw-tabs { display: flex; flex-wrap: wrap; gap: var(--space-2); }
