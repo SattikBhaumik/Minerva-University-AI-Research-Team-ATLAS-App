@@ -1,235 +1,271 @@
 {
-  "source": "https://www.minerva.edu/undergraduate/majors-concentrations/",
-  "readOn": "2026-11-21",
-  "colleges": {
-    "AH": {
-      "tab": null,
-      "headline": {
-        "percent": "82%",
-        "text": "of AH graduates* are employed in various industries within six months of graduation"
-      },
-      "sample": "*Data collected from 104 AH college graduates from 2019 to 2023",
-      "stats": [
-        {
-          "percent": "18%",
-          "text": "of AH graduates* are pursuing advanced degrees within six months of graduation"
-        }
-      ],
-      "industries": [
-        {
-          "name": "Business",
-          "percent": "28%"
-        },
-        {
-          "name": "Graduate School",
-          "percent": "18%"
-        },
-        {
-          "name": "Education",
-          "percent": "18%"
-        },
-        {
-          "name": "Government, Law, and Public Policy",
-          "percent": "12%"
-        },
-        {
-          "name": "Media and Journalism",
-          "percent": "12%"
-        },
-        {
-          "name": "Engineering and Data Science",
-          "percent": "12%"
-        }
-      ],
-      "careers": [
-        "Writing",
-        "Journalism",
-        "Film writer/Filmmaker",
-        "UX Designer",
-        "Art Instructor",
-        "Game Designer",
-        "Media Producer",
-        "Production Coordinator",
-        "Museum Curator",
-        "Policy Specialist",
-        "Artist Relations Specialist"
-      ],
-      "gradSchools": null,
-      "capstones": "analyzing how documentary film making can be used as a political weapon or even creating a fictional novel, blending creativity with practical experience."
-    },
-    "B": {
-      "tab": null,
-      "headline": {
-        "percent": "94.8%",
-        "text": "of Business graduates* are employed full-time or completing internships within six months of graduation."
-      },
-      "sample": "*Data collected from 97 BZ college graduates from 2019 to 2025",
-      "stats": [
-        {
-          "percent": "75.3%",
-          "text": "employed full-time"
-        },
-        {
-          "percent": "18.6%",
-          "text": "completing internships"
-        },
-        {
-          "percent": "1%",
-          "text": "enrolled in advanced degree programs"
-        }
-      ],
-      "industries": [],
-      "careers": [
-        "Entrepreneurship",
-        "Brand Management and Marketing",
-        "Consulting",
-        "Growth & Strategy and Business Development",
-        "Business Operations",
-        "Product Management",
-        "Investment Banking",
-        "Financial Operations",
-        "Financial Planning and Analysis / Strategic Finance",
-        "Data Science",
-        "Continuing Studies"
-      ],
-      "gradSchools": "Those students who pursued graduate studies have done so at institutions such as Brown University, King's College London, New York University, Oxford University, the University of Rochester, and more.",
-      "capstones": "At the end of your four years at Minerva, you will write a business plan or even open your own startup as your Capstone Project."
-    },
-    "CS": {
-      "tab": null,
-      "headline": {
-        "percent": "95.6%",
-        "text": "of CS graduates* are actively working or enrolled in advanced degree programs within six months of graduation."
-      },
-      "sample": "*Data collected from 256 CS college graduates from 2019 to 2025",
-      "stats": [
-        {
-          "percent": "74.2%",
-          "text": "entered full-time employment directly"
-        },
-        {
-          "percent": "11.1%",
-          "text": "pursued internships"
-        },
-        {
-          "percent": "10.3%",
-          "text": "pursued advanced degrees"
-        }
-      ],
-      "industries": [
-        {
-          "name": "Big Tech and Software",
-          "percent": "44.5%"
-        },
-        {
-          "name": "Academia and Research",
-          "percent": "17.6%"
-        },
-        {
-          "name": "Startups and Entrepreneurship",
-          "percent": "14.5%"
-        },
-        {
-          "name": "Finance and Consulting",
-          "percent": "10.9%"
-        },
-        {
-          "name": "Social Impact and Government",
-          "percent": "8.2%"
-        }
-      ],
-      "careers": [
-        "Entrepreneurship",
-        "Software Engineering / Software Development",
-        "Tech Consultancy",
-        "Machine Learning Engineering",
-        "Technical Product Management",
-        "Ethical AI Research",
-        "CTO",
-        "Data Science"
-      ],
-      "gradSchools": "Minerva students who pursued graduate studies have done so at institutions such as Brown University, Caltech, Cambridge University, Cornell University, Duke University, Stanford, Princeton, Harvard University, UC Berkeley, Johns Hopkins, and more!",
-      "capstones": "building a set of optimal strategies for winning a game of Monopoly, a web-based platform that uses interactive simulations to teach personal finance, or creating a 3D video game with polygon racers."
-    },
-    "NS": {
-      "tab": null,
-      "headline": {
-        "percent": "85%",
-        "text": "of Natural Sciences graduates* are pursuing an advanced degree or employed full-time within six months of graduation."
-      },
-      "sample": "*Data collected from 46 NS college graduates from 2019 to 2025",
-      "stats": [
-        {
-          "percent": "43.5%",
-          "text": "are pursuing an advanced degree"
-        },
-        {
-          "percent": "41.3%",
-          "text": "are employed full-time"
-        }
-      ],
-      "industries": [
-        {
-          "name": "Graduate Education",
-          "percent": "50%"
-        },
-        {
-          "name": "Consulting and Entrepreneurship",
-          "percent": "17.4%"
-        },
-        {
-          "name": "Education",
-          "percent": "15.2%"
-        },
-        {
-          "name": "Healthcare and Biotech",
-          "percent": "6.5%"
-        }
-      ],
-      "careers": [
-        "Researcher",
-        "Lab Technician",
-        "Science Consultant",
-        "Computational Biologist",
-        "Bioinformatician",
-        "Environmental Educator",
-        "Conservation Specialist",
-        "Medical Technologist"
-      ],
-      "gradSchools": "Minerva students who pursued graduate studies have done so at institutions such as Harvard University, Caltech, Cambridge University, Karolinska Institute, Oxford University, Johns Hopkins University, Princeton University, and many others.",
-      "capstones": "building a computational pipeline manual for biologists, improving stem cell delivery for neural tissue repair using nanomaterial scaffolds, or formulating sustainable sunscreens."
-    },
-    "SS": {
-      "tab": null,
-      "headline": {
-        "percent": "93%",
-        "text": "of Social Science graduates* are employed full-time or enrolled in advanced degree programs within six months of graduation."
-      },
-      "sample": "*Amoung the 105 surveryed graduates with Social Sciences as their sole major, from 2019 to 2025",
-      "stats": [
-        {
-          "percent": "74%",
-          "text": "entered full-time employment directly"
-        },
-        {
-          "percent": "20%",
-          "text": "enrolled in graduate school"
-        },
-        {
-          "percent": "7%",
-          "text": "pursued internships"
-        }
-      ],
-      "industries": [],
-      "careers": [
-        "Policy Associate / Policy Specialist",
-        "Legal Associate",
-        "Social Sciences Researcher",
-        "Counselor",
-        "Editorial Producer"
-      ],
-      "gradSchools": null,
-      "capstones": "analyzing the dynamics and complexities of global waste trade, recommending policies to mitigate Japan's fertility fall, or studying the impact of author gender, ethnicity, and university affiliation on perceived credibility, for example."
+ "source": "https://www.minerva.edu/undergraduate/majors-concentrations/",
+ "readOn": "2026-11-21",
+ "colleges": {
+  "AH": {
+   "tab": null,
+   "headline": {
+    "percent": "82%",
+    "text": "of AH graduates* are employed in various industries within six months of graduation"
+   },
+   "sample": "*Data collected from 104 AH college graduates from 2019 to 2023",
+   "stats": [
+    {
+     "percent": "18%",
+     "text": "of AH graduates* are pursuing advanced degrees within six months of graduation"
     }
+   ],
+   "industries": [
+    {
+     "name": "Business",
+     "percent": "28%"
+    },
+    {
+     "name": "Graduate School",
+     "percent": "18%"
+    },
+    {
+     "name": "Education",
+     "percent": "18%"
+    },
+    {
+     "name": "Government, Law, and Public Policy",
+     "percent": "12%"
+    },
+    {
+     "name": "Media and Journalism",
+     "percent": "12%"
+    },
+    {
+     "name": "Engineering and Data Science",
+     "percent": "12%"
+    }
+   ],
+   "careers": [
+    "Writing",
+    "Journalism",
+    "Film writer/Filmmaker",
+    "UX Designer",
+    "Art Instructor",
+    "Game Designer",
+    "Media Producer",
+    "Production Coordinator",
+    "Museum Curator",
+    "Policy Specialist",
+    "Artist Relations Specialist"
+   ],
+   "gradSchools": null,
+   "capstones": "analyzing how documentary film making can be used as a political weapon or even creating a fictional novel, blending creativity with practical experience.",
+   "brochure": {
+    "label": "Minerva brochure: AH Grads after Graduation (March 2026)",
+    "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac9a0c7d8cb75107d3_%5BMARCH%202026%5D%20AH%20Grads%20after%20Graduation.pdf"
+   },
+   "atlasFlag": "Covers the classes of 2019 to 2023 only; 82% and 18% add to 100%, so no one is counted as unemployed or unknown."
+  },
+  "B": {
+   "tab": null,
+   "headline": {
+    "percent": "94.8%",
+    "text": "of Business graduates* are employed full-time or completing internships within six months of graduation."
+   },
+   "sample": "*Data collected from 97 BZ college graduates from 2019 to 2025",
+   "stats": [
+    {
+     "percent": "75.3%",
+     "text": "employed full-time"
+    },
+    {
+     "percent": "18.6%",
+     "text": "completing internships"
+    },
+    {
+     "percent": "1%",
+     "text": "enrolled in advanced degree programs"
+    }
+   ],
+   "industries": [],
+   "careers": [
+    "Entrepreneurship",
+    "Brand Management and Marketing",
+    "Consulting",
+    "Growth & Strategy and Business Development",
+    "Business Operations",
+    "Product Management",
+    "Investment Banking",
+    "Financial Operations",
+    "Financial Planning and Analysis / Strategic Finance",
+    "Data Science",
+    "Continuing Studies"
+   ],
+   "gradSchools": "Those students who pursued graduate studies have done so at institutions such as Brown University, King's College London, New York University, Oxford University, the University of Rochester, and more.",
+   "capstones": "At the end of your four years at Minerva, you will write a business plan or even open your own startup as your Capstone Project.",
+   "brochure": {
+    "label": "Minerva brochure: B Grads after Graduation (March 2026)",
+    "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7abc1b69dd02707cc03_%5BMARCH%202026%5D%20BZ%20Grads%20after%20Graduation.pdf"
+   },
+   "atlasFlag": "This headline counts internships; full-time work alone is 75.3%."
+  },
+  "CS": {
+   "tab": null,
+   "headline": {
+    "percent": "95.6%",
+    "text": "of CS graduates* are actively working or enrolled in advanced degree programs within six months of graduation."
+   },
+   "sample": "*Data collected from 256 CS college graduates from 2019 to 2025",
+   "stats": [
+    {
+     "percent": "74.2%",
+     "text": "entered full-time employment directly"
+    },
+    {
+     "percent": "11.1%",
+     "text": "pursued internships"
+    },
+    {
+     "percent": "10.3%",
+     "text": "pursued advanced degrees"
+    }
+   ],
+   "industries": [
+    {
+     "name": "Big Tech and Software",
+     "percent": "44.5%"
+    },
+    {
+     "name": "Academia and Research",
+     "percent": "17.6%"
+    },
+    {
+     "name": "Startups and Entrepreneurship",
+     "percent": "14.5%"
+    },
+    {
+     "name": "Finance and Consulting",
+     "percent": "10.9%"
+    },
+    {
+     "name": "Social Impact and Government",
+     "percent": "8.2%"
+    }
+   ],
+   "careers": [
+    "Entrepreneurship",
+    "Software Engineering / Software Development",
+    "Tech Consultancy",
+    "Machine Learning Engineering",
+    "Technical Product Management",
+    "Ethical AI Research",
+    "CTO",
+    "Data Science"
+   ],
+   "gradSchools": "Minerva students who pursued graduate studies have done so at institutions such as Brown University, Caltech, Cambridge University, Cornell University, Duke University, Stanford, Princeton, Harvard University, UC Berkeley, Johns Hopkins, and more!",
+   "capstones": "building a set of optimal strategies for winning a game of Monopoly, a web-based platform that uses interactive simulations to teach personal finance, or creating a 3D video game with polygon racers.",
+   "brochure": {
+    "label": "Minerva brochure: CS Grads after Graduation (March 2026)",
+    "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac04cc1509cd5d566b_%5BMARCH%202026%5D%20CS%20Grads%20after%20Graduation.pdf"
+   },
+   "atlasFlag": "This headline counts internships; full-time work alone is 74.2%."
+  },
+  "NS": {
+   "tab": null,
+   "headline": {
+    "percent": "85%",
+    "text": "of Natural Sciences graduates* are pursuing an advanced degree or employed full-time within six months of graduation."
+   },
+   "sample": "*Data collected from 46 NS college graduates from 2019 to 2025",
+   "stats": [
+    {
+     "percent": "43.5%",
+     "text": "are pursuing an advanced degree"
+    },
+    {
+     "percent": "41.3%",
+     "text": "are employed full-time"
+    }
+   ],
+   "industries": [
+    {
+     "name": "Graduate Education",
+     "percent": "50%"
+    },
+    {
+     "name": "Consulting and Entrepreneurship",
+     "percent": "17.4%"
+    },
+    {
+     "name": "Education",
+     "percent": "15.2%"
+    },
+    {
+     "name": "Healthcare and Biotech",
+     "percent": "6.5%"
+    }
+   ],
+   "careers": [
+    "Researcher",
+    "Lab Technician",
+    "Science Consultant",
+    "Computational Biologist",
+    "Bioinformatician",
+    "Environmental Educator",
+    "Conservation Specialist",
+    "Medical Technologist"
+   ],
+   "gradSchools": "Minerva students who pursued graduate studies have done so at institutions such as Harvard University, Caltech, Cambridge University, Karolinska Institute, Oxford University, Johns Hopkins University, Princeton University, and many others.",
+   "capstones": "building a computational pipeline manual for biologists, improving stem cell delivery for neural tissue repair using nanomaterial scaffolds, or formulating sustainable sunscreens.",
+   "brochure": {
+    "label": "Minerva brochure: NS Grads after Graduation (March 2026)",
+    "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac0e16e4cfc13618f6_%5BMARCH%202026%5D%20NS%20Grads%20after%20Graduation.pdf"
+   },
+   "atlasFlag": "The same brochure also shows 'Graduate Education 50%', which conflicts with 43.5%; ATLAS shows the 43.5%.",
+   "hideIndustries": [
+    "Graduate Education"
+   ]
+  },
+  "SS": {
+   "tab": null,
+   "headline": {
+    "percent": "93%",
+    "text": "of Social Science graduates* are employed full-time or enrolled in advanced degree programs within six months of graduation."
+   },
+   "sample": "*Amoung the 105 surveryed graduates with Social Sciences as their sole major, from 2019 to 2025",
+   "stats": [
+    {
+     "percent": "74%",
+     "text": "entered full-time employment directly"
+    },
+    {
+     "percent": "20%",
+     "text": "enrolled in graduate school"
+    },
+    {
+     "percent": "7%",
+     "text": "pursued internships"
+    }
+   ],
+   "industries": [],
+   "careers": [
+    "Policy Associate / Policy Specialist",
+    "Legal Associate",
+    "Social Sciences Researcher",
+    "Counselor",
+    "Editorial Producer"
+   ],
+   "gradSchools": null,
+   "capstones": "analyzing the dynamics and complexities of global waste trade, recommending policies to mitigate Japan's fertility fall, or studying the impact of author gender, ethnicity, and university affiliation on perceived credibility, for example.",
+   "brochure": {
+    "label": "Minerva brochure: SS Grads after Graduation (March 2026)",
+    "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7acc5e7e58e7c290934_%5BMARCH%202026%5D%20SS%20Grads%20after%20Graduation.pdf"
+   },
+   "atlasFlag": "The parts (74%, 20%, 7%) add to 101% against the 93% headline."
   }
+ },
+ "completion": {
+  "text": "83.76% of entering students graduated within six years (150% of normal time), all cohorts",
+  "source": {
+   "label": "Minerva: Completion and Retention Rates, November 2025",
+   "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/6915f03bace3ce80e1ea0cfe_Completion%20and%20Retention%20Rates%20-%20November%202025.pdf"
+  }
+ },
+ "note": "Minerva's figures, verbatim. atlasFlag, hideIndustries and completion were added by ATLAS on 2026-11-21 from reports/Minerva graduate outcome numbers.md."
 }

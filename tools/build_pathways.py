@@ -84,8 +84,7 @@ def prereq_codes(code):
 
 
 def outcome_source(col):
-    url = MAJORS_URL + (f"?tab={TABS[col]}" if col in TABS else '')
-    return {'label': f"{COLLEGE[col][0]} outcomes", 'url': url}
+    return OUT['colleges'][col]['brochure']
 
 
 def major_source(col):
@@ -311,9 +310,11 @@ def build():
         grad = stat_lines(r'advanced|graduate')[:1]
         work = stat_lines(r'employ|internship|working')
         work = [w for w in work if not re.search(r'advanced|graduate', w, re.I)] or work[:1]
-        ind = ', '.join(f"{i['name']} {i['percent']}" for i in oc['industries'])
+        ind = ', '.join(f"{i['name']} {i['percent']}" for i in oc['industries'] if i['name'] not in oc.get('hideIndustries', []))
         nodes[f'after-{col}'] = {
-            'kind': 'choice', 'stage': 'After Minerva', 'prompt': 'Where might you head next?',
+            'kind': 'choice', 'stage': 'After Minerva',
+            'prompt': 'Where might you head next?',
+            'note': "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
             'options': [
                 {'id': 'grad', 'label': 'Graduate study', 'whatYouDo': "A master's or Ph.D.",
                  'facts': grad + ([oc['gradSchools']] if oc['gradSchools'] else []) + [sample],
@@ -322,7 +323,8 @@ def build():
                  'facts': work + ([f'Industries: {ind}'] if ind else []) + ['Fields named: ' + ', '.join(oc['careers'])] + [sample],
                  'keepsOpen': 'Graduate study later, with work experience behind you.', 'source': outcome_source(col), 'next': 'end'},
                 {'id': 'undecided', 'label': 'Not sure yet', 'whatYouDo': 'A fine place to be as an applicant.',
-                 'facts': [f"{oc['headline']['percent']} {oc['headline']['text'].replace('*', '')}", sample],
+                 'facts': [f"{oc['headline']['percent']} {oc['headline']['text'].replace('*', '')}", oc['atlasFlag'], sample,
+                           f"Across all colleges: {OUT['completion']['text']} (Minerva, November 2025)"],
                  'keepsOpen': 'Electives from every college keep a second interest alive; up to two minors are allowed.',
                  'source': outcome_source(col), 'next': 'end'},
             ],

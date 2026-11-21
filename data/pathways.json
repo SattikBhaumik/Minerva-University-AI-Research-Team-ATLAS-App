@@ -455,8 +455,8 @@
       ],
       "note": "Past capstones can involve analyzing how documentary film making can be used as a political weapon or even creating a fictional novel, blending creativity with practical experience. What would yours chase?",
       "source": {
-        "label": "Arts & Humanities outcomes",
-        "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+        "label": "Minerva brochure: AH Grads after Graduation (March 2026)",
+        "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac9a0c7d8cb75107d3_%5BMARCH%202026%5D%20AH%20Grads%20after%20Graduation.pdf"
       },
       "continueLabel": "After Minerva",
       "next": "after-AH",
@@ -466,6 +466,7 @@
       "kind": "choice",
       "stage": "After Minerva",
       "prompt": "Where might you head next?",
+      "note": "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
       "options": [
         {
           "id": "grad",
@@ -477,8 +478,8 @@
           ],
           "keepsOpen": "Research, teaching and specialist roles.",
           "source": {
-            "label": "Arts & Humanities outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "label": "Minerva brochure: AH Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac9a0c7d8cb75107d3_%5BMARCH%202026%5D%20AH%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         },
@@ -494,8 +495,8 @@
           ],
           "keepsOpen": "Graduate study later, with work experience behind you.",
           "source": {
-            "label": "Arts & Humanities outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "label": "Minerva brochure: AH Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac9a0c7d8cb75107d3_%5BMARCH%202026%5D%20AH%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         },
@@ -505,12 +506,14 @@
           "whatYouDo": "A fine place to be as an applicant.",
           "facts": [
             "82% of AH graduates are employed in various industries within six months of graduation",
-            "Data collected from 104 AH college graduates from 2019 to 2023"
+            "Covers the classes of 2019 to 2023 only; 82% and 18% add to 100%, so no one is counted as unemployed or unknown.",
+            "Data collected from 104 AH college graduates from 2019 to 2023",
+            "Across all colleges: 83.76% of entering students graduated within six years (150% of normal time), all cohorts (Minerva, November 2025)"
           ],
           "keepsOpen": "Electives from every college keep a second interest alive; up to two minors are allowed.",
           "source": {
-            "label": "Arts & Humanities outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "label": "Minerva brochure: AH Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac9a0c7d8cb75107d3_%5BMARCH%202026%5D%20AH%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         }
@@ -814,8 +817,8 @@
       ],
       "note": "At the end of your four years at Minerva, you will write a business plan or even open your own startup as your Capstone Project. What would yours chase?",
       "source": {
-        "label": "Business outcomes",
-        "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+        "label": "Minerva brochure: B Grads after Graduation (March 2026)",
+        "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7abc1b69dd02707cc03_%5BMARCH%202026%5D%20BZ%20Grads%20after%20Graduation.pdf"
       },
       "continueLabel": "After Minerva",
       "next": "after-B",
@@ -825,6 +828,7 @@
       "kind": "choice",
       "stage": "After Minerva",
       "prompt": "Where might you head next?",
+      "note": "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
       "options": [
         {
           "id": "grad",
@@ -837,8 +841,8 @@
           ],
           "keepsOpen": "Research, teaching and specialist roles.",
           "source": {
-            "label": "Business outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "label": "Minerva brochure: B Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7abc1b69dd02707cc03_%5BMARCH%202026%5D%20BZ%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         },
@@ -854,8 +858,8 @@
           ],
           "keepsOpen": "Graduate study later, with work experience behind you.",
           "source": {
-            "label": "Business outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "label": "Minerva brochure: B Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7abc1b69dd02707cc03_%5BMARCH%202026%5D%20BZ%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         },
@@ -865,12 +869,14 @@
           "whatYouDo": "A fine place to be as an applicant.",
           "facts": [
             "94.8% of Business graduates are employed full-time or completing internships within six months of graduation.",
-            "Data collected from 97 BZ college graduates from 2019 to 2025"
+            "This headline counts internships; full-time work alone is 75.3%.",
+            "Data collected from 97 BZ college graduates from 2019 to 2025",
+            "Across all colleges: 83.76% of entering students graduated within six years (150% of normal time), all cohorts (Minerva, November 2025)"
           ],
           "keepsOpen": "Electives from every college keep a second interest alive; up to two minors are allowed.",
           "source": {
-            "label": "Business outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "label": "Minerva brochure: B Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7abc1b69dd02707cc03_%5BMARCH%202026%5D%20BZ%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         }
@@ -1174,8 +1180,8 @@
       ],
       "note": "Past capstones can involve building a set of optimal strategies for winning a game of Monopoly, a web-based platform that uses interactive simulations to teach personal finance, or creating a 3D video game with polygon racers. What would yours chase?",
       "source": {
-        "label": "Computational Sciences outcomes",
-        "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+        "label": "Minerva brochure: CS Grads after Graduation (March 2026)",
+        "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac04cc1509cd5d566b_%5BMARCH%202026%5D%20CS%20Grads%20after%20Graduation.pdf"
       },
       "continueLabel": "After Minerva",
       "next": "after-CS",
@@ -1185,6 +1191,7 @@
       "kind": "choice",
       "stage": "After Minerva",
       "prompt": "Where might you head next?",
+      "note": "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
       "options": [
         {
           "id": "grad",
@@ -1197,8 +1204,8 @@
           ],
           "keepsOpen": "Research, teaching and specialist roles.",
           "source": {
-            "label": "Computational Sciences outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            "label": "Minerva brochure: CS Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac04cc1509cd5d566b_%5BMARCH%202026%5D%20CS%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         },
@@ -1215,8 +1222,8 @@
           ],
           "keepsOpen": "Graduate study later, with work experience behind you.",
           "source": {
-            "label": "Computational Sciences outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            "label": "Minerva brochure: CS Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac04cc1509cd5d566b_%5BMARCH%202026%5D%20CS%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         },
@@ -1226,12 +1233,14 @@
           "whatYouDo": "A fine place to be as an applicant.",
           "facts": [
             "95.6% of CS graduates are actively working or enrolled in advanced degree programs within six months of graduation.",
-            "Data collected from 256 CS college graduates from 2019 to 2025"
+            "This headline counts internships; full-time work alone is 74.2%.",
+            "Data collected from 256 CS college graduates from 2019 to 2025",
+            "Across all colleges: 83.76% of entering students graduated within six years (150% of normal time), all cohorts (Minerva, November 2025)"
           ],
           "keepsOpen": "Electives from every college keep a second interest alive; up to two minors are allowed.",
           "source": {
-            "label": "Computational Sciences outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            "label": "Minerva brochure: CS Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac04cc1509cd5d566b_%5BMARCH%202026%5D%20CS%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         }
@@ -1504,8 +1513,8 @@
       ],
       "note": "Past capstones can involve building a computational pipeline manual for biologists, improving stem cell delivery for neural tissue repair using nanomaterial scaffolds, or formulating sustainable sunscreens. What would yours chase?",
       "source": {
-        "label": "Natural Sciences outcomes",
-        "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+        "label": "Minerva brochure: NS Grads after Graduation (March 2026)",
+        "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac0e16e4cfc13618f6_%5BMARCH%202026%5D%20NS%20Grads%20after%20Graduation.pdf"
       },
       "continueLabel": "After Minerva",
       "next": "after-NS",
@@ -1515,6 +1524,7 @@
       "kind": "choice",
       "stage": "After Minerva",
       "prompt": "Where might you head next?",
+      "note": "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
       "options": [
         {
           "id": "grad",
@@ -1527,8 +1537,8 @@
           ],
           "keepsOpen": "Research, teaching and specialist roles.",
           "source": {
-            "label": "Natural Sciences outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+            "label": "Minerva brochure: NS Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac0e16e4cfc13618f6_%5BMARCH%202026%5D%20NS%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         },
@@ -1538,14 +1548,14 @@
           "whatYouDo": "Straight into a job.",
           "facts": [
             "41.3% are employed full-time",
-            "Industries: Graduate Education 50%, Consulting and Entrepreneurship 17.4%, Education 15.2%, Healthcare and Biotech 6.5%",
+            "Industries: Consulting and Entrepreneurship 17.4%, Education 15.2%, Healthcare and Biotech 6.5%",
             "Fields named: Researcher, Lab Technician, Science Consultant, Computational Biologist, Bioinformatician, Environmental Educator, Conservation Specialist, Medical Technologist",
             "Data collected from 46 NS college graduates from 2019 to 2025"
           ],
           "keepsOpen": "Graduate study later, with work experience behind you.",
           "source": {
-            "label": "Natural Sciences outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+            "label": "Minerva brochure: NS Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac0e16e4cfc13618f6_%5BMARCH%202026%5D%20NS%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         },
@@ -1555,12 +1565,14 @@
           "whatYouDo": "A fine place to be as an applicant.",
           "facts": [
             "85% of Natural Sciences graduates are pursuing an advanced degree or employed full-time within six months of graduation.",
-            "Data collected from 46 NS college graduates from 2019 to 2025"
+            "The same brochure also shows 'Graduate Education 50%', which conflicts with 43.5%; ATLAS shows the 43.5%.",
+            "Data collected from 46 NS college graduates from 2019 to 2025",
+            "Across all colleges: 83.76% of entering students graduated within six years (150% of normal time), all cohorts (Minerva, November 2025)"
           ],
           "keepsOpen": "Electives from every college keep a second interest alive; up to two minors are allowed.",
           "source": {
-            "label": "Natural Sciences outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+            "label": "Minerva brochure: NS Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac0e16e4cfc13618f6_%5BMARCH%202026%5D%20NS%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         }
@@ -1863,8 +1875,8 @@
       ],
       "note": "Past capstones can involve analyzing the dynamics and complexities of global waste trade, recommending policies to mitigate Japan's fertility fall, or studying the impact of author gender, ethnicity, and university affiliation on perceived credibility. What would yours chase?",
       "source": {
-        "label": "Social Sciences outcomes",
-        "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+        "label": "Minerva brochure: SS Grads after Graduation (March 2026)",
+        "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7acc5e7e58e7c290934_%5BMARCH%202026%5D%20SS%20Grads%20after%20Graduation.pdf"
       },
       "continueLabel": "After Minerva",
       "next": "after-SS",
@@ -1874,6 +1886,7 @@
       "kind": "choice",
       "stage": "After Minerva",
       "prompt": "Where might you head next?",
+      "note": "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
       "options": [
         {
           "id": "grad",
@@ -1885,8 +1898,8 @@
           ],
           "keepsOpen": "Research, teaching and specialist roles.",
           "source": {
-            "label": "Social Sciences outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "label": "Minerva brochure: SS Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7acc5e7e58e7c290934_%5BMARCH%202026%5D%20SS%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         },
@@ -1902,8 +1915,8 @@
           ],
           "keepsOpen": "Graduate study later, with work experience behind you.",
           "source": {
-            "label": "Social Sciences outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "label": "Minerva brochure: SS Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7acc5e7e58e7c290934_%5BMARCH%202026%5D%20SS%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         },
@@ -1913,12 +1926,14 @@
           "whatYouDo": "A fine place to be as an applicant.",
           "facts": [
             "93% of Social Science graduates are employed full-time or enrolled in advanced degree programs within six months of graduation.",
-            "Amoung the 105 surveryed graduates with Social Sciences as their sole major, from 2019 to 2025"
+            "The parts (74%, 20%, 7%) add to 101% against the 93% headline.",
+            "Amoung the 105 surveryed graduates with Social Sciences as their sole major, from 2019 to 2025",
+            "Across all colleges: 83.76% of entering students graduated within six years (150% of normal time), all cohorts (Minerva, November 2025)"
           ],
           "keepsOpen": "Electives from every college keep a second interest alive; up to two minors are allowed.",
           "source": {
-            "label": "Social Sciences outcomes",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "label": "Minerva brochure: SS Grads after Graduation (March 2026)",
+            "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7acc5e7e58e7c290934_%5BMARCH%202026%5D%20SS%20Grads%20after%20Graduation.pdf"
           },
           "next": "end"
         }
