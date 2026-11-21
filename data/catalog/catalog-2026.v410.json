@@ -1598,7 +1598,7 @@
   {
    "code": "B154",
    "title": "Strategic Brand Leadership",
-   "description": "In this course, we build on your knowledge of market research, consumer psychology, and creative problem- solving to understand and explore different approaches to growth. Throughout the course, we will delve into new metrics for measuring marketing’s worth, leverage psychological principles for brand building, and analyze the power of partnerships for growth. Throughout the semester you will propose, execute, and evaluate experiments to get first-hand experience in growing a brand. We will place these activities into the larger context of the firm and will explore the strategic role that they play in business development.",
+   "description": "In this course, we build on your knowledge of market research, consumer psychology, and creative problem-solving to understand and explore different approaches to growth. Throughout the course, we will delve into new metrics for measuring marketing’s worth, leverage psychological principles for brand building, and analyze the power of partnerships for growth. Throughout the semester you will propose, execute, and evaluate experiments to get first-hand experience in growing a brand. We will place these activities into the larger context of the firm and will explore the strategic role that they play in business development.",
    "note": "",
    "prerequisites": "B113: Enterprise, Design and Optimization",
    "corequisites": "",
@@ -1778,7 +1778,7 @@
   {
    "code": "CB03",
    "title": "Applied Algorithmic Thinking",
-   "description": "The purpose of this course is to learn how to apply fundamental concepts in computer science to solve real- world problems and how to implement basic algorithmic strategies in Python. We’ll learn how thinking like a computer scientist can improve our own lives and how we can apply concepts from computer science to solve difficult problems.",
+   "description": "The purpose of this course is to learn how to apply fundamental concepts in computer science to solve real-world problems and how to implement basic algorithmic strategies in Python. We’ll learn how thinking like a computer scientist can improve our own lives and how we can apply concepts from computer science to solve difficult problems.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
    "corequisites": "",
@@ -1998,7 +1998,7 @@
   {
    "code": "CS130",
    "title": "Statistical Modeling: Prediction and Causal Inference",
-   "description": "The course focuses on the application of predictive and causal statistical inference for decision making across a wide range of scenarios and contexts. The first part of the course focuses on parametric and non- parametric predictive modeling (regression, cross-validation, bootstrapping, random forests, etc.). The second part of the course focuses on causal inference in randomized control trials and observational studies (statistical matching, synthetic control methods, encouragement design/instrument variables, regression discontinuity design, etc.). Technical aspects of the course focus on computational approaches and real-world challenges, drawing cases from the life sciences, public policy and political science, education, and business. This course also emphasizes the importance of being able to articulate one’s findings effectively and tailor methodology and policy/decision-relevant recommendations for different audiences. Note: CS130 may be substituted for a tutorial in CS/NS/SS and can count like a cross-listed tutorial for double majors in SS, NS, or CS (any pairwise combination). This course was previously CS112. This course counts toward the Minor in Interdisciplinary Digital Practices (for non-CS Majors) because it helps students learn essential skills in predictive and causal statistical analysis, fostering your ability to use data effectively and responsibly in various domains, such as public policy, education, historical studies, and business.",
+   "description": "The course focuses on the application of predictive and causal statistical inference for decision making across a wide range of scenarios and contexts. The first part of the course focuses on parametric and non-parametric predictive modeling (regression, cross-validation, bootstrapping, random forests, etc.). The second part of the course focuses on causal inference in randomized control trials and observational studies (statistical matching, synthetic control methods, encouragement design/instrument variables, regression discontinuity design, etc.). Technical aspects of the course focus on computational approaches and real-world challenges, drawing cases from the life sciences, public policy and political science, education, and business. This course also emphasizes the importance of being able to articulate one’s findings effectively and tailor methodology and policy/decision-relevant recommendations for different audiences. Note: CS130 may be substituted for a tutorial in CS/NS/SS and can count like a cross-listed tutorial for double majors in SS, NS, or CS (any pairwise combination). This course was previously CS112. This course counts toward the Minor in Interdisciplinary Digital Practices (for non-CS Majors) because it helps students learn essential skills in predictive and causal statistical analysis, fostering your ability to use data effectively and responsibly in various domains, such as public policy, education, historical studies, and business.",
    "note": "",
    "prerequisites": "FA51: Formal Analyses or CS51: Formal Analyses",
    "corequisites": "",
@@ -2748,7 +2748,7 @@
   {
    "code": "NS113",
    "title": "Chemical Structure and Reactivity",
-   "description": "This course explores the physical and chemical properties of nature based on molecular, atomic, and sub- atomic structures, with an emphasis on how structure determines reactivity. Empirical observations will be combined with the principles of chemistry and physics to understand the microscopic properties of nature that underpin phenomena at various scales. Students who complete this course will be able to generate strong mechanistic chemical explanations and apply them in advanced chemistry, physics, earth science, and biology courses.",
+   "description": "This course explores the physical and chemical properties of nature based on molecular, atomic, and sub-atomic structures, with an emphasis on how structure determines reactivity. Empirical observations will be combined with the principles of chemistry and physics to understand the microscopic properties of nature that underpin phenomena at various scales. Students who complete this course will be able to generate strong mechanistic chemical explanations and apply them in advanced chemistry, physics, earth science, and biology courses.",
    "note": "For those who begin in 2020 or later, this course is a required core in the Natural Sciences Concentration, and will be first offered Spring 2022.",
    "prerequisites": "EA51: Empirical Analyses or NS51: Empirical Analyses",
    "corequisites": "",

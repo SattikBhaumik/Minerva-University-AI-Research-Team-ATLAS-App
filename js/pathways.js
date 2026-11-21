@@ -255,7 +255,7 @@ const Pathways = (() => {
       const list = el('ul', 'pw-about-list');
       box.append(list);
       const known = (codes) => (codes || []).filter((c) => data.courseInfo && data.courseInfo[c]);
-      const firstSentence = (t) => (t.match(/^.+?[.!?](\s|$)/) || [t])[0].trim();
+      const firstSentence = (t) => (t.match(/^.+?(?<!\b[A-Z])[.!?](?=\s|$)/) || [t])[0].trim();
       function item(code, brief) {
         const c = data.courseInfo[code];
         const li = el('li', 'pw-about-item');
@@ -279,12 +279,21 @@ const Pathways = (() => {
       function preview(options, animate) {
         list.textContent = '';
         let any = false;
-        options.forEach((opt) => {
-          const k = known(opt.courses);
-          if (!k.length) return;
+        const withCourses = options.filter((o) => known(o.courses).length);
+        const common = withCourses.length > 1
+          ? known(withCourses[0].courses).filter((c) => withCourses.every((o) => o.courses.includes(c)))
+          : [];
+        if (common.length) {
           any = true;
-          list.append(el('li', 'caption pw-about-group', opt.label));
-          k.forEach((code) => list.append(item(code, true)));
+          list.append(el('li', 'caption pw-about-group', withCourses.length === 2 ? 'Common to both paths' : 'Common to all paths'));
+          common.forEach((code) => list.append(item(code, true)));
+        }
+        withCourses.forEach((opt) => {
+          const own = known(opt.courses).filter((c) => !common.includes(c));
+          if (!own.length) return;
+          any = true;
+          list.append(el('li', 'caption pw-about-group', common.length ? `Only in ${opt.label}` : opt.label));
+          own.forEach((code) => list.append(item(code, true)));
         });
         reveal(animate, any);
       }

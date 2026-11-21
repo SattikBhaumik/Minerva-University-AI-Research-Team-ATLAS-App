@@ -60,7 +60,8 @@ for l in lines(31, 82):
         if l.startswith('Credit Units:'): cur['credits'] = float(l.split(':')[1]); mode = None
         elif mode in ('desc', 'note', 'prerequisites', 'corequisites'):
             k = 'description' if mode == 'desc' else mode
-            cur[k] = (cur[k] + ' ' + l).strip()
+            joined = re.search(r'[a-z]-$', cur[k]) and not re.match(r'(and|or|to)\b', l)
+            cur[k] = (cur[k] + ('' if joined else ' ') + l).strip()
 json.dump({'source': 'Minerva University Course Catalog, Revision 2026.v410 (2026-11-16)', 'majors': majors, 'concentrations': concs, 'minors': minors, 'courses': courses}, open(out, 'w'), indent=1, ensure_ascii=False)
 print('majors', len(majors), [x['name'] for x in majors])
 print('concentrations', len(concs), 'minors', len(minors), 'courses', len(courses))
