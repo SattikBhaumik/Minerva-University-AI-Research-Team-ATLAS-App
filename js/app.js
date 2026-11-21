@@ -154,7 +154,22 @@
      INITIALIZATION
   ================================================================ */
 
+  // Reload once if a newer version is deployed than the one this page runs.
+  async function checkForNewVersion() {
+    try {
+      const latest = await API.getLatestVersion();
+      const key = `atlas_reloaded_for_${latest}`;
+      if (latest && API.version && latest !== API.version && !sessionStorage.getItem(key)) {
+        sessionStorage.setItem(key, '1');
+        window.location.reload();
+      }
+    } catch (err) {
+      console.log('version check skipped', err);
+    }
+  }
+
   async function init() {
+    checkForNewVersion();
     // Sidebar roles start a fresh path with that answer picked; the active
     // role follows whatever the first answer in the path is.
     roleBtns.forEach((btn) => btn.addEventListener('click', () => {

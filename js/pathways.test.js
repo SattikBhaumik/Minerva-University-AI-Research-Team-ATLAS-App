@@ -67,6 +67,14 @@ test('every course code shown exists in the catalog', () => {
   assert(planted.some((c) => !known.has(c)), 'negative control: an invented code should be caught');
 });
 
+test('version.json matches every ?v= tag in index.html', () => {
+  const html = fs.readFileSync(path.join(__dirname, '..', 'index.html'), 'utf-8');
+  const tags = [...new Set([...html.matchAll(/\?v=([\w.-]+)"/g)].map((m) => m[1]))];
+  const v = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'version.json'), 'utf-8')).v;
+  assert(tags.length === 1, `index.html mixes versions: ${tags.join(', ')}`);
+  assert(tags[0] === v, `index.html says ${tags[0]}, version.json says ${v}`);
+});
+
 let failed = 0;
 for (const { name, fn } of tests) {
   try { fn(); console.log(`✓ ${name}`); } catch (e) { console.error(`✗ ${name}: ${e.message}`); failed++; }
