@@ -374,6 +374,11 @@ const Pathways = (() => {
             list.append(li);
           }
         });
+        if (info.interview && typeof Guides !== 'undefined') {
+          const li = el('li');
+          li.append(Guides.interviewKit(info.interview, info.interviewQuestions));
+          list.append(li);
+        }
         reveal(false, info.groups.length > 0);
       }
       return { box, show, preview, aside };

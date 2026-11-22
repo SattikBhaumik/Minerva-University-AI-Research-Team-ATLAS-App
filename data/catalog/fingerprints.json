@@ -23,6 +23,27 @@
       "kind": "pdf",
       "sha256": "244c181ef3db4dab0cdb6e506fcb67a2f617b3c618b0d3a4d317cebf205049f8",
       "notes": "policies derived from the handbook (the PDF URL changes on republish)"
+    },
+    {
+      "label": "Global Immersion",
+      "url": "https://www.minerva.edu/global-immersion",
+      "kind": "html",
+      "sha256": "f435f8ac47d0e0938bf6ec6f14165fcf15ff77973619b15d6b205b937132842b",
+      "notes": "data/catalog/rotation.json (cities, stages, partners)"
+    },
+    {
+      "label": "FAQs",
+      "url": "https://www.minerva.edu/faqs/",
+      "kind": "html",
+      "sha256": "a30293d9de4b1b29dfc3101d7415a4fdc0aaa51a9154a7e1393196e9fe4d8630",
+      "notes": "data/catalog/faq.json (re-run tools/extract_faq.py)"
+    },
+    {
+      "label": "Scholarships",
+      "url": "https://www.minerva.edu/scholarships",
+      "kind": "html",
+      "sha256": "9086a53a03d36ad0a71959c26f957f54bb581ab990fd31818d38ee8e31be8468",
+      "notes": "data/catalog/scholarships.json (names, deadlines, eligibility)"
     }
   ]
 }

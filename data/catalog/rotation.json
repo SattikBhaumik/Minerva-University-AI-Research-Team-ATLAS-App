@@ -1,0 +1,71 @@
+{
+  "readOn": "2026-11-22",
+  "note": "From Minerva's own pages (Global Immersion, Undergraduate, and dated announcements) read 2026-11-22; Minerva says locations are subject to change.",
+  "current": [
+    {
+      "year": 1,
+      "stage": "Foundation",
+      "city": "San Francisco",
+      "summary": "Build how you think. Develop habits of mind and foundational concepts. Learn to analyze, communicate, and approach problems with rigor.",
+      "partners": ["Google", "Adobe", "Gensler", "San Francisco City Government", "GLIDE", "City Hope", "826 Valencia"],
+      "examples": [
+        "Master the four Cornerstone Courses that launch your global learning journey",
+        "Complete real-world projects with leading organizations such as Google, Adobe, Gensler, and the San Francisco City Government",
+        "Habitat restoration at Alcatraz and the redwoods at Muir Woods"
+      ],
+      "source": { "label": "Minerva: Global Immersion (Stop 1); Undergraduate (Year 1 Foundation)", "url": "https://www.minerva.edu/global-immersion" }
+    },
+    {
+      "year": 2,
+      "stage": "Direction",
+      "city": "Tokyo",
+      "summary": "Apply your learning and problem solving in a new cultural and real-world context. Begin connecting ideas to action.",
+      "partners": ["The Nippon Foundation"],
+      "examples": [
+        "Dive into your major coursework, while strengthening core skills",
+        "Location-based assignments across the city in Japanese society, culture, and civic engagement",
+        "Civic projects with local organizations to tackle real-world challenges",
+        "Celebrating traditions like Exploration Day"
+      ],
+      "source": { "label": "Minerva: Global Immersion (Stop 2); Undergraduate (Year 2 Direction); Nippon Foundation partner from 2024-04-23 announcement", "url": "https://www.minerva.edu/global-immersion" }
+    },
+    {
+      "year": 3,
+      "stage": "Focus & Synthesis",
+      "city": "Buenos Aires",
+      "summary": "Deepen concentration courses, pursue a Minor, and begin your Capstone process. Lead global projects, from policy design with local government to product innovation.",
+      "partners": ["TECHO", "CIPPEC", "Urban Integration Secretariat", "NotCo"],
+      "examples": [
+        "Policy design with local government",
+        "Civic projects and volunteering with housing-focused NGOs like TECHO",
+        "Organizing the International Forum on Extreme Heat Adaptation with CIPPEC",
+        "Poverty reduction projects with the Urban Integration Secretariat under the Ministry of Social Development"
+      ],
+      "source": { "label": "Minerva: Global Immersion (Stop 3); partners CIPPEC, Urban Integration Secretariat, NotCo from 2024-09-03 announcement", "url": "https://www.minerva.edu/global-immersion" }
+    },
+    {
+      "year": 4,
+      "stage": "Focus & Synthesis",
+      "city": "A European city (not named on the current page)",
+      "summary": "Study urban diversity, sustainability, and civic innovation through advanced coursework. Complete your Capstone project, applying your learning to real-world impact.",
+      "partners": [],
+      "examples": [
+        "Complete your Capstone project, applying your learning to real-world impact",
+        "Apply for prestigious fellowships and graduate programs, joining past global alumni"
+      ],
+      "source": { "label": "Minerva: Global Immersion (Stop 4: A European City; past cities include Berlin and London)", "url": "https://www.minerva.edu/global-immersion" }
+    }
+  ],
+  "pastCities": [
+    { "city": "Berlin", "when": "Named as a past European city on the current Global Immersion page; listed in the 2024-04-23 release", "source": { "label": "Minerva: Global Immersion", "url": "https://www.minerva.edu/global-immersion" } },
+    { "city": "London", "when": "Named as a past European city on the current Global Immersion page; listed as recent and current on the Experience Global Immersion page", "source": { "label": "Minerva: Global Immersion", "url": "https://www.minerva.edu/global-immersion" } },
+    { "city": "Seoul", "when": "Listed in the 2024-04-23 release; not on the current Global Immersion page", "source": { "label": "Minerva: Tokyo announcement (2024-04-23)", "url": "https://www.minerva.edu/announcements/minerva-university-announces-plans-to-include-tokyo-into-its-global-rotation-program" } },
+    { "city": "Taipei", "when": "Listed in the 2024-04-23 release; not on the current Global Immersion page", "source": { "label": "Minerva: Tokyo announcement (2024-04-23)", "url": "https://www.minerva.edu/announcements/minerva-university-announces-plans-to-include-tokyo-into-its-global-rotation-program" } },
+    { "city": "Hyderabad", "when": "Originally offered in 2018; relaunched as an undergraduate rotation city on 2026-02-04 with T-Hub as central partner", "source": { "label": "Minerva: Hyderabad relaunch (2026-02-04)", "url": "https://www.minerva.edu/announcements/minerva-university-relaunches-hyderabad-as-global-rotation-city-for-undergraduates" } }
+  ],
+  "conflicts": [
+    { "what": "Which cities are in the rotation", "detail": "The current Global Immersion page names San Francisco, Tokyo, Buenos Aires and A European City (Berlin and London as past cities). The 2024-04-23 release lists San Francisco, Berlin, Buenos Aires, Hyderabad, Seoul, Taipei and Tokyo. The Experience Global Immersion page lists recent and current cities as San Francisco, Berlin, Buenos Aires, Hyderabad, London, Seoul and Taipei (no Tokyo) and refers to Fall 2025 applications, so it is older." },
+    { "what": "Hyderabad", "detail": "Not on the current Global Immersion page. The 2026-02-04 release relaunches it as an undergraduate rotation city (T-Hub partner) without saying which year or stop it fills." },
+    { "what": "Years 3 and 4", "detail": "The Undergraduate page groups Years 3 & 4 as Focus & Synthesis (Buenos Aires & a European Experience) without saying which city is which year; the Global Immersion page orders Buenos Aires as Stop 3 and a European city as Stop 4. Year assignment here follows the Stop order." }
+  ]
+}

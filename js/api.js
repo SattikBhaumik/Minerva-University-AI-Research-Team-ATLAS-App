@@ -74,6 +74,18 @@ const API = (() => {
     return get('data/catalog/calendar.json', { v: ASSET_VERSION });
   }
 
+  // Minerva's four-year rotation, FAQ and listed scholarships, as read
+  // from minerva.edu (data/catalog/rotation.json, faq.json, scholarships.json).
+  async function getRotation() {
+    return get('data/catalog/rotation.json', { v: ASSET_VERSION });
+  }
+  async function getFaq() {
+    return get('data/catalog/faq.json', { v: ASSET_VERSION });
+  }
+  async function getScholarships() {
+    return get('data/catalog/scholarships.json', { v: ASSET_VERSION });
+  }
+
   async function getPathways() {
     return get('data/pathways.json', { v: ASSET_VERSION });
   }
@@ -96,6 +108,9 @@ const API = (() => {
     getLatestVersion,
     getCatalog,
     getCalendar,
+    getRotation,
+    getFaq,
+    getScholarships,
     version: ASSET_VERSION,
   };
 })();

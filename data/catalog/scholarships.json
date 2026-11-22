@@ -1,0 +1,234 @@
+{
+  "readOn": "2026-11-22",
+  "source": {
+    "label": "Minerva University: Scholarships to Support Your Minerva Education",
+    "url": "https://www.minerva.edu/scholarships"
+  },
+  "note": "Minerva lists these external scholarships; they are run by other organizations.",
+  "items": [
+    {
+      "name": "Masason Foundation",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: January",
+      "eligibility": "For exceptionally gifted youth of any nationality",
+      "url": "https://masason-foundation.org/en/"
+    },
+    {
+      "name": "Sasakawa Peace Foundation Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": null,
+      "eligibility": "For Japanese students, including U.S. students who hold Japanese nationality",
+      "url": "https://scholarship.spf.org/en"
+    },
+    {
+      "name": "Barry Goldwater Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: January 26",
+      "eligibility": "STEM undergrad",
+      "url": "https://goldwaterscholarship.gov"
+    },
+    {
+      "name": "Morehead-Cain Scholarship (UNC)",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: October (via Nomination)",
+      "eligibility": "Top merit at UNC",
+      "url": "https://www.moreheadcain.org"
+    },
+    {
+      "name": "Jefferson Scholarship (UVA)",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: December (via Nomination)",
+      "eligibility": "Top merit at UVA",
+      "url": "https://www.jeffersonscholars.org"
+    },
+    {
+      "name": "YoungArts Competition",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: October 13",
+      "eligibility": "Arts, performance",
+      "url": "https://www.youngarts.org"
+    },
+    {
+      "name": "Prudential Emerging Visionaries",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: November 03",
+      "eligibility": "Social-impact youth leaders",
+      "url": "https://www.prudential.com/emergingvisionaries"
+    },
+    {
+      "name": "DREAM.US Opportunity Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: February 28",
+      "eligibility": "Undocumented, need",
+      "url": "https://www.thedream.us"
+    },
+    {
+      "name": "McDonald’s HACER National Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: February 06",
+      "eligibility": "Hispanic students",
+      "url": "https://www.mcdonalds.com/hacer"
+    },
+    {
+      "name": "APIA Scholars",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: January 09",
+      "eligibility": "Asian/Pacific Islander students",
+      "url": "https://www.apiascholars.org"
+    },
+    {
+      "name": "Lockheed Martin STEM Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: April 01",
+      "eligibility": "STEM, need, U.S. citizen",
+      "url": "https://www.lockheedmartin.com/scholarship"
+    },
+    {
+      "name": "Amazon Future Engineer Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: December 15",
+      "eligibility": "Computer science, need",
+      "url": "https://www.amazonfutureengineer.com"
+    },
+    {
+      "name": "Generation Google Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: December 05",
+      "eligibility": "CS, diversity",
+      "url": "https://buildyourfuture.withgoogle.com"
+    },
+    {
+      "name": "Equitable Excellence Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: December 17",
+      "eligibility": "Leadership, impact",
+      "url": "https://equitable.com/foundation/equitable-excellence-scholarship"
+    },
+    {
+      "name": "Taco Bell Live Más Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: January 03",
+      "eligibility": "Passion-driven, video",
+      "url": "https://www.livemasscholarship.com"
+    },
+    {
+      "name": "Cameron Impact Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: September 05",
+      "eligibility": "Academics + service",
+      "url": "https://www.bryancameroneducationfoundation.org"
+    },
+    {
+      "name": "QuestBridge National College Match",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: September 26",
+      "eligibility": "Low-income, high-achieving",
+      "url": "https://www.questbridge.org"
+    },
+    {
+      "name": "Coolidge Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: February 23",
+      "eligibility": "Academic merit (juniors)",
+      "url": "https://coolidgescholars.org"
+    },
+    {
+      "name": "Hispanic Scholarship Fund",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: February 15",
+      "eligibility": "Hispanic students",
+      "url": "https://www.hsf.net"
+    },
+    {
+      "name": "Ron Brown Scholar Program",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: January 09",
+      "eligibility": "African-American leaders",
+      "url": "https://www.ronbrown.org"
+    },
+    {
+      "name": "GE Reagan Foundation Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: January 05",
+      "eligibility": "Leadership, integrity",
+      "url": "https://www.reaganfoundation.org"
+    },
+    {
+      "name": "Elks Most Valuable Student Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: November 14",
+      "eligibility": "Leadership & service",
+      "url": "https://www.elks.org/scholars/scholarships/mvs.cfm"
+    },
+    {
+      "name": "The Gates Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: September 15",
+      "eligibility": "Minority, low-income",
+      "url": "https://www.thegatesscholarship.org"
+    },
+    {
+      "name": "Coca-Cola Scholars Program",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: October 31",
+      "eligibility": "Leadership & service",
+      "url": "https://www.coca-colascholarsfoundation.org/apply"
+    },
+    {
+      "name": "Jack Kent Cooke College Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: November 16",
+      "eligibility": "High-achieving, low-income",
+      "url": "https://www.jkcf.org/our-scholarships/college-scholarship-program"
+    },
+    {
+      "name": "Davidson Fellows Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: February 14",
+      "eligibility": "Significant project under 18",
+      "url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship"
+    },
+    {
+      "name": "Horatio Alger National Scholarship",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: March 15",
+      "eligibility": "Resilient, financial need",
+      "url": "https://www.horatioalger.org/scholarships"
+    },
+    {
+      "name": "National Merit Scholarship Program",
+      "provider": null,
+      "deadline": null,
+      "deadlineText": "Deadline: September (by School)",
+      "eligibility": "Top PSAT/NMSQT performers",
+      "url": "https://www.nationalmerit.org"
+    }
+  ]
+}

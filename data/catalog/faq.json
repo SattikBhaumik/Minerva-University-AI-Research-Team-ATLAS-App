@@ -1,0 +1,655 @@
+{
+  "readOn": "2026-11-22",
+  "source": {
+    "label": "Minerva University FAQs",
+    "url": "https://www.minerva.edu/faqs/"
+  },
+  "categories": [
+    {
+      "name": "About Minerva University",
+      "items": [
+        {
+          "q": "Where is Minerva University based?",
+          "a": "Minerva University is based in San Francisco, California. The university operates over several global cities where students reside during their undergraduate program. Past and current rotation cities include Berlin, Buenos Aires, Hyderabad, San Francisco, Seoul, Taipei, and Tokyo.",
+          "links": []
+        },
+        {
+          "q": "What makes Minerva University the #1 most innovative university in the world?",
+          "a": "Minerva University was named the #1 most innovative university in the world for five consecutive years by World University Rankings for Innovation (WURI). Our unique pedagogical approach based on the science of learning and powered by our technology-driven learning environment, our global immersion program, our rigorous admissions process, and, most of all, our commitment to continuous innovation and improvement is what drives our innovation ranking. Read more about the title or watch this video about what makes Minerva the most innovative university in the world.",
+          "links": [
+            "https://www.wuri.world/wuri-ranking-2024",
+            "https://www.minerva.edu/announcements/minerva-university-named-worlds-most-innovative-university-for-fourth-consecutive-year/",
+            "https://www.youtube.com/watch?v=P1wk0Y-OfGw"
+          ]
+        },
+        {
+          "q": "What is Minerva University?",
+          "a": "Minerva University, headquartered in San Francisco, California, is a Western Association of Schools and Colleges/Senior College and University Commission (WSCUC) accredited higher education institution that offers both a full-time undergraduate program and a part-time graduate program. Minerva is committed to providing a transformative educational experience, allowing the brightest and most motivated students from around the world to become leaders, critical thinkers, and global citizens. Ranked as the world’s most innovative university by World’s University Rankings for Innovation (WURI), Minerva offers a reinvented curriculum, a digital learning environment paired with project-based, experiential learning, and an immersive global experience in several global cities.",
+          "links": [
+            "https://www.minerva.edu/accreditation/",
+            "https://www.wuri.world/wuri-ranking-2024"
+          ]
+        },
+        {
+          "q": "How is Minerva University different from other undergraduate programs?",
+          "a": "Key Minerva distinguishers include:\n- A rigorous, engaging, and hands-on curriculum based on the science of learning\n- Accomplished faculty focused on student instruction\n- Four years of global cultural immersion\n- Small seminar classes with fewer than 23 students\n- An advanced, interactive learning environment\n- Mentorship-focused career support services",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Admissions at Minerva",
+      "items": [
+        {
+          "q": "Who can I contact if I have more admissions related questions?",
+          "a": "You can contact our Admissions team at admissions@minerva.edu.",
+          "links": [
+            "mailto:admissions@minerva.edu"
+          ]
+        },
+        {
+          "q": "Does Minerva offer a graduate program?",
+          "a": "Yes. Minerva offers the Master of Science in Decision Making and Applied Analytics (MDA) and graduate Certificate in Decision Making and Applied Analytics (CDA). For more information, visit our Graduate Programs webpage. We also offer Executive Education for professionals with 10+ years of experience.",
+          "links": [
+            "https://www.minerva.edu/graduate/"
+          ]
+        },
+        {
+          "q": "How old do I need to be to apply?",
+          "a": "Applicants must be over the age of 16 in order to apply.",
+          "links": []
+        },
+        {
+          "q": "Does Minerva accept home-schooled students? Are there any special guidelines for those students?",
+          "a": "Yes. Minerva accepts home-schooled students. All students must have completed the requirements to earn a high school diploma (or the international equivalent). Please email admissions@minerva.edu with any questions about the academic documents required.",
+          "links": []
+        },
+        {
+          "q": "Am I able to transfer credits from another institution?",
+          "a": "Transfer students will be able to transfer up to thirty two (32) credits that count toward select majors, pending faculty approval. Transferred credits are at the discretion of the Registrar under the guidance of the Provost. If you are admitted to Minerva and would like to transfer credits from completed university courses, you must submit a description of each course and the grades you received.",
+          "links": []
+        },
+        {
+          "q": "What admissions criteria does Minerva use to select its students?",
+          "a": "Minerva is looking for the brightest and most motivated students from around the world. We screen for strong intellectual and leadership background, analytical capabilities, creativity, and strength of character. For more information, please visit our admissions page.",
+          "links": [
+            "https://www.minerva.edu/undergraduate/admissions/"
+          ]
+        },
+        {
+          "q": "Does Minerva accept transfer students?",
+          "a": "Yes. Minerva does accept transfer students. Students who transfer to Minerva may transfer up to thirty two (32) units of credit at the discretion of the Registrar under the guidance of the Provost. This pathway allows eligible students to apply prior college credit towards a Minerva degree and graduate in three years, without compromising the Minerva learning model.",
+          "links": []
+        },
+        {
+          "q": "When is the application deadline?",
+          "a": "Minerva offers multiple admission cycles for students who would like to start in the Fall semester each year. Students can submit only one application per academic year. Review the current application deadlines here.",
+          "links": [
+            "https://www.minerva.edu/graduate/admissions/#Admissions-Cycles"
+          ]
+        },
+        {
+          "q": "Who can apply to Minerva?",
+          "a": "Minerva University offers a four-year undergraduate program. We accept applications from all students who have completed high school (or the international equivalent) and have or are expecting to receive a high school diploma before beginning their studies at Minerva in the fall semester. We also offer a Master of Science in Decision Making and Applied Analytics (MDA), a first-of-its-kind program designed specifically to prepare twenty-first-century leaders to make consequential decisions. This program is designed for highly motivated post-bachelor’s students looking to accelerate their careers. We also offer the World Wise Executive Leadership program for professionals with 10 or more years of experience.",
+          "links": [
+            "https://www.minerva.edu/undergraduate/",
+            "https://www.minerva.edu/faqs/#",
+            "https://www.minerva.edu/graduate/mda/"
+          ]
+        },
+        {
+          "q": "Does Minerva require students to be fluent in English?",
+          "a": "Yes. All classes at Minerva are conducted in English, so students must be fluent in written and spoken English to be successful. We measure an applicant's English fluency in our application.",
+          "links": []
+        },
+        {
+          "q": "What is the Binding Enrollment option?",
+          "a": "By choosing to make your decision binding, you will receive an expedited admissions notification within four weeks of submitting your completed application. Choosing the Binding Enrollment option formally designates that Minerva is your top choice. If admitted, you are committed to paying your enrollment deposit within 10 days of receiving your admissions notification and agree to withdraw any applications to other institutions. You can only apply binding during the Early Action cycle. You must also apply for Financial Aid within 5 days of submitting your application.\n‍\nNote: Minerva University reserves the right to remove the binding option from a student's application if further review is required before making a final decision.",
+          "links": []
+        },
+        {
+          "q": "Is there an application fee?",
+          "a": "No, there is no application fee to apply to Minerva University.",
+          "links": []
+        },
+        {
+          "q": "Is it possible to be a part-time student at Minerva?",
+          "a": "Minerva does not offer a part-time undergraduate program. The graduate and executive education programs are offered in a part-time format to meet the needs of the working professionals in those programs.",
+          "links": []
+        },
+        {
+          "q": "Does Minerva accept standardized test scores?",
+          "a": "Minerva does not require standardized test scores such as the ACT or SAT. You may submit your test scores while completing Minerva’s application, but they are optional.",
+          "links": []
+        },
+        {
+          "q": "Can students apply for mid-year enrollment?",
+          "a": "No. New student enrollment is strictly reserved for the beginning of the academic year in the Fall.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Minerva’s Undergraduate Application Process",
+      "items": [
+        {
+          "q": "Can I change the information in my application after I have clicked submit?",
+          "a": "You are encouraged to thoroughly review your details before you submit your application. If the information you have submitted changes (for example, your address), please send an email to admissions@minerva.edu with the following in the subject line: “Application Updates for [Your Full Name].” Note: it is important you send this email using the same email address you used to submit your application. In the body of the email, you should describe the changes you would like to make and explain why you are making them.",
+          "links": []
+        },
+        {
+          "q": "Can I save the application and complete it later?",
+          "a": "Yes. The application includes the ability to save and resume. You can log in to resume your saved application at www.minerva.edu/application/login/. However, once you begin a timed challenge, you must complete it in one sitting.",
+          "links": [
+            "http://www.minerva.edu/application/login/"
+          ]
+        },
+        {
+          "q": "How much time will I need to submit the online application?",
+          "a": "You will need approximately 5-10 minutes to complete Part One. After you complete this step, you will be invited to a customized Admission Center where you will have access to all other sections of the admissions process, including a set of challenges, transcripts, and accomplishments. You can expect the challenges to take approximately 2 hours to complete.",
+          "links": []
+        },
+        {
+          "q": "What should I do if I have technical issues during the challenges?",
+          "a": "If you experience technical issues at any point during the admissions process, please email admissions@minerva.edu with a detailed description of the problem and attach screenshots.",
+          "links": []
+        },
+        {
+          "q": "Can you describe Minerva’s application process?",
+          "a": "Our unique three-part admissions process focuses on who you are, how you think, and what you have achieved. Part 1 is the basic application form, Part 2 is a series of challenges, and Part 3 is your past accomplishments and academic performance. For more information, visit our admissions page.",
+          "links": [
+            "https://www.minerva.edu/undergraduate/admissions/"
+          ]
+        },
+        {
+          "q": "How do I know that Minerva received my application?",
+          "a": "Applicants receive an email confirmation within 24 hours of submitting an application. If you did not receive this confirmation in your inbox and have checked your spam folder, email admissions@minerva.edu. To help us quickly identify your application, please send this email using the email address you used in the application.",
+          "links": []
+        },
+        {
+          "q": "What if I require special accommodations for completing the application?",
+          "a": "If you have a disability that may affect your ability to complete the application, please email disabilityservices@minerva.edu before completing any timed portions of the admissions process. To read more about accommodations at Minerva, please read our Provision of Services.",
+          "links": [
+            "https://www.minerva.edu/resources/disability/"
+          ]
+        },
+        {
+          "q": "Why do you need my high school counselor or school official’s contact information?",
+          "a": "Like other universities, we will review your school transcript as part of our evaluation process. Depending on the education system in your country, this might be a document verifying your final grades from high school, or your final examination or national test results. Although we request an unofficial transcript from you early on, we also require a counselor or other school official to verify the validity of these documents.",
+          "links": []
+        },
+        {
+          "q": "I applied to Minerva before. May I apply again?",
+          "a": "You may only apply once per academic year. If you decide to reapply, you will still be required to complete the full admissions process.",
+          "links": []
+        },
+        {
+          "q": "How important is it for me to provide an email address in my application?",
+          "a": "To apply to Minerva, we require applicants to provide an email address. We will regularly send information regarding updates on Minerva, information on your admissions status and follow-up steps, and region-specific event notifications using the email address you provide in the admissions application. We recommend that you provide an email address that is both functional and personal. If you do not have one, we recommend you create an account. There are numerous free and popular email clients.",
+          "links": []
+        },
+        {
+          "q": "Can I apply through the Common Application?",
+          "a": "Yes. Undergraduate applicants may apply to Minerva through the Common Application but are still required to complete additional steps specific to the Minerva application. Within 48 hours of completing the Common Application, you will receive an email inviting you to continue the process and outlining what next steps are. Your application will not be reviewed until all required steps, after submitting the Common Application, are complete.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Receiving an Admissions Decision",
+      "items": [
+        {
+          "q": "Does Minerva University have a waitlist for admissions?",
+          "a": "Yes, Minerva University utilizes a waitlist for admissions. This allows us to provide opportunities to more students as spaces become available.",
+          "links": []
+        },
+        {
+          "q": "What is the enrollment deadline?",
+          "a": "The enrollment deadline for all cycles is May 1. However, if you selected the binding enrollment option, you are required to enroll within 10 days of your admission notification date. If you are offered a spot after being waitlisted, your enrollment deadline will be specified in the email you receive.",
+          "links": []
+        },
+        {
+          "q": "How do I enroll at Minerva?",
+          "a": "Upon admission to Minerva, you will receive access to your personalized Enrollment Center. From there you, along with a parent or guardian if you are under 18, will sign the Enrollment Agreement. Once you sign the agreement, you will be able to pay the enrollment deposit of $500. When these steps are finalized, your enrollment at Minerva will be complete.",
+          "links": []
+        },
+        {
+          "q": "Can students admitted to Minerva defer enrollment?",
+          "a": "When applying to Minerva, you should indicate the year that you expect to matriculate in your online admissions application. Admitted students interested in deferring their enrollment can petition to defer. They must first fully enroll to reserve their place at Minerva. Students have until June 15 to file a petition to defer their matriculation to a future year. Deferrals are generally granted for significant educational, professional, or personal opportunities, such as: internships, military service or other comparable gap-year experiences that students have already committed to prior to enrolling. Deferrals are not approved solely for financial aid or affordability reasons. In the deferral form you will be required to explain your plans during the gap year and attach proof that you will not be attending another accredited university.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Waiting List",
+      "items": [
+        {
+          "q": "I joined the waitlist but no longer want to be considered for admission by Minerva University. What should I do?",
+          "a": "If you are on the active waitlist and no longer wish to be, please email enroll@minerva.edu to request to be withdrawn from the waitlist.",
+          "links": []
+        },
+        {
+          "q": "If I am on the waitlist, should I send a letter of continued interest or updates to my academic record in order to improve my chances?",
+          "a": "If there has been a significant change, such as in your academic record, since you first submitted your application, you may provide updated information by emailing enroll@minerva.edu.",
+          "links": [
+            "mailto:enroll@minerva.edu"
+          ]
+        },
+        {
+          "q": "What if I was waitlisted but I applied binding?",
+          "a": "If you applied binding and were waitlisted, you were released from that agreement and the 10-day enrollment decision requirement no longer applies. If you are offered admission off the waitlist your letter of admission will include the deadline by which you are required to enroll.",
+          "links": []
+        },
+        {
+          "q": "If I am offered admission from the waitlist, how long will I have to make my decision to enroll?",
+          "a": "Students who are offered admission from the waitlist will have until May 1 to commit to Minerva University. If they are offered admission after this date, they will have five days from the date of notification to commit to Minerva University and pay a $500 enrollment deposit to secure their place in the class.",
+          "links": []
+        },
+        {
+          "q": "When can I expect to hear back from Minerva University regarding the waitlist?",
+          "a": "We anticipate being in touch with waitlisted candidates beginning in early May. We will communicate with students on the active waitlist frequently in order to provide updates. If you have any further questions or need assistance, please contact our admissions team at enroll@minerva.edu.",
+          "links": []
+        },
+        {
+          "q": "What steps do I need to take to be on the waitlist?",
+          "a": "Students who are offered the option of joining the active waitlist must confirm their interest in joining the list no later than May 1. Instructions on how to join the waitlist are outlined in the decision letter. Only students who take action by this date will continue to be considered for admission.",
+          "links": []
+        },
+        {
+          "q": "What is my admission decision if I am on the waitlist?",
+          "a": "Students on the waitlist have not had a final decision made on their application to Minerva University. Instead, we have opted to defer their decision in order to allow the student to remain under consideration. All students will receive a final decision on their application no later than July 1.",
+          "links": []
+        },
+        {
+          "q": "How does the Minerva University waitlist work?",
+          "a": "The waitlist is a tool we use to offer admission to qualified students if spots become available after the initial decision deadline. Applicants on the waitlist are not guaranteed admission but remain in consideration.",
+          "links": []
+        },
+        {
+          "q": "Does Minerva University have a waitlist for admissions?",
+          "a": "Yes, Minerva University utilizes a waitlist for admissions. This allows us to provide opportunities to more students as spaces become available.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Paying for School (Undergraduate)",
+      "items": [
+        {
+          "q": "Does Minerva cover the costs of flights to and from different residence hall locations or to and from a student’s home country?",
+          "a": "Minerva does not cover the costs of flights between residence hall locations or to and from your home country. Like most other universities, these costs, along with books, student services, and insurance, are additional. For more information on estimated costs, please visit the Tuition & Fees page.",
+          "links": [
+            "https://www.minerva.edu/undergraduate/tuition-fees/"
+          ]
+        },
+        {
+          "q": "What is Minerva’s undergraduate tuition?",
+          "a": "Tuition information, as well as current student estimated costs and fees, can be found on our undergraduate Tuition & Fees page.",
+          "links": [
+            "https://www.minerva.edu/undergraduate/tuition-fees/"
+          ]
+        },
+        {
+          "q": "What are housing and other costs that students will be expected to pay in the first year?",
+          "a": "In addition to the Tuition and Student Services Fees, students are required to pay an annual housing fee, which includes room and board in each rotation city. Minerva estimates miscellaneous expenses, such as food, transportation, books, and supplies, to be approximately $5,000-$6,000 per year. These other expenses are not paid directly to Minerva and are dependent on personal lifestyle choices. In addition, all students are required to submit a one-time security deposit of $1,000 to cover any damages to a residence hall caused by students, excess cleaning costs in housing, unpaid invoices at the end of each year, and any other expenses incurred on behalf of a student by Minerva.",
+          "links": [
+            "https://www.minerva.edu/undergraduate/tuition-fees/"
+          ]
+        },
+        {
+          "q": "Are technology costs, including a computer, included in the fees?",
+          "a": "Technology support costs are included in the Residential Services fees. However, you are required to supply a laptop and headset that meet the requirements for use of our learning management system. Though not mandatory, we also recommend purchasing a graphic drawing tablet.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Applying for Undergraduate Financial Aid",
+      "items": [
+        {
+          "q": "How do I know my application was submitted or reviewed?",
+          "a": "After you click submit on each section your application will turn completely yellow. If you asked for a section to be reopened or received a flag from a financial aid representative that section will turn red and continue to stay red. Green sections mean that the financial aid team is actively reviewing or has reviewed your application.",
+          "links": []
+        },
+        {
+          "q": "If I miss my deadline, can I request an extension?",
+          "a": "No, we do not provide deadline extensions.",
+          "links": []
+        },
+        {
+          "q": "Do I need to supply my parents’ financial information in the financial aid center or CSS profile if I am a self-supporting student?",
+          "a": "Yes. When awarding aid, Minerva requires parental financial information for all students, with very few exceptions. All responses in the CSS profile, as well as on the supporting documents provided, refer to parent, not student financial information. As a general rule, a student is considered independent for financial aid consideration if she/he/they is or has at least one of the following: is at least 26 years old as of January 1 of the first academic year, is married, has a legal dependent other than a spouse, or is an orphan or ward of the court (or was a ward of the court until age 18). If none of the above applies, the student is considered a dependent and must provide parent information in the CSS profile and the financial aid center.",
+          "links": []
+        },
+        {
+          "q": "Do I need to submit the FAFSA?",
+          "a": "No. Minerva determines each family’s level of need using the information provided in your CSS profile and supporting documents.",
+          "links": []
+        },
+        {
+          "q": "Do you provide CSS fee waivers?",
+          "a": "No. Minerva does not provide fee waivers for the CSS Profile.",
+          "links": []
+        },
+        {
+          "q": "Do I need to supply both the CSS profile and Financial Aid Center?",
+          "a": "Yes, both items are required to be submitted by the financial aid deadline stated in the financial aid center portal.",
+          "links": [
+            "https://www.minerva.edu/financial-aid-center/"
+          ]
+        },
+        {
+          "q": "Is Minerva University “need based” or “need aware”?",
+          "a": "Financial Aid at Minerva University is need aware. This means that while we don’t necessarily make admissions decisions solely based on a student’s family’s ability to pay for their education, we do take the level of need into consideration when making final recommendations for admission.",
+          "links": []
+        },
+        {
+          "q": "If I qualify for aid, how much assistance will I receive?",
+          "a": "Minerva's financial aid is determined by your Expected Family Contribution (EFC). The process involves assessing your application, documents, and available funds. If you qualify, a package is offered, starting with a loan. Additional aid may include work-study and, if needed, a scholarship. No full rides are offered; all students pay a base EFC each semester in addition to fees for flights, visas, taxes, and health insurance.",
+          "links": []
+        },
+        {
+          "q": "When is the Financial Aid deadline?",
+          "a": "The financial aid deadline is tied to the cycle in which the student applies to Minerva University. Students must submit all necessary documentation by the deadline in order to receive a financial aid determination. For the current application deadlines, please consult the Financial Aid page. Binding Enrollment applicants must apply during Early Action and complete the financial aid application within five days of submitting their application. Regardless of which cycle you apply in, binding or not binding, applications are due midnight US Pacific Time (PST) of the deadline stated in the student’s financial aid center.",
+          "links": [
+            "https://www.minerva.edu/undergraduate/financial-aid/"
+          ]
+        },
+        {
+          "q": "What supporting documents are required to apply for financial aid?",
+          "a": "In addition to completing the CSS Profile and Minerva’s Financial Aid Questionnaire, all applicants are asked to upload the following documents to their Financial Aid Center: (1) most recent Tax Returns and records of earned income W-2 forms for both parents or the foreign country equivalent (income statements or letter of employment stating monthly salary). (2) Parents’ bank statements covering the last 12 months for each account held in their names (checking, savings, investment, etc.). (3) 3 months of income statements from the parent(s)’ employer or self made earnings. These records are stored securely, are confidential, and are used only for the purpose of determining financial aid awards.",
+          "links": []
+        },
+        {
+          "q": "What information do the bank statements need to include?",
+          "a": "Itemized bank statements should show the account holder’s name, the date range that is covered by the statement, and the total amount of money available. Bank statements are required for all accounts held in each parent's name (checking, savings, investment, etc.). Documents should also include any explanations for larger than average expenses for the last 12 months.",
+          "links": []
+        },
+        {
+          "q": "I am an international student; do I still need to complete the CSS profile?",
+          "a": "Yes. In order to apply for financial aid, whether based in the U.S. or internationally, you are required to submit a CSS profile, as well as supporting financial documents in your Financial Aid Center.",
+          "links": []
+        },
+        {
+          "q": "Do I have to provide information for my non-custodial parent?",
+          "a": "Yes. Even if your non-custodial parent is not offering to contribute to funding your education, Minerva requires him/her to fill out the non-custodial parent form. If you no longer have contact with your non-custodial parent you can access an NCP form by selecting that parents are divorced/separated in the initial financial aid center window when you first log in.",
+          "links": []
+        },
+        {
+          "q": "Are international students eligible for financial aid?",
+          "a": "All students, regardless of citizenship, are eligible to apply for financial aid. Minerva offers financial aid packages to qualified individuals based on demonstrated need, merit, and the availability of scholarship funds in the form of loans, work-study, and scholarships. Learn more about Financial Aid at Minerva.",
+          "links": [
+            "https://assets.website-files.com/64ca995f0fd30a33b2fd01cc/6513206f0c1737954501fab0_FinancingYourEducation_09262023.pdf"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paying for School (Graduate and Executive Education)",
+      "items": [
+        {
+          "q": "Do you offer financial aid for the graduate or executive education programs?",
+          "a": "No. We do not offer financial aid for our graduate or executive education programs.",
+          "links": []
+        },
+        {
+          "q": "What is Minerva’s tuition for the World Wise Executive Leadership program?",
+          "a": "Tuition information, and other estimated costs and fees, can be found on the Executive Education tuition page.",
+          "links": [
+            "https://www.minerva.edu/exec-ed/ tuition-finance"
+          ]
+        },
+        {
+          "q": "What is Minerva’s tuition for the Graduate program?",
+          "a": "Tuition information, and other estimated costs and fees, can be found on our Graduate tuition page.",
+          "links": [
+            "https://www.minerva.edu/graduate/tuition-finances"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Academics",
+      "items": [
+        {
+          "q": "How is Minerva’s way of teaching unique?",
+          "a": "The Minerva learning platform and Minerva’s pedagogy have been intentionally built to incorporate the science of learning and to ensure successful student learning outcomes. By teaching in this format, we ensure that each class will be small, highly interactive, and student-oriented. Classes are taught by fully qualified faculty members and are designed to be highly engaging and thought-provoking. In addition, the learning platform also allows us to collect data on your performance during each session, which provides rapid feedback—helping you to learn more effectively.",
+          "links": []
+        },
+        {
+          "q": "What makes Minerva’s interactive learning environment better than a traditional classroom?",
+          "a": "The Minerva learning platform uses the latest advances in information technology, which when combined with our pedagogy, provides an engaging class experience that is unmatched. Live, video-based seminars enhance student-to-professor and peer-to-peer interactions by ensuring that everyone is visibly engaged and actively participating. The platform also facilitates numerous rapid mode changes, including moving from full group discussion to smaller breakout groups, one-on-one and team debates, collaborative document sharing and editing, as well as dynamic polling and real-time simulations. The platform’s asynchronous tools provide powerful capabilities for students and professors alike, by enabling deeper and more frequent data-rich feedback, schedule and assignment management, and searchable review of prior class footage.",
+          "links": []
+        },
+        {
+          "q": "I am currently taking AP exams or college-level courses while in high school. Can I place outside of entry-level courses?",
+          "a": "While Minerva does accept transfer credit for college level courses, we do not accept AP exams for credit at this time.",
+          "links": []
+        },
+        {
+          "q": "A lot of schools talk about critical thinking. Can you talk specifically about how you teach students to think?",
+          "a": "Minerva intentionally teaches students the habits of mind (cognitive skills that become automatic) and foundational concepts (knowledge that can be built upon) that underlie four core competencies required of leaders and innovators: the abilities to think critically, think creatively, communicate effectively, and interact effectively. We teach you these skills systematically and intentionally in the first-year Cornerstone courses and then students reinforce these skills by using them in upper-division course assignments, as they immerse themselves in each city and pursue project-based learning opportunities.",
+          "links": []
+        },
+        {
+          "q": "How does Minerva support students interested in the arts (both visual and musical), if at all? Can I major or minor in these areas?",
+          "a": "There are a variety of opportunities for students to engage in performing and visual arts. In each city, students can join performance groups, create arts student initiatives, engage in projects with civic partners affiliated with arts and humanities (e.g., students in San Francisco have engaged with San Francisco Opera and Burning Man), and study visual arts alongside local artists. We also have partnerships with local performing arts centers so that our students can engage and learn from community members. Students can major or minor in the Arts & Literature track.",
+          "links": []
+        },
+        {
+          "q": "Can I do a double major or double concentration?",
+          "a": "Yes. You may choose either to double major or do a double concentration. Explore our majors and courses.",
+          "links": [
+            "https://www.minerva.edu/majors"
+          ]
+        },
+        {
+          "q": "How do office hours work? Are any of our professors available in person?",
+          "a": "Professors hold regular office hours on Minerva’s interactive learning platform. You can also contact them for individual appointments. Each year, multiple faculty members travel to the various rotation cities to work in person with students studying in those cities. It is very likely that you will meet many faculty members in person prior to graduation.\n‍",
+          "links": []
+        },
+        {
+          "q": "What is the academic calendar like? When do Minerva students get breaks?",
+          "a": "Please visit our Academic Calendar here.",
+          "links": [
+            "https://www.minerva.edu/academic-calendar"
+          ]
+        },
+        {
+          "q": "Will students be sitting together around a table and watching a video of the professor or will students be in their dorm rooms? What is the physical location of the classes?",
+          "a": "There is no specific required physical location for attending a class as long as it is an environment with high-speed internet where you can follow classes attentively. You can therefore be in your dorm room, in the student lounge, at a local cafe, or local library while attending classes in real-time. Students often take classes physically together, but this is not a requirement.",
+          "links": []
+        },
+        {
+          "q": "Will I have an academic advisor?",
+          "a": "Yes, all undergraduate students are assigned an advisor.",
+          "links": []
+        },
+        {
+          "q": "If I want to take a class not offered at Minerva, can I cross-register at a local university?",
+          "a": "You may be able to take classes at a local university, but it is up to the discretion of the Registrar under the guidance of the Provost whether the credits earned at any other institution will be formally accepted at Minerva. Please note that only a maximum of thirty two (32) credits can be transferred from another institution to Minerva.",
+          "links": []
+        },
+        {
+          "q": "Do all classes take place online?",
+          "a": "Minerva’s undergraduate program is first and foremost a residential program. All academic classes are synchronous and take place live in real-time via our learning platform. All of Minerva’s classes are seminars of 23 students or fewer and are “face-to-face” on the computer screen (e.g., the equivalent of giving each student a front-row seat).There are also opportunities for civic projects and location based assignments.\n‍",
+          "links": []
+        },
+        {
+          "q": "I can’t find the major I’m most interested in studying on your list of concentrations. Can I create my own major?",
+          "a": "The current list of majors and concentrations is available on the Majors and Concentrations webpage. Individualized majors are not possible, but the combination of concentrations and the ability to do an approved special concentration provides flexibility. The existing majors and associated concentrations are highly interdisciplinary and are appropriate for a wide variety of career paths. Moreover, the Capstone project and unique tutorials allow students to focus precisely on their own topics of interest.",
+          "links": [
+            "https://www.minerva.edu/undergraduate/majors-concentrations/"
+          ]
+        },
+        {
+          "q": "How will lab work be conducted without a permanent campus?",
+          "a": "Seminar courses are designed for students to experience and participate in the designing, executing, and interpreting of scientific experiments. In addition, Minerva helps students find semester and summer internships, where they do actual, cutting-edge research. Minerva is also committed to creating hands-on experiences where we offer opportunities to participate in Summer labs.",
+          "links": []
+        },
+        {
+          "q": "Does Minerva teach foreign languages? If so, what languages are offered?",
+          "a": "Minerva does not offer foreign language courses or majors. However, as you live in different countries you have the opportunity to enroll in local language classes, practice the language, and experience the culture firsthand. In addition, our international student body naturally lends itself to language clubs and ample informal opportunities to practice a language.",
+          "links": []
+        },
+        {
+          "q": "Becoming a global leader is abstract. What does that actually look like?",
+          "a": "Becoming a global leader is both about being academically prepared to tackle difficult problems and culturally and socially prepared to operate in a global context. Our academic curriculum teaches you how to work with others, how to lead, how to persuade, and how to negotiate effectively. The Capstone project provides a unique opportunity to actually address an issue or a problem. From a social perspective, during your time at Minerva, you will be culturally immersed in some of the world’s most important global hubs, including San Francisco, Berlin, Buenos Aires, and Tokyo. You will be better prepared to understand the interconnected nature of the world because you’ve experienced multiple parts of it.",
+          "links": []
+        },
+        {
+          "q": "Will my credits transfer if I decide to leave Minerva?",
+          "a": "Minerva, like all institutions of higher education, does not determine the acceptance of transfer credits by other institutions. Our courses are accredited, and thus we expect that they will be treated like courses from other accredited institutions—but the decision is up to the transfer institution.",
+          "links": []
+        },
+        {
+          "q": "Is Minerva accredited?",
+          "a": "Yes. Minerva is an institution regionally accredited by the Western Senior College and University Commission Association of Schools and Colleges (WASC or WSCUC). Students graduate from Minerva University and receive a diploma with a Bachelor of Science (B.S.) or a Bachelor of Arts (B.A.) that is recognized globally. Learn more about Minerva’s accreditation.",
+          "links": [
+            "https://www.minerva.edu/accreditation/"
+          ]
+        },
+        {
+          "q": "I am currently attending another institution. Will my credits transfer to Minerva?",
+          "a": "You will be able to transfer up to thirty two (32) units of credit at the discretion of the Registrar under the guidance of the Provost.",
+          "links": []
+        },
+        {
+          "q": "Can you tell me more about the faculty at Minerva?",
+          "a": "All of Minerva’s faculty are experts in their fields and are trained in the science of learning. The current faculty can be found on our Faculty page. As our student body grows, we will continue to recruit world-class faculty.",
+          "links": [
+            "https://www.minerva.edu/faculty/"
+          ]
+        },
+        {
+          "q": "Why are all classes small seminars?",
+          "a": "Minerva classes focus on building skills and understanding—not mere information dissemination. Cognitive and behavioral research has demonstrated that students learn most effectively when actively engaged with the subject matter—a learning approach that large lectures or other passive forms of teaching do not facilitate. Minerva’s small class size, fewer than 23 students—coupled with our learning platform’s advanced technology—enables professors to provide expert and detailed instruction, direct personal interaction, and frequent feedback, ensuring every student participates actively.",
+          "links": []
+        },
+        {
+          "q": "What makes the Minerva curriculum distinctive?",
+          "a": "The curriculum was intentionally structured to teach both breadth and depth demanded by the constantly evolving world, emphasizing four core skills—thinking critically, thinking creatively, communicating effectively, and interacting effectively. By exposing students to interdisciplinary subject matters and continuously reinforcing key habits of mind and foundational concepts, Minerva teaches a broad and adaptable set of skills and knowledge, applicable to any field. Depth of learning occurs in the major courses and the self-directed Capstone project, where students focus on a specific project starting in their third year and continuing through their final year.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Residential Life",
+      "items": [
+        {
+          "q": "Where can I find pictures and virtual tours for the residence halls?",
+          "a": "You may explore our residence halls through virtual tours by Minerva students on our YouTube channel. Once you enroll, you’ll also gain access to myMinerva, where you can view detailed information and photos for housing in each rotation city.",
+          "links": [
+            "https://www.youtube.com/playlist?list=PL-V70w67FyfJpDK4m-YQHcU9PC1ydP3pi",
+            "https://my.minerva.edu/student-life/cities/"
+          ]
+        },
+        {
+          "q": "Does Minerva provide security guards at its residence hall?",
+          "a": "Yes, security or front desk staff work the residence hall front door 24 hours daily.",
+          "links": []
+        },
+        {
+          "q": "Do Minerva residence halls have cafeterias or meal plans?",
+          "a": "Minerva does not have a formal meal plan, and you are responsible for purchasing and cooking your own food. You and your classmates will live in Minerva-designated residence halls, each of which has a communal kitchen (or a kitchen in your individual apartment, depending on location) so you can cook individual meals or prepare family-style group meals with your peers. All of our residence halls are in urban areas that have a variety of restaurants, markets, and shops nearby. We provide resources to help start your exploration of the city but then leave it to you to independently source your preferred food options.",
+          "links": []
+        },
+        {
+          "q": "Who takes care of residence halls at Minerva?",
+          "a": "Every residence hall has at least one dedicated onsite staff member, usually the Student Life team’s Residential Life Manager. They lead student community building in the city, fostering close relationships and providing the support and resources for students to thrive. They live in the residence hall and are available in case of any emergency. Minerva also engages work-study interns who work closely with the Residential Life Manager to foster community well-being and safety in the city.",
+          "links": []
+        },
+        {
+          "q": "Can I live outside of the residence hall during the academic year?",
+          "a": "Students are allowed to seek separate living arrangements outside of the residence hall in their second, third, and fourth years. Student Life staff must be aware of the student’s independent housing location in the rotation city. In addition to paying for their own independent housing, students still have to pay residential fees but these will be lower than those charged to students in Minerva residence halls. Residential fees cover the costs of programming and support for all students in the city.",
+          "links": []
+        },
+        {
+          "q": "What type of living arrangements are available within the Minerva residence halls?",
+          "a": "Each residence hall is different but, in general, students can expect the living arrangements to range from double rooms to triple- and quad-occupancy. Common spaces are usually available in residence halls, along with communal kitchens, although each location is different. In some rotation cities, residence halls are made up of apartments instead of individual rooms, also with common spaces available.",
+          "links": []
+        },
+        {
+          "q": "Where are the Minerva residence halls located in the rotation cities?",
+          "a": "Residence halls in our rotation cities are strategically located in vibrant urban neighborhoods and provide access to a variety of markets, shops, cafes, and restaurants. Depending on the size of each cohort, as well as building availability, the location of the residence halls in our global rotation cities may vary. Our San Francisco residence hall is located in central San Francisco, in the Russian Hill neighborhood.",
+          "links": []
+        },
+        {
+          "q": "Which global cities are included in Minerva’s four-year undergraduate program?",
+          "a": "Current rotation cities available during the academic year include San Francisco, where students spend their first academic year at Minerva, followed by other cities such as Berlin, Buenos Aires, and Tokyo. Minerva also offers a series of ongoing student-focused labs to provide immersive research and project opportunities to students. Previous Minerva University Lab projects have included a Sustainability Lab design project in Limón, Costa Rica, an Artificial Intelligence (AI) Lab in Tokyo, Japan, and a Music, Health & Wellness Lab research and design project in San Francisco, US. At Minerva University, the global cities you can choose from may change over time to enhance your learning experience, ensuring that we meet practical needs and provide the best educational opportunities.",
+          "links": []
+        },
+        {
+          "q": "How does Minerva determine future residence hall locations?",
+          "a": "Minerva strives to ensure that students have the opportunity to experience life in the world's most prominent political, economic, and cultural urban hubs. We evaluate locations based on a variety of factors, including quality of the holistic student experience, access to professional opportunities, and availability of secure housing.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Student Experience",
+      "items": [
+        {
+          "q": "How does Minerva handle alumni reunions?",
+          "a": "Minerva alumni enjoy a vibrant network and community established during their student years. Post-graduation, this connection endures through annual events hosted in local hubs by dedicated alumni volunteers. Additionally, there is an annual reunion for the class that is five years out, inviting the entire community to join in the celebration. We also have the Alumni Council, which is an alumni-run volunteer group that establishes annual events, local hub opportunities, and sustains the alumni connection with the institution.",
+          "links": []
+        },
+        {
+          "q": "What is included in the lifelong career services Minerva offers?",
+          "a": "Minerva’s Coaching and Talent Development team supports students in developing professional skills and building a career network. In addition to unlimited consultation sessions, the team of experts provides networking, publicity, and entrepreneurial support. These coordinated services help raise the visibility of your achievements and propel your career forward.",
+          "links": []
+        },
+        {
+          "q": "Does Minerva support students in arranging internships or is it up to students?",
+          "a": "Minerva has dedicated career support services to help you understand your professional values and goals, leverage Minerva's global employer network, identify internship and research opportunities, and launch your career upon graduation. Students are responsible for arranging their own internships, supported by Minerva’s Coaching and Talent Development team’s resources. Learn more about career development at Minerva.\n‍",
+          "links": [
+            "https://www.minerva.edu/undergraduate/career-development/"
+          ]
+        },
+        {
+          "q": "Are there any sports available at Minerva (either to watch or play)?",
+          "a": "Minerva does not have a formal sports program. However, we encourage you to get involved with local sports teams, as spectators, or to participate in local sports clubs, as participants. For example, San Francisco has a wide variety of club sports including soccer, volleyball, baseball, Ultimate Frisbee, basketball, and more.",
+          "links": []
+        },
+        {
+          "q": "What kinds of activities are there outside of the classroom experience? Who organizes these activities?",
+          "a": "Minerva integrates the classroom experience with an ecosystem of projects, co-curricular and extracurricular programming, and activities to facilitate experiential learning, develop character, and build community. We create opportunities for students to immerse themselves in each of their residential locations by challenging them to be active participants rather than tourists. Minerva’s city experiences and location-based assignments consist of immersive, behind-the-scenes experiences at leading companies, cultural centers, science labs, and local organizations. They are designed, curated, and facilitated by the Student Life team, which has staff members in each city. The city experiences and location-based assignments provide practical context—from workshops to seminars—for students to apply the curriculum they are learning in the classroom in a real-world context and begin creating a portfolio of work for professional development.\n‍\nThe Student Life team also runs a university-wide program for project-based learning through civic projects—projects hosted by leading practitioners and experts in each residential location. These projects are co-designed and curated by the Student Life team alongside local organizations, called civic partners (e.g. startups, corporations, NGOs, governmental organizations, art collectives, etc.). By participating in civic projects, students get to collaborate with professionals from various industries, such as venture capital funds, artificial intelligence labs, healthcare startups, and educational organizations, to name a few. Throughout the semester, students work with their civic partner on projects ranging from ideating marketing campaigns and conducting research to creating an app or developing governmental programs.",
+          "links": []
+        },
+        {
+          "q": "What type of students make up Minerva’s student body?",
+          "a": "Minerva students are a diverse array of exceptionally bright, motivated, and forward-thinking students from around the world. Many of our students are passionate about global issues and social justice, some are budding entrepreneurs, some are great athletes and artists, and others are published writers and researchers. To find out more about our student body, we encourage you to read our blog and follow our social media.",
+          "links": [
+            "https://www.minerva.edu/blog/",
+            "https://www.instagram.com/minervauniversity/"
+          ]
+        },
+        {
+          "q": "Why would a student or parent choose Minerva over a traditional elite university?",
+          "a": "Minerva is right for you if you are excited by the challenge of academic rigor, the opportunity for immersive global experiences, the ability to work closely with high-profile faculty, and the responsibility to help shape a university experience.",
+          "links": []
+        }
+      ]
+    },
+    {
+      "name": "Executive Education",
+      "items": [
+        {
+          "q": "Is this a degree program?",
+          "a": "No. World Wise is a non-degree executive education program focused exclusively on leadership and cultural fluency.",
+          "links": []
+        },
+        {
+          "q": "Why is the program regionally designed instead of fully global from the start?",
+          "a": "World Wise explicitly teaches cross-cultural leadership skills. Regional cohorts allow for deeper, more relevant learning that addresses region-specific challenges. Participants apply the skills learned in their courses during the Accelerator week which includes interaction with a diverse set of leaders and collaborators.",
+          "links": []
+        },
+        {
+          "q": "Is the program only available for participants based in Asia?",
+          "a": "The inaugural cohort is focused on professionals based in Asia, reflecting the program’s regional cohort design. Future cohorts will expand to additional regions.",
+          "links": []
+        }
+      ]
+    }
+  ]
+}
