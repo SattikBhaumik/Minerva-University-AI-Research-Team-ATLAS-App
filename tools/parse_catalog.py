@@ -18,6 +18,8 @@ for line in open(src, encoding='utf-8'):
     pages.setdefault(pg, []).append(line.rstrip('\n'))
 def lines(a, b):
     return [l.strip() for p in range(a, b + 1) for l in pages.get(p, [])]
+def paged_lines(a, b):
+    return [(p, l.strip()) for p in range(a, b + 1) for l in pages.get(p, [])]
 CODE = r'[A-Z]{1,3}\d{2,5}[A-Z]?'
 FIELDS = ('College:', 'Program Requirement:', 'Course Requirements:')
 
@@ -48,10 +50,10 @@ concs = parse_programs(lines(15, 22), 'Concentration')
 minors = parse_programs(lines(24, 30), 'Minor')
 
 courses, cur, mode = [], None, None
-for l in lines(31, 82):
+for page, l in paged_lines(31, 82):
     m = re.fullmatch(rf'({CODE}) / (.+)', l)
     if m:
-        cur = {'code': m.group(1), 'title': m.group(2), 'description': '', 'note': '', 'prerequisites': '', 'corequisites': '', 'type': '', 'credits': None}
+        cur = {'code': m.group(1), 'title': m.group(2), 'page': page, 'description': '', 'note': '', 'prerequisites': '', 'corequisites': '', 'type': '', 'credits': None}
         courses.append(cur); mode = 'desc'; continue
     if cur is None or l == 'Course Offerings': continue
     for key, field in (('Note:', 'note'), ('Prerequisites:', 'prerequisites'), ('Corequisites:', 'corequisites'), ('Co-requisites:', 'corequisites'), ('Course Type:', 'type')):

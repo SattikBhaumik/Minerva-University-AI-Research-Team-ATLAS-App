@@ -107,6 +107,21 @@ const Pathways = (() => {
     return p;
   }
 
+  // "Learn more" links to Minerva's own pages; they open in a new tab.
+  function linksLine(links) {
+    const p = el('p', 'caption pw-links');
+    p.append('Learn more: ');
+    links.forEach((l, i) => {
+      if (i) p.append(' · ');
+      const a = el('a', null, l.label);
+      a.href = l.url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+      p.append(a);
+    });
+    return p;
+  }
+
   /* ---- Explorer ---- */
 
   function mount(root, data) {
@@ -248,7 +263,9 @@ const Pathways = (() => {
       }
       const keeps = el('p', 'body pw-keeps');
       keeps.append(el('span', 'body-strong', 'Keeps open: '), opt.keepsOpen);
-      panel.append(keeps, sourceLine(opt.source, data.asOf));
+      panel.append(keeps);
+      if (opt.links && opt.links.length) panel.append(linksLine(opt.links));
+      panel.append(sourceLine(opt.source, data.asOf));
     }
 
     function aboutBox() {
@@ -266,6 +283,13 @@ const Pathways = (() => {
         const li = el('li', 'pw-about-item');
         li.append(el('p', 'body-strong', `${code} ${c.title}`),
           el('p', 'body pw-about-desc', brief ? firstSentence(c.description) : c.description));
+        if (c.url) {
+          const a = el('a', 'caption pw-about-link', `Full description in the catalog, p. ${c.page}`);
+          a.href = c.url;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          li.append(a);
+        }
         return li;
       }
       function reveal(animate, any) {
@@ -326,6 +350,7 @@ const Pathways = (() => {
       node.items.forEach((t) => ul.append(el('li', 'body', t)));
       card.append(ul);
       if (node.note) card.append(el('p', 'body pw-note', node.note));
+      if (node.links && node.links.length) card.append(linksLine(node.links));
       card.append(sourceLine(node.source, data.asOf));
       const btn = el('button', 'btn btn-primary pw-continue', node.continueLabel || 'Continue');
       btn.type = 'button';

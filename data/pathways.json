@@ -3,327 +3,457 @@
     "B110": {
       "title": "Market Dynamics and Product Analytics",
       "description": "Business is a powerful driver of economic growth and stability; to do well in business, you must understand consumers, products, and markets.",
-      "needs": "B111 (taken together)"
+      "needs": "B111 (taken together)",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=36",
+      "page": 36
     },
     "B111": {
       "title": "Financial Planning, Budgeting and Modeling",
       "description": "This Core course provides a foundation for all Business majors and is a prerequisite for all Business Concentration courses. Students learn about the financial and strategic tools managers use to track, evaluate, and improve their business operations for achieving business objectives.",
-      "needs": "B110 (taken together)"
+      "needs": "B110 (taken together)",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=36",
+      "page": 36
     },
     "B112": {
       "title": "Doing Business",
       "description": "This Core course provides foundations for Business majors and is a prerequisite for all junior-level Concentration courses in this major. We analyze the political, regulatory, and societal contexts in which business gets done from a global perspective.",
-      "needs": "B110, B111"
+      "needs": "B110, B111",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=37",
+      "page": 37
     },
     "B113": {
       "title": "Enterprise, Design and Optimization",
       "description": "This Core course provides foundations for all Business Majors and is a prerequisite for all junior-level Concentration Courses. Students will explore the inner workings of the business enterprise in context of its environment.",
-      "needs": "B110, B111"
+      "needs": "B110, B111",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=37",
+      "page": 37
     },
     "CS110": {
       "title": "Problem Solving with Data Structures and Algorithms",
       "description": "Apply core concepts in design and analysis of algorithms, data structures, and computational problem-solving techniques to address complex problems.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=46",
+      "page": 46
     },
     "CS111": {
       "title": "Single and Multivariable Calculus",
       "description": "Learn to utilize principles of single and multivariable calculus to solve relevant problems from across STEM. Traditional calculus courses focus on the techniques needed to perform complex computations by hand, and evaluate students primarily on their ability to do so quickly.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=47",
+      "page": 47
     },
     "CS113": {
       "title": "Theory and Applications of Linear Algebra",
       "description": "This course develops the tools necessary for the analysis of linear systems. The emphases are both on abstract notions such as vectors spaces, linear maps between them and their matrix representations, and concrete applications such as Markov chains and graphical network analysis.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=47",
+      "page": 47
     },
     "CS114": {
       "title": "Probability and Statistics and the Structure of Randomness",
       "description": "When can you find patterns in seemingly random noise? Or determine when an observed pattern is likely due to chance?",
-      "needs": "CS111"
+      "needs": "CS111",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=47",
+      "page": 47
     },
     "NS110L": {
       "title": "Physics of Life",
       "description": "We explore how physics, ranging from mechanics through atomic physics, can be applied to the life sciences. Examples of applications are: fluid flow and heat regulation in biological organisms, electrostatics in the nervous system, and wave phenomena in hearing and vision.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=66",
+      "page": 66
     },
     "NS110U": {
       "title": "Physics of the Universe",
       "description": "We use gravitational and electromagnetic interactions as representatives for how physics takes experimental evidence and then encodes it into a theoretical framework that can be used to make predictions and draw inferences about new phenomena.",
-      "needs": "CS111"
+      "needs": "CS111",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=66",
+      "page": 66
     },
     "NS111": {
       "title": "Implications of Earth's Cycles",
       "description": "The Earth system is investigated from its origin to its functioning today. Beginning with the origin of the Universe and the creation of elements in stars, the course progresses to an understanding of solar systems and the conditions that gave rise to habitable planets.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=66",
+      "page": 66
     },
     "NS112": {
       "title": "Evolution Across Multiple Scales",
       "description": "“Nothing in biology makes sense, except in the light of evolution” – T. Dobzhansky. From the relationships among species in a forest to the interactions of molecules in a cell, evolution is ultimately responsible.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=67",
+      "page": 67
     },
     "NS113": {
       "title": "Chemical Structure and Reactivity",
       "description": "This course explores the physical and chemical properties of nature based on molecular, atomic, and sub-atomic structures, with an emphasis on how structure determines reactivity.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=67",
+      "page": 67
     },
     "SS110": {
       "title": "Psychology: From Neurons to Society",
       "description": "In this course we learn about the mind by looking at (1) multiple levels of analysis, from neurons to social systems, (2) multiple methodologies used in research, and (3) how multiple types of explanation (mechanism, function, ontogeny, phylogeny) shed light on each other.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=73",
+      "page": 73
     },
     "SS111": {
       "title": "Modern Economic Thought",
       "description": "Are economic agents really rational? Should governments interfere with markets?",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=73",
+      "page": 73
     },
     "SS112": {
       "title": "Political Science and Social Change",
       "description": "Governments greatly affect their citizens and, in turn, citizens may greatly affect government and their society. The course has four units to examine these influences.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=73",
+      "page": 73
     },
     "AH146": {
       "title": "Decoding Art and Literature",
       "description": "We can gain a deeper appreciation of any work of art, music, or literature by delving into issues of form, structure, and function. In this course students acquire the tools to understand different artistic genres through close analysis of individual works.",
-      "needs": "AH112 or AH156 or AH166 or AH144"
+      "needs": "AH112 or AH156 or AH166 or AH144",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=33",
+      "page": 33
     },
     "AH156": {
       "title": "Socioeconomic Influences on Art and Literature",
       "description": "For several centuries artistic and literary works were considered the product of the individual creative genius of artists and writers. More recently, scholars have argued that these works are also social products, that they are shaped by the economic, social, and cultural forces of their societies.",
-      "needs": "AH110 or AH112 or AH142 or AH146 or AH152 or AH162 or AH166"
+      "needs": "AH110 or AH112 or AH142 or AH146 or AH152 or AH162 or AH166",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=34",
+      "page": 34
     },
     "AH166": {
       "title": "Artistic Communication from Page to Practice",
       "description": "This course examines various modes of artistic expression and communication—including protest, propaganda and humor.",
-      "needs": "AH112"
+      "needs": "AH112",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=36",
+      "page": 36
     },
     "AH162": {
       "title": "Public and Applied History",
       "description": "\"The past is never dead. It's not even past,\" wrote William Faulkner.",
-      "needs": "AH110 or AH113 or AH142 or AH152"
+      "needs": "AH110 or AH113 or AH142 or AH152",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=35",
+      "page": 35
     },
     "AH164": {
       "title": "Social and Political Philosophy",
       "description": "As individuals, we lead both private and public lives. Political and social institutions provide the framework within which we interact with others and pursue our personal goals and ambitions.",
-      "needs": "AH111 or AH113 or AH144 or AH154 or SS112"
+      "needs": "AH111 or AH113 or AH144 or AH154 or SS112",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=35",
+      "page": 35
     },
     "AH152": {
       "title": "Comparing Societies and Histories: The Impact of Time and Place",
       "description": "Historical narratives often rely on implicit comparisons between time periods and societies. In this course, students make these comparisons explicit in order to illuminate differences and similarities in the ways societies have responded to political, economic, social, and environmental challenges.",
-      "needs": "AH110 or AH142 or AH162 or SS112"
+      "needs": "AH110 or AH142 or AH162 or SS112",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=34",
+      "page": 34
     },
     "AH154": {
       "title": "Law and Ethics from a Global Perspective",
       "description": "What is the law, why should we obey it, and what constitutes an ethical legal system? Are human rights universal or culturally relative?",
-      "needs": "AH111 or AH144 or AH164 or SS166"
+      "needs": "AH111 or AH144 or AH164 or SS166",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=34",
+      "page": 34
     },
     "AH142": {
       "title": "The Craft of Historical Analysis",
       "description": "History as a field of study is based on a set of methods to analyze the past, understand the foundations of the present, and at times anticipate the future.",
-      "needs": "AH110 or AH152 or AH162"
+      "needs": "AH110 or AH152 or AH162",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=33",
+      "page": 33
     },
     "AH144": {
       "title": "Ethical Worldviews, Moral Dilemmas",
       "description": "Normative ethics is the study of ethical systems that provide answers to the question of how one ought to act in situations of moral significance. Moral dilemmas involve choices between mutually exclusive alternatives, each of which carries significant burdens.",
-      "needs": "AH111"
+      "needs": "AH111",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=33",
+      "page": 33
     },
     "AH110": {
       "title": "Global History",
       "description": "From prehistoric times, human populations have moved across the globe. Driven by environmental, economic, political, and social forces, they have carried with them and have been exposed to new customs, new technologies, and new ideas for structuring societies and interacting with other peoples.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=31",
+      "page": 31
     },
     "AH111": {
       "title": "Morality, Identity, and Justice",
       "description": "What’s ethically significant about being human, or about our identities as members of various social groups? What do we owe to animals, to ecosystems, to future generations, to AI, and how do our answers to these questions rely on theories of identity?",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=32",
+      "page": 32
     },
     "AH112": {
       "title": "The Arts and Social Change",
       "description": "A fundamental characteristic of the arts is that they are transformative. They lead us to see ourselves in new ways, to re-conceptualize our world, and to rethink our relationship to it.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=32",
+      "page": 32
     },
     "AH113": {
       "title": "Dynamics of Design",
       "description": "Design affects the objects, spaces, and ideas of everyday life, from door handles and physical spaces to laws and the virtual spaces in which we experience our lives.",
-      "needs": ""
+      "needs": "",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=32",
+      "page": 32
     },
     "B144": {
       "title": "Needs Identification and Product Development",
       "description": "In this course, we will explore different approaches to need identification, product design and development, and market introduction. We will learn how to understand our customers and their needs and learn how to identify the new market potential of existing products.",
-      "needs": "B113"
+      "needs": "B113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=37",
+      "page": 37
     },
     "B154": {
       "title": "Strategic Brand Leadership",
       "description": "In this course, we build on your knowledge of market research, consumer psychology, and creative problem-solving to understand and explore different approaches to growth.",
-      "needs": "B113"
+      "needs": "B113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=38",
+      "page": 38
     },
     "B164": {
       "title": "Brand Evolution and Reinvention",
       "description": "Powerful brands can enhance customer relationships, generate profitability, and produce shareholder value. Yet, enterprise growth often begins to slows down as brands get older and approach maturity.",
-      "needs": "B112, B113"
+      "needs": "B112, B113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=39",
+      "page": 39
     },
     "B165": {
       "title": "Global Financial Strategy",
       "description": "Global investing requires sophisticated tools to select among risk/return scenarios. Learn to apply these tools, which include diversification and hedging for risk reduction, appropriate capital structuring to fund growth, and dividend/share repurchase strategies to drive shareholder value.",
-      "needs": "B112, B113"
+      "needs": "B112, B113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=39",
+      "page": 39
     },
     "B166": {
       "title": "Business Optimization",
       "description": "In this class we study ways to optimize organizational structure, processes, and systems that support key business functions in large enterprises.",
-      "needs": "B112, B113"
+      "needs": "B112, B113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=39",
+      "page": 39
     },
     "B146": {
       "title": "Business Operations",
       "description": "Study the entrepreneurial process from inception through early growth stages and the unique operational challenges of competing with highly constrained resources.",
-      "needs": "B113"
+      "needs": "B113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=38",
+      "page": 38
     },
     "B156": {
       "title": "Business Systems",
       "description": "Learn strategic and tactical decision-making for the design and operation of product and service delivery systems. Consider strategies to increase competitiveness while managing risk.",
-      "needs": "B113"
+      "needs": "B113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=39",
+      "page": 39
     },
     "B145": {
       "title": "Venture Initiation and Valuation",
       "description": "The overall goal of this course is to bolster your ability to work with scarce resources while balancing growth and profitability. Relying on skills developed in B111, you will build “muscle memory” so you can raise capital and effectively interface with stakeholders in future business creation and growth.",
-      "needs": "B113"
+      "needs": "B113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=38",
+      "page": 38
     },
     "B155": {
       "title": "Capital Allocation and Value Creation",
       "description": "Investigate how growing enterprises use their balance sheets to execute growth strategies. Apply discounted cash flow and real options to select among opportunities that create business value.",
-      "needs": "B113"
+      "needs": "B113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=38",
+      "page": 38
     },
     "CS162": {
       "title": "Software Engineering: Building Powerful Applications",
       "description": "This course is organized around the principle that the only way to learn software development is to develop software. Work together as a team to develop a significant web application.",
-      "needs": "CS110"
+      "needs": "CS110",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=50",
+      "page": 50
     },
     "CS164": {
       "title": "Optimization Methods",
       "description": "Learn to use and analyze optimization techniques such as linear, quadratic, semidefinite and mixed-integer programming. Explore optimization algorithms such as Newton’s method, interior point methods and branch and bound methods.",
-      "needs": "CS111, CS113"
+      "needs": "CS111, CS113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=50",
+      "page": 50
     },
     "CS166": {
       "title": "Modeling and Analysis of Complex Systems",
       "description": "Learn how to apply advanced modeling techniques to analyze and predict the behavior of social, physical and economic systems. You will learn from specific examples applied to portfolio management, traffic flow management, and analyzing social networks.",
-      "needs": "CS110, CS114 or CS130"
+      "needs": "CS110, CS114 or CS130",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=50",
+      "page": 50
     },
     "CS142": {
       "title": "Theory of Computation",
       "description": "Students learn about models of computation that provide the theoretical basis for modern computer science. Topics include deterministic and nondeterministic finite state machines, Turing machines, formal language theory, computational complexity and the classification of algorithms.",
-      "needs": "CS110"
+      "needs": "CS110",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=48",
+      "page": 48
     },
     "CS152": {
       "title": "Theory and Applications of Artificial Intelligence",
       "description": "Apply methods and algorithms from Artificial Intelligence (AI) — such as propositional logic, logic programming, predicate calculus, and computational reasoning — to a diverse range of applications from robot navigation to restaurant selection with expert systems.",
-      "needs": "CS110"
+      "needs": "CS110",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=49",
+      "page": 49
     },
     "CS154": {
       "title": "Analytical and Numerical Methods in Differential Equations",
       "description": "Methods are explored to interpolate data, solve linear and non-linear systems of equations, and model dynamical systems with the use of ordinary and partial differential equations. Additionally, Fourier Analysis is applied to model and process signals.",
-      "needs": "CS111, CS113"
+      "needs": "CS111, CS113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=49",
+      "page": 49
     },
     "CS156": {
       "title": "Finding Patterns in Data with Machine Learning",
       "description": "Students learn to apply core machine learning techniques — such as classification, perceptron, neural networks, support vector machines, hidden Markov models, and nonparametric models of clustering — as well as fundamental concepts such as feature selection, cross-validation and over-fitting.",
-      "needs": "CS113, CS114"
+      "needs": "CS113, CS114",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=49",
+      "page": 49
     },
     "CS146": {
       "title": "Computational Methods for Bayesian Statistics",
       "description": "Learn to apply Bayesian inference which is the mathematical framework for using observed data to update the information we have about a system.",
-      "needs": "CS114"
+      "needs": "CS114",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=49",
+      "page": 49
     },
     "CS144": {
       "title": "Real Analysis",
       "description": "Students learn how to read, write, and evaluate rigorous mathematical arguments. These skills are practiced on foundational material that forms a bridge to topics in advanced mathematics—both applied and pure.",
-      "needs": "CS111"
+      "needs": "CS111",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=48",
+      "page": 48
     },
     "NS144": {
       "title": "Genes to Organisms",
       "description": "Investigate how biological traits are determined. Examine how genetic and environmental influences are translated through cellular and developmental mechanisms to determine the properties of cells, organisms, and species.",
-      "needs": "NS112"
+      "needs": "NS112",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=68",
+      "page": 68
     },
     "NS154": {
       "title": "Life's Chemistry",
       "description": "Investigate biological systems from the cellular and molecular levels of analysis. Learn how the physical and chemical properties of molecular interactions within and between cells give rise to the emergent properties of life.",
-      "needs": "NS112, NS113"
+      "needs": "NS112, NS113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=69",
+      "page": 69
     },
     "NS164": {
       "title": "Solutions From and For Life",
       "description": "Explore cutting-edge solutions to difficult problems in human health. Learn the process by which drugs are discovered and designed, how stem cells are engineered to form tissues, and how genes can be engineered for a multitude of purposes.",
-      "needs": "NS112"
+      "needs": "NS112",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=70",
+      "page": 70
     },
     "NS152": {
       "title": "Analyzing Matter and Molecules",
       "description": "Understanding what matter is, how matter and small molecules are studied, and how they can be manipulated is the gateway to technological solutions to many world challenges.",
-      "needs": "NS110L or NS110U, NS113"
+      "needs": "NS110L or NS110U, NS113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=68",
+      "page": 68
     },
     "NS156": {
       "title": "Modeling and Measuring Environmental Systems",
       "description": "Explore how researchers study and monitor earth systems, including the latest methods for climate, pollution, and ocean monitoring. Delve into how models are used to understand and predict earth systems and how to construct your own models of environmental systems.",
-      "needs": "NS111 or NS113"
+      "needs": "NS111 or NS113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=69",
+      "page": 69
     },
     "NS146": {
       "title": "Integrating Earth's Systems",
       "description": "Explore key Earth systems, with an emphasis on how solid Earth components interact with living organisms, the hydrosphere and the atmosphere. Consider the effects of volcanism, mountain-building, earthquakes, weathering and erosion on biotic and abiotic domains.",
-      "needs": "NS111"
+      "needs": "NS111",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=68",
+      "page": 68
     },
     "NS166": {
       "title": "Keeping Earth Habitable",
       "description": "Examine environmental and natural resource issues such as pollution, deforestation, climate change impacts, habitat loss, agricultural impacts, and the potential impact of human population growth and consumption.",
-      "needs": "NS111 or NS112"
+      "needs": "NS111 or NS112",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=70",
+      "page": 70
     },
     "NS142": {
       "title": "Quantum Nature of Matter: Theory and Applications",
       "description": "Study the nature of matter from a quantitative standpoint using the tools provided by quantum mechanics. Starting from experiments that led the way to the discovery of quantum mechanics, we first establish its mathematical foundations.",
-      "needs": "NS110U, CS111, CS113"
+      "needs": "NS110U, CS111, CS113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=68",
+      "page": 68
     },
     "NS162": {
       "title": "Statistical Mechanics: Theory and Applications",
       "description": "Statistical Mechanics describes how macroscopic systems and the macroscopic physical laws that govern them emerge from the aggregated behavior of many microscopic components.",
-      "needs": "CS111, NS110L or NS110U or NS113"
+      "needs": "CS111, NS110L or NS110U or NS113",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=70",
+      "page": 70
     },
     "SS142": {
       "title": "Theory, Research, and Innovation in the Psychological Sciences",
       "description": "We explore broad theories of cognition and emotion through the lens of psychology, also drawing on philosophy and artificial intelligence.",
-      "needs": "SS110"
+      "needs": "SS110",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=73",
+      "page": 73
     },
     "SS152": {
       "title": "Cognitive Neuroscience",
       "description": "Explore how the brain gives rise to the mind through the lens of cognitive neuroscience. Learn about the anatomy, physiology, and chemistry of the brain and consider the role of this physical substrate in neural computation.",
-      "needs": "SS110"
+      "needs": "SS110",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=74",
+      "page": 74
     },
     "SS162": {
       "title": "Personal and Social Motivation",
       "description": "How can we effectively change our own habits and behaviors? What is the best way to motivate and persuade others?",
-      "needs": "SS110"
+      "needs": "SS110",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=75",
+      "page": 75
     },
     "SS164": {
       "title": "Global Development and Applied Economics",
       "description": "Examine important challenges facing both developing and developed economies. Explore the development of societies through the analysis of access to education and healthcare as well as sustainable mechanisms for economic growth.",
-      "needs": "SS111"
+      "needs": "SS111",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=76",
+      "page": 76
     },
     "SS166": {
       "title": "Comparative Constitutional Law: Designing Societies",
       "description": "This course is an overview of comparative constitution-making and implementation. What distinguishes a constitution from other types of law?",
-      "needs": "SS112"
+      "needs": "SS112",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=76",
+      "page": 76
     },
     "SS144": {
       "title": "Intermediate Economic Theory and Tools",
       "description": "SS144 equips students with a broad set of analytical tools that economists use to study behavior from the macro to micro level. We begin with a broad overview of why some economies grow faster than others, and use mathematical tools to illustrate growth dynamics.",
-      "needs": "SS111"
+      "needs": "SS111",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=74",
+      "page": 74
     },
     "SS154": {
       "title": "Econometrics and Economic Systems",
       "description": "Learn how to use core econometric and statistical methods to construct and validate economic and social models. Students will learn methods to conduct and critique empirical studies in economics as well as other social sciences.",
-      "needs": "SS111"
+      "needs": "SS111",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=75",
+      "page": 75
     },
     "SS156": {
       "title": "Comparative Politics in Practice",
       "description": "This course examines and compares how political systems operate in practice and why they have different outcomes, such as corruption/transparency, racism, political stability/instability, low/high inequality, security/insecurity, and low/high socio-economic standards.",
-      "needs": "SS112"
+      "needs": "SS112",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=75",
+      "page": 75
     },
     "SS146": {
       "title": "Practice of Governance",
       "description": "What makes good governance? How can governments pursue worthy public policy aims successfully?",
-      "needs": "SS112"
+      "needs": "SS112",
+      "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf#page=74",
+      "page": 74
     }
   },
   "asOf": "2026-11-21",
@@ -408,8 +538,14 @@
           "keepsOpen": "6 concentrations; at least 20 credits come from other colleges.",
           "source": {
             "label": "Arts & Humanities",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=arts-humanities"
           },
+          "links": [
+            {
+              "label": "Arts & Humanities on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=arts-humanities"
+            }
+          ],
           "next": "college-AH"
         },
         {
@@ -422,8 +558,14 @@
           "keepsOpen": "6 concentrations; at least 20 credits come from other colleges.",
           "source": {
             "label": "Business",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=business"
           },
+          "links": [
+            {
+              "label": "Business on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=business"
+            }
+          ],
           "next": "college-B"
         },
         {
@@ -438,6 +580,12 @@
             "label": "Computational Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
           },
+          "links": [
+            {
+              "label": "Computational Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            }
+          ],
           "next": "college-CS"
         },
         {
@@ -452,6 +600,12 @@
             "label": "Natural Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
           },
+          "links": [
+            {
+              "label": "Natural Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+            }
+          ],
           "next": "college-NS"
         },
         {
@@ -464,8 +618,14 @@
           "keepsOpen": "6 concentrations; at least 20 credits come from other colleges.",
           "source": {
             "label": "Social Sciences",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=social-sciences"
           },
+          "links": [
+            {
+              "label": "Social Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=social-sciences"
+            }
+          ],
           "next": "college-SS"
         }
       ]
@@ -536,6 +696,12 @@
             "label": "Natural Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
           },
+          "links": [
+            {
+              "label": "Natural Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+            }
+          ],
           "next": "college-NS"
         },
         {
@@ -550,6 +716,12 @@
             "label": "Computational Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
           },
+          "links": [
+            {
+              "label": "Computational Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            }
+          ],
           "next": "college-CS"
         }
       ]
@@ -569,8 +741,14 @@
           "keepsOpen": "Points to Social Sciences.",
           "source": {
             "label": "Social Sciences",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=social-sciences"
           },
+          "links": [
+            {
+              "label": "Social Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=social-sciences"
+            }
+          ],
           "next": "college-SS"
         },
         {
@@ -583,8 +761,14 @@
           "keepsOpen": "Points to Arts & Humanities.",
           "source": {
             "label": "Arts & Humanities",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=arts-humanities"
           },
+          "links": [
+            {
+              "label": "Arts & Humanities on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=arts-humanities"
+            }
+          ],
           "next": "college-AH"
         }
       ]
@@ -606,6 +790,12 @@
             "label": "Computational Sciences",
             "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
           },
+          "links": [
+            {
+              "label": "Computational Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            }
+          ],
           "next": "college-CS"
         },
         {
@@ -618,8 +808,14 @@
           "keepsOpen": "Points to Business.",
           "source": {
             "label": "Business",
-            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/"
+            "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=business"
           },
+          "links": [
+            {
+              "label": "Business on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=business"
+            }
+          ],
           "next": "college-B"
         }
       ]
@@ -641,7 +837,17 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-AH",
-      "plan": "Arts & Humanities"
+      "plan": "Arts & Humanities",
+      "links": [
+        {
+          "label": "Arts & Humanities on minerva.edu",
+          "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=arts-humanities"
+        },
+        {
+          "label": "Full course catalog (PDF)",
+          "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf"
+        }
+      ]
     },
     "y1-AH": {
       "kind": "step",
@@ -700,6 +906,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Business on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=business"
+            }
+          ],
           "next": "y3-AH-1",
           "plan": "electives from Business",
           "courses": [
@@ -721,6 +933,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Computational Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            }
+          ],
           "next": "y3-AH-1",
           "plan": "electives from Computational Sciences",
           "courses": [
@@ -742,6 +960,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Natural Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+            }
+          ],
           "next": "y3-AH-1",
           "plan": "electives from Natural Sciences",
           "courses": [
@@ -764,6 +988,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Social Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=social-sciences"
+            }
+          ],
           "next": "y3-AH-1",
           "plan": "electives from Social Sciences",
           "courses": [
@@ -797,6 +1027,12 @@
           },
           "next": "y4-AH",
           "plan": "AH146, AH156, AH166",
+          "links": [
+            {
+              "label": "Arts and Literature on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/arts-and-literature/"
+            }
+          ],
           "courses": [
             "AH146",
             "AH156",
@@ -819,6 +1055,12 @@
           },
           "next": "y4-AH",
           "plan": "AH162, AH164, AH166",
+          "links": [
+            {
+              "label": "Design Across the Humanities on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/design-across-the-humanities/"
+            }
+          ],
           "courses": [
             "AH162",
             "AH164",
@@ -841,6 +1083,12 @@
           },
           "next": "y4-AH",
           "plan": "AH152, AH154, AH156",
+          "links": [
+            {
+              "label": "Global and Comparative Humanities on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/global-and-comparative-humanities/"
+            }
+          ],
           "courses": [
             "AH152",
             "AH154",
@@ -863,6 +1111,12 @@
           },
           "next": "y4-AH",
           "plan": "AH142, AH152, AH162",
+          "links": [
+            {
+              "label": "Historical Forces on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/historical-forces/"
+            }
+          ],
           "courses": [
             "AH142",
             "AH152",
@@ -885,6 +1139,12 @@
           },
           "next": "y4-AH",
           "plan": "AH142, AH144, AH146",
+          "links": [
+            {
+              "label": "Interpretation and Meaning on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/interpretation-and-meaning/"
+            }
+          ],
           "courses": [
             "AH142",
             "AH144",
@@ -907,6 +1167,12 @@
           },
           "next": "y4-AH",
           "plan": "AH144, AH154, AH164",
+          "links": [
+            {
+              "label": "Philosophy, Ethics, and the Law on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/philosophy-ethics-and-the-law/"
+            }
+          ],
           "courses": [
             "AH144",
             "AH154",
@@ -1066,7 +1332,17 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-B",
-      "plan": "Business"
+      "plan": "Business",
+      "links": [
+        {
+          "label": "Business on minerva.edu",
+          "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=business"
+        },
+        {
+          "label": "Full course catalog (PDF)",
+          "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf"
+        }
+      ]
     },
     "y1-B": {
       "kind": "step",
@@ -1125,6 +1401,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Arts & Humanities on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=arts-humanities"
+            }
+          ],
           "next": "y3-B-1",
           "plan": "electives from Arts & Humanities",
           "courses": [
@@ -1146,6 +1428,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Computational Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            }
+          ],
           "next": "y3-B-1",
           "plan": "electives from Computational Sciences",
           "courses": [
@@ -1167,6 +1455,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Natural Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+            }
+          ],
           "next": "y3-B-1",
           "plan": "electives from Natural Sciences",
           "courses": [
@@ -1189,6 +1483,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Social Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=social-sciences"
+            }
+          ],
           "next": "y3-B-1",
           "plan": "electives from Social Sciences",
           "courses": [
@@ -1222,6 +1522,12 @@
           },
           "next": "y4-B",
           "plan": "B144, B154, B164",
+          "links": [
+            {
+              "label": "Brand Management on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/brand-management/"
+            }
+          ],
           "courses": [
             "B144",
             "B154",
@@ -1244,6 +1550,12 @@
           },
           "next": "y4-B",
           "plan": "B164, B165, B166",
+          "links": [
+            {
+              "label": "Enterprise Management on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/enterprise-management/"
+            }
+          ],
           "courses": [
             "B164",
             "B165",
@@ -1266,6 +1578,12 @@
           },
           "next": "y4-B",
           "plan": "B146, B156, B166",
+          "links": [
+            {
+              "label": "Managing Operational Complexity on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/managing-operational-complexity/"
+            }
+          ],
           "courses": [
             "B146",
             "B156",
@@ -1288,6 +1606,12 @@
           },
           "next": "y4-B",
           "plan": "B144, B145, B146",
+          "links": [
+            {
+              "label": "New Business Ventures on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/new-business-ventures/"
+            }
+          ],
           "courses": [
             "B144",
             "B145",
@@ -1310,6 +1634,12 @@
           },
           "next": "y4-B",
           "plan": "B154, B155, B156",
+          "links": [
+            {
+              "label": "Scalable Growth on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/scalable-growth/"
+            }
+          ],
           "courses": [
             "B154",
             "B155",
@@ -1332,6 +1662,12 @@
           },
           "next": "y4-B",
           "plan": "B145, B155, B165",
+          "links": [
+            {
+              "label": "Strategic Finance on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/strategic-finance-business/"
+            }
+          ],
           "courses": [
             "B145",
             "B155",
@@ -1492,7 +1828,17 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-CS",
-      "plan": "Computational Sciences"
+      "plan": "Computational Sciences",
+      "links": [
+        {
+          "label": "Computational Sciences on minerva.edu",
+          "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+        },
+        {
+          "label": "Full course catalog (PDF)",
+          "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf"
+        }
+      ]
     },
     "y1-CS": {
       "kind": "step",
@@ -1551,6 +1897,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Arts & Humanities on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=arts-humanities"
+            }
+          ],
           "next": "y3-CS-1",
           "plan": "electives from Arts & Humanities",
           "courses": [
@@ -1572,6 +1924,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Business on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=business"
+            }
+          ],
           "next": "y3-CS-1",
           "plan": "electives from Business",
           "courses": [
@@ -1593,6 +1951,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Natural Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+            }
+          ],
           "next": "y3-CS-1",
           "plan": "electives from Natural Sciences",
           "courses": [
@@ -1615,6 +1979,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Social Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=social-sciences"
+            }
+          ],
           "next": "y3-CS-1",
           "plan": "electives from Social Sciences",
           "courses": [
@@ -1648,6 +2018,12 @@
           },
           "next": "y4-CS",
           "plan": "CS162, CS164, CS166",
+          "links": [
+            {
+              "label": "Applied Problem Solving on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/applied-problem-solving/"
+            }
+          ],
           "courses": [
             "CS162",
             "CS164",
@@ -1670,6 +2046,12 @@
           },
           "next": "y4-CS",
           "plan": "CS142, CS152, CS162",
+          "links": [
+            {
+              "label": "Computer Science and Artificial Intelligence on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/computer-science-and-artificial-intelligence/"
+            }
+          ],
           "courses": [
             "CS142",
             "CS152",
@@ -1692,6 +2074,12 @@
           },
           "next": "y4-CS",
           "plan": "CS152, CS154, CS156",
+          "links": [
+            {
+              "label": "Contemporary Knowledge Discovery on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/contemporary-knowledge-discovery/"
+            }
+          ],
           "courses": [
             "CS152",
             "CS154",
@@ -1714,6 +2102,12 @@
           },
           "next": "y4-CS",
           "plan": "CS146, CS156, CS166",
+          "links": [
+            {
+              "label": "Data Science and Statistics on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/data-science-and-statistics/"
+            }
+          ],
           "courses": [
             "CS146",
             "CS156",
@@ -1736,6 +2130,12 @@
           },
           "next": "y4-CS",
           "plan": "CS152, CS156, CS162",
+          "links": [
+            {
+              "label": "Computational Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            }
+          ],
           "courses": [
             "CS152",
             "CS156",
@@ -1758,6 +2158,12 @@
           },
           "next": "y4-CS",
           "plan": "CS144, CS154, CS164",
+          "links": [
+            {
+              "label": "Mathematics on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/mathematics/"
+            }
+          ],
           "courses": [
             "CS144",
             "CS154",
@@ -1919,7 +2325,17 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-NS",
-      "plan": "Natural Sciences"
+      "plan": "Natural Sciences",
+      "links": [
+        {
+          "label": "Natural Sciences on minerva.edu",
+          "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+        },
+        {
+          "label": "Full course catalog (PDF)",
+          "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf"
+        }
+      ]
     },
     "y1-NS": {
       "kind": "step",
@@ -2011,6 +2427,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Computational Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            }
+          ],
           "next": "y3-NS-1",
           "plan": "electives from Computational Sciences",
           "courses": [
@@ -2032,6 +2454,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Arts & Humanities on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=arts-humanities"
+            }
+          ],
           "next": "y3-NS-1",
           "plan": "electives from Arts & Humanities",
           "courses": [
@@ -2053,6 +2481,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Business on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=business"
+            }
+          ],
           "next": "y3-NS-1",
           "plan": "electives from Business",
           "courses": [
@@ -2074,6 +2508,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Social Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=social-sciences"
+            }
+          ],
           "next": "y3-NS-1",
           "plan": "electives from Social Sciences",
           "courses": [
@@ -2107,6 +2547,12 @@
           },
           "next": "y4-NS",
           "plan": "NS144, NS154, NS164",
+          "links": [
+            {
+              "label": "Cells and Organisms on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/cells-and-organisms/"
+            }
+          ],
           "courses": [
             "NS144",
             "NS154",
@@ -2129,6 +2575,12 @@
           },
           "next": "y4-NS",
           "plan": "NS152, NS154, NS156",
+          "links": [
+            {
+              "label": "Chemistry Across Scales on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/chemistry-across-scales/"
+            }
+          ],
           "courses": [
             "NS152",
             "NS154",
@@ -2151,6 +2603,12 @@
           },
           "next": "y4-NS",
           "plan": "NS146, NS156, NS166",
+          "links": [
+            {
+              "label": "Earth and Environmental Systems on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/earth-and-environmental-systems/"
+            }
+          ],
           "courses": [
             "NS146",
             "NS156",
@@ -2173,6 +2631,12 @@
           },
           "next": "y4-NS",
           "plan": "NS142, NS152, NS162",
+          "links": [
+            {
+              "label": "Matter and Energy on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/matter-and-energy/"
+            }
+          ],
           "courses": [
             "NS142",
             "NS152",
@@ -2333,7 +2797,17 @@
       },
       "continueLabel": "Start Year 1",
       "next": "y1-SS",
-      "plan": "Social Sciences"
+      "plan": "Social Sciences",
+      "links": [
+        {
+          "label": "Social Sciences on minerva.edu",
+          "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=social-sciences"
+        },
+        {
+          "label": "Full course catalog (PDF)",
+          "url": "https://course-resources.minerva.edu/uploaded_files/mu/00418360-8266/course-catalog-rev-410.pdf"
+        }
+      ]
     },
     "y1-SS": {
       "kind": "step",
@@ -2391,6 +2865,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Arts & Humanities on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=arts-humanities"
+            }
+          ],
           "next": "y3-SS-1",
           "plan": "electives from Arts & Humanities",
           "courses": [
@@ -2412,6 +2892,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Business on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=business"
+            }
+          ],
           "next": "y3-SS-1",
           "plan": "electives from Business",
           "courses": [
@@ -2433,6 +2919,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Computational Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=computational-sciences"
+            }
+          ],
           "next": "y3-SS-1",
           "plan": "electives from Computational Sciences",
           "courses": [
@@ -2454,6 +2946,12 @@
             "label": "Course Catalog 2026.v410",
             "url": "https://minerva.edu/academics/course-catalog-pdf/"
           },
+          "links": [
+            {
+              "label": "Natural Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/undergraduate/majors-concentrations/?tab=natural-sciences"
+            }
+          ],
           "next": "y3-SS-1",
           "plan": "electives from Natural Sciences",
           "courses": [
@@ -2489,6 +2987,12 @@
           },
           "next": "y4-SS",
           "plan": "SS142, SS152, SS162",
+          "links": [
+            {
+              "label": "Cognition, Brain, and Behavior on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/cognition-brain-and-behavior/"
+            }
+          ],
           "courses": [
             "SS142",
             "SS152",
@@ -2511,6 +3015,12 @@
           },
           "next": "y4-SS",
           "plan": "SS162, SS164, SS166",
+          "links": [
+            {
+              "label": "Designing Societies on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/designing-societies/"
+            }
+          ],
           "courses": [
             "SS162",
             "SS164",
@@ -2533,6 +3043,12 @@
           },
           "next": "y4-SS",
           "plan": "SS144, SS154, SS164",
+          "links": [
+            {
+              "label": "Economics and Society on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/economics-and-society/"
+            }
+          ],
           "courses": [
             "SS144",
             "SS154",
@@ -2555,6 +3071,12 @@
           },
           "next": "y4-SS",
           "plan": "SS152, SS154, SS156",
+          "links": [
+            {
+              "label": "Empirical Approaches to the Social Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/empirical-approaches-to-the-social-sciences/"
+            }
+          ],
           "courses": [
             "SS152",
             "SS154",
@@ -2577,6 +3099,12 @@
           },
           "next": "y4-SS",
           "plan": "SS146, SS156, SS166",
+          "links": [
+            {
+              "label": "Politics, Government, and Society on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/politics-government-and-society/"
+            }
+          ],
           "courses": [
             "SS146",
             "SS156",
@@ -2599,6 +3127,12 @@
           },
           "next": "y4-SS",
           "plan": "SS142, SS144, SS146",
+          "links": [
+            {
+              "label": "Theory and Analysis in the Social Sciences on minerva.edu",
+              "url": "https://www.minerva.edu/concentrations/theory-and-analysis-in-the-social-sciences/"
+            }
+          ],
           "courses": [
             "SS142",
             "SS144",
