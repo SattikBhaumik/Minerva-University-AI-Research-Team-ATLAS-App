@@ -1358,6 +1358,7 @@
   {
    "code": "AC81",
    "title": "Academic and Career Exploration I",
+   "page": 31,
    "description": "For students in their second year.",
    "note": "",
    "prerequisites": "None",
@@ -1368,6 +1369,7 @@
   {
    "code": "AC82",
    "title": "Academic and Career Exploration II",
+   "page": 31,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -1378,6 +1380,7 @@
   {
    "code": "AH50",
    "title": "Multimodal Communications",
+   "page": 31,
    "description": "Multimodal Communications focuses on communicating effectively. You will learn to understand and convey information at a high level, gaining practical experience in public speaking, visual communication, design, debate, and artistic expression.",
    "note": "Students must take this course in the Fall term of Year 1.",
    "prerequisites": "None",
@@ -1388,6 +1391,7 @@
   {
    "code": "AH51",
    "title": "Multimodal Communications",
+   "page": 31,
    "description": "Multimodal Communications focuses on communicating effectively. You will learn to understand and convey information at a high level, gaining practical experience in public speaking, visual communication, design, debate, and artistic expression.",
    "note": "Students must take this course in the Spring term of Year 1.",
    "prerequisites": "AH50: Multimodal Communications",
@@ -1398,6 +1402,7 @@
   {
    "code": "AH110",
    "title": "Global History",
+   "page": 31,
    "description": "From prehistoric times, human populations have moved across the globe. Driven by environmental, economic, political, and social forces, they have carried with them and have been exposed to new customs, new technologies, and new ideas for structuring societies and interacting with other peoples. They have also brought war, disease, and reduced cultural and biological diversity. Through theoretical and empirical readings about cross-cultural, transnational, and global encounters, this course provides you with the analytical tools to examine the large sweep of such events and movements in the period since 1400 from a variety of perspectives, to understand their causes, their impacts, the counter-currents they engendered, and what we can learn from them. Throughout we pay attention not only to what happened in the past, but to how historians have interpreted these developments.",
    "note": "",
    "prerequisites": "MC51: Multimodal Communications or AH51: Multimodal Communications",
@@ -1408,6 +1413,7 @@
   {
    "code": "AH111",
    "title": "Morality, Identity, and Justice",
+   "page": 32,
    "description": "What’s ethically significant about being human, or about our identities as members of various social groups? What do we owe to animals, to ecosystems, to future generations, to AI, and how do our answers to these questions rely on theories of identity? How do social and political institutions and structures limit and enable who we are? How might we reimagine the boundaries of humanity to challenge oppressive and unjust power dynamics? In this course we will examine the origins and enduring justifications for core ethical beliefs, as well as challenges to the idea that there are universal ethical norms by exploring the emergence of different conceptions of humanity and human values from a wide range of globally diverse perspectives. While the course introduces students to many historically significant philosophical voices, most of our classes focus on applying philosophy to concrete contemporary ethical challenges, particularly in the areas of environmental ethics, data ethics, bioethics, and feminist ethics. Note: This course provides the foundations for, and is a prerequisite for, the Philosophy, Ethics and the Law concentration in the Arts & Humanities major. AH111 also counts toward the Minor in Sustainability because it addresses a broad range of environmental ethical topics, including food ethics, climate ethics, and environmental justice. It also counts toward the Minor in Interdisciplinary Digital Practices because it provides an introduction to ethical questions related to privacy and surveillance, the moral status of AI, and data justice.",
    "note": "",
    "prerequisites": "MC51: Multimodal Communications or AH51: Multimodal Communications",
@@ -1418,6 +1424,7 @@
   {
    "code": "AH112",
    "title": "The Arts and Social Change",
+   "page": 32,
    "description": "A fundamental characteristic of the arts is that they are transformative. They lead us to see ourselves in new ways, to re-conceptualize our world, and to rethink our relationship to it. Consequently, the arts are often harbingers and pacesetters for social change. This course explores the use of creative expression in the visual arts, literature, and music to question and sometimes resist authority, to reassess ideological constructs, and to advocate change in social and political systems as well as in the arts themselves. Under what circumstances are such efforts likely to be successful? How do we determine success? To address these issues, the course draws examples from literature, the visual and performing arts, and music from different parts of the world. This course is a foundation and a prerequisite for the Arts and Literature concentration in the Arts & Humanities major.",
    "note": "",
    "prerequisites": "MC51: Multimodal Communications or AH51: Multimodal Communications",
@@ -1428,6 +1435,7 @@
   {
    "code": "AH113",
    "title": "Dynamics of Design",
+   "page": 32,
    "description": "Design affects the objects, spaces, and ideas of everyday life, from door handles and physical spaces to laws and the virtual spaces in which we experience our lives. Building on a broadly conceived and interdisciplinary understanding of “design,” this course covers approaches to design that are useful for all types of design practice. We explore how people and their technologies and material worlds have co-evolved over time. We also consider ethical questions related to design and practice transferring principles from one design field to other design fields. We conclude by covering recent developments in design studies that will directly equip you to recognize the contingency of different design logics and the intricacies of design trends that emerge in the future. You’ll leave this course with a deeper and more nuanced knowledge of your technological and material worlds, a robust foundation to further practice various types of design, and a nuanced set of tools to participate in the building and crafting of your communities as a designer and/or citizen. Note: This course qualifies as part of the Interdisciplinary Minor in Sustainability because it addresses sustainable design. Students learn how social, technological, and ecological systems interact in design processes and products and how to use the tools of design for more just and sustainable outcomes.",
    "note": "",
    "prerequisites": "MC51: Multimodal Communications or AH51: Multimodal Communications",
@@ -1438,6 +1446,7 @@
   {
    "code": "AH142",
    "title": "The Craft of Historical Analysis",
+   "page": 33,
    "description": "History as a field of study is based on a set of methods to analyze the past, understand the foundations of the present, and at times anticipate the future. Historical analysis focuses on why changes did or did not occur in particular societies at various times, how these changes unfolded, the motivations of participants, and the influence that the past may have on the present. This course examines the creative responses of historians to the challenges they face in uncovering the past and addressing these issues. Students deal with questions such as what are the boundaries between historical and fictional narratives? How does who writes history affect what they write? If history is written by those in power, as is often stated, what tools does the historian have to write about the people without a history? What possibilities and limitations are inherent in different kinds of historical evidence, whether material objects, written texts, or digitized data sets?",
    "note": "",
    "prerequisites": "AH110: Global History or AH152: Comparing Societies and Histories: The Impact of Time and Place or AH162: Public and Applied History",
@@ -1448,6 +1457,7 @@
   {
    "code": "AH144",
    "title": "Ethical Worldviews, Moral Dilemmas",
+   "page": 33,
    "description": "Normative ethics is the study of ethical systems that provide answers to the question of how one ought to act in situations of moral significance. Moral dilemmas involve choices between mutually exclusive alternatives, each of which carries significant burdens. This course introduces you to theoretical frameworks from a wide range of global perspectives, including Greek, Confucian, and African virtue ethical theories, Kantian and Utilitarian moral theories, and Feminist and Buddhist ethical theories centered on care and compassion. Students study ethical theories in their social and historical contexts and then apply them to address moral decisions and dilemmas arising from reproductive and sexual ethics, the ethics of care work, the ethics of markets, climate change ethics and green tourism, and the distribution of scarce health resources. This course supports and is a prerequisite for both the Philosophy, Ethics and the Law Concentration and the Interpretation and Meaning Concentrations in the Arts & Humanities major because the course provides students with experience in closely interpreting philosophical texts in their social and historical contexts, and supports students as they integrate contextual knowledge into their evaluations of each perspective. This course also counts toward the Minor in Interdisciplinary Digital Practices because it provides foundations to major ethical systems of value, and applies ethical reasoning to the design and use of social robots, data ethics in the context of healthcare. This Concentration course does not have a prerequisite Core course.",
    "note": "",
    "prerequisites": "CX51: Complex Systems or SS51: Complex Systems or AH111: Morality, Identity, and Justice",
@@ -1458,6 +1468,7 @@
   {
    "code": "AH146",
    "title": "Decoding Art and Literature",
+   "page": 33,
    "description": "We can gain a deeper appreciation of any work of art, music, or literature by delving into issues of form, structure, and function. In this course students acquire the tools to understand different artistic genres through close analysis of individual works. The course draws examples from both the western and non-western traditions, from diverse historical periods, and from works with different functions that are aimed at different audiences. The goal is to provide students with a broad set of analytical tools that they can apply to a wide range of visual, textual, and musical works.",
    "note": "",
    "prerequisites": "AH112: The Arts and Social Change or AH156: Socioeconomic Influences on Art and Literature or AH166: Artistic Communication from Page to Practice or AH144: Ethical Worldviews, Moral Dilemmas",
@@ -1468,6 +1479,7 @@
   {
    "code": "AH152",
    "title": "Comparing Societies and Histories: The Impact of Time and Place",
+   "page": 34,
    "description": "Historical narratives often rely on implicit comparisons between time periods and societies. In this course, students make these comparisons explicit in order to illuminate differences and similarities in the ways societies have responded to political, economic, social, and environmental challenges. Students combine the fundamentals of historical inquiry with methods and perspectives from sociology and anthropology to examine controversial debates about the relative success and failure of different societies and the responses of different societies to similar challenges from the seventeenth century to the present; they also analyze case studies on topics including empire, nationalism, responses to environmental and political crises, and social movements. Along the way, they consider what is gained and what is lost by approaching historical phenomena from a comparative perspective.",
    "note": "",
    "prerequisites": "AH110: Global History or AH142: The Craft of Historical Analysis or AH162: Public and Applied History or SS112: Political Science and Social Change",
@@ -1478,6 +1490,7 @@
   {
    "code": "AH154",
    "title": "Law and Ethics from a Global Perspective",
+   "page": 34,
    "description": "What is the law, why should we obey it, and what constitutes an ethical legal system? Are human rights universal or culturally relative? How should customary laws relate to constitutions, if at all? We examine fundamental legal concepts and practices, as well as the evolution of diverse understandings of law and its application from the perspectives of legal systems throughout the world. We then consider topics in legal theory such as the role of constitutions and customs, the theory of punishment, the purpose of civil disobedience, the roles of law in constructing social identities, the relationship between national and international law, and the nature and practice of human rights law. This course supports and is a prerequisite for both the Philosophy, Ethics and the Law Concentration and the Global and Comparative Humanities Concentration in the Arts & Humanities major because the course examines legal theory from a wide range of global perspectives, helping students draw comparisons and cross-cultural critiques of assumptions we find in legal theories.",
    "note": "",
    "prerequisites": "AH111: Morality, Identity, and Justice or AH144: Ethical Worldviews, Moral Dilemmas or AH164: Social and Political Philosophy or SS166: Comparative Constitutional Law: Designing Societies",
@@ -1488,6 +1501,7 @@
   {
    "code": "AH156",
    "title": "Socioeconomic Influences on Art and Literature",
+   "page": 34,
    "description": "For several centuries artistic and literary works were considered the product of the individual creative genius of artists and writers. More recently, scholars have argued that these works are also social products, that they are shaped by the economic, social, and cultural forces of their societies. To what extent and in what ways do socioeconomic and cultural forces influence the arts and literature? This course explores this and related questions as we examine issues such as the relationship between artists, writers, patrons, and clients; the social and cultural functions of different works of art and literature; the role of gender and power relations in the creation, production and reception of art; the education and training of artists and writers; the influence of globalization on artistic production and practice; and the organization of labor in the production of art. Who is in and who is out of the process of artistic and literary creation, production, and reception? And what implications does this have for participation in the various art markets that have emerged over time? Finally, how can an understanding of the social and economic processes influencing the arts and literature help us become more informed creators and consumers of art today? Drawing on key cultural and socioeconomic theoretical frameworks to ground our understanding, this course focuses on artistic and literary works from different time periods and locales, and ranging from popular and to elite traditions, in order to explore in greater depth a diversity of styles as well as interpretive perspectives.",
    "note": "",
    "prerequisites": "AH110: Global History or AH112: The Arts and Social Change or AH142: The Craft of Historical Analysis or AH146: Decoding Art and Literature or AH152: Comparing Societies and Histories: The Impact of Time and Place or AH162: Public and Applied History or AH166: Artistic Communication from Page to Practice",
@@ -1498,6 +1512,7 @@
   {
    "code": "AH162",
    "title": "Public and Applied History",
+   "page": 35,
    "description": "\"The past is never dead. It's not even past,\" wrote William Faulkner. The presentness of the past is evident in the controversies that ensue when history is used and misused for public purposes. This course analyzes some of the critical public debates that have occurred over historical issues and over governmental policies enacted in different parts of the world in response to museum exhibits, memorials, the publication of history textbooks, and the making of historical films. It also examines the call for political actions based on a fictitious past as well as the role of historians in opposing such efforts. Students consider questions such as: what constitutes public history and what theoretical issues does it raise? What is the difference between public memory and history? What are the standards and responsibilities of the field? What obligations does the historian have to the living and the dead, and what preparation do historians need in order to be effective in this increasingly important segment of the historical profession? This course counts toward the Minor in Interdisciplinary Digital Practices because it examines both the theory and practice of the digital humanities, from data ethics and presenting work to the public to mapping with geographic information systems (GIS) and using text and network analysis.",
    "note": "",
    "prerequisites": "AH110: Global History or AH113: Dynamics of Design or AH142: The Craft of Historical Analysis or AH152: Comparing Societies and Histories: The Impact of Time and Place",
@@ -1508,6 +1523,7 @@
   {
    "code": "AH164",
    "title": "Social and Political Philosophy",
+   "page": 35,
    "description": "As individuals, we lead both private and public lives. Political and social institutions provide the framework within which we interact with others and pursue our personal goals and ambitions. What is the proper role of these institutions, and how can we change them for the better? How are our social and political institutions the result of design thinking and how can we critically reflect on the design dynamics in play to contribute to more democratic or more just institutions? This course explores these questions by examining central topics in social and political philosophy, including democracy, justice, the family, and the nature of social identity. We investigate how political and social systems ought to be designed, with special consideration to international issues including environmental pollution, humanitarian intervention, global poverty, migration, and secession.",
    "note": "This course supports and is a prerequisite for the Philosophy, Ethics and the Law Concentration and the Design Across the Humanities Concentration in the Arts & Humanities major. It also counts toward the Minor in Sustainability because it examines social and political values underpinning institutions of peace and justice featured in contemporary societies, including democratic principles that aim to reduce inequality and poverty, mobility design through immigration and border policies, and the use of design thinking to challenge western conceptions of sustainable development.",
    "prerequisites": "AH111: Morality, Identity, and Justice or AH113: Dynamics of Design or AH144: Ethical Worldviews, Moral Dilemmas or AH154: Law and Ethics from a Global Perspective or SS112: Political Science and Social Change",
@@ -1518,6 +1534,7 @@
   {
    "code": "AH166",
    "title": "Artistic Communication from Page to Practice",
+   "page": 36,
    "description": "This course examines various modes of artistic expression and communication—including protest, propaganda and humor. Our aim is to understand the different ways that works of literary, musical, visual, and multimedia art shed light on the world and communicate with a wide range of different communities and constituencies. To address this goal, we will ask questions such as: How do poems or stories express artistic visions differently than paintings or music? Is a documentary film an effective form of propaganda and is it potentially more or less effective than a photograph? How do these genres vary in their abilities to persuade? The course explores these and related questions, paying particular attention to moving images—films, television shows, and works of digital art. Students apply theory to practice and use the modes of communication analyzed in class to communicate and persuade by producing creative projects, whether they be poems, works of creative fiction, musical compositions, graphic art posters, or other works. No Core class prerequisite, but completion of AH112 or AH113 is recommended.",
    "note": "",
    "prerequisites": "MC51: Multimodal Communications or AH51: Multimodal Communications or AH112: The Arts and Social Change",
@@ -1528,6 +1545,7 @@
   {
    "code": "B110",
    "title": "Market Dynamics and Product Analytics",
+   "page": 36,
    "description": "Business is a powerful driver of economic growth and stability; to do well in business, you must understand consumers, products, and markets. Market Dynamics and Product Analytics is a Major Core course that provides essential foundations for business majors and is a prerequisite for all junior-level business Concentration courses. The objective of B110 is to challenge students to apply marketing methods used by businesses to create value for shareholders and selected customers and consumers. We examine the consumer behavior of individuals, learn how to run, analyze and interpret experiments, and we review business marketing strategies designed to create and capture value.",
    "note": "",
    "prerequisites": "B111: Financial Planning, Budgeting and Modeling (corequisite), CX51: Complex Systems or SS51: Complex Systems, EA51: Empirical Analyses or NS51: Empirical Analyses, FA51: Formal Analyses or CS51: Formal Analyses, MC51: Multimodal Communications or AH51: Multimodal Communications",
@@ -1538,6 +1556,7 @@
   {
    "code": "B111",
    "title": "Financial Planning, Budgeting and Modeling",
+   "page": 36,
    "description": "This Core course provides a foundation for all Business majors and is a prerequisite for all Business Concentration courses. Students learn about the financial and strategic tools managers use to track, evaluate, and improve their business operations for achieving business objectives. Students learn accounting terminology to read financial statements, explore tools used to develop financial models, and analyze case studies of real-world business situations. Key topics include financial and managerial accounting, present value analysis, options, capital structure, strategy, and corporate social responsibility.",
    "note": "",
    "prerequisites": "B110: Market Dynamics and Product Analytics (corequisite), CX51: Complex Systems or SS51: Complex Systems, EA51: Empirical Analyses or NS51: Empirical Analyses, FA51: Formal Analyses or CS51: Formal Analyses, MC51: Multimodal Communications or AH51: Multimodal Communications",
@@ -1548,6 +1567,7 @@
   {
    "code": "B112",
    "title": "Doing Business",
+   "page": 37,
    "description": "This Core course provides foundations for Business majors and is a prerequisite for all junior-level Concentration courses in this major. We analyze the political, regulatory, and societal contexts in which business gets done from a global perspective. We address how organizations can create strategies that address varying cultural biases, labor market conditions, and financial regulations. Overall the goal is to examine how businesses succeed and fail when trying to expand into new markets and new geographies. Note: B112 must be completed before B164, B165, B166, or B199 (Business Practicum).",
    "note": "B113 is no longer a required corequisite as of Fall 2023; it is still recommended to take both courses in the same semester if possible",
    "prerequisites": "B110: Market Dynamics and Product Analytics, B111: Financial Planning, Budgeting and Modeling",
@@ -1558,6 +1578,7 @@
   {
    "code": "B113",
    "title": "Enterprise, Design and Optimization",
+   "page": 37,
    "description": "This Core course provides foundations for all Business Majors and is a prerequisite for all junior-level Concentration Courses. Students will explore the inner workings of the business enterprise in context of its environment. The focus is on how to formulate and execute organizational strategies to achieve financial and non-financial objectives. Students learn about multiple levels and factors in organizational designs and how to manage tradeoffs in strategic decision making. The role of agents, functions, structures, processes will be analyzed, as well as design, implementation, control and improvement activities. Human behavior, incentives, emergent effects, stakeholder interests and operational efficiency will be considered. Completing B112 in the same semester (as a corequisite) is recommended but not required.",
    "note": "",
    "prerequisites": "B110: Market Dynamics and Product Analytics, B111: Financial Planning, Budgeting and Modeling",
@@ -1568,6 +1589,7 @@
   {
    "code": "B144",
    "title": "Needs Identification and Product Development",
+   "page": 37,
    "description": "In this course, we will explore different approaches to need identification, product design and development, and market introduction. We will learn how to understand our customers and their needs and learn how to identify the new market potential of existing products. We will delve into the conception, design, planning, and forecasting phases of new product design. Finally, will explore the process of realizing a product in different business settings, and learn how to introduce new products to various markets. To do this, we build on our knowledge of market research, consumer psychology, and creative problem-solving from previous courses.",
    "note": "",
    "prerequisites": "B113: Enterprise, Design and Optimization",
@@ -1578,6 +1600,7 @@
   {
    "code": "B145",
    "title": "Venture Initiation and Valuation",
+   "page": 38,
    "description": "The overall goal of this course is to bolster your ability to work with scarce resources while balancing growth and profitability. Relying on skills developed in B111, you will build “muscle memory” so you can raise capital and effectively interface with stakeholders in future business creation and growth. We will analyze new ventures and projects from readings, real-world illustrations, case studies, a location-based assignment, and your own business plan. We also will discuss how entrepreneurs, investors, and policymakers can move the needle in order to bring about more equal access to entrepreneurial capital and support socially and ecologically responsible investments. As potential entrepreneurs, you will discover how to raise capital and effectively interface with investors, board members, employees, and other stakeholders in order to maximize positive outcomes.",
    "note": "",
    "prerequisites": "B113: Enterprise, Design and Optimization",
@@ -1588,6 +1611,7 @@
   {
    "code": "B146",
    "title": "Business Operations",
+   "page": 38,
    "description": "Study the entrepreneurial process from inception through early growth stages and the unique operational challenges of competing with highly constrained resources. Integrate financial planning, organizational design, product development, market penetration and operations management concepts while addressing risk-reward tradeoffs. The focus is on the utilization of business practices to transform inputs into goods and services as efficiently as possible to enable sustainable growth.",
    "note": "",
    "prerequisites": "B113: Enterprise, Design and Optimization",
@@ -1598,6 +1622,7 @@
   {
    "code": "B154",
    "title": "Strategic Brand Leadership",
+   "page": 38,
    "description": "In this course, we build on your knowledge of market research, consumer psychology, and creative problem-solving to understand and explore different approaches to growth. Throughout the course, we will delve into new metrics for measuring marketing’s worth, leverage psychological principles for brand building, and analyze the power of partnerships for growth. Throughout the semester you will propose, execute, and evaluate experiments to get first-hand experience in growing a brand. We will place these activities into the larger context of the firm and will explore the strategic role that they play in business development.",
    "note": "",
    "prerequisites": "B113: Enterprise, Design and Optimization",
@@ -1608,6 +1633,7 @@
   {
    "code": "B155",
    "title": "Capital Allocation and Value Creation",
+   "page": 38,
    "description": "Investigate how growing enterprises use their balance sheets to execute growth strategies. Apply discounted cash flow and real options to select among opportunities that create business value. Learn the role of finance in selecting and valuing appropriate M&A candidates and strategies for achieving synergy.",
    "note": "",
    "prerequisites": "B113: Enterprise, Design and Optimization",
@@ -1618,6 +1644,7 @@
   {
    "code": "B156",
    "title": "Business Systems",
+   "page": 39,
    "description": "Learn strategic and tactical decision-making for the design and operation of product and service delivery systems. Consider strategies to increase competitiveness while managing risk. Compare approaches to business process outsourcing, quality management, partnering, and supply chain coordination and rationalization.",
    "note": "",
    "prerequisites": "B113: Enterprise, Design and Optimization",
@@ -1628,6 +1655,7 @@
   {
    "code": "B164",
    "title": "Brand Evolution and Reinvention",
+   "page": 39,
    "description": "Powerful brands can enhance customer relationships, generate profitability, and produce shareholder value. Yet, enterprise growth often begins to slows down as brands get older and approach maturity. During this tipping point in the life cycle, firms must decide how to revitalize their brands and rekindle enterprise growth in order to prevent brand failure. To address these challenges, this course examines signs of brand maturity and explores opportunities for brand revitalization. To begin, we analyze key performance indicators to generate a brand audit and learn how to assess brand equity. Thereafter, we use creative and innovative thinking to explore different paths to enterprise growth and brand revitalization including new market entry, brand extensions, co-branding, brand reinvention, and mergers and acquisitions.",
    "note": "",
    "prerequisites": "B112: Doing Business, B113: Enterprise, Design and Optimization",
@@ -1638,6 +1666,7 @@
   {
    "code": "B165",
    "title": "Global Financial Strategy",
+   "page": 39,
    "description": "Global investing requires sophisticated tools to select among risk/return scenarios. Learn to apply these tools, which include diversification and hedging for risk reduction, appropriate capital structuring to fund growth, and dividend/share repurchase strategies to drive shareholder value. Investigate the role of private equity investing and financial engineering in modern global finance.",
    "note": "",
    "prerequisites": "B112: Doing Business, B113: Enterprise, Design and Optimization",
@@ -1648,6 +1677,7 @@
   {
    "code": "B166",
    "title": "Business Optimization",
+   "page": 39,
    "description": "In this class we study ways to optimize organizational structure, processes, and systems that support key business functions in large enterprises. We learn build, buy, and partner strategies, identify the major pitfalls in systems design and management, and navigate the often conflicting requirements that drive profitability. The goal of the course is to examine how large enterprises use their operational systems to synchronize product or service availability with market potential.",
    "note": "",
    "prerequisites": "B112: Doing Business, B113: Enterprise, Design and Optimization",
@@ -1658,6 +1688,7 @@
   {
    "code": "B199",
    "title": "Business Practicum",
+   "page": 40,
    "description": "The Business Practicum is a residential course in the summer between the third and fourth years. Students combine Learning Outcomes from two or more major core or concentration courses in the Business College.",
    "note": "Business Majors should register for this course in the summer semester between third and fourth year.",
    "prerequisites": "B112: Doing Business, B113: Enterprise, Design and Optimization",
@@ -1668,6 +1699,7 @@
   {
    "code": "CA01",
    "title": "Critique and Communication",
+   "page": 40,
    "description": "From the languages we speak to the images we see, our world is layered with information. To communicate effectively, we need to learn how to analyze these layers, see how they are organized, and understand how they will be perceived by different audiences. Learning to take critical perspectives improves our ability to weigh evidence, evaluate decisions, and craft persuasive, well-supported arguments. In this course, students learn to extend the principles of close reading and careful writing to a wide range of written and multimedia communications.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1678,6 +1710,7 @@
   {
    "code": "CA02",
    "title": "Applied Creative and Critical Thinking",
+   "page": 40,
    "description": "Logical reasoning, problem solving, and recognizing and mitigating cognitive biases are among the most fundamental skills that facilitate effective work in any area. In this course, we systematically practice these skills, learning to apply them to concrete problems across domains. Students will gain a foundation in critical and creative thinking upon which they can build expertise in disciplinary knowledge.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1688,6 +1721,7 @@
   {
    "code": "CA03",
    "title": "Statistical Intuitions and Applications",
+   "page": 40,
    "description": "In this course, students learn how to use probability and statistics to extract useful information from data, including identifying the correct tool to be used for a given application and set of assumptions, along with interpreting the results. Students learn how to represent a problem formally by identifying the variables and parameters and then creating a model that uses relevant data to address the problem. Students investigate the use of descriptive statistics to describe data and consider the uses and misuses of correlation models. This is followed by an examination of probability and probability distributions, focusing on how to use them to make inferences about populations from samples. We conclude by studying Bayesian statistics and inference as a framework for thinking about problems and prediction probabilistically.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1698,6 +1732,7 @@
   {
    "code": "CA04",
    "title": "Deriving Insights from Evidence",
+   "page": 41,
    "description": "Students in this course learn to combine creative and critical thinking to quantitatively apply methods used in the natural and social sciences. Students learn to frame problems effectively, develop and test hypotheses, and derive insights from empirical evidence. Students will dig deeply into different types of data; comparing cases in which direct manipulation of the phenomena being studied is not possible (such as observational studies, case studies, and surveys), and cases in which variables are manipulated to different degrees (such as randomized controlled medical trials and quasi-experiments). We emphasize the tenets of good research design, strengths and limitations of different design types, quantitative methods to validate data, and the generalizability of inferences drawn from distinct study designs.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1708,6 +1743,7 @@
   {
    "code": "CA04B",
    "title": "Evaluating Evidence",
+   "page": 41,
    "description": "In this course, students learn how \"thinking like a scientist\" will enable them to frame problems effectively, recognize and develop testable hypotheses, and evaluate the strength of empirical evidence supporting conjecture. Students explore the relationships among facts, hypotheses, theories and scientific laws and the desirable properties of hypotheses (testable, simple, consistent, and accurate). Students also compare the types of inferences that can be drawn from observational data and the results of experimental interventions.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1718,6 +1754,7 @@
   {
    "code": "CA05",
    "title": "Systems and Society",
+   "page": 41,
    "description": "This course focuses on effective engagement in social systems. Students will examine social interaction through the lens of complex systems theory, which provides a powerful framework for understanding human behavior and group dynamics. Students learn to recognize that they are embedded within many different complex social systems, and they apply their understanding of these systems to analyzing and improving social interactions.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1728,6 +1765,7 @@
   {
    "code": "CA06",
    "title": "Systems and Strategic Leadership",
+   "page": 41,
    "description": "Building on Systems and Society, students use their knowledge of complexity in social systems as a basis for learning tools for interpersonal and group engagement, including strategy development, negotiation, and leadership. By synthesizing knowledge of complex systems with techniques for influencing individuals and groups, students learn how to interact effectively within and across groups and organizations.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1738,6 +1776,7 @@
   {
    "code": "CA07",
    "title": "Interpretation, Communication and Design",
+   "page": 42,
    "description": "To communicate effectively, one must be able to convey the result of one’s thinking to others in a compelling manner, and to persuade them to adopt the same or similar views. Humans organize and interpret what they see and hear according to certain principles. Everything from sophisticated art forms to everyday gadgets must take these principles into account in order to be successful. Knowing these principles enhances our ability to evaluate a wide range of products from films and video games to material objects. Applying them enables us to create high quality multimodal and multimedia communications. In this course, students will learn to interpret and create communications from written essays to presentations to artistic works based on the principles of verbal and nonverbal expression and design.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1748,6 +1787,7 @@
   {
    "code": "CA08",
    "title": "Computational Modeling and Decision Theory",
+   "page": 42,
    "description": "In this course, students learn to use computational tools to find either optimal or approximate solutions to problems. Topics include sorting, path-finding, data classification, perceptron models, genetic algorithms, agent-based and numerical simulations of models, and network theory. In addition, we study decision-making in the face of risky or uncertain outcomes. The approach is two-fold: students investigate both quantitative tools for making rational decisions, and descriptions of common biases and heuristics applied by humans that may lead to non-optimal choices.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1758,6 +1798,7 @@
   {
    "code": "CB01",
    "title": "Strategic Learning & Growth",
+   "page": 42,
    "description": "This course provides tools for students to reflect, plan, and act in ways that will allow them to learn new skills and reach goals more effectively. Students study key scientific findings related to learning and executive functioning and practice creating habits that promote self-awareness, knowledge acquisition, efficient planning, and careful decision making. The course will focus on instilling a growth mindset and developing practical strategies for engaging in continuous cycles of reflection and learning.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1768,6 +1809,7 @@
   {
    "code": "CB02",
    "title": "Expressive Clarity",
+   "page": 42,
    "description": "This course focuses on clarity and style in communication. Students develop an understanding of why great writing and speaking matter and learn how to use effective word choice, phrasing, sentence structure, and tone across a variety of mediums.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1778,6 +1820,7 @@
   {
    "code": "CB03",
    "title": "Applied Algorithmic Thinking",
+   "page": 43,
    "description": "The purpose of this course is to learn how to apply fundamental concepts in computer science to solve real-world problems and how to implement basic algorithmic strategies in Python. We’ll learn how thinking like a computer scientist can improve our own lives and how we can apply concepts from computer science to solve difficult problems.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1788,6 +1831,7 @@
   {
    "code": "CB04",
    "title": "Applied Quantitative Thinking",
+   "page": 43,
    "description": "In this course, students study topics in mathematics that are directly applicable to daily life. A key goal of the course is for students to develop intuitions about how to use mathematics to solve concrete problems, as opposed to just memorizing formulas or procedures to pass an exam. Students come away from this course with the knowledge and confidence to tackle real-world problems using mathematical tools and strategies.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -1798,6 +1842,7 @@
   {
    "code": "CP191",
    "title": "Capstone Seminar",
+   "page": 43,
    "description": "Explore several topics of interest, focusing on the potential of each one to develop into a high-quality Capstone project. In parallel, continue to develop valuable skills for advancing your project from ideation through evaluation and planning to implementation and prototyping, applying learning outcomes from your major as well as the entire curriculum, and in particular from the Cornerstone courses.",
    "note": "This course is offered Pass / No Pass. This course is only offered during the Fall term. Students should enroll in this course in the Fall term of Year 3.",
    "prerequisites": "IL123: Special Topics Japan Society & Culture or GL93: Global Learning III",
@@ -1808,6 +1853,7 @@
   {
    "code": "CP192",
    "title": "Capstone Seminar",
+   "page": 43,
    "description": "Revise and complete a professional proposal for the Capstone project. Engage in peer review of written work as well as presentations to receive critiques and suggestions from other students. The final written proposal is evaluated by the Capstone Seminar instructor as well as the assigned Capstone Advisor.",
    "note": "This course is offered Pass / No Pass. This course is only offered during the Spring term. Students should enroll in this course in the Spring term of Year 3. Students do not have to pass CP191 in order to register for CP192; they need to be third-year students only.",
    "prerequisites": "CP19101: Capstone Seminar or CP19102: Capstone Seminar or CP19103: Capstone Seminar or CP19104: Capstone Seminar or CP19105: Capstone Seminar or IL124: Special Topics in Japanese Culture and Society or IL14001: Special Topics Capstone Seminar or IL14002: Special Topics Capstone Seminar or IL14003: Special Topics Capstone Seminar",
@@ -1818,6 +1864,7 @@
   {
    "code": "CP193",
    "title": "Capstone Directed Study I",
+   "page": 44,
    "description": "Conduct an original piece of research or creation of a project under the guidance of a faculty advisor. At the end of the course, you will submit an initial draft of your Capstone work along with clear plans for achieving the remaining project goals.",
    "note": "Students should enroll in this course in the Fall term of Year 4.",
    "prerequisites": "CP192: Capstone Seminar",
@@ -1828,6 +1875,7 @@
   {
    "code": "CP194",
    "title": "Capstone Directed Study II",
+   "page": 44,
    "description": "Building on CP193, continue developing an original piece of research or project under the guidance of a faculty advisor. By the end of the course, submit the completed Capstone project and accompanying academic documentation of the project, an abstract of the project, a short-article prospectus, and a lesson plan for an active-learning class for peers to be taught during Manifest.",
    "note": "Students should enroll in this course in the Spring term of Year 4.",
    "prerequisites": "CP193: Capstone Directed Study I",
@@ -1838,6 +1886,7 @@
   {
    "code": "CP195",
    "title": "Manifest",
+   "page": 44,
    "description": "The Capstone is presented during Manifest, a month-long term that takes place in San Francisco, following the spring semester of the fourth year. During this celebratory conclusion to your Minerva experience, you present your Capstone work to an audience of faculty, fellow students, and members of the broader community. The Capstone project will then be evaluated according to the standards relevant to your chosen field. A successful Capstone will effectively propel you into the next stage of your professional life.",
    "note": "This course is no longer offered.",
    "prerequisites": "CP194: Capstone Directed Study II",
@@ -1848,6 +1897,7 @@
   {
    "code": "CP196",
    "title": "Manifest-2 credits",
+   "page": 44,
    "description": "",
    "note": "",
    "prerequisites": "CP194: Capstone Directed Study II",
@@ -1858,6 +1908,7 @@
   {
    "code": "CP399",
    "title": "Masters Thesis",
+   "page": 44,
    "description": "",
    "note": "",
    "prerequisites": "CS312: Knowledge: Information Based Decisions, CS351: Formal Methods for Analysis and Decision Making, NS351: Applications of Scientific Inquiry, NS372: Research Methods Across Contexts, SS351: Advanced Complex Systems",
@@ -1868,6 +1919,7 @@
   {
    "code": "CP399R",
    "title": "Thesis Continuation",
+   "page": 45,
    "description": "Continuation of Masters Thesis CP399.",
    "note": "",
    "prerequisites": "CP399: Masters Thesis",
@@ -1878,6 +1930,7 @@
   {
    "code": "CP19101",
    "title": "Capstone Seminar",
+   "page": 45,
    "description": "Explore several topics of interest, focusing on the potential of each one to develop into a high-quality Capstone project. In parallel, continue to develop valuable skills for advancing your project from ideation through evaluation and planning to implementation and prototyping, applying learning outcomes from your major as well as the entire curriculum, and in particular from the Cornerstone courses.",
    "note": "This course is offered as a letter-graded course. This course is only offered during the Fall term. Students should enroll in this course in the Fall term of Year 3.",
    "prerequisites": "GL93: Global Learning III or IL123: Special Topics Japan Society & Culture",
@@ -1888,6 +1941,7 @@
   {
    "code": "CP19102",
    "title": "Capstone Seminar",
+   "page": 45,
    "description": "Explore several topics of interest, focusing on the potential of each one to develop into a high-quality Capstone project. In parallel, continue to develop valuable skills for advancing your project from ideation through evaluation and planning to implementation and prototyping, applying learning outcomes from your major as well as the entire curriculum, and in particular from the Cornerstone courses.",
    "note": "This course is offered as a letter-graded course. This course is only offered during the Fall term. Students should enroll in this course in the Fall term of Year 3.",
    "prerequisites": "GL93: Global Learning III or IL123: Special Topics Japan Society & Culture",
@@ -1898,6 +1952,7 @@
   {
    "code": "CP19103",
    "title": "Capstone Seminar",
+   "page": 45,
    "description": "Explore several topics of interest, focusing on the potential of each one to develop into a high-quality Capstone project. In parallel, continue to develop valuable skills for advancing your project from ideation through evaluation and planning to implementation and prototyping, applying learning outcomes from your major as well as the entire curriculum, and in particular from the Cornerstone courses.",
    "note": "This course is offered as a letter-graded course. This course is only offered during the Fall term. Students should enroll in this course in the Fall term of Year 3.",
    "prerequisites": "GL93: Global Learning III or IL123: Special Topics Japan Society & Culture",
@@ -1908,6 +1963,7 @@
   {
    "code": "CP19104",
    "title": "Capstone Seminar",
+   "page": 45,
    "description": "Explore several topics of interest, focusing on the potential of each one to develop into a high-quality Capstone project. In parallel, continue to develop valuable skills for advancing your project from ideation through evaluation and planning to implementation and prototyping, applying learning outcomes from your major as well as the entire curriculum, and in particular from the Cornerstone courses.",
    "note": "This course is offered as a letter-graded course. This course is only offered during the Fall term. Students should enroll in this course in the Fall term of Year 3.",
    "prerequisites": "GL93: Global Learning III or IL123: Special Topics Japan Society & Culture",
@@ -1918,6 +1974,7 @@
   {
    "code": "CP19105",
    "title": "Capstone Seminar",
+   "page": 46,
    "description": "Explore several topics of interest, focusing on the potential of each one to develop into a high-quality Capstone project. In parallel, continue to develop valuable skills for advancing your project from ideation through evaluation and planning to implementation and prototyping, applying learning outcomes from your major as well as the entire curriculum, and in particular from the Cornerstone courses.",
    "note": "This course is offered as a letter-graded course. This course is only offered during the Fall term. Students should enroll in this course in the Fall term of Year 3.",
    "prerequisites": "GL93: Global Learning III or IL123: Special Topics Japan Society & Culture",
@@ -1928,6 +1985,7 @@
   {
    "code": "CS50",
    "title": "Formal Analyses",
+   "page": 46,
    "description": "Formal Analyses focuses on thinking critically. You will receive training in advanced logic, rational thought, statistics, computational thinking, and formal systems -- all of which will help you formulate, analyze, and solve complex challenges.",
    "note": "Students must take this course in the Fall term of Year 1.",
    "prerequisites": "None",
@@ -1938,6 +1996,7 @@
   {
    "code": "CS51",
    "title": "Formal Analyses",
+   "page": 46,
    "description": "Formal Analyses focuses on thinking critically. You will receive training in advanced logic, rational thought, statistics, computational thinking, and formal systems -- all of which will help you formulate, analyze, and solve complex challenges.",
    "note": "Students must take this course in the Spring term of Year 1.",
    "prerequisites": "CS50: Formal Analyses",
@@ -1948,6 +2007,7 @@
   {
    "code": "CS51B",
    "title": "Programming",
+   "page": 46,
    "description": "",
    "note": "Programming course. May be fulfilled by in-person test challenge, or successful completion of CS51B",
    "prerequisites": "None",
@@ -1958,6 +2018,7 @@
   {
    "code": "CS110",
    "title": "Problem Solving with Data Structures and Algorithms",
+   "page": 46,
    "description": "Apply core concepts in design and analysis of algorithms, data structures, and computational problem-solving techniques to address complex problems. Hashing, searching, sorting, tree algorithms, dynamic programming, greedy algorithms, divide and conquer, backtracking, random number generation, and randomized algorithms are examples of algorithms you will learn to exploit to solve problems ranging from logistics to route optimization to DNA sequencing. This course counts toward the Minor in Interdisciplinary Digital Studies (for non-CS Majors) because it helps students learn how the algorithmic building blocks of digital technologies are essential for understanding the software tools and libraries available for creating digital artifacts in the humanities such as visualizations, apps, and data stories.",
    "note": "",
    "prerequisites": "FA51: Formal Analyses or CS51: Formal Analyses, CS51B: Programming or PR51: Programming Structured Study Sessions",
@@ -1968,6 +2029,7 @@
   {
    "code": "CS111",
    "title": "Single and Multivariable Calculus",
+   "page": 47,
    "description": "Learn to utilize principles of single and multivariable calculus to solve relevant problems from across STEM. Traditional calculus courses focus on the techniques needed to perform complex computations by hand, and evaluate students primarily on their ability to do so quickly. This course takes a different approach by shifting the focus to applying foundational calculus concepts to analyze and solve problems in practical contexts while building the facility to take full advantage of technologies such as Sage to perform complex computations. In addition to honing skills from critical and creative thinking, an emphasis is placed on effective collaborative problem-solving and communication of technical processes and results to appropriate audiences. Note: This course was previously CS111A.",
    "note": "",
    "prerequisites": "FA51: Formal Analyses or CS51: Formal Analyses",
@@ -1978,6 +2040,7 @@
   {
    "code": "CS113",
    "title": "Theory and Applications of Linear Algebra",
+   "page": 47,
    "description": "This course develops the tools necessary for the analysis of linear systems. The emphases are both on abstract notions such as vectors spaces, linear maps between them and their matrix representations, and concrete applications such as Markov chains and graphical network analysis. Students apply their knowledge to explore a wide variety of problems such as Page Rank, least squares fitting, and traffic modeling. Note: This course was previously CS111B. In addition to the listed prerequisites, the following courses are recommended prior to taking this course: CS111",
    "note": "",
    "prerequisites": "FA51: Formal Analyses or CS51: Formal Analyses",
@@ -1988,6 +2051,7 @@
   {
    "code": "CS114",
    "title": "Probability and Statistics and the Structure of Randomness",
+   "page": 47,
    "description": "When can you find patterns in seemingly random noise? Or determine when an observed pattern is likely due to chance? This course focuses on the concepts from probability and statistics used to extract meaning from data. In addition to building a strong, theoretical foundation, students learn how to apply these tools to understand real-world scenarios. Formal topics include Sample spaces, conditional probability and independence, Bayes’ theorem, discrete and continuous random variables, joint distributions, the law of large numbers as well as the central limit theorem among others. These techniques are then used in applications such as statistical learning, linear regression, simulation, maximum likelihood and least squares. This class counts toward the Interdisciplinary Digital Practices Minor because it helps students learn the mathematical and computational foundations of the statistical analyses and predictive models commonly employed in the social and natural sciences.",
    "note": "",
    "prerequisites": "CS111: Single and Multivariable Calculus",
@@ -1998,6 +2062,7 @@
   {
    "code": "CS130",
    "title": "Statistical Modeling: Prediction and Causal Inference",
+   "page": 48,
    "description": "The course focuses on the application of predictive and causal statistical inference for decision making across a wide range of scenarios and contexts. The first part of the course focuses on parametric and non-parametric predictive modeling (regression, cross-validation, bootstrapping, random forests, etc.). The second part of the course focuses on causal inference in randomized control trials and observational studies (statistical matching, synthetic control methods, encouragement design/instrument variables, regression discontinuity design, etc.). Technical aspects of the course focus on computational approaches and real-world challenges, drawing cases from the life sciences, public policy and political science, education, and business. This course also emphasizes the importance of being able to articulate one’s findings effectively and tailor methodology and policy/decision-relevant recommendations for different audiences. Note: CS130 may be substituted for a tutorial in CS/NS/SS and can count like a cross-listed tutorial for double majors in SS, NS, or CS (any pairwise combination). This course was previously CS112. This course counts toward the Minor in Interdisciplinary Digital Practices (for non-CS Majors) because it helps students learn essential skills in predictive and causal statistical analysis, fostering your ability to use data effectively and responsibly in various domains, such as public policy, education, historical studies, and business.",
    "note": "",
    "prerequisites": "FA51: Formal Analyses or CS51: Formal Analyses",
@@ -2008,6 +2073,7 @@
   {
    "code": "CS142",
    "title": "Theory of Computation",
+   "page": 48,
    "description": "Students learn about models of computation that provide the theoretical basis for modern computer science. Topics include deterministic and nondeterministic finite state machines, Turing machines, formal language theory, computational complexity and the classification of algorithms. Students practice building a variety of automata and Turing machines using Python. What are the language grammars? and what role does a grammar plays in the way we analyze problems, solve problems, communicate with the computer, and even analyze natural languages? What makes a problem difficult to solve? Are some problems intrinsically harder than others, or is it that just because we have not yet discovered more efficient solutions? What, if any, are the limits of what can be solved with a computer? The techniques presented in this course shed light on why some computational problems are hard or even tractable. Students also gain experience communicating mathematical ideas in a rigorous fashion.",
    "note": "",
    "prerequisites": "CS110: Problem Solving with Data Structures and Algorithms",
@@ -2018,6 +2084,7 @@
   {
    "code": "CS144",
    "title": "Real Analysis",
+   "page": 48,
    "description": "Students learn how to read, write, and evaluate rigorous mathematical arguments. These skills are practiced on foundational material that forms a bridge to topics in advanced mathematics—both applied and pure. Subtopics in modern algebra and real analysis are chosen to illustrate the fundamental concepts of careful bounding, counting, and the application of equivalence classes.",
    "note": "",
    "prerequisites": "CS111: Single and Multivariable Calculus",
@@ -2028,6 +2095,7 @@
   {
    "code": "CS146",
    "title": "Computational Methods for Bayesian Statistics",
+   "page": 49,
    "description": "Learn to apply Bayesian inference which is the mathematical framework for using observed data to update the information we have about a system. The course proceeds from the fundamentals of probability theory and Bayesian inference to the data modeling process, covering various real-world scenarios from sports, medicine, vehicle tracking, social sciences, and more. The second half of the course covers approximate methods for automating inference in the form of variational inference (approximations using functions) and Monte Carlo methods (approximations using random samples). These methods allow us to work with large models containing many unknown variables and large data sets.",
    "note": "",
    "prerequisites": "CS114: Probability and Statistics and the Structure of Randomness",
@@ -2038,6 +2106,7 @@
   {
    "code": "CS152",
    "title": "Theory and Applications of Artificial Intelligence",
+   "page": 49,
    "description": "Apply methods and algorithms from Artificial Intelligence (AI) — such as propositional logic, logic programming, predicate calculus, and computational reasoning — to a diverse range of applications from robot navigation to restaurant selection with expert systems. Discover AI in action through an exploration of robotics, and gain an appreciation of its convergence towards modern machine learning methods. This course counts toward the Interdisciplinary Digital Practices Minor because students learn to apply methods from AI such as search, predicate logic, and logic programming to designing knowledge-based software systems and robotics. NOTE: In addition to the listed prerequisites, the following courses are recommended prior to taking this course: CS113",
    "note": "",
    "prerequisites": "CS110: Problem Solving with Data Structures and Algorithms",
@@ -2048,6 +2117,7 @@
   {
    "code": "CS154",
    "title": "Analytical and Numerical Methods in Differential Equations",
+   "page": 49,
    "description": "Methods are explored to interpolate data, solve linear and non-linear systems of equations, and model dynamical systems with the use of ordinary and partial differential equations. Additionally, Fourier Analysis is applied to model and process signals. Numerical implementations of the mathematical methods are developed using MATLAB or Octave. NOTE: Students may request to take CS113 in the same semester, as a corequisite.",
    "note": "",
    "prerequisites": "CS111: Single and Multivariable Calculus, CS113: Theory and Applications of Linear Algebra",
@@ -2058,6 +2128,7 @@
   {
    "code": "CS156",
    "title": "Finding Patterns in Data with Machine Learning",
+   "page": 49,
    "description": "Students learn to apply core machine learning techniques — such as classification, perceptron, neural networks, support vector machines, hidden Markov models, and nonparametric models of clustering — as well as fundamental concepts such as feature selection, cross-validation and over-fitting. Students program machine learning algorithms to make sense of a wide range of data, such as genetic data, data used to perform customer segmentation or data used to predict the outcome of elections. This course counts toward the Minor in Interdisciplinary Digital Practices because students learn to apply methods from statistics and linear algebra to creating large-scale classification and prediction algorithms that learn from data, including neural networks, dimensionality reduction, and tree-based algorithms. NOTE: In addition to the listed prerequisites, the following courses are recommended prior to taking this course: CS110",
    "note": "",
    "prerequisites": "CS113: Theory and Applications of Linear Algebra, CS114: Probability and Statistics and the Structure of Randomness",
@@ -2068,6 +2139,7 @@
   {
    "code": "CS162",
    "title": "Software Engineering: Building Powerful Applications",
+   "page": 50,
    "description": "This course is organized around the principle that the only way to learn software development is to develop software. Work together as a team to develop a significant web application. Examples include a social media application or a distributed chat system. You will have the opportunity to apply and experience all aspects of software development, including requirements analysis, design, planning, implementation, testing, and deployment.",
    "note": "",
    "prerequisites": "CS110: Problem Solving with Data Structures and Algorithms",
@@ -2078,6 +2150,7 @@
   {
    "code": "CS164",
    "title": "Optimization Methods",
+   "page": 50,
    "description": "Learn to use and analyze optimization techniques such as linear, quadratic, semidefinite and mixed-integer programming. Explore optimization algorithms such as Newton’s method, interior point methods and branch and bound methods.",
    "note": "",
    "prerequisites": "CS111: Single and Multivariable Calculus, CS113: Theory and Applications of Linear Algebra",
@@ -2088,6 +2161,7 @@
   {
    "code": "CS166",
    "title": "Modeling and Analysis of Complex Systems",
+   "page": 50,
    "description": "Learn how to apply advanced modeling techniques to analyze and predict the behavior of social, physical and economic systems. You will learn from specific examples applied to portfolio management, traffic flow management, and analyzing social networks. The course covers three modeling frameworks — cellular automata for modeling interactions on grids of cells, networks for more general interactions between nodes in a graph, and Monte Carlo simulations showing how we can use simulation to generate random numbers and how we can use random numbers to drive simulations of complex phenomena. The course covers the theoretical (mathematical) and practical (implementation) aspects of each of the three frameworks. This course counts toward the Minor in Interdisciplinary Digital Practices because it provides students opportunities to create models and simulations to understand and predict social, physical, and economic systems using tools from network theory, cellular automata, and Monte Carlo simulations.",
    "note": "",
    "prerequisites": "CS110: Problem Solving with Data Structures and Algorithms, CS114: Probability and Statistics and the Structure of Randomness or CS130: Statistical Modeling: Prediction and Causal Inference",
@@ -2098,6 +2172,7 @@
   {
    "code": "CS312",
    "title": "Knowledge: Information Based Decisions",
+   "page": 50,
    "description": "",
    "note": "This course is intended for students enrolled in the Master of Science in Decision Analysis program.",
    "prerequisites": "CS351: Formal Methods for Analysis and Decision Making",
@@ -2108,6 +2183,7 @@
   {
    "code": "CS350",
    "title": "Formal Methods for Analysis and Decision Making",
+   "page": 51,
    "description": "Formal Analyses focus on rigorous critical thinking, focusing on logical argumentation and data science. Students learn formal reasoning and logic, mathematical and statistical models, algorithms and introductory machine learning, and key elements of decision theory. A key component of the course is learning to identify the biases and other pitfalls that may color the formulation and interpretation of arguments, models, and decisions.",
    "note": "",
    "prerequisites": "None",
@@ -2118,6 +2194,7 @@
   {
    "code": "CS351",
    "title": "Formal Methods for Analysis and Decision Making",
+   "page": 51,
    "description": "Formal Methods for Analysis and Decision Making focuses on rigorous critical thinking. Students learn formal reasoning and logic, mathematical and statistical models, algorithms and introductory machine learning, and key elements of decision theory. A key component of the course is learning to identify the biases and other pitfalls that may color the formulation and interpretation of arguments, models, and decisions.",
    "note": "",
    "prerequisites": "CS350: Formal Methods for Analysis and Decision Making",
@@ -2128,6 +2205,7 @@
   {
    "code": "CX50",
    "title": "Complex Systems",
+   "page": 51,
    "description": "Previously SS50. Explore how humans function as members of various systems, using concepts such as multiple causality and multi-factor integrations. You will develop your ability to interact effectively by participating in group project collaboration, negotiation, leadership, and formal debate.",
    "note": "Students must take this course in the Fall term of Year 1.",
    "prerequisites": "None",
@@ -2138,6 +2216,7 @@
   {
    "code": "CX51",
    "title": "Complex Systems",
+   "page": 51,
    "description": "Previously SS51. Explore how humans function as members of various systems, using concepts such as multiple causality and multi-factor integrations. You will develop your ability to interact effectively by participating in group project collaboration, negotiation, leadership, and formal debate.",
    "note": "",
    "prerequisites": "CX50: Complex Systems",
@@ -2148,6 +2227,7 @@
   {
    "code": "EA50",
    "title": "Empirical Analyses",
+   "page": 51,
    "description": "Previously NS50. Develop your creative thinking skills and familiarize yourself with methods used in social and natural sciences. These methods teach you to effectively frame problems, identify solutions, develop and test hypotheses, design research studies, and reach plausible conclusions.",
    "note": "Students must take this course in the Fall term of Year 1.",
    "prerequisites": "None",
@@ -2158,6 +2238,7 @@
   {
    "code": "EA51",
    "title": "Empirical Analyses",
+   "page": 52,
    "description": "Previously NS51. Develop your creative thinking skills and familiarize yourself with methods used in social and natural sciences. These methods teach you to effectively frame problems, identify solutions, develop and test hypotheses, design research studies, and reach plausible conclusions.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -2168,6 +2249,7 @@
   {
    "code": "EL199",
    "title": "Building Skills through Professional Experience",
+   "page": 52,
    "description": "",
    "note": "Minerva is focused on “practical knowledge,” which entails using material learned in class to address real-world problems or issues. Some of our students have had or plan to undertake internships, research projects or volunteer opportunities (including Civic Projects) during their time at Minerva. Such experiences (along with the completion of required EL199 assignments) may fulfill a requirement for tutorial or elective course credit (when 4 credits). No more than a total of eight aggregate semester credits can be satisfied by EL199 experience (summer or in-semester) or prior experiential learning.To qualify for credit, students must conduct their project under the supervision of a qualified supervisor (typically a faculty member at another institution for research projects or someone employed by the organization where the student is interning or volunteering). The project can fall within the supervisor’s larger project goals, but the student must contribute intellectually to the design and execution of the project and is responsible for writing the final summary paper describing the project (see below).",
    "prerequisites": "None",
@@ -2178,6 +2260,7 @@
   {
    "code": "FA50",
    "title": "Formal Analyses",
+   "page": 53,
    "description": "Previously CS50. Focus on thinking critically through in-depth training in logic, statistics, and algorithmic thinking. Use formal, computational, and quantitative approaches to formulate, analyze, and tackle problems.",
    "note": "Students must take this course in the Fall term of Year 1.",
    "prerequisites": "None",
@@ -2188,6 +2271,7 @@
   {
    "code": "FA51",
    "title": "Formal Analyses",
+   "page": 53,
    "description": "Previously CS51. Focus on thinking critically through in-depth training in logic, statistics, and algorithmic thinking. Use formal, computational, and quantitative approaches to formulate, analyze, and tackle problems.",
    "note": "",
    "prerequisites": "FA50: Formal Analyses",
@@ -2198,6 +2282,7 @@
   {
    "code": "FE50",
    "title": "Cornerstone Civic Projects",
+   "page": 53,
    "description": "Cornerstone Civic Projects (CCPs) are your chance to apply the practical knowledge being learned in the Cornerstones to a broad, important, and locally relevant challenge. This is a unique opportunity to combine academic work with meaningful city engagement and interactions with local professionals. This experience will involve multiple iterative assignments, including project proposals, presentations, prototypes, and a final deliverable. This is a student-driven endeavor that will require teamwork, time management, and commitment. Students are expected to spend about 40-50 hours of work on CCP each semester.",
    "note": "",
    "prerequisites": "None",
@@ -2208,6 +2293,7 @@
   {
    "code": "FE51",
    "title": "Cornerstone Civic Projects",
+   "page": 53,
    "description": "Cornerstone Civic Projects (CCPs) are your chance to apply the practical knowledge being learned in the Cornerstones to a broad, important, and locally relevant challenge. This is a unique opportunity to combine academic work with meaningful city engagement and interactions with local professionals. This experience will involve multiple iterative assignments, including project proposals, presentations, prototypes, and a final deliverable. This is a student-driven endeavor that will require teamwork, time management, and commitment. Students are expected to spend about 40-50 hours of work on CCP each semester.",
    "note": "",
    "prerequisites": "None",
@@ -2218,6 +2304,7 @@
   {
    "code": "GL91",
    "title": "Global Learning I",
+   "page": 54,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -2228,6 +2315,7 @@
   {
    "code": "GL92",
    "title": "Global Learning II",
+   "page": 54,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -2238,6 +2326,7 @@
   {
    "code": "GL93",
    "title": "Global Learning III",
+   "page": 54,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -2248,6 +2337,7 @@
   {
    "code": "GL95",
    "title": "Global Learning V",
+   "page": 54,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -2258,6 +2348,7 @@
   {
    "code": "GL96",
    "title": "Global Learning VI",
+   "page": 54,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -2268,6 +2359,7 @@
   {
    "code": "GL97",
    "title": "Global Learning VII",
+   "page": 54,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -2278,6 +2370,7 @@
   {
    "code": "GL98",
    "title": "Global Learning VIII",
+   "page": 54,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -2288,6 +2381,7 @@
   {
    "code": "IL50",
    "title": "Connecting the Curriculum to the Real World",
+   "page": 54,
    "description": "",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -2298,6 +2392,7 @@
   {
    "code": "IL91",
    "title": "Integrated Learning I: Managing Complexity of a Global World",
+   "page": 55,
    "description": "This course is the first semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society. Integrated Learning is a framework that bridges academic learning with personal and character development across multiple dimensions.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -2308,6 +2403,7 @@
   {
    "code": "IL92",
    "title": "Integrated Learning II: Managing Complexity of a Global World",
+   "page": 55,
    "description": "This course is the second semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society. Integrated Learning is a framework that bridges academic learning with personal and character development across multiple dimensions.",
    "note": "This course is no longer offered.",
    "prerequisites": "IL91: Integrated Learning I: Managing Complexity of a Global World",
@@ -2318,6 +2414,7 @@
   {
    "code": "IL93",
    "title": "Integrated Learning III: Managing Complexity of a Global World",
+   "page": 55,
    "description": "This course is the third semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society. Integrated Learning is a framework that bridges academic learning with personal and character development across multiple dimensions.",
    "note": "This course is no longer offered.",
    "prerequisites": "IL92: Integrated Learning II: Managing Complexity of a Global World",
@@ -2328,6 +2425,7 @@
   {
    "code": "IL94",
    "title": "Integrated Learning IV: Managing Complexity of a Global World",
+   "page": 55,
    "description": "This course is the fourth semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society. Integrated Learning is a framework that bridges academic learning with personal and character development across multiple dimensions.",
    "note": "This course is no longer offered.",
    "prerequisites": "IL93: Integrated Learning III: Managing Complexity of a Global World",
@@ -2338,6 +2436,7 @@
   {
    "code": "IL95",
    "title": "Integrated Learning V: Managing Complexity of a Global World",
+   "page": 56,
    "description": "This course is the fifth semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society. Integrated Learning is a framework that bridges academic learning with personal and character development across multiple dimensions.",
    "note": "This course is no longer offered.",
    "prerequisites": "IL94: Integrated Learning IV: Managing Complexity of a Global World",
@@ -2348,6 +2447,7 @@
   {
    "code": "IL96",
    "title": "Integrated Learning VI: Managing Complexity of a Global World",
+   "page": 56,
    "description": "This course is the sixth semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society. Integrated Learning is a framework that bridges academic learning with personal and character development across multiple dimensions.",
    "note": "This course is no longer offered.",
    "prerequisites": "IL95: Integrated Learning V: Managing Complexity of a Global World",
@@ -2358,6 +2458,7 @@
   {
    "code": "IL97",
    "title": "Integrated Learning VII: Managing Complexity of a Global World",
+   "page": 56,
    "description": "This course is the seventh semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society. Integrated Learning is a framework that bridges academic learning with personal and character development across multiple dimensions.",
    "note": "This course is no longer offered.",
    "prerequisites": "IL96: Integrated Learning VI: Managing Complexity of a Global World",
@@ -2368,6 +2469,7 @@
   {
    "code": "IL98",
    "title": "Integrated Learning VIII: Managing Complexity of a Global World",
+   "page": 56,
    "description": "This course is the final semester of an 8-semester curriculum, which provides students with tools to face the challenging process of personal and character growth, and prepares students for effective citizenship in a diverse multicultural society. Integrated Learning is a framework that bridges academic learning with personal and character development across multiple dimensions.",
    "note": "This course is no longer offered.",
    "prerequisites": "IL97: Integrated Learning VII: Managing Complexity of a Global World",
@@ -2378,6 +2480,7 @@
   {
    "code": "IL99",
    "title": "Transfer Credits",
+   "page": 56,
    "description": "At the discretion of the college dean, Minerva will grant up to eight units of transfer credit for courses taken at other colleges or universities. Information about how to determine the eligibility and on how to apply for credit can be found in the \"Transfer Credits\" section of the Student Handbook.",
    "note": "",
    "prerequisites": "None",
@@ -2388,6 +2491,7 @@
   {
    "code": "IL120",
    "title": "Special Topics",
+   "page": 57,
    "description": "IL120 Special Topics courses provide faculty and students opportunities to focus on a narrow subset of topics. Topics and availability of these courses vary from year to year. Students may choose to enroll in more than one IL120, pending the usual requirements related to course overload rules. IL120 courses count toward the regular 120 attempted credits for financial aid and tuition purposes. Examples of previously offered IL120 courses include: IL120.01 Modern Middle East (AH/SS): This course will explore the political, social, cultural and economic dynamics in the Middle East // IL120.02 Sustainability Global Exchange Seminar (AH/NS/SS): This course explores sustainability in connection with topics like food security, climate migration, and ocean pollution. // IL120.03 Policy Pathways to Sustainable Development (SS): This course explores key elements of sustainable development policy. // IL120.04 Policy Pathways to Sustainable Development: Policy Design Process (SS, Prereq. IL120.03): This course provides opportunities to analyze and apply policy processes to address sustainability-related problems.",
    "note": "",
    "prerequisites": "None",
@@ -2398,6 +2502,7 @@
   {
    "code": "IL123",
    "title": "Special Topics Japan Society & Culture",
+   "page": 57,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -2408,6 +2513,7 @@
   {
    "code": "IL124",
    "title": "Special Topics in Japanese Culture and Society",
+   "page": 57,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -2418,6 +2524,7 @@
   {
    "code": "IL140",
    "title": "Special Topics Seminar",
+   "page": 57,
    "description": "IL140 Special Topics courses provide faculty and students opportunities to focus on a narrow subset of topics. Topics and availability of these courses vary from year to year, and they are open to all Majors. Examples of IL140 course offerings include: IL140.01 Worlds in Translation, and IL140.02 AI and Authorship. These seminars serve as an optional substitution for the CP191/192 sequence for M28s. Completion of IL140 satisfies the Capstone course requirements for the third year. As a 4-credit course, students should either enroll in IL140 in place of one of their three regular 4-credit courses or plan to take the course as an overload (if they are in good academic standing). Enrollment in IL140 as a fourth 4-credit class does not require an overload application. Students who would like to enroll in CP192 in the Spring and who have space in their degree plan for the credits are eligible to take CP192 in addition to IL140.",
    "note": "",
    "prerequisites": "AH110: Global History or AH111: Morality, Identity, and Justice or AH112: The Arts and Social Change or AH113: Dynamics of Design or B110: Market Dynamics and Product Analytics or B111: Financial Planning, Budgeting and Modeling or B112: Doing Business or B113: Enterprise, Design and Optimization or CS110: Problem Solving with Data Structures and Algorithms or CS111: Single and Multivariable Calculus or CS113: Theory and Applications of Linear Algebra or CS114: Probability and Statistics and the Structure of Randomness or NS110L: Physics of Life or NS110U: Physics of the Universe or NS111: Implications of Earth's Cycles or NS112: Evolution Across Multiple Scales or NS113: Chemical Structure and Reactivity or SS110: Psychology: From Neurons to Society or SS111: Modern Economic Thought or SS112: Political Science and Social Change",
@@ -2428,6 +2535,7 @@
   {
    "code": "IL181",
    "title": "Senior Tutorial",
+   "page": 58,
    "description": "Advanced topics taught in conjunction with professor expertise. Students engage with the other students and professor in ways that are not possible in ordinary class.",
    "note": "Students should enroll in this course in Year 4.",
    "prerequisites": "None",
@@ -2438,6 +2546,7 @@
   {
    "code": "IL190",
    "title": "Credit for Experiential Learning Application",
+   "page": 58,
    "description": "This option for alternative credit is for a substantive learning experience typically a multi-year project that is not directly academic in nature. Examples have included but are not limited to military service, peace corps service, starting a company, creating a substantial piece of work, such as art, literature, musical composition, etc. Depending on the time devoted, this could be eligible for 4 or 8 alternative credits (240 or 480 hours). Note, that no more than an aggregate of 8 alternative credits (transfer credits, IL199, IL190) can be used toward the 120 credits needed for graduation. Students must get preapproval from the Registrar to enroll in this course. This is done by submitting a brief proposal that will be reviewed, the form is available at the Registrar site in myMinerva. Once approved, students will need to generate a substantive paper describing the experience and how they applied 10 relevant HCs. Further details are in the Assignment.",
    "note": "",
    "prerequisites": "None",
@@ -2448,6 +2557,7 @@
   {
    "code": "IL195",
    "title": "Research/Independent Study",
+   "page": 58,
    "description": "Students taking this course are pursuing a research or independent study project that requires them to maintain their student status to maintain continued advising services, use of library privileges, coaching and talent development, financial aid, and CAPS. They are given initial guidance, feedback, review of intermediate work products, and final evaluation of student performance by their assigned faculty member. This requirement applies whether or not the student is physically on campus for the applicable semester while the cohort is in the U.S. or on Global Rotation. Students registered in IL195 will complete a contract that documents the following: the assigned Faculty members name (for M21, M22, Capstone Advisor, or Capstone Seminar Faculty, listed as IL195; for M23 IL93 and IL94 and for M24 use IL92). The events and activities and work products required to be completed; meeting frequency on Forum and the specific Learning Outcomes.",
    "note": "",
    "prerequisites": "None",
@@ -2458,6 +2568,7 @@
   {
    "code": "IL196",
    "title": "Summer Program",
+   "page": 58,
    "description": "Summer session is course designed for international M24 students to spend time in residence, so that they may apply knowledge learned within the classroom. This immersive experience will be at least four weeks in length, and typically takes place during the summer semester.",
    "note": "",
    "prerequisites": "None",
@@ -2468,6 +2579,7 @@
   {
    "code": "IL199",
    "title": "Research / Internship Experience",
+   "page": 59,
    "description": "Full information on IL199 here https://my.minerva.edu/academics/curriculum/integrated-learning/il199/",
    "note": "",
    "prerequisites": "None",
@@ -2478,6 +2590,7 @@
   {
    "code": "IL14001",
    "title": "Special Topics Capstone Seminar",
+   "page": 59,
    "description": "IL140 Special Topics Capstone Seminar courses provide faculty and students opportunities to focus on a narrow subset of topics while developing skill sets students will use in their fourth-year Capstone projects. Topics and availability of these courses vary from year to year, and they are open to all Majors. The topic of a particular IL140 course does not determine your intended topic for your Fourth-Year Capstone Project; students are welcome to pursue any IL140 topic that interests them. Examples of IL140 course offerings include: IL140.01 Worlds in Translation, IL140.02 AI and Authorship, IL140.03 Modern Latin America. These seminars serve as an optional substitution for the CP191/192 sequence for third-year students. Completion of IL140 satisfies the Capstone course requirements for the third year. As a 4-credit course, students should either enroll in IL140 in place of one of their three regular 4-credit courses or plan to take the course as an overload (if they are in good academic standing). Enrollment in IL140 as a fourth 4-credit class does not require an overload application. Students who take IL140 and also would like to enroll in CP192 in the Spring will have an option to do so.",
    "note": "Enrollment is limited to third-year students.",
    "prerequisites": "AH110: Global History or AH111: Morality, Identity, and Justice or AH112: The Arts and Social Change or AH113: Dynamics of Design or B110: Market Dynamics and Product Analytics or B111: Financial Planning, Budgeting and Modeling or B112: Doing Business or B113: Enterprise, Design and Optimization or CS110: Problem Solving with Data Structures and Algorithms or CS111: Single and Multivariable Calculus or CS113: Theory and Applications of Linear Algebra or CS114: Probability and Statistics and the Structure of Randomness or NS110L: Physics of Life or NS110U: Physics of the Universe or NS111: Implications of Earth's Cycles or NS112: Evolution Across Multiple Scales or NS113: Chemical Structure and Reactivity or SS110: Psychology: From Neurons to Society or SS111: Modern Economic Thought or SS112: Political Science and Social Change",
@@ -2488,6 +2601,7 @@
   {
    "code": "IL14002",
    "title": "Special Topics Capstone Seminar",
+   "page": 59,
    "description": "IL140 Special Topics Capstone Seminar courses provide faculty and students opportunities to focus on a narrow subset of topics while developing skill sets students will use in their fourth-year Capstone projects. Topics and availability of these courses vary from year to year, and they are open to all Majors. The topic of a particular IL140 course does not determine your intended topic for your Fourth-Year Capstone Project; students are welcome to pursue any IL140 topic that interests them. Examples of IL140 course offerings include: IL140.01 Worlds in Translation, IL140.02 AI and Authorship, IL140.03 Modern Latin America. These seminars serve as an optional substitution for the CP191/192 sequence for third-year students. Completion of IL140 satisfies the Capstone course requirements for the third year. As a 4-credit course, students should either enroll in IL140 in place of one of their three regular 4-credit courses or plan to take the course as an overload (if they are in good academic standing). Enrollment in IL140 as a fourth 4-credit class does not require an overload application. Students who take IL140 and also would like to enroll in CP192 in the Spring will have an option to do so.",
    "note": "Enrollment is limited to third-year students.",
    "prerequisites": "AH110: Global History or AH111: Morality, Identity, and Justice or AH112: The Arts and Social Change or AH113: Dynamics of Design or B110: Market Dynamics and Product Analytics or B111: Financial Planning, Budgeting and Modeling or B112: Doing Business or B113: Enterprise, Design and Optimization or CS110: Problem Solving with Data Structures and Algorithms or CS111: Single and Multivariable Calculus or CS113: Theory and Applications of Linear Algebra or CS114: Probability and Statistics and the Structure of Randomness or NS110L: Physics of Life or NS110U: Physics of the Universe or NS111: Implications of Earth's Cycles or NS112: Evolution Across Multiple Scales or NS113: Chemical Structure and Reactivity or SS110: Psychology: From Neurons to Society or SS111: Modern Economic Thought or SS112: Political Science and Social Change",
@@ -2498,6 +2612,7 @@
   {
    "code": "IL14003",
    "title": "Special Topics Capstone Seminar",
+   "page": 60,
    "description": "IL140 Special Topics Capstone Seminar courses provide faculty and students opportunities to focus on a narrow subset of topics while developing skill sets students will use in their fourth-year Capstone projects. Topics and availability of these courses vary from year to year, and they are open to all Majors. The topic of a particular IL140 course does not determine your intended topic for your Fourth-Year Capstone Project; students are welcome to pursue any IL140 topic that interests them. Examples of IL140 course offerings include: IL140.01 Worlds in Translation, IL140.02 AI and Authorship, IL140.03 Modern Latin America. These seminars serve as an optional substitution for the CP191/192 sequence for third-year students. Completion of IL140 satisfies the Capstone course requirements for the third year. As a 4-credit course, students should either enroll in IL140 in place of one of their three regular 4-credit courses or plan to take the course as an overload (if they are in good academic standing). Enrollment in IL140 as a fourth 4-credit class does not require an overload application. Students who take IL140 and also would like to enroll in CP192 in the Spring will have an option to do so.",
    "note": "Enrollment is limited to third-year students.",
    "prerequisites": "AH110: Global History or AH111: Morality, Identity, and Justice or AH112: The Arts and Social Change or AH113: Dynamics of Design or B110: Market Dynamics and Product Analytics or B111: Financial Planning, Budgeting and Modeling or B112: Doing Business or B113: Enterprise, Design and Optimization or CS110: Problem Solving with Data Structures and Algorithms or CS111: Single and Multivariable Calculus or CS113: Theory and Applications of Linear Algebra or CS114: Probability and Statistics and the Structure of Randomness or NS110L: Physics of Life or NS110U: Physics of the Universe or NS111: Implications of Earth's Cycles or NS112: Evolution Across Multiple Scales or NS113: Chemical Structure and Reactivity or SS110: Psychology: From Neurons to Society or SS111: Modern Economic Thought or SS112: Political Science and Social Change",
@@ -2508,6 +2623,7 @@
   {
    "code": "IL18101",
    "title": "Senior Tutorial: Digital Humanities",
+   "page": 60,
    "description": "Advanced topics taught in conjunction with professor expertise. Students engage with the other students and professor in ways that are not possible in ordinary class. Students must be majoring in AH or CS, or minoring in Interdisciplinary Digital Practices to enroll in this Tutorial.",
    "note": "Students should enroll in this course in Year 4.",
    "prerequisites": "CP192: Capstone Seminar, AH110: Global History, CS110: Problem Solving with Data Structures and Algorithms",
@@ -2518,6 +2634,7 @@
   {
    "code": "IL18102",
    "title": "Senior Tutorial: AI Lab",
+   "page": 61,
    "description": "Advanced topics taught in conjunction with professor expertise. Students engage with the other students and professor in ways that are not possible in ordinary class. Students must be majoring in CS to enroll in this Tutorial.",
    "note": "Students should enroll in this course in Year 4.",
    "prerequisites": "CP192: Capstone Seminar, CS146: Computational Methods for Bayesian Statistics or CS156: Finding Patterns in Data with Machine Learning or CS166: Modeling and Analysis of Complex Systems",
@@ -2528,6 +2645,7 @@
   {
    "code": "IL18104",
    "title": "Senior Tutorial: Deep Learning",
+   "page": 61,
    "description": "Advanced topics taught in conjunction with professor expertise. Students engage with the other students and professor in ways that are not possible in ordinary class. Students must be majoring in CS to enroll in this Tutorial. Primary College: CS; Cross-listings: None; Additional prerequisites: all CS core courses (CS110, CS111, CS113, CS114) and a working knowledge of Python for numerical computation (one or more of NumPy, SciPy, Pandas, Scikit-Learn). Please note: CP192 is listed as a prerequisite only to signify eligibility for fourth-years alone",
    "note": "Students should enroll in this course in Year 4.",
    "prerequisites": "CP192: Capstone Seminar, CS110: Problem Solving with Data Structures and Algorithms, CS111: Single and Multivariable Calculus, CS113: Theory and Applications of Linear Algebra, CS114: Probability and Statistics and the Structure of Randomness",
@@ -2538,6 +2656,7 @@
   {
    "code": "IL18105",
    "title": "Senior Tutorial: Distributed Systems",
+   "page": 61,
    "description": "Advanced topics taught in conjunction with professor expertise. Students engage with the other students and professor in ways that are not possible in ordinary class. Students must be majoring in CS to enroll in this Tutorial.",
    "note": "Students should enroll in this course in Year 4.",
    "prerequisites": "CP192: Capstone Seminar, CS162: Software Engineering: Building Powerful Applications",
@@ -2548,6 +2667,7 @@
   {
    "code": "IL18106",
    "title": "Senior Tutorial: Molecular Immunology",
+   "page": 61,
    "description": "Advanced topics taught in conjunction with professor expertise. Students engage with the other students and professor in ways that are not possible in ordinary class. Students must be majoring in NS, or minoring in Neuroscience to enroll in this Tutorial. CS majors may enroll with college head approval.",
    "note": "Students should enroll in this course in Year 4.",
    "prerequisites": "CP192: Capstone Seminar, NS154: Life's Chemistry or NS144: Genes to Organisms or NS164: Solutions From and For Life",
@@ -2558,6 +2678,7 @@
   {
    "code": "IL18107",
    "title": "Senior Tutorial: Mission Critical or Mission Impossible? Creating Safe, Sustainable Cities",
+   "page": 62,
    "description": "Advanced topics taught in conjunction with professor expertise. Students engage with the other students and professor in ways that are not possible in ordinary class. Students must be majoring in AH, NS, or SS, or minoring in sustainability to enroll in this Tutorial. CS majors may enroll in this class with approval from the college head.",
    "note": "Students should enroll in this course in Year 4.",
    "prerequisites": "CP192: Capstone Seminar",
@@ -2568,6 +2689,7 @@
   {
    "code": "IL18108",
    "title": "Senior Tutorial: Politics, Philosophy, and Economics",
+   "page": 62,
    "description": "Advanced topics taught in conjunction with professor expertise. Students engage with the other students and professor in ways that are not possible in ordinary class. Students must be majoring in SS to enroll in this Tutorial. AH majors may enroll with permission of the College Heads.",
    "note": "Students should enroll in this course in Year 4.",
    "prerequisites": "CP192: Capstone Seminar, SS111: Modern Economic Thought, SS112: Political Science and Social Change",
@@ -2578,6 +2700,7 @@
   {
    "code": "IL18109",
    "title": "Senior Tutorial: Science of Teaching and Learning",
+   "page": 62,
    "description": "Advanced topics taught in conjunction with professor expertise. Students engage with the other students and professor in ways that are not possible in ordinary class. Students must be majoring in AH, CS, NS, or SS to enroll in this Tutorial. Primary college: SS; Cross-listings: AH, CS, NS. Also fulfills Neuroscience minor requirement.",
    "note": "Students should enroll in this course in Year 4.",
    "prerequisites": "CP192: Capstone Seminar",
@@ -2588,6 +2711,7 @@
   {
    "code": "IL18110",
    "title": "The Historical and Cultural Lives of Drugs",
+   "page": 62,
    "description": "Drugs are material substances with properties that interact with the body and mind. But which substances count as drugs, and what societies do with them, have varied enormously across time and place. From the opium that fueled imperial wars to the caffeine that powers modern capitalism, from sacred plant medicines used in ritual contexts to the synthetic compounds of twentieth-century laboratories, drugs sit at the intersection of science, commerce, law, and culture. This tutorial examines how societies have produced, consumed, regulated, and imagined psychoactive and therapeutic substances. Along the way, we will ask why certain substances become illegal while others remain celebrated, how scientific knowledge about drugs has been constructed and contested, and what the global drug trade reveals about power, race, and the making of the modern world. The course draws on methods from the history of science, medical humanities, and global history to help students think critically about the deep entanglement of chemistry, culture, and politics. Students must be majoring in AH or SS to enroll. Primary college: AH, SS; Cross-listings: *NS with permission of College Head",
    "note": "",
    "prerequisites": "AH110: Global History or AH111: Morality, Identity, and Justice or AH112: The Arts and Social Change or AH113: Dynamics of Design or SS110: Psychology: From Neurons to Society or SS111: Modern Economic Thought or SS112: Political Science and Social Change, CP192: Capstone Seminar",
@@ -2598,6 +2722,7 @@
   {
    "code": "IL18111",
    "title": "Computational Cognitive Neuroscience",
+   "page": 63,
    "description": "This course will cover current topics in computational cognitive science, including computational neuroscience, probabilistic modeling of cognition, artificial intelligence, and more. The goal is to expose students to current research in different areas in the field while exploring a few more deeply. The class will be structured so that students who have backgrounds in certain areas can share with students who don’t, giving each student an overview of the field. Ideally, every computational application should be complemented by a psychological component (for example, people with statistics backgrounds can share how that part of CS is being applied to Cognitive Science, and individuals with a neuroscientific understanding can explain where the motivation for reinforcement learning comes from). Also recommended: One of: CS146, CS152, CS156, CS166, or SS152. Students must be majoring in CS, NS, or SS to enroll.",
    "note": "",
    "prerequisites": "CS110: Problem Solving with Data Structures and Algorithms or SS110: Psychology: From Neurons to Society, CP192: Capstone Seminar",
@@ -2608,6 +2733,7 @@
   {
    "code": "IL18112",
    "title": "Computational Cognitive Neuroscience",
+   "page": 63,
    "description": "This course will cover current topics in computational cognitive science, including computational neuroscience, probabilistic modeling of cognition, artificial intelligence, and more. The goal is to expose students to current research in different areas in the field while exploring a few more deeply. The class will be structured so that students who have backgrounds in certain areas can share with students who don’t, giving each student an overview of the field. Ideally, every computational application should be complemented by a psychological component (for example, people with statistics backgrounds can share how that part of CS is being applied to Cognitive Science, and individuals with a neuroscientific understanding can explain where the motivation for reinforcement learning comes from). Also recommended: One of: CS146, CS152, CS156, CS166, or SS152. Students must be majoring in CS, NS, or SS to enroll. Primary College: CS; Cross-listings: NS, SS. Also fulfills Neuroscience minor requirement.",
    "note": "",
    "prerequisites": "CS110: Problem Solving with Data Structures and Algorithms or SS110: Psychology: From Neurons to Society, CP192: Capstone Seminar",
@@ -2618,6 +2744,7 @@
   {
    "code": "IL18113",
    "title": "Robotics & Machine Vision",
+   "page": 64,
    "description": "This tutorial will provide an in-depth study of the fundamentals of robotics, from theory to applications. Students will have the opportunity to learn about kinematics, dynamics, motion planning, navigation, and machine vision. Must be a CS major to enroll. Primary College: CS; Cross-listings: None",
    "note": "",
    "prerequisites": "CS110: Problem Solving with Data Structures and Algorithms or CS111: Single and Multivariable Calculus or CS113: Theory and Applications of Linear Algebra or CS114: Probability and Statistics and the Structure of Randomness, CS152: Theory and Applications of Artificial Intelligence or CS154: Analytical and Numerical Methods in Differential Equations, CP192: Capstone Seminar",
@@ -2628,6 +2755,7 @@
   {
    "code": "IL18114",
    "title": "Topology",
+   "page": 64,
    "description": "This tutorial will explore topology, a branch of mathematics affectionately referred to as “rubber sheet geometry” or “math for folks who can't tell the difference between a donut and a coffee cup.” Topics will include topological spaces, connectedness, compactness, homeomorphisms, and covering spaces. Additional topics will be chosen by the tutorial students with guidance from the professor. Potential areas range from the more theoretical (e.g., knot theory, algebraic geometry, or combinatorial group theory) to quite applied (e.g., topological data analysis, image processing, or robotics). Must be a CS major to enroll. Primary College: CS; Cross-listings: *NS with permission of College Head, *SS with permission of College Head",
    "note": "",
    "prerequisites": "CS110: Problem Solving with Data Structures and Algorithms or CS111: Single and Multivariable Calculus or CS113: Theory and Applications of Linear Algebra or CS114: Probability and Statistics and the Structure of Randomness, CS142: Theory of Computation or CS144: Real Analysis, CP192: Capstone Seminar",
@@ -2638,6 +2766,7 @@
   {
    "code": "IL18115",
    "title": "Journalism",
+   "page": 64,
    "description": "The Journalism tutorial is intended to meet the needs of students from a variety of majors or capstone projects, including those interested in science communications or data journalism. This tutorial is meant to teach students how to critically evaluate works of journalism and produce their own. We examine works of journalism from a wide range of genres, including reportage, essays and criticism, explanatory reporting, features, and the like. Works examined come in a variety of forms, from traditional articles to multimedia projects. Students dissect journalistic works to understand their strengths and weaknesses, using lessons learned to inform their own journalistic pursuits. Much of the tutorial is devoted to assessing journalism and workshopping ongoing journalist projects. But we also devote time for discussion of the craft of journalism, addressing topics ranging from journalistic ethics to interviewing techniques. Must be an SS or AH major to enroll. Primary College: SS; Cross-listings: AH, *CS with permission of College Head, *NS with permission of College Head",
    "note": "",
    "prerequisites": "SS110: Psychology: From Neurons to Society or SS111: Modern Economic Thought or SS112: Political Science and Social Change or AH110: Global History or AH111: Morality, Identity, and Justice or AH112: The Arts and Social Change or AH113: Dynamics of Design, CP192: Capstone Seminar",
@@ -2648,6 +2777,7 @@
   {
    "code": "MC50",
    "title": "Multimodal Communications",
+   "page": 65,
    "description": "Previously AH50. Learn to communicate effectively at a high level and deeply analyze communications of various forms. You will form the skills and practical experience to speak publicly, communicate visually, design, debate, and express yourself artistically.",
    "note": "Students must take this course in the Fall term of Year 1.",
    "prerequisites": "None",
@@ -2658,6 +2788,7 @@
   {
    "code": "MC51",
    "title": "Multimodal Communications",
+   "page": 65,
    "description": "Previously AH51. Learn to communicate effectively at a high level and deeply analyze communications of various forms. You will form the skills and practical experience to speak publicly, communicate visually, design, debate, and express yourself artistically.",
    "note": "",
    "prerequisites": "MC50: Multimodal Communications",
@@ -2668,6 +2799,7 @@
   {
    "code": "MV101",
    "title": "Connecting the Curriculum to the Real World",
+   "page": 65,
    "description": "Students in the Founding Class of Minerva Schools at KGI were introduced to over 100 habits of mind and foundational concepts during their first-year cornerstone courses. These skills and concepts flesh out four core competencies, namely: critical thinking, creative thinking, effective communication, and effective interaction. This course is designed to help students connect these habits of mind and foundational concepts to the real world, as experienced outside of school.",
    "note": "This course is no longer offered.",
    "prerequisites": "None",
@@ -2678,6 +2810,7 @@
   {
    "code": "NS50",
    "title": "Empirical Analyses",
+   "page": 65,
    "description": "Empirical Analyses focuses on thinking creatively. You will become familiar with the central methods used in the natural and social sciences, enabling you to frame problems effectively, develop and test hypotheses, and engage in informed conjecture.",
    "note": "Students must take this course in the Fall term of Year 1.",
    "prerequisites": "None",
@@ -2688,6 +2821,7 @@
   {
    "code": "NS51",
    "title": "Empirical Analyses",
+   "page": 65,
    "description": "Empirical Analyses focuses on thinking creatively. You will become familiar with the central methods used in the natural and social sciences, enabling you to frame problems effectively, develop and test hypotheses, and engage in informed conjecture.",
    "note": "Students must take this course in the Spring term of Year 1.",
    "prerequisites": "NS50: Empirical Analyses",
@@ -2698,6 +2832,7 @@
   {
    "code": "NS110",
    "title": "Fundamental Laws of Nature",
+   "page": 66,
    "description": "Discover the implications of the physical and chemical nature of matter, from the smallest particles to the structure of the universe; learn how observation, experiments, theory and new instrumentation enable asking questions not possible before; explore how these fundamental understandings can be applied to solve some of earth's grand challenges. From ancient times it has been known that Nature exhibits certain regularities: the rising and setting of the Sun, the phases of the moon, the seasons, tides amongst others. To understand why such regularities exist, the scientific method was developed and applied via exacting observations, leading to hypotheses which were then further tested.",
    "note": "This course is no longer offered.",
    "prerequisites": "CX51: Complex Systems or SS51: Complex Systems, EA51: Empirical Analyses or NS51: Empirical Analyses, FA51: Formal Analyses or CS51: Formal Analyses, MC51: Multimodal Communications or AH51: Multimodal Communications",
@@ -2708,6 +2843,7 @@
   {
    "code": "NS110L",
    "title": "Physics of Life",
+   "page": 66,
    "description": "We explore how physics, ranging from mechanics through atomic physics, can be applied to the life sciences. Examples of applications are: fluid flow and heat regulation in biological organisms, electrostatics in the nervous system, and wave phenomena in hearing and vision. The course emphasizes the development of tools and problem-solving approaches needed to describe the physical phenomena at hand.",
    "note": "",
    "prerequisites": "FA51: Formal Analyses or CS51: Formal Analyses",
@@ -2718,6 +2854,7 @@
   {
    "code": "NS110U",
    "title": "Physics of the Universe",
+   "page": 66,
    "description": "We use gravitational and electromagnetic interactions as representatives for how physics takes experimental evidence and then encodes it into a theoretical framework that can be used to make predictions and draw inferences about new phenomena. The course emphasizes the development of the tools needed to describe the physical structure of nature and then uses these tools to infer the domain of validity of theories in physics and what might lie beyond them.",
    "note": "",
    "prerequisites": "NS51: Empirical Analyses or EA51: Empirical Analyses, CS111: Single and Multivariable Calculus",
@@ -2728,6 +2865,7 @@
   {
    "code": "NS111",
    "title": "Implications of Earth's Cycles",
+   "page": 66,
    "description": "The Earth system is investigated from its origin to its functioning today. Beginning with the origin of the Universe and the creation of elements in stars, the course progresses to an understanding of solar systems and the conditions that gave rise to habitable planets. Earth evolved from a lifeless, reduced planet with a simple mineralogy to a complex, oxidized planet that can support advanced life such as human beings. An aim of the course is to place human beings in a universal and planetary context, and to see the steps in planetary evolution as an essential perspective on how we relate to Earth today. This course qualifies as part of the Interdisciplinary Minor in Sustainability because it addresses the evolution of Earth and the natural processes regulating the planet. In order to sustainably care for the planet, it is essential to understand the systems and processes operating on Earth from climate regulation to natural resource formation and how human activities impact these processes.",
    "note": "",
    "prerequisites": "EA51: Empirical Analyses or NS51: Empirical Analyses",
@@ -2738,6 +2876,7 @@
   {
    "code": "NS112",
    "title": "Evolution Across Multiple Scales",
+   "page": 67,
    "description": "“Nothing in biology makes sense, except in the light of evolution” – T. Dobzhansky. From the relationships among species in a forest to the interactions of molecules in a cell, evolution is ultimately responsible. One might be tempted to view Dobzhansky’s quote as indicating that evolution is one key that unlocks the complexity of biology. That view is supported by statements such as “survival of the fittest,” which oversimplify the complexity of evolution. Instead, Evolution at Multiple Scales views evolution as the elaborate set of interconnected concepts it is. Although Darwin published On the Origin of Species over 150 years ago, evolutionary biology continues to be augmented, as new discoveries are driven by new technologies. By evaluating evolutionary concepts in a broad range of biological scenarios, students deepen their understanding of evolution itself, shedding light on the diversity of life it has produced. This course qualifies as part of the Interdisciplinary Minor in Sustainability because it addresses biodiversity. NS112 focuses on the evolutionary processes producing biodiversity, and also addresses the benefits of biodiversity to humans, the consequences of biodiversity loss, and strategies to maintain it.",
    "note": "",
    "prerequisites": "EA51: Empirical Analyses or NS51: Empirical Analyses",
@@ -2748,6 +2887,7 @@
   {
    "code": "NS113",
    "title": "Chemical Structure and Reactivity",
+   "page": 67,
    "description": "This course explores the physical and chemical properties of nature based on molecular, atomic, and sub-atomic structures, with an emphasis on how structure determines reactivity. Empirical observations will be combined with the principles of chemistry and physics to understand the microscopic properties of nature that underpin phenomena at various scales. Students who complete this course will be able to generate strong mechanistic chemical explanations and apply them in advanced chemistry, physics, earth science, and biology courses.",
    "note": "For those who begin in 2020 or later, this course is a required core in the Natural Sciences Concentration, and will be first offered Spring 2022.",
    "prerequisites": "EA51: Empirical Analyses or NS51: Empirical Analyses",
@@ -2758,6 +2898,7 @@
   {
    "code": "NS125",
    "title": "Research Methods",
+   "page": 67,
    "description": "This course covers applications of research methods and data analysis. We use primary research literature related to seven case studies to examine different forms of quantitative, qualitative, and mixed methods research, and to understand the ways in which these techniques help address specific research questions. Primary texts for the course cover the broader context of research designs and the use of the R programming language for data analysis and visualization. Secondary texts relate to the case studies. Students facilitate class sessions, choosing and assigning to the rest of the class their own readings and original framing of a research approach to an assigned topic. Note: NS125/SS125 may be substituted for a tutorial in NS/SS and can count like a cross-listed tutorial for double majors in SS, NS, or CS (any pairwise combination). In addition to the listed prerequisites, the following courses are recommended prior to taking this course: CS130",
    "note": "",
    "prerequisites": "EA51: Empirical Analyses or NS51: Empirical Analyses",
@@ -2768,6 +2909,7 @@
   {
    "code": "NS142",
    "title": "Quantum Nature of Matter: Theory and Applications",
+   "page": 68,
    "description": "Study the nature of matter from a quantitative standpoint using the tools provided by quantum mechanics. Starting from experiments that led the way to the discovery of quantum mechanics, we first establish its mathematical foundations. We then focus on electronic structures of particles and atoms. Along the way, we also review examples of technological revolutions catalyzed by quantum mechanics. Zoom in on events at microscopic scales, where interactions of energy and matter can behave differently than as predicted by classical physics.",
    "note": "",
    "prerequisites": "NS110U: Physics of the Universe, CS111: Single and Multivariable Calculus, CS113: Theory and Applications of Linear Algebra",
@@ -2778,6 +2920,7 @@
   {
    "code": "NS144",
    "title": "Genes to Organisms",
+   "page": 68,
    "description": "Investigate how biological traits are determined. Examine how genetic and environmental influences are translated through cellular and developmental mechanisms to determine the properties of cells, organisms, and species. Apply concepts and approaches from genetics, developmental biology, and computational biology to fundamental questions, including how to determine disease risk and how gene expression is finely coordinated and tuned. Explore the ethical and societal implications of genetics research and applications, including the impact on human health and behavior. NOTE: In addition to the listed prerequisites, the following courses are recommended prior to taking this course: CS130",
    "note": "",
    "prerequisites": "NS112: Evolution Across Multiple Scales",
@@ -2788,6 +2931,7 @@
   {
    "code": "NS146",
    "title": "Integrating Earth's Systems",
+   "page": 68,
    "description": "Explore key Earth systems, with an emphasis on how solid Earth components interact with living organisms, the hydrosphere and the atmosphere. Consider the effects of volcanism, mountain-building, earthquakes, weathering and erosion on biotic and abiotic domains. This course is designed to complement concepts from NS111 by extending and supplementing content knowledge and practical skills. The emphasis is on examining interactions within the whole Earth system, and on considering how we know what we know. Various important geochemical approaches are taught and then applied to real-world examples. By exploring the chemistry, physics and biology behind a tremendous diversity of Earth processes—from the surface to deep Earth, from microbe scale to whole-Earth scale—students gain critical skills and perspective to apply to a host of scientific questions beyond those considered in this course. NOTE: In addition to the listed prerequisites, the following courses are recommended prior to taking this course: NS113",
    "note": "",
    "prerequisites": "NS111: Implications of Earth's Cycles",
@@ -2798,6 +2942,7 @@
   {
    "code": "NS152",
    "title": "Analyzing Matter and Molecules",
+   "page": 68,
    "description": "Understanding what matter is, how matter and small molecules are studied, and how they can be manipulated is the gateway to technological solutions to many world challenges. Learn principles underlying optics, chemical identification, and chemical separation, and employ analytical tools for molecular and elemental analyses to tackle important interdisciplinary problems. In this course, we explore the application of analytical techniques to a range of topics, from everyday concerns of water quality, to major problems such as oil spill monitoring and cleanup, to ecosystem- and planetary-scale research questions that rely on remote sensing technologies. The first unit focuses on how light and electromagnetic radiation are used to view matter and molecules both directly and indirectly. The second unit focuses on identifying and quantifying molecules based upon their reactions and interactions with other, known chemicals. The third unit focuses on using sub-atomic properties, such as charge or isotopic composition, to characterize analytes. Students explore common techniques to separate and identify specific atoms or molecules within such mixtures. In the final unit we combine approaches from all earlier parts of the course to address current, multi-faceted research questions associated with the Earth’s past, present and future climate. NOTE: In addition to the listed prerequisites, the following courses are recommended prior to taking this course: CS111",
    "note": "",
    "prerequisites": "NS110L: Physics of Life or NS110U: Physics of the Universe, NS113: Chemical Structure and Reactivity",
@@ -2808,6 +2953,7 @@
   {
    "code": "NS154",
    "title": "Life's Chemistry",
+   "page": 69,
    "description": "Investigate biological systems from the cellular and molecular levels of analysis. Learn how the physical and chemical properties of molecular interactions within and between cells give rise to the emergent properties of life. Apply the principles of organic chemistry to understand the reactions that structure and power living systems. Explore key questions about cellular functions of diverse organisms ranging from plants and animals to microbes. Learn about experimental techniques that inform our understanding of cellular function and molecular interactions—including microscopy, x-ray diffraction, stable-isotope probing, enzyme activity assays —and apply them to current research questions.",
    "note": "",
    "prerequisites": "NS112: Evolution Across Multiple Scales, NS113: Chemical Structure and Reactivity",
@@ -2818,6 +2964,7 @@
   {
    "code": "NS156",
    "title": "Modeling and Measuring Environmental Systems",
+   "page": 69,
    "description": "Explore how researchers study and monitor earth systems, including the latest methods for climate, pollution, and ocean monitoring. Delve into how models are used to understand and predict earth systems and how to construct your own models of environmental systems. Use this knowledge to understand the major challenges facing the Earth system, the current state-of-the-science, and to design future solutions. This course will introduce students to the fundamental processes that control weather, air pollution, and climate change and enable them to reduce this complex system to simple, yet useful, models. We will critique current models and remote sensing observations to determine what we can and cannot see or predict. Students will evaluate environmental assessments and forecasts, then extend that knowledge to how science is able to inform and change public policy. We will address what are the most important next steps to solve the pressing environmental challenges facing both science and society. Note: This course qualifies as part of the Interdisciplinary Minor in Sustainability. In addition to the listed prerequisites, the following courses are recommended prior to taking this course: NS110L or NS110U, CS111",
    "note": "",
    "prerequisites": "NS111: Implications of Earth's Cycles or NS113: Chemical Structure and Reactivity",
@@ -2828,6 +2975,7 @@
   {
    "code": "NS162",
    "title": "Statistical Mechanics: Theory and Applications",
+   "page": 70,
    "description": "Statistical Mechanics describes how macroscopic systems and the macroscopic physical laws that govern them emerge from the aggregated behavior of many microscopic components. The field developed to explain the empirical results of thermodynamics in terms of the microscopic theory of atoms — Why do macroscopic systems have uniform properties? How do equations of state emerge from microscopic dynamics? When do these emergent laws break down? Why does the 2nd law of thermodynamics emerge, and how does it relate to phenomena from the efficiency of engines to the cooling of the universe? Why does matter have phases and under what conditions do phase transitions occur? While we primarily focus on explaining the tools of statistical mechanics through thermodynamics, we also discuss applications of these tools to computer science, machine learning, finance, and modeling social systems. In doing so, we introduce the basics of information theory and develop the connections between thermodynamic entropy and the more broadly applicable concept of Shannon entropy. NOTE: In addition to the listed prerequisites, the following courses are recommended prior to taking this course: CS114",
    "note": "",
    "prerequisites": "CS111: Single and Multivariable Calculus, NS110L: Physics of Life or NS110U: Physics of the Universe or NS113: Chemical Structure and Reactivity",
@@ -2838,6 +2986,7 @@
   {
    "code": "NS164",
    "title": "Solutions From and For Life",
+   "page": 70,
    "description": "Explore cutting-edge solutions to difficult problems in human health. Learn the process by which drugs are discovered and designed, how stem cells are engineered to form tissues, and how genes can be engineered for a multitude of purposes. Analyze how to determine what solutions can be applied to what problems and how to communicate advances in biotechnology to expert and public audiences. NOTE: In addition to the listed prerequisites, the following courses are recommended prior to taking this course: NS113, NS144, NS154, CS130",
    "note": "",
    "prerequisites": "NS112: Evolution Across Multiple Scales",
@@ -2848,6 +2997,7 @@
   {
    "code": "NS166",
    "title": "Keeping Earth Habitable",
+   "page": 70,
    "description": "Examine environmental and natural resource issues such as pollution, deforestation, climate change impacts, habitat loss, agricultural impacts, and the potential impact of human population growth and consumption. Consider systems challenges and potential solutions including social, political, economic, and technological approaches to major environmental problems. Note: This course is required for the Interdisciplinary Minor in Sustainability. Students not majoring in NS but with a declared minor in Sustainability may enroll in NS166 without completing the prerequisites (NS111 and/or NS112). This course takes an in-depth look at environmental and natural resource issues such as pollution, habitat loss, and climate change impacts and then explores potential solutions. Effective solutions to “keeping Earth habitable” require combining social, political, economic, technological, and ethical approaches.",
    "note": "",
    "prerequisites": "NS111: Implications of Earth's Cycles or NS112: Evolution Across Multiple Scales",
@@ -2858,6 +3008,7 @@
   {
    "code": "NS350",
    "title": "Frameworks for Evidence-Based Decision Making",
+   "page": 71,
    "description": "Decision making roles require leaders to solve problems ranging from everyday obstacles to complex challenges with solutions that require significant time and resources for implementation. This course offers a deep dive into problem solving and decision making focusing on effective frameworks for the process and mitigating biases known to impede effective and innovative decision making.",
    "note": "",
    "prerequisites": "None",
@@ -2868,6 +3019,7 @@
   {
    "code": "NS351",
    "title": "Applications of Scientific Inquiry",
+   "page": 71,
    "description": "This course focuses on the central methods used in the natural and social sciences, with the purpose of helping students to frame problems effectively, develop and test hypotheses, and engage in informed conjecture.",
    "note": "",
    "prerequisites": "NS350: Frameworks for Evidence-Based Decision Making",
@@ -2878,6 +3030,7 @@
   {
    "code": "NS372",
    "title": "Research Methods Across Contexts",
+   "page": 71,
    "description": "",
    "note": "",
    "prerequisites": "CS351: Formal Methods for Analysis and Decision Making",
@@ -2888,6 +3041,7 @@
   {
    "code": "PR50",
    "title": "Programming Structured Study Sessions",
+   "page": 71,
    "description": "",
    "note": "",
    "prerequisites": "None",
@@ -2898,6 +3052,7 @@
   {
    "code": "PR51",
    "title": "Programming Structured Study Sessions",
+   "page": 71,
    "description": "This course is designed to help bridge the gap between the Cornerstones and upper-level Computational Sciences courses as needed. Topics include CPU, ALU, binary, memory, object oriented programming, variable scope and mutability, refactoring, networks, debugging, and security. Note: This course can be successfully completed by either (1) Passing a technical interview; or (2) Successfully completing weekly structured study sessions in the spring semester.",
    "note": "",
    "prerequisites": "None",
@@ -2908,6 +3063,7 @@
   {
    "code": "SES101",
    "title": "Facilitating Engaged Learning in Virtual Classrooms",
+   "page": 71,
    "description": "This first course in a series of three focuses on student engagement in the virtual classroom. In six class meetings, participants explore how learning science can inform student interactions and the design of classroom activities. We discuss how to draw on pre-class preparation during active class sessions in order to maximize in-person interactions. We share strategies on how to build a learning community in virtual spaces. And finally, we share best practices for defining clear outcomes and articulating their applicability and relevance. Participants bring their own preparatory work to the sessions and should expect to produce materials they can use in their own virtual classrooms.",
    "note": "",
    "prerequisites": "None",
@@ -2918,6 +3074,7 @@
   {
    "code": "SES102",
    "title": "Teaching Practicum: Virtual Engagement Techniques",
+   "page": 72,
    "description": "This practicum allows participants to apply what they learn in Course 1 by practicing virtual engagement techniques and exploring the connection between facilitation and lesson- and course-design in preparation for Course 3. They also practice giving feedback to other professors on virtual engagement techniques, outside of content. Course 2 consists of three meetings with the full cohort and two small “team” meetings outside of regular class time (five meetings total). Participants watch their partners’ videos using a provided feedback form, and they meet with their partners at their convenience to discuss feedback and suggestions. Minerva professors and students may also watch videos and provide feedback. This course includes: 1. An extensive and flexible worksheet—the Virtual Classroom Observation Tool, based on recent research on the science of teaching and learning—is provided to assist in the evaluation of recorded class sessions; 2. Three full cohort meetings require participants to set goals and expectations, engage in disciplinary-specific discussions and cross-team pollination of ideas, and synthesize what they learned; 3. Upon request, we will produce a written evaluation of the participant’s teaching for inclusion in a teaching portfolio.",
    "note": "",
    "prerequisites": "None",
@@ -2928,6 +3085,7 @@
   {
    "code": "SES103",
    "title": "Course Planning and Lesson Design for Virtual Classrooms",
+   "page": 72,
    "description": "This final course in the sequence focuses on course and lesson planning for primarily synchronous virtual courses or blended classes (e.g., some synchronous online and some in-person class meetings). It includes: 1. Two 60-minute class sessions on syllabus design, with an emphasis on defining learning outcomes and effectively distributing them throughout class meetings (e.g., start with foundational material first; plan for synthesis days; etc.); 2. Two 60-minute class sessions on lesson plan design for virtual classrooms; and 3. Participants work asynchronously (self-paced) to complete a syllabus and two lesson plans. Instructors provide feedback on draft work products, and they are available for consultation in office hours.",
    "note": "",
    "prerequisites": "None",
@@ -2938,6 +3096,7 @@
   {
    "code": "SS50",
    "title": "Complex Systems",
+   "page": 72,
    "description": "Complex Systems focuses on interacting effectively. You will explore how humans function as members of various systems, learning the concepts of multiple causality and multi-factor interactions, group project collaboration, negotiation, leadership, and formal debate.",
    "note": "Students must take this course in the Fall term of Year 1.",
    "prerequisites": "None",
@@ -2948,6 +3107,7 @@
   {
    "code": "SS51",
    "title": "Complex Systems",
+   "page": 72,
    "description": "Complex Systems focuses on interacting effectively. You will explore how humans function as members of various systems, learning the concepts of multiple causality and multi-factor interactions, group project collaboration, negotiation, leadership, and formal debate.",
    "note": "Students must take this course in the Spring term of Year 1.",
    "prerequisites": "SS50: Complex Systems",
@@ -2958,6 +3118,7 @@
   {
    "code": "SS110",
    "title": "Psychology: From Neurons to Society",
+   "page": 73,
    "description": "In this course we learn about the mind by looking at (1) multiple levels of analysis, from neurons to social systems, (2) multiple methodologies used in research, and (3) how multiple types of explanation (mechanism, function, ontogeny, phylogeny) shed light on each other. Using these three course objectives, we will build up a framework for understanding the full range of topics in cognitive science, and how they relate to other disciplines both within the social sciences (e.g., political science and economics) and beyond them (e.g., biology and computer science).",
    "note": "",
    "prerequisites": "CX51: Complex Systems or SS51: Complex Systems",
@@ -2968,6 +3129,7 @@
   {
    "code": "SS111",
    "title": "Modern Economic Thought",
+   "page": 73,
    "description": "Are economic agents really rational? Should governments interfere with markets? Can central banks just print money and “get away with it”? How can policy makers tackle rising prices? What is the socioeconomic legacy of COVID-19 around the world? Today’s economists are grappling with uniquely challenging questions. This course offers students an introduction to economics through a uniquely interdisciplinary lens to better understand these questions. Students will assess how markets work in theory and in reality; evaluate the tools used by governments and central banks to correct market failures; and analyze the workings of the international financial and economic system.",
    "note": "",
    "prerequisites": "CX51: Complex Systems or SS51: Complex Systems",
@@ -2978,6 +3140,7 @@
   {
    "code": "SS112",
    "title": "Political Science and Social Change",
+   "page": 73,
    "description": "Governments greatly affect their citizens and, in turn, citizens may greatly affect government and their society. The course has four units to examine these influences. The first unit is a brief introduction to the discipline of political science. The second unit covers the rise of the modern state, seeking to understand the ideas, structural factors, and rational decisions that led to different political orders. The third unit examines how society can change the state through revolutionary and reformist social movements. We end by exploring ongoing struggles in the contemporary world to remake states and societies by critically examining case studies of both positive and negative social change. For the final project, students design a campaign to enact a specific social change (at the local, state, or federal level) and devise ways to assess its impact. Note: This course qualifies as part of the Interdisciplinary Minor in Sustainability because it provides causal frameworks for understanding the political context of sustainable design, technology, and environmental policy. These causal frameworks include structuralism, constructivism, institutionalism, and rational choice.",
    "note": "",
    "prerequisites": "CX51: Complex Systems or SS51: Complex Systems",
@@ -2988,6 +3151,7 @@
   {
    "code": "SS142",
    "title": "Theory, Research, and Innovation in the Psychological Sciences",
+   "page": 73,
    "description": "We explore broad theories of cognition and emotion through the lens of psychology, also drawing on philosophy and artificial intelligence. Within cognition, we examine different kinds of thinking, including induction, deduction, problem solving, and decision making, and we learn how to integrate theories of different types of thinking (such as inductive reasoning and problem solving). We also combine theories of thinking with theories of other cognitive processes such as attention and memory—so that instead of many seemingly separate cognitive processes, we have a cognitive being who can perform many different types of cognitive tasks. In addition, we examine and evaluate theories of emotions, both traditional and contemporary. How do emotions influence a wide variety of cognitive processes such as problem solving and decision making, and how might this help us to understand cognition and emotion? Finally, we explore theories of creativity from both cognitive and emotion-based perspectives.",
    "note": "",
    "prerequisites": "SS110: Psychology: From Neurons to Society",
@@ -2998,6 +3162,7 @@
   {
    "code": "SS144",
    "title": "Intermediate Economic Theory and Tools",
+   "page": 74,
    "description": "SS144 equips students with a broad set of analytical tools that economists use to study behavior from the macro to micro level. We begin with a broad overview of why some economies grow faster than others, and use mathematical tools to illustrate growth dynamics. We then transition to macroeconomic and microeconomic theory by first analyzing macroeconomic models and then decisions made at the firm and individual level by exploring tools such as utility and profit maximization. From there we explore the field of game theory and apply tools such as Nash equilibrium and analyze games in strategic forms. We next progress to the field of international trade and assess trade agreements while applying tools such as graphical analysis and regression outcomes. The next unit focuses on understanding empirical tests of predictions from the models we studied thus far. We end the class with an introduction to behavioral economics and learn to analyze various factors that impact behavior in real-world economic decision making.",
    "note": "",
    "prerequisites": "SS111: Modern Economic Thought",
@@ -3008,6 +3173,7 @@
   {
    "code": "SS146",
    "title": "Practice of Governance",
+   "page": 74,
    "description": "What makes good governance? How can governments pursue worthy public policy aims successfully? What are the most innovative ideas and best practices governments can adopt to create positive outcomes for the communities and societies they govern? This course seeks to answer those and related questions by examining governance models at the subnational, national, and international levels. We will delve into the current practices of governance at all these levels in various regions around the world in order to learn what does and does not work. As we critically examine these practices and models, we will develop our own thinking and approaches to governance. Note: This course qualifies as part of the Interdisciplinary Minor in Sustainability because sustainability is increasingly a concern in a wide array of governance matters. Using case studies, the course explores sustainability as a governance issue in a variety of contexts, from local environmental regulation to transnational cooperation on climate change.",
    "note": "",
    "prerequisites": "SS112: Political Science and Social Change",
@@ -3018,6 +3184,7 @@
   {
    "code": "SS152",
    "title": "Cognitive Neuroscience",
+   "page": 74,
    "description": "Explore how the brain gives rise to the mind through the lens of cognitive neuroscience. Learn about the anatomy, physiology, and chemistry of the brain and consider the role of this physical substrate in neural computation. This course introduces the methodological foundations of cognitive neuroscience and their application to analyzing specific mental processes and events, with links to related fields such as genetics and computational neuroscience. In addition, it provides a framework for understanding cognitive disorders, mental thriving and human development, which supports student engagement in public policy or social ventures.Topics include the evolution of the brain, consciousness, vision, motor control, speech, memory, executive function, developmental psychology, and disorders of the brain such as depression, schizophrenia, Alzheimer's disease and autism spectrum disorder.",
    "note": "",
    "prerequisites": "SS110: Psychology: From Neurons to Society",
@@ -3028,6 +3195,7 @@
   {
    "code": "SS154",
    "title": "Econometrics and Economic Systems",
+   "page": 75,
    "description": "Learn how to use core econometric and statistical methods to construct and validate economic and social models. Students will learn methods to conduct and critique empirical studies in economics as well as other social sciences. We apply these techniques to answer causal questions such as: What environmental policy in Europe has been most effective in reducing pollution? Are celebrities involved in international development actually helping alleviate poverty? Do cigarette taxes reduce smoking? Do drunk driving laws actually reduce traffic deaths? Are international sanctions effective in correcting rulers’ behavior? Quantitative approaches used to answer such questions include multiple regression, matching, differences in differences, regression discontinuity, and instrumental variables. The aim of this course is to make you better critique causal studies and more comfortable when performing your own causal study.",
    "note": "",
    "prerequisites": "SS111: Modern Economic Thought",
@@ -3038,6 +3206,7 @@
   {
    "code": "SS156",
    "title": "Comparative Politics in Practice",
+   "page": 75,
    "description": "This course examines and compares how political systems operate in practice and why they have different outcomes, such as corruption/transparency, racism, political stability/instability, low/high inequality, security/insecurity, and low/high socio-economic standards. Students will learn the ways in which institutions and structures shape the way people act individually and collectively across different countries with diverse political systems to achieve their goals. Note: This course qualifies as part of the Interdisciplinary Minor in Sustainability because it takes an in-depth look at the complex interactions that take place between political, social, cultural, and economic factors that are relevant to sustainability. In general, students also learn how to use complexity thinking to analyze and compare the interactions between institutions, structures, and human actions that affect sustainable development issues across different political systems. This course counts toward the Minor in Interdisciplinary Digital Practices because students learn to apply political science theories and complexity thinking to examine the role that digital technologies play in shaping political behaviors, interactions, and phenomena.",
    "note": "",
    "prerequisites": "SS112: Political Science and Social Change",
@@ -3048,6 +3217,7 @@
   {
    "code": "SS162",
    "title": "Personal and Social Motivation",
+   "page": 75,
    "description": "How can we effectively change our own habits and behaviors? What is the best way to motivate and persuade others? Is it ethical to consciously motivate or persuade those around us? As the answers to these questions have become better understood, they are being used to help people adopt more beneficial practices across many fields such as medicine, business, and environmental activism. Drawing on personality psychology, health psychology, cognitive psychology, and social psychology, we gain a better understanding of what motivates us and learn why specific ways to influence people's beliefs and behavior are most effective in certain contexts.",
    "note": "",
    "prerequisites": "SS110: Psychology: From Neurons to Society",
@@ -3058,6 +3228,7 @@
   {
    "code": "SS164",
    "title": "Global Development and Applied Economics",
+   "page": 76,
    "description": "Examine important challenges facing both developing and developed economies. Explore the development of societies through the analysis of access to education and healthcare as well as sustainable mechanisms for economic growth. Identify the socio-economic impacts of rural to urban migration and technological progress while exploring the reasons for income inequality throughout the world. Generate and critique policies designed to address specific economic issues within an effective institutional and political framework.",
    "note": "This course qualifies as part of the Minors in Sustainability, and in Interdisciplinary Digital Practices because students examine the promises and challenges of technological progress, including welfare gains from digital technologies, and labor market impacts in both developed and developing economies.",
    "prerequisites": "SS111: Modern Economic Thought",
@@ -3068,6 +3239,7 @@
   {
    "code": "SS166",
    "title": "Comparative Constitutional Law: Designing Societies",
+   "page": 76,
    "description": "This course is an overview of comparative constitution-making and implementation. What distinguishes a constitution from other types of law? What are its purposes? How should it be written, interpreted, and enforced? How do economic, social, political, and cultural context determine the process and substance of a constitution? What have been the most successful constitutional systems and why? These are the guiding questions of this course. In it, students will compare and contrast the constitutions of several different countries and critically examine the nuances of the daunting political tensions inherent to the founding of a new constitutional regime: how should one recognize the positive legacies of the past and the constraints of the present, all the while leaving room for legal development and adaptation to an uncertain future? Students will combine these lessons with their foundational knowledge early in the course to articulate their own framework for approaching constitutional design. Using this framework, they then participate in a multi-class final group project to write a constitution. By the end, the students should be able to think broadly and deeply about how institutions, rules, and structure can order complex social systems and maintain stability, efficiency and justice. (not an ABA or CBA approved law course)",
    "note": "",
    "prerequisites": "SS112: Political Science and Social Change",
@@ -3078,6 +3250,7 @@
   {
    "code": "SS350",
    "title": "Advanced Complex Systems",
+   "page": 76,
    "description": "This course focuses on the ways in which people function as agents within larger systems. We explore concepts of multiple causality and multi-factor interactions, and the implications that these concepts have for various means of effective interaction, such as group project collaboration, negotiation, leadership, and formal debate.",
    "note": "",
    "prerequisites": "None",
@@ -3088,6 +3261,7 @@
   {
    "code": "SS351",
    "title": "Advanced Complex Systems",
+   "page": 77,
    "description": "This course focuses on the ways in which people function as agents within larger systems. We explore concepts of multiple causality and multi-factor interactions, and the implications that these concepts have for various means of effective interaction, such as group project collaboration, negotiation, leadership, and formal debate.",
    "note": "",
    "prerequisites": "None",
@@ -3098,6 +3272,7 @@
   {
    "code": "SS352",
    "title": "Decision Making in Complex Social Systems",
+   "page": 77,
    "description": "This course focuses on effective decision making in social systems. Students learn to apply tools for complexity analysis to understand groups and individuals, and then study topics in leadership and teamwork to think about how to best achieve goals within complex systems.",
    "note": "",
    "prerequisites": "None",
@@ -3108,6 +3283,7 @@
   {
    "code": "SS360",
    "title": "Critical Analysis of Consequential Decision Making",
+   "page": 77,
    "description": "Synthesize and extend learnings from the core courses by engaging with examples of consequential decision making. Flexibly apply HCs to complex and challenging case studies. Analyze the context of the case, formulate a strategy, consider solutions, and make or judge a decision while adapting as necessary to unexpected challenges.",
    "note": "",
    "prerequisites": "NS350: Frameworks for Evidence-Based Decision Making, NS351: Applications of Scientific Inquiry, CS350: Formal Methods for Analysis and Decision Making, CS351: Formal Methods for Analysis and Decision Making, SS352: Decision Making in Complex Social Systems",
@@ -3118,6 +3294,7 @@
   {
    "code": "SS372",
    "title": "Research Methods in Education",
+   "page": 77,
    "description": "This course will start with understanding the most robustly-supported conclusions in the scientific literature about education, and the methods used by that scientific literature. Building on that, students will then suggest new data collection that would push our knowledge of education further. Finally, we will discuss the real-world implications of such research, and how to present such research to real-world audiences of various types.",
    "note": "",
    "prerequisites": "NS351: Applications of Scientific Inquiry",
@@ -3128,6 +3305,7 @@
   {
    "code": "WR50",
    "title": "Writing Structured Study Sessions",
+   "page": 78,
    "description": "Writing Structured Study Sessions (SSS) for the Fall semester are designed to support first-year students in developing the necessary writing skills to succeed in the Cornerstones. They are mandatory for students that receive a ✓- in the writing summer assessments or do not complete them at all. Note: Students enrolled in this course must satisfactorily complete all sessions in order to continue taking Cornerstone courses in the following semester.",
    "note": "",
    "prerequisites": "None",
@@ -3138,6 +3316,7 @@
   {
    "code": "AH182",
    "title": "Senior Tutorial",
+   "page": 79,
    "description": "This course has been renamed to IL181: Senior Tutorial",
    "note": "",
    "prerequisites": "",
@@ -3148,6 +3327,7 @@
   {
    "code": "CS111A",
    "title": "Continuous Mathematical Systems",
+   "page": 79,
    "description": "This course has been renamed to CS111: Single and Multivariable Calculus",
    "note": "",
    "prerequisites": "",
@@ -3158,6 +3338,7 @@
   {
    "code": "CS111B",
    "title": "Linear Mathematical Systems",
+   "page": 79,
    "description": "This course has been renamed to CS113: Theory and Applications of Linear Algebra",
    "note": "",
    "prerequisites": "",
@@ -3168,6 +3349,7 @@
   {
    "code": "CS112",
    "title": "Knowledge: Information Based Decisions",
+   "page": 79,
    "description": "This course has been renamed to CS130: Statistical Modeling: Prediction and Causal Inference",
    "note": "",
    "prerequisites": "",
@@ -3178,6 +3360,7 @@
   {
    "code": "CS112M",
    "title": "Knowledge: Information Based Decisions",
+   "page": 79,
    "description": "This course has been renamed to CS312: Knowledge: Information Based Decisions",
    "note": "",
    "prerequisites": "",
@@ -3188,6 +3371,7 @@
   {
    "code": "CS181",
    "title": "Senior Tutorial",
+   "page": 79,
    "description": "This course has been renamed to IL181: Senior Tutorial",
    "note": "",
    "prerequisites": "",
@@ -3198,6 +3382,7 @@
   {
    "code": "CS182",
    "title": "Senior Tutorial",
+   "page": 79,
    "description": "This course has been renamed to IL181: Senior Tutorial",
    "note": "",
    "prerequisites": "",
@@ -3208,6 +3393,7 @@
   {
    "code": "MS216",
    "title": "Research Methods",
+   "page": 79,
    "description": "This course has been renamed to NS270: Research Methods",
    "note": "",
    "prerequisites": "",
@@ -3218,6 +3404,7 @@
   {
    "code": "MS217",
    "title": "Research Methods",
+   "page": 79,
    "description": "This course has been renamed to NS271: Research Methods",
    "note": "",
    "prerequisites": "",
@@ -3228,6 +3415,7 @@
   {
    "code": "MS310",
    "title": "Advanced Complex Systems",
+   "page": 79,
    "description": "This course has been renamed to SS350: Advanced Complex Systems",
    "note": "",
    "prerequisites": "",
@@ -3238,6 +3426,7 @@
   {
    "code": "MS311",
    "title": "Advanced Complex Systems",
+   "page": 79,
    "description": "This course has been renamed to SS351: Advanced Complex Systems",
    "note": "",
    "prerequisites": "",
@@ -3248,6 +3437,7 @@
   {
    "code": "MS312",
    "title": "Advanced Empirical Analyses",
+   "page": 80,
    "description": "This course has been renamed to NS350: Frameworks for Evidence-Based Decision Making",
    "note": "",
    "prerequisites": "",
@@ -3258,6 +3448,7 @@
   {
    "code": "MS313",
    "title": "Advanced Empirical Analyses",
+   "page": 80,
    "description": "This course has been renamed to NS351: Applications of Scientific Inquiry",
    "note": "",
    "prerequisites": "",
@@ -3268,6 +3459,7 @@
   {
    "code": "MS314",
    "title": "Advanced Formal Analyses",
+   "page": 80,
    "description": "This course has been renamed to CS350: Formal Methods for Analysis and Decision Making",
    "note": "",
    "prerequisites": "",
@@ -3278,6 +3470,7 @@
   {
    "code": "MS315",
    "title": "Advanced Formal Analyses",
+   "page": 80,
    "description": "This course has been renamed to CS351: Formal Methods for Analysis and Decision Making",
    "note": "",
    "prerequisites": "",
@@ -3288,6 +3481,7 @@
   {
    "code": "MS316",
    "title": "Research Methods",
+   "page": 80,
    "description": "This course has been renamed to NS370: Research Methods",
    "note": "",
    "prerequisites": "",
@@ -3298,6 +3492,7 @@
   {
    "code": "MS317",
    "title": "Research Methods",
+   "page": 80,
    "description": "This course has been renamed to NS371: Research Methods",
    "note": "",
    "prerequisites": "",
@@ -3308,6 +3503,7 @@
   {
    "code": "MS318",
    "title": "Thesis",
+   "page": 80,
    "description": "This course has been renamed to CP399: Masters Thesis NCC2 / Transfer Credits This course has been renamed to IL99: Transfer Credits NCC3 / Prior Experiential Learning This course has been renamed to IL190: Credit for Experiential Learning Application",
    "note": "",
    "prerequisites": "",
@@ -3318,6 +3514,7 @@
   {
    "code": "NS181",
    "title": "Senior Tutorial",
+   "page": 80,
    "description": "This course has been renamed to IL181: Senior Tutorial",
    "note": "",
    "prerequisites": "",
@@ -3328,6 +3525,7 @@
   {
    "code": "NS182",
    "title": "Senior Tutorial",
+   "page": 80,
    "description": "This course has been renamed to IL181: Senior Tutorial",
    "note": "",
    "prerequisites": "",
@@ -3338,6 +3536,7 @@
   {
    "code": "NS270",
    "title": "Research Methods",
+   "page": 80,
    "description": "This course has been renamed to NS272: Research Methods",
    "note": "",
    "prerequisites": "",
@@ -3348,6 +3547,7 @@
   {
    "code": "NS271",
    "title": "Research Methods",
+   "page": 81,
    "description": "This course has been renamed to NS272: Research Methods",
    "note": "",
    "prerequisites": "",
@@ -3358,6 +3558,7 @@
   {
    "code": "NS272",
    "title": "Research Methods",
+   "page": 81,
    "description": "This course has been renamed to NS125: Research Methods SS50HKUST / Complex Systems This course has been renamed to SS50: Complex Systems",
    "note": "",
    "prerequisites": "",
@@ -3368,6 +3569,7 @@
   {
    "code": "SS181",
    "title": "Senior Tutorial",
+   "page": 81,
    "description": "This course has been renamed to IL181: Senior Tutorial",
    "note": "",
    "prerequisites": "",
@@ -3378,6 +3580,7 @@
   {
    "code": "SS182",
    "title": "Senior Tutorial",
+   "page": 81,
    "description": "This course has been renamed to IL181: Senior Tutorial",
    "note": "",
    "prerequisites": "",

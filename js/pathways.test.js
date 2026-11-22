@@ -76,6 +76,18 @@ test('version.json matches every ?v= tag in index.html', () => {
   assert(tags[0] === v, `index.html says ${tags[0]}, version.json says ${v}`);
 });
 
+test('every link shown is one of the verified links', () => {
+  const links = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'catalog', 'links.json'), 'utf-8'));
+  const verified = new Set([links.catalogPdf, ...Object.values(links.concentrationPages).filter(Boolean)]);
+  Object.values(links.collegeTabs).forEach((t) => verified.add(`${links.majorsPage}?tab=${t}`));
+  const shown = [];
+  Object.values(data.nodes).forEach((n) => [n, ...(n.options || [])].forEach((h) => (h.links || []).forEach((l) => shown.push(l.url))));
+  Object.values(data.courseInfo).forEach((c) => shown.push(c.url.replace(/#page=\d+$/, '')));
+  const unknown = [...new Set(shown)].filter((u) => !verified.has(u));
+  assert(shown.length > 50, `expected many links, got ${shown.length}`);
+  assert(unknown.length === 0, `unverified: ${unknown.join(', ')}`);
+});
+
 let failed = 0;
 for (const { name, fn } of tests) {
   try { fn(); console.log(`✓ ${name}`); } catch (e) { console.error(`✗ ${name}: ${e.message}`); failed++; }

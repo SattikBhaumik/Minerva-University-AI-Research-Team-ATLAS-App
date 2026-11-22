@@ -22,13 +22,14 @@ CAT = json.loads((ROOT / 'data/catalog/catalog-2026.v410.json').read_text())
 OUT = json.loads((ROOT / 'data/catalog/outcomes.json').read_text())
 ED = json.loads((ROOT / 'data/catalog/editorial.json').read_text())
 RES = json.loads((ROOT / 'data/catalog/research.json').read_text())
+LINKS = json.loads((ROOT / 'data/catalog/links.json').read_text())
 RESEARCH_SRC = {'label': 'Minerva: Research', 'url': RES['source']}
 
 AS_OF = '2026-11-21'
 CATALOG_URL = 'https://minerva.edu/academics/course-catalog-pdf/'
 CATALOG_SRC = {'label': 'Course Catalog 2026.v410', 'url': CATALOG_URL}
 MAJORS_URL = 'https://www.minerva.edu/undergraduate/majors-concentrations/'
-TABS = {'NS': 'natural-sciences', 'CS': 'computational-sciences'}
+TABS = LINKS['collegeTabs']
 
 ORDER = ['AH', 'B', 'CS', 'NS', 'SS']
 COLLEGE = {
@@ -93,6 +94,15 @@ def major_source(col):
     return {'label': COLLEGE[col][0], 'url': MAJORS_URL + (f"?tab={TABS[col]}" if col in TABS else '')}
 
 
+def college_link(col):
+    return {'label': f"{COLLEGE[col][0]} on minerva.edu", 'url': MAJORS_URL + f"?tab={TABS[col]}"}
+
+
+def catalog_link(code):
+    return {'label': f"{code} in the course catalog (p. {COURSE[code]['page']})",
+            'url': f"{LINKS['catalogPdf']}#page={COURSE[code]['page']}"}
+
+
 def core(col):
     return [c['code'] for c in CAT['courses'] if c['type'] == 'Major Core' and prefix(c['code']) == col]
 
@@ -138,7 +148,7 @@ def build():
                 'whatYouDo': first_sentence(MAJOR[COLLEGE[col][0]]['description']),
                 'facts': ['Core: ' + ', '.join(f"{c} {COURSE[c]['title']}" for c in core(col))],
                 'keepsOpen': f"{len(concentrations(col))} concentrations; at least 20 credits come from other colleges.",
-                'source': major_source(col), 'next': f'college-{col}'}
+                'source': major_source(col), 'links': [college_link(col)], 'next': f'college-{col}'}
     # Owner exception to the three-tab rule: all five colleges on one screen.
     opts = [college_option(c) for c in ORDER]
     for o in opts:
@@ -165,7 +175,7 @@ def build():
                 'whatYouDo': first_sentence(MAJOR[COLLEGE[o['college']][0]]['description']),
                 'facts': ['Sample courses: ' + ', '.join(f"{c} {COURSE[c]['title']}" for c in core(o['college'])[:3])],
                 'keepsOpen': f"Points to {COLLEGE[o['college']][0]}.",
-                'source': major_source(o['college']), 'next': f"college-{o['college']}",
+                'source': major_source(o['college']), 'links': [college_link(o['college'])], 'next': f"college-{o['college']}",
             } for o in q['options']],
         }
 
@@ -183,7 +193,7 @@ def build():
             ] + ([f"Minors here: {', '.join(m['name'].split(' - ')[-1] for m in minors(col))}"] if minors(col) else []),
             'note': 'Not your fit? Change an answer above.',
             'source': CATALOG_SRC, 'continueLabel': 'Start Year 1', 'next': f'y1-{col}',
-            'plan': name,
+            'plan': name, 'links': [college_link(col), {'label': 'Full course catalog (PDF)', 'url': LINKS['catalogPdf']}],
         }
         nodes[f'y1-{col}'] = {
             'kind': 'step', 'stage': y['y1'], 'prompt': 'Four Cornerstone courses, all year',
@@ -245,7 +255,7 @@ def build():
             keeps = (f"{COLLEGE[o][0]} minors: {', '.join(mins)}." if mins else 'Counts toward the 20 credits from other colleges.')
             return {'id': o.lower(), 'name': COLLEGE[o][0], 'label': f'{COLLEGE[o][0]} core',
                     'whatYouDo': first_sentence(MAJOR[COLLEGE[o][0]]['description']),
-                    'facts': facts, 'keepsOpen': keeps, 'source': CATALOG_SRC,
+                    'facts': facts, 'keepsOpen': keeps, 'source': CATALOG_SRC, 'links': [college_link(o)],
                     'next': f'y3-{col}-1', 'plan': 'electives from ' + COLLEGE[o][0]}
         # Owner exception to the three-tab rule: all four other colleges in one row.
         opts = [elective(o) for o in others]
@@ -275,7 +285,9 @@ def build():
             return {'id': re.sub(r'[^a-z]+', '-', c['name'].lower()).strip('-'), 'name': c['name'], 'label': c['name'],
                     'whatYouDo': first_sentence(c['description']) or 'The catalog gives no description; its three courses are below.',
                     'facts': [course_line(x) for x in codes], 'keepsOpen': keeps,
-                    'source': CATALOG_SRC, 'next': f'y4-{col}', 'plan': ', '.join(codes)}
+                    'source': CATALOG_SRC, 'next': f'y4-{col}', 'plan': ', '.join(codes),
+                    'links': [{'label': f"{c['name']} on minerva.edu", 'url': LINKS['concentrationPages'][c['name']]}
+                              if LINKS['concentrationPages'].get(c['name']) else college_link(col)]}
         if col == 'AH':
             prompt = 'Pick a track to lean into. Every AH major takes at least one course from Arts and Literature, Historical Forces, and Philosophy, Ethics, and the Law.'
         else:
@@ -377,7 +389,8 @@ def build():
                     short = ' '.join(sentences[:2])
                     if len(short) > 320:
                         short = sentences[0]
-                    info[code] = {'title': c['title'], 'description': short, 'needs': prereq_codes(code)}
+                    info[code] = {'title': c['title'], 'description': short, 'needs': prereq_codes(code),
+                                  'url': catalog_link(code)['url'], 'page': c['page']}
 
     return {
         'courseInfo': info,
