@@ -306,7 +306,7 @@ button, input, select, textarea { font: inherit; }
 .pw-tab::after {
   content: ''; position: absolute; left: var(--space-3); right: var(--space-3); bottom: 5px;
   height: 3px; border-radius: 2px; background: var(--color-primary);
-  transform: scaleX(0); transition: transform 0.25s ease-out;
+  transform: scaleX(0); transition: transform 0.4s var(--ease-settle);
 }
 .pw-tab:hover:not(.is-selected) { background: var(--color-surface-alt); }
 .pw-tab:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
@@ -352,7 +352,7 @@ button, input, select, textarea { font: inherit; }
 .pw-about-group { text-transform: uppercase; letter-spacing: 0.04em; margin-top: var(--space-3); }
 .pw-about-group:first-child { margin-top: 0; }
 .pw-about-group + .pw-about-item { border-top: none; margin-top: var(--space-1); padding-top: 0; }
-.pw-about.pw-reveal { animation: pw-fade 0.26s ease-out both; }
+.pw-about.pw-reveal { animation: pw-soften 0.45s var(--ease-settle) both; }
 @media (min-width: 1100px) {
   .view-inner:has(#pathways-root) { max-width: 1040px; }
   .pw-row { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: var(--space-4); align-items: stretch; }
@@ -361,12 +361,27 @@ button, input, select, textarea { font: inherit; }
   .pw-about summary::-webkit-details-marker { display: none; }
 }
 
-.pw-enter .pw-connector { animation: pw-grow 0.28s ease-out both; }
-.pw-enter .pw-row { animation: pw-drop 0.42s cubic-bezier(0.2, 0.8, 0.2, 1) 0.18s both; }
-.pw-panel.pw-reveal { animation: pw-fade 0.26s ease-out both; }
+/* A new layer manifests: the line draws down, then the card rises out of a
+   soft blur, its tabs follow one by one, and the course box settles last. */
+:root { --ease-settle: cubic-bezier(0.16, 1, 0.3, 1); --ease-draw: cubic-bezier(0.65, 0, 0.35, 1); }
+.pw-enter .pw-connector { animation: pw-grow 0.36s var(--ease-draw) both; }
+.pw-enter .pw-row { animation: pw-manifest 0.75s var(--ease-settle) 0.22s both; will-change: opacity, transform, filter; }
+.pw-enter .pw-tab { animation: pw-rise 0.55s var(--ease-settle) both; }
+.pw-enter .pw-tab:nth-child(1) { animation-delay: 0.36s; }
+.pw-enter .pw-tab:nth-child(2) { animation-delay: 0.42s; }
+.pw-enter .pw-tab:nth-child(3) { animation-delay: 0.48s; }
+.pw-enter .pw-tab:nth-child(4) { animation-delay: 0.54s; }
+.pw-enter .pw-tab:nth-child(5) { animation-delay: 0.60s; }
+.pw-enter .pw-row > .pw-about { animation: pw-soften 0.6s var(--ease-settle) 0.5s both; }
+.pw-panel.pw-reveal { animation: pw-soften 0.45s var(--ease-settle) both; }
 @keyframes pw-grow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
-@keyframes pw-drop { from { opacity: 0; transform: translateY(-14px); } to { opacity: 1; transform: none; } }
-@keyframes pw-fade { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+@keyframes pw-manifest {
+  from { opacity: 0; transform: translateY(14px) scale(0.985); filter: blur(6px); }
+  60% { filter: blur(0); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+@keyframes pw-rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes pw-soften { from { opacity: 0; transform: translateY(-4px); filter: blur(3px); } to { opacity: 1; transform: none; filter: none; } }
 
 /* ---- Sidebar: role tabs with saved-plan dropdowns ---- */
 .sidebar-nav { padding: var(--space-2); }
