@@ -81,7 +81,7 @@ const Tools = (() => {
     // A drawn diagram: needs on the left, the course in the middle, what it
     // opens on the right. Nodes are real buttons; the lines are an SVG
     // overlay measured from where the nodes actually landed.
-    const diagram = el('div', 'map-diagram');
+    const diagram = el('div', 'map-diagram map-animate');
     const lane = (label) => { const l = el('div', 'map-lane'); l.append(el('p', 'caption-label map-lane-label', label)); return l; };
     const needs = lane('Needs');
     const groups = C.prereqs(start);
@@ -114,7 +114,11 @@ const Tools = (() => {
     diagram.append(svg, needs, mid, opens);
     root.append(diagram);
 
+    // Lines draw themselves only on the first layout; a later redraw
+    // (window resize) just repositions them.
+    const shownAt = performance.now();
     const draw = () => {
+      const animate = performance.now() - shownAt < 400;
       const box = diagram.getBoundingClientRect();
       svg.setAttribute('width', box.width);
       svg.setAttribute('height', box.height);
@@ -124,17 +128,20 @@ const Tools = (() => {
         const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
         const mx = (x1 + x2) / 2;
         p.setAttribute('d', `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`);
+        p.setAttribute('pathLength', '1');
+        if (animate) p.setAttribute('class', 'map-path-draw');
         svg.append(p);
       };
       const cy = cr.top + cr.height / 2 - box.top;
-      fromNodes.forEach((n) => { const r = n.getBoundingClientRect(); line(r.right - box.left, r.top + r.height / 2 - box.top, cr.left - box.left, cy); });
+      // Every line starts at the center card, so they all grow outward from it.
+      fromNodes.forEach((n) => { const r = n.getBoundingClientRect(); line(cr.left - box.left, cy, r.right - box.left, r.top + r.height / 2 - box.top); });
       toNodes.forEach((n) => { const r = n.getBoundingClientRect(); line(cr.right - box.left, cy, r.left - box.left, r.top + r.height / 2 - box.top); });
     };
     requestAnimationFrame(draw);
     if (window.ResizeObserver) new ResizeObserver(draw).observe(diagram);
 
     // The whole chain back to Year 1, as nested lists.
-    const chain = el('div', 'card map-chain');
+    const chain = el('div', 'card map-chain map-animate-late');
     chain.append(el('h3', 'section-header', 'Full chain'));
     const tree = (code0, seen) => {
       const ul = el('ul', 'map-tree');
