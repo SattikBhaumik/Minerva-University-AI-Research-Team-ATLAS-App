@@ -227,6 +227,38 @@ const Tools = (() => {
       card.append(ul);
       status.append(card);
     });
+    // Credits against the tuition cap and degree, with internship hours.
+    const cr = C.creditSummary(have, Number(t.elHours) || 0);
+    const credits = el('div', 'card');
+    credits.append(el('h3', 'section-header', 'Credits'));
+    const cl = el('ul', 'tracker-status');
+    [[`${cr.attempted} of 120 attempted credits (what tuition covers)`, cr.attempted <= 120],
+      [`${cr.total} of 120 credits toward the degree`, cr.total >= 120],
+      [`Internship (EL199): ${cr.el} credits; at most 8 from transfer, prior learning and internships`, cr.el <= 8]]
+      .forEach(([text, ok]) => { const li = el('li', `body ${ok ? 'is-done' : ''}`); li.append(mark(ok), text); cl.append(li); });
+    credits.append(cl);
+    const hours = el('label', 'tool-field');
+    hours.append(el('span', 'caption-label', 'Internship hours logged (240 hours = 4 credits, 120 = 2)'));
+    const hin = el('input', 'field-input');
+    hin.type = 'number'; hin.min = '0'; hin.step = '10'; hin.value = t.elHours || '';
+    hin.addEventListener('change', () => update((x) => { x.elHours = Math.max(0, Number(hin.value) || 0); }));
+    hours.append(hin);
+    credits.append(hours);
+    status.append(credits);
+
+    // Years 3 and 4: capstone steps and the major's Senior Tutorials.
+    const plan = el('div', 'card');
+    plan.append(el('h3', 'section-header', 'Years 3 and 4'));
+    plan.append(el('p', 'caption-label', 'Capstone'));
+    C.CAPSTONE.forEach((c) => plan.append(box([c], `${title(c)} · ${C.course[c].credits} credits`)));
+    t.majors.forEach((col) => {
+      const tut = C.majorTutorials(col);
+      plan.append(el('p', 'caption-label', col === 'B' ? 'Business Practicum' : `Senior Tutorials listed for ${C.COLLEGES[col].name}`));
+      tut.forEach((c) => plan.append(box([c], title(c))));
+      if (col !== 'B') plan.append(el('p', 'caption', 'Majors also need 8 more credits from Senior Tutorials, extra concentration courses or approved internships.'));
+    });
+    status.append(plan);
+
     const open = el('div', 'card');
     open.append(el('h3', 'section-header', 'Open to you now'));
     const nowOpen = C.openNow(have, t.majors).filter((c) => t.majors.includes(C.prefixOf(c)));
@@ -357,11 +389,208 @@ const Tools = (() => {
     root.append(list);
   }
 
+  /* ---------------- Reflect on plans (+ advisor export) ---------------- */
+
+  const REFLECT_KEY = 'atlas_reflect';
+  function loadReflect() {
+    try { return Object.assign({ notes: {}, criteria: [], ratings: {} }, JSON.parse(localStorage.getItem(REFLECT_KEY) || '{}')); } catch (e) { return { notes: {}, criteria: [], ratings: {} }; }
+  }
+  function saveReflect(r) { try { localStorage.setItem(REFLECT_KEY, JSON.stringify(r)); } catch (e) { /* storage blocked: notes just do not persist */ } }
+  const pkey = (entry) => entry.path.join('.');
+
+  function renderReflect(root, saved) {
+    root.textContent = '';
+    const plans = saved.list();
+    const r = loadReflect();
+    if (!plans.length) {
+      root.append(el('p', 'body', 'Save a plan first (the "Save this plan" button at the end of a pathway). Three plans that differ on purpose make the comparison below worth doing.'));
+      return;
+    }
+    const q = new URLSearchParams(window.location.search);
+    const cur = plans.find((p) => p.id === q.get('plan')) || plans[0];
+    const head = el('div', 'tool-controls');
+    head.append(select('Plan', plans.map((p) => option(p.id, p.name, p.id === cur.id)), (v) => { setQuery({ plan: v }); renderReflect(root, saved); }).wrap);
+    root.append(head);
+    const notes = r.notes[pkey(cur)] = r.notes[pkey(cur)] || { courses: {}, questions: '' };
+    const why = el('div', 'card');
+    why.append(el('h3', 'section-header', 'Why this?'), el('p', 'caption', 'A sentence per course in your own words. Saved in this browser only.'));
+    [...C.planCourses(P, cur.path)].sort().forEach((code) => {
+      const f = el('label', 'tool-field reflect-field');
+      f.append(el('span', 'caption-label', title(code)));
+      const ta = el('textarea', 'field-input');
+      ta.rows = 2; ta.value = notes.courses[code] || '';
+      ta.addEventListener('input', () => { notes.courses[code] = ta.value; saveReflect(r); });
+      f.append(ta);
+      why.append(f);
+    });
+    const qf = el('label', 'tool-field reflect-field');
+    qf.append(el('span', 'caption-label', 'Open questions for an advisor or a Minervan'));
+    const qa = el('textarea', 'field-input');
+    qa.rows = 3; qa.value = notes.questions || '';
+    qa.addEventListener('input', () => { notes.questions = qa.value; saveReflect(r); });
+    qf.append(qa);
+    why.append(qf);
+    root.append(why);
+
+    // Your own criteria, weighted, and each plan rated against them.
+    const crit = el('div', 'card');
+    crit.append(el('h3', 'section-header', 'Your criteria'), el('p', 'caption', 'Name what matters to you, weight it 1 to 3, then rate up to three plans 1 to 5. The scores are yours, not ATLAS\'s.'));
+    const addRow = el('div', 'tool-controls');
+    const cin = el('input', 'field-input'); cin.placeholder = 'e.g. research experience, time for art, cost of extra courses';
+    cin.setAttribute('aria-label', 'New criterion');
+    const add = el('button', 'btn btn-ghost', 'Add criterion'); add.type = 'button';
+    add.addEventListener('click', () => { const v = cin.value.trim(); if (v && r.criteria.length < 6) { r.criteria.push({ name: v.slice(0, 60), weight: 2 }); saveReflect(r); renderReflect(root, saved); } });
+    addRow.append(cin, add);
+    crit.append(addRow);
+    const compared = plans.slice(0, 3);
+    if (r.criteria.length) {
+      const table = el('table', 'reflect-table');
+      const hr = el('tr'); hr.append(el('th', null, 'Criterion'), el('th', null, 'Weight'));
+      compared.forEach((p) => hr.append(el('th', null, p.name)));
+      table.append(hr);
+      r.criteria.forEach((cr, i) => {
+        const tr = el('tr');
+        const name = el('td'); name.append(cr.name + ' ');
+        const del = el('button', 'saved-delete', '×'); del.type = 'button'; del.setAttribute('aria-label', `Remove ${cr.name}`);
+        del.addEventListener('click', () => { r.criteria.splice(i, 1); saveReflect(r); renderReflect(root, saved); });
+        name.append(del);
+        const w = el('td'); const ws = el('select', 'field-input');
+        [1, 2, 3].forEach((n) => ws.append(option(String(n), String(n), n === cr.weight)));
+        ws.addEventListener('change', () => { cr.weight = Number(ws.value); saveReflect(r); renderReflect(root, saved); });
+        w.append(ws);
+        tr.append(name, w);
+        compared.forEach((p) => {
+          const td = el('td'); const rs = el('select', 'field-input');
+          const cur0 = ((r.ratings[pkey(p)] || {})[cr.name]) || 0;
+          [0, 1, 2, 3, 4, 5].forEach((n) => rs.append(option(String(n), n ? String(n) : '-', n === cur0)));
+          rs.addEventListener('change', () => { (r.ratings[pkey(p)] = r.ratings[pkey(p)] || {})[cr.name] = Number(rs.value); saveReflect(r); renderReflect(root, saved); });
+          td.append(rs); tr.append(td);
+        });
+        table.append(tr);
+      });
+      const tot = el('tr'); tot.append(el('td', 'body-strong', 'Weighted total'), el('td'));
+      compared.forEach((p) => tot.append(el('td', 'body-strong', String(r.criteria.reduce((sum, cr) => sum + cr.weight * (((r.ratings[pkey(p)] || {})[cr.name]) || 0), 0)))));
+      table.append(tot);
+      const wrap = el('div', 'reflect-table-wrap'); wrap.append(table);
+      crit.append(wrap);
+    }
+    if (plans.length < 3) crit.append(el('p', 'caption', `${plans.length} of 3 plans saved. Try a third that differs on purpose: another college, or the opposite choice at one step.`));
+    root.append(crit);
+
+    const actions = el('div', 'pw-actions');
+    const pr = el('button', 'btn btn-primary', 'Print for an advisor'); pr.type = 'button';
+    pr.addEventListener('click', () => printAdvisor(cur, notes, r));
+    actions.append(pr);
+    root.append(actions);
+  }
+
+  // A one-page sheet: the plan's picks, courses with your notes, questions,
+  // and your criteria. Printed alone; removed again after printing.
+  function printAdvisor(entry, notes, r) {
+    const sheet = el('div', 'advisor-sheet');
+    sheet.append(el('h1', 'view-heading', `ATLAS plan: ${entry.name}`), el('p', 'caption', `Saved ${new Date(entry.savedAt).toLocaleDateString()} · courses and rules from Minerva's Course Catalog 2026.v410`));
+    const picks = el('ul', 'pw-summary');
+    planSummary(entry).forEach(([stage, label]) => { const li = el('li', 'body'); li.append(el('span', 'caption', `${stage}: `), label); picks.append(li); });
+    sheet.append(el('h2', 'section-header', 'Picks'), picks, el('h2', 'section-header', 'Courses and why'));
+    [...C.planCourses(P, entry.path)].sort().forEach((code) => {
+      const p = el('p', 'body'); p.append(el('span', 'body-strong', title(code)));
+      if (notes.courses[code]) p.append(` · ${notes.courses[code]}`);
+      sheet.append(p);
+    });
+    if (notes.questions) sheet.append(el('h2', 'section-header', 'Open questions'), el('p', 'body advisor-questions', notes.questions));
+    if (r.criteria.length) {
+      sheet.append(el('h2', 'section-header', 'What matters to me'));
+      r.criteria.forEach((cr) => sheet.append(el('p', 'body', `${cr.name} (weight ${cr.weight}): rated ${((r.ratings[pkey(entry)] || {})[cr.name]) || '-'} of 5`)));
+    }
+    document.body.append(sheet);
+    document.body.classList.add('printing-advisor');
+    const done = () => { document.body.classList.remove('printing-advisor'); sheet.remove(); window.removeEventListener('afterprint', done); };
+    window.addEventListener('afterprint', done);
+    window.print();
+    setTimeout(() => { if (document.body.contains(sheet) && !window.matchMedia('print').matches) done(); }, 1500);
+  }
+
+  /* ---------------- Deadlines calendar (+ .ics) ---------------- */
+
+  let CAL = null;
+  const pad = (n) => String(n).padStart(2, '0');
+  const iso = (d) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+
+  // A rule's dates for a class that started in fall `startYear`: academic
+  // year k runs Aug/Sep of startYear+k-1 to the next summer.
+  function ruleDates(rule, startYear) {
+    return rule.years.map((y) => {
+      const year = startYear + y - 1 + (rule.month < 8 ? 1 : 0);
+      return { start: `${year}-${pad(rule.month)}-${pad(rule.day)}`, end: null, title: `${rule.title} (Year ${y})`, category: rule.category, approximate: rule.approximate, detail: rule.detail, source: rule.source };
+    });
+  }
+
+  function icsFor(events) {
+    const esc = (t) => String(t || '').replace(/[\\;,]/g, (m) => `\\${m}`).replace(/\n/g, '\\n');
+    const day = (s) => s.replace(/-/g, '');
+    const next = (s) => { const d = new Date(`${s}T00:00:00Z`); d.setUTCDate(d.getUTCDate() + 1); return d.toISOString().slice(0, 10).replace(/-/g, ''); };
+    const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+/, '');
+    const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//ATLAS//Minerva dates//EN', 'CALSCALE:GREGORIAN'];
+    events.forEach((e, i) => {
+      lines.push('BEGIN:VEVENT', `UID:atlas-${day(e.start)}-${i}@atlas`, `DTSTAMP:${stamp}`, `DTSTART;VALUE=DATE:${day(e.start)}`,
+        `DTEND;VALUE=DATE:${e.end ? next(e.end) : next(e.start)}`, `SUMMARY:${esc((e.approximate ? 'About: ' : '') + e.title)}`,
+        `DESCRIPTION:${esc([e.detail, `Source: Minerva ${e.source === 'handbook' ? 'Undergraduate Student Handbook' : 'academic calendar'}. Check with Minerva before relying on it.`].filter(Boolean).join(' '))}`, 'END:VEVENT');
+    });
+    lines.push('END:VCALENDAR');
+    return lines.join('\r\n');
+  }
+
+  function renderCalendar(root) {
+    root.textContent = '';
+    if (!CAL) { root.append(el('p', 'body', 'The calendar is loading or could not be loaded. Reload to try again.')); return; }
+    const q = new URLSearchParams(window.location.search);
+    const thisYear = new Date().getFullYear();
+    const startYear = Number(q.get('start')) || (new Date().getMonth() >= 7 ? thisYear : thisYear - 1);
+    const head = el('div', 'tool-controls');
+    head.append(select('I started at Minerva in fall', [0, 1, 2, 3, 4].map((k) => thisYear - 4 + k + 1).map((y) => option(String(y), String(y), y === startYear)),
+      (v) => { setQuery({ start: v }); renderCalendar(root); }).wrap);
+    root.append(head);
+    const fromRules = (CAL.rules || []).flatMap((rule) => ruleDates(rule, startYear));
+    const all = [...(CAL.events || []).map((e) => Object.assign({}, e)), ...fromRules].sort((a, b) => a.start.localeCompare(b.start));
+    const dl = el('button', 'btn btn-primary', 'Add to my calendar (.ics)'); dl.type = 'button';
+    dl.addEventListener('click', () => {
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(new Blob([icsFor(all)], { type: 'text/calendar' }));
+      a.download = `atlas-minerva-dates-class-of-${startYear + 4}.ics`;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    });
+    const acts = el('div', 'pw-actions'); acts.append(dl);
+    root.append(acts, el('p', 'caption', 'All-day events from Minerva\'s academic calendar and Undergraduate Student Handbook. Dates marked "about" are approximate in the handbook itself. Minerva\'s own pages win if anything differs.'));
+    let month = '';
+    const list = el('div', 'card cal-list');
+    all.forEach((e) => {
+      const m = e.start.slice(0, 7);
+      if (m !== month) { month = m; list.append(el('h3', 'section-header cal-month', new Date(`${m}-01T12:00:00`).toLocaleDateString(undefined, { month: 'long', year: 'numeric' }))); }
+      const row = el('div', `cal-row cal-${e.category || 'other'}`);
+      const when = new Date(`${e.start}T12:00:00`).toLocaleDateString(undefined, { day: 'numeric', month: 'short' }) + (e.end ? ` to ${new Date(`${e.end}T12:00:00`).toLocaleDateString(undefined, { day: 'numeric', month: 'short' })}` : '');
+      row.append(el('span', 'caption cal-when', (e.approximate ? 'about ' : '') + when), el('span', 'body', e.title), el('span', 'caption cal-cat', e.category || ''));
+      list.append(row);
+    });
+    root.append(list);
+    if ((CAL.conflicts || []).length) {
+      const cf = el('div', 'card');
+      cf.append(el('h3', 'section-header', 'Where Minerva\'s own sources disagree'));
+      CAL.conflicts.forEach((c) => cf.append(el('p', 'body', `${c.what}: calendar says ${c.calendar}; handbook says ${c.handbook}.`)));
+      root.append(cf);
+    }
+    const src = el('p', 'caption pw-source');
+    Object.values(CAL.sources || {}).forEach((s, i) => { if (i) src.append(' · '); const a = el('a', null, s.label); a.href = s.url; a.target = '_blank'; a.rel = 'noopener'; src.append(a); });
+    root.append(src);
+  }
+
+  function setCalendar(cal) { CAL = cal; }
+
   function init(catalogRaw, pathways, pdf) {
     C = Catalog.create(catalogRaw);
     P = pathways;
     catalogPdf = pdf;
   }
 
-  return { init, renderMap, renderTracker, renderCompare, renderMinors, TRACKER_KEY };
+  return { init, renderMap, renderTracker, renderCompare, renderMinors, renderReflect, renderCalendar, setCalendar, icsFor, ruleDates, TRACKER_KEY, REFLECT_KEY };
 })();

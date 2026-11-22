@@ -185,6 +185,7 @@ const Pathways = (() => {
       layers.push({ nodeId, section, about, row, card });
 
       if (node.kind === 'choice' && node.note) card.append(el('p', 'caption pw-choice-note', node.note));
+      if (node.kind === 'choice' && node.guess) card.append(guessWidget(node.guess));
       if (node.kind === 'choice') buildChoice(card, node, index, heading);
       else if (node.kind === 'step') buildStep(card, node, index);
       else buildEnd(card, node);
@@ -193,6 +194,32 @@ const Pathways = (() => {
       if (animate) {
         section.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
       }
+    }
+
+    // Commit to a guess, then see Minerva's figure and how far off it was.
+    function guessWidget(g) {
+      const box = el('div', 'pw-guess');
+      const id = `pw-guess-${uid++}`;
+      const label = el('label', 'body', g.prompt);
+      label.htmlFor = id;
+      const row = el('div', 'pw-guess-row');
+      const range = el('input');
+      range.type = 'range'; range.min = '0'; range.max = '100'; range.step = '1'; range.value = '50'; range.id = id;
+      const out = el('output', 'body-strong pw-guess-value', '50%');
+      range.addEventListener('input', () => { out.textContent = `${range.value}%`; });
+      const btn = el('button', 'btn btn-ghost', 'Reveal');
+      btn.type = 'button';
+      const result = el('p', 'body pw-guess-result');
+      result.hidden = true;
+      btn.addEventListener('click', () => {
+        const off = Math.round(Math.abs(Number(range.value) - g.answer) * 10) / 10;
+        result.textContent = `You guessed ${range.value}%. Minerva reports ${g.reveal} (${g.sample}). ${off === 0 ? 'Exactly right.' : `You were ${off} points ${Number(range.value) > g.answer ? 'above' : 'below'}.`}`;
+        result.hidden = false;
+        range.disabled = true; btn.disabled = true;
+      });
+      row.append(range, out, btn);
+      box.append(label, row, result);
+      return box;
     }
 
     function buildChoice(card, node, index, heading) {

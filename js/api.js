@@ -69,6 +69,11 @@ const API = (() => {
     return get('data/catalog/catalog-2026.v410.json', { v: ASSET_VERSION });
   }
 
+  // Minerva dates and handbook deadlines (data/catalog/calendar.json).
+  async function getCalendar() {
+    return get('data/catalog/calendar.json', { v: ASSET_VERSION });
+  }
+
   async function getPathways() {
     return get('data/pathways.json', { v: ASSET_VERSION });
   }
@@ -90,6 +95,7 @@ const API = (() => {
     getPathways,
     getLatestVersion,
     getCatalog,
+    getCalendar,
     version: ASSET_VERSION,
   };
 })();

@@ -343,6 +343,14 @@ def build():
         ind = ', '.join(f"{i['name']} {i['percent']}" for i in oc['industries'] if i['name'] not in oc.get('hideIndustries', []))
         nodes[f'after-{col}'] = {
             'kind': 'choice', 'stage': 'After Minerva',
+            # Guess first, then reveal: the applicant commits to a number
+            # before seeing Minerva's figure. Nothing is stored.
+            'guess': {
+                'prompt': f"Before you look: what share of {name} graduates do you think were working or studying six months after graduating?",
+                'answer': float(oc['headline']['percent'].rstrip('%')),
+                'reveal': f"{oc['headline']['percent']} {oc['headline']['text'].replace('*', '')}",
+                'sample': sample,
+            },
             'prompt': 'Where might you head next?',
             'note': "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
             'options': [
