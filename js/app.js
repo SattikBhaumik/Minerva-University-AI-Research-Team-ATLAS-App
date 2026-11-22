@@ -217,6 +217,38 @@
           pathways?.startWith(entry.path, true);
           setMenu(false);
         });
+        const ren = document.createElement('button');
+        ren.type = 'button';
+        ren.className = 'saved-delete saved-rename';
+        ren.setAttribute('aria-label', `Rename saved plan ${entry.name}`);
+        ren.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>';
+        ren.addEventListener('click', () => {
+          // Swap the name for a text box: Enter or leaving it saves, Esc cancels.
+          const input = document.createElement('input');
+          input.type = 'text';
+          input.className = 'field-input saved-input';
+          input.value = entry.name;
+          input.maxLength = SavedPaths.MAX_NAME;
+          input.setAttribute('aria-label', 'New name for this plan');
+          let done = false;
+          const finish = (keep) => {
+            if (done) return;
+            done = true;
+            if (keep) SavedPaths.rename(entry.id, input.value);
+            renderSaved();
+            setSavedOpen(entry.role, true);
+            document.querySelector(`[data-saved-list="${entry.role}"] [data-id="${entry.id}"]`)?.focus();
+          };
+          input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') { e.preventDefault(); finish(true); }
+            if (e.key === 'Escape') { e.preventDefault(); finish(false); }
+          });
+          input.addEventListener('blur', () => finish(true));
+          li.replaceChildren(input);
+          input.focus();
+          input.select();
+        });
+        open.dataset.id = entry.id;
         const del = document.createElement('button');
         del.type = 'button';
         del.className = 'saved-delete';
@@ -227,7 +259,7 @@
           SavedPaths.remove(entry.id);
           renderSaved();
         });
-        li.append(open, del);
+        li.append(open, ren, del);
         list.append(li);
       });
     });
@@ -249,6 +281,8 @@
     menuBtn?.addEventListener('click', () => setMenu(!sidebar.classList.contains('open')));
     // Phones: a tap outside the open sidebar closes it.
     document.addEventListener('click', (e) => {
+      // A control the click just replaced (rename) is detached: not "outside".
+      if (!e.target.isConnected) return;
       if (sidebar?.classList.contains('open') && !sidebar.contains(e.target) && !menuBtn.contains(e.target)) setMenu(false);
     });
     checkForNewVersion();

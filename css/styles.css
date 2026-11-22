@@ -412,6 +412,7 @@ button, input, select, textarea { font: inherit; }
 }
 .saved-open:hover, .saved-delete:hover { background: var(--color-surface-alt); }
 .saved-name { font-size: var(--type-tabular-size); font-weight: var(--type-body-strong-weight); overflow-wrap: anywhere; }
+.saved-input { margin: 2px 0; padding: 6px 8px; font-size: var(--type-tabular-size); }
 .saved-delete { padding: 6px; border: none; background: none; cursor: pointer; border-radius: var(--radius-control); color: var(--color-text-muted); }
 .saved-toggle:focus-visible, .saved-open:focus-visible, .saved-delete:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 1px; }
 
