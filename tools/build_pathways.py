@@ -199,7 +199,8 @@ def build():
                 'label': f'Featured by Minerva under {name}',
                 'items': [{'text': s['title'], 'url': s['url']} for s in STORIES['colleges'].get(col, [])],
                 'source': {'label': 'Majors and concentrations', 'url': STORIES['source']},
-            }]},
+            }], 'interview': col,
+                'interviewQuestions': ED['interviewKit']['questions'] if ED.get('interviewKit', {}).get('status') == 'approved' else []},
         }
         nodes[f'y1-{col}'] = {
             'kind': 'step', 'stage': y['y1'], 'prompt': 'Four Cornerstone courses, all year',

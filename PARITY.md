@@ -98,7 +98,7 @@ When shipping any user-facing feature:
 
 | Feature | Web | iOS | macOS | tvOS | Android | Notes |
 |---|---|---|---|---|---|---|
-| Pathway explorer (stage tabs, next layer only, path in URL) | 🚧 | ⏳ | ⏳ | ⏳ | ⏳ | Web: Applicant and Minervan entries (sidebar + first question), saved plans per role (this browser only, `js/saved.js`, with backup/restore and print), tools: prerequisite map, course tracker, compare plans, minors and double majors, reflect on plans (advisor print), deadlines calendar with .ics (`js/tools.js` over `js/catalog.js`), guess-then-reveal outcomes, all five colleges, generated from the 2026.v410 course catalog by `tools/build_pathways.py`; native waits on the platform-set decision. Max 3 options per choice and catalog-only course codes, checked by `js/pathways.test.js` |
+| Pathway explorer (stage tabs, next layer only, path in URL) | 🚧 | ⏳ | ⏳ | ⏳ | ⏳ | Web: Applicant and Minervan entries (sidebar + first question), saved plans per role (this browser only, `js/saved.js`, with backup/restore and print), tools: prerequisite map, course tracker, compare plans, minors and double majors, reflect on plans (advisor print), deadlines calendar with .ics (`js/tools.js` over `js/catalog.js`), guess-then-reveal outcomes, cities timeline with a private journal, Minerva's FAQ verbatim with search, weekly workload from handbook 6.13, a blank compare-schools grid, scholarships Minerva lists, an interview kit beside the stories (`js/guides.js`), all five colleges, generated from the 2026.v410 course catalog by `tools/build_pathways.py`; native waits on the platform-set decision. Max 3 options per choice and catalog-only course codes, checked by `js/pathways.test.js` |
 
 ---
 

@@ -112,5 +112,16 @@
     "collegeException": "2026-11-22, owner: \"display all five options instead of this branching here\" (Minervans already know Minerva's five colleges by name)."
   },
   "electivesException": "2026-11-23, owner: \"please remove this option of 'More Colleges' that is present anywhere and just give all the options in that row, if there is no space, you can expand the row to the next line\".",
-  "concentrationsException": "2026-11-22, owner: \"Do the same thing for 'More Concentrations' as you did for 'more Colleges', do it across anywhere where 'More Concentration' is available\"."
+  "concentrationsException": "2026-11-22, owner: \"Do the same thing for 'More Concentrations' as you did for 'more Colleges', do it across anywhere where 'More Concentration' is available\".",
+  "interviewKit": {
+    "status": "draft",
+    "note": "Starter questions for the interview kit beside each college's stories. Drafted by the agent on 2026-11-22; they appear on the site only when the owner sets status to \"approved\". Until then the kit shows only the visitor's own questions.",
+    "questions": [
+      "What did you expect Minerva to be like, and what surprised you?",
+      "Which city changed how you think, and how?",
+      "What does a hard week look like for you?",
+      "How did you choose your major, and would you choose it again?",
+      "What do you wish you had asked before you enrolled?"
+    ]
+  }
 }

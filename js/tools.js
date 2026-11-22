@@ -576,15 +576,44 @@ const Tools = (() => {
     if ((CAL.conflicts || []).length) {
       const cf = el('div', 'card');
       cf.append(el('h3', 'section-header', 'Where Minerva\'s own sources disagree'));
-      CAL.conflicts.forEach((c) => cf.append(el('p', 'body', `${c.what}: calendar says ${c.calendar}; handbook says ${c.handbook}.`)));
+      const ul = el('ul', 'conflict-list');
+      CAL.conflicts.forEach((c) => {
+        const li = el('li', 'body');
+        li.append(el('span', 'body-strong', c.what));
+        const sub = el('ul', 'conflict-sides');
+        sub.append(el('li', 'body', `Calendar: ${c.calendar}`), el('li', 'body', `Handbook: ${c.handbook}`));
+        li.append(sub);
+        ul.append(li);
+      });
+      cf.append(ul);
       root.append(cf);
+    }
+    if (SCH && SCH.items.length) {
+      const card = el('details', 'card sch-card');
+      card.append(el('summary', 'section-header', `External scholarships Minerva lists (${SCH.items.length})`),
+        el('p', 'caption', `${SCH.note} Deadlines are as Minerva lists them, without a year, so they are not in the .ics file. Check each program's page.`));
+      const ul = el('ul', 'sch-list');
+      SCH.items.forEach((it) => {
+        const li = el('li', 'body');
+        li.append(it.url ? (() => { const a = el('a', 'body-strong', it.name); a.href = it.url; a.target = '_blank'; a.rel = 'noopener'; return a; })() : el('span', 'body-strong', it.name));
+        const meta = [it.deadlineText, it.eligibility].filter(Boolean).join(' · ');
+        if (meta) li.append(el('span', 'caption sch-meta', meta));
+        ul.append(li);
+      });
+      const srcp = el('p', 'caption pw-source');
+      const a = el('a', null, SCH.source.label); a.href = SCH.source.url; a.target = '_blank'; a.rel = 'noopener';
+      srcp.append(el('span', 'caption-label', 'Source: '), a, ` · read ${SCH.readOn}`);
+      card.append(ul, srcp);
+      root.append(card);
     }
     const src = el('p', 'caption pw-source');
     Object.values(CAL.sources || {}).forEach((s, i) => { if (i) src.append(' · '); const a = el('a', null, s.label); a.href = s.url; a.target = '_blank'; a.rel = 'noopener'; src.append(a); });
     root.append(src);
   }
 
+  let SCH = null;
   function setCalendar(cal) { CAL = cal; }
+  function setScholarships(sch) { SCH = sch; }
 
   function init(catalogRaw, pathways, pdf) {
     C = Catalog.create(catalogRaw);
@@ -592,5 +621,5 @@ const Tools = (() => {
     catalogPdf = pdf;
   }
 
-  return { init, renderMap, renderTracker, renderCompare, renderMinors, renderReflect, renderCalendar, setCalendar, icsFor, ruleDates, TRACKER_KEY, REFLECT_KEY };
+  return { init, renderMap, renderTracker, renderCompare, renderMinors, renderReflect, renderCalendar, setCalendar, setScholarships, icsFor, ruleDates, TRACKER_KEY, REFLECT_KEY };
 })();

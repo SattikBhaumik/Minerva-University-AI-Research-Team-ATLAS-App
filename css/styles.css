@@ -531,3 +531,41 @@ button, input, select, textarea { font: inherit; }
   .advisor-sheet .section-header { margin-top: var(--space-4); }
   .advisor-questions { white-space: pre-wrap; }
 }
+
+/* ---- Cities, Minerva's answers, workload, compare schools, interview kit ---- */
+.conflict-list { margin: var(--space-2) 0 0; padding-left: 1.25em; }
+.conflict-list > li { margin-bottom: var(--space-2); }
+.conflict-sides { margin: 2px 0 0; padding-left: 1.25em; list-style: circle; }
+.city-line { list-style: none; margin: var(--space-3) 0 0; padding: 0 0 0 var(--space-4); border-left: 2px solid var(--color-primary); }
+.city-stop { position: relative; margin-bottom: var(--space-3); }
+.city-stop::before { content: ""; position: absolute; left: calc(-1 * var(--space-4) - 7px); top: 22px; width: 12px; height: 12px; border-radius: 50%; background: var(--color-primary); }
+.city-year { text-transform: uppercase; letter-spacing: 0.04em; margin: 0; }
+.city-stop .section-header { margin: 2px 0 var(--space-2); }
+.faq-cat { margin-bottom: var(--space-2); }
+.faq-cat > summary { cursor: pointer; margin: 0; }
+.faq-item { border-top: 1px solid var(--color-border); padding: var(--space-2) 0; }
+.faq-item:first-of-type { margin-top: var(--space-2); }
+.faq-item > summary { cursor: pointer; }
+.faq-answer { white-space: pre-line; margin: var(--space-2) 0 0; }
+.sch-card > summary { cursor: pointer; margin: 0; }
+.sch-list { list-style: none; margin: var(--space-2) 0 0; padding: 0; }
+.sch-list li { padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border); overflow-wrap: anywhere; }
+.sch-meta { display: block; }
+.week-own { align-items: center; }
+.week-own .field-input:first-child { flex: 1 1 160px; }
+.week-hours { width: 5em; flex: 0 0 auto; }
+.week-bar { display: flex; height: 18px; margin: var(--space-3) 0 var(--space-2); border-radius: var(--radius-control); background: var(--color-surface-alt); overflow: hidden; }
+.week-seg { height: 100%; }
+.week-seminar { background: var(--color-primary); }
+.week-work { background: var(--color-primary); opacity: 0.7; }
+.week-range { background: repeating-linear-gradient(45deg, var(--color-primary) 0 4px, transparent 4px 8px); opacity: 0.45; }
+.week-el { background: var(--color-text-muted); }
+.week-mine { background: var(--color-text-muted); opacity: 0.5; }
+.week-over { color: var(--color-warning); font-weight: var(--type-body-strong-weight); }
+.schools-table th { vertical-align: top; min-width: 8em; }
+.schools-table textarea { min-width: 9em; resize: vertical; }
+.interview-kit { margin-top: var(--space-3); }
+@media print {
+  body.printing-grid #schools-root > .card:first-child { display: none !important; }
+  body.printing-grid .schools-table textarea { border: none; resize: none; }
+}

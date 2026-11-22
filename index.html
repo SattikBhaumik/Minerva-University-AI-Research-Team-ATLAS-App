@@ -35,7 +35,7 @@
        data/pathways.json), and set the same value in version.json, or
        browsers can pair a new index.html with an old app.js for up to 10
        minutes. app.js reloads once when version.json is newer than this page. -->
-  <link rel="stylesheet" href="css/styles.css?v=2026-11-24.4">
+  <link rel="stylesheet" href="css/styles.css?v=2026-11-24.5">
 </head>
 <body>
 
@@ -77,30 +77,48 @@
           </div>
           <ul class="saved-list" id="saved-minervan" data-saved-list="minervan" hidden></ul>
         </div>
-        <p class="caption nav-heading">Tools</p>
+        <p class="caption nav-heading">Explore</p>
+        <button class="sidebar-nav-item tool-nav" type="button" data-view="cities">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <span>Cities</span>
+        </button>
+        <button class="sidebar-nav-item tool-nav" type="button" data-view="faq">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"/><path d="M12 17h.01"/></svg>
+          <span>Minerva's answers</span>
+        </button>
         <button class="sidebar-nav-item tool-nav" type="button" data-view="map">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg>
           <span>Prerequisite map</span>
         </button>
+        <p class="caption nav-heading">Plan</p>
         <button class="sidebar-nav-item tool-nav" type="button" data-view="tracker">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
           <span>Course tracker</span>
-        </button>
-        <button class="sidebar-nav-item tool-nav" type="button" data-view="compare">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="16" rx="1"/><rect x="14" y="4" width="7" height="16" rx="1"/></svg>
-          <span>Compare plans</span>
         </button>
         <button class="sidebar-nav-item tool-nav" type="button" data-view="minors">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
           <span>Minors & double majors</span>
         </button>
-        <button class="sidebar-nav-item tool-nav" type="button" data-view="reflect">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-          <span>Reflect on plans</span>
+        <button class="sidebar-nav-item tool-nav" type="button" data-view="week">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg>
+          <span>Weekly workload</span>
         </button>
         <button class="sidebar-nav-item tool-nav" type="button" data-view="calendar">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
           <span>Deadlines</span>
+        </button>
+        <p class="caption nav-heading">Decide</p>
+        <button class="sidebar-nav-item tool-nav" type="button" data-view="compare">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="16" rx="1"/><rect x="14" y="4" width="7" height="16" rx="1"/></svg>
+          <span>Compare plans</span>
+        </button>
+        <button class="sidebar-nav-item tool-nav" type="button" data-view="reflect">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          <span>Reflect on plans</span>
+        </button>
+        <button class="sidebar-nav-item tool-nav" type="button" data-view="schools">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M10 21v-5h4v5"/></svg>
+          <span>Compare schools</span>
         </button>
       </nav>
       <div class="sidebar-footer">
@@ -207,22 +225,75 @@
           <div id="calendar-root"></div>
         </div>
       </section>
+      <section id="view-cities" class="view" aria-label="Cities" hidden>
+        <div class="view-inner view-wide">
+          <div class="view-head">
+            <h1 class="view-heading">Cities</h1>
+            <button class="btn btn-ghost menu-btn" type="button" aria-controls="channels-sidebar" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <span>Menu</span>
+            </button>
+          </div>
+          <p class="caption tool-intro">Where each year happens, in Minerva's words. Your notes stay in this browser.</p>
+          <div id="cities-root"></div>
+        </div>
+      </section>
+      <section id="view-faq" class="view" aria-label="Minerva's answers" hidden>
+        <div class="view-inner view-wide">
+          <div class="view-head">
+            <h1 class="view-heading">Minerva's answers</h1>
+            <button class="btn btn-ghost menu-btn" type="button" aria-controls="channels-sidebar" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <span>Menu</span>
+            </button>
+          </div>
+          <p class="caption tool-intro">Every question on Minerva's FAQ page, answered in Minerva's words.</p>
+          <div id="faq-root"></div>
+        </div>
+      </section>
+      <section id="view-week" class="view" aria-label="Weekly workload" hidden>
+        <div class="view-inner view-wide">
+          <div class="view-head">
+            <h1 class="view-heading">Weekly workload</h1>
+            <button class="btn btn-ghost menu-btn" type="button" aria-controls="channels-sidebar" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <span>Menu</span>
+            </button>
+          </div>
+          <p class="caption tool-intro">The handbook's hours per course, plus your own week.</p>
+          <div id="week-root"></div>
+        </div>
+      </section>
+      <section id="view-schools" class="view" aria-label="Compare schools" hidden>
+        <div class="view-inner view-wide">
+          <div class="view-head">
+            <h1 class="view-heading">Compare schools</h1>
+            <button class="btn btn-ghost menu-btn" type="button" aria-controls="channels-sidebar" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <span>Menu</span>
+            </button>
+          </div>
+          <p class="caption tool-intro">Your schools, your criteria. ATLAS fills in nothing.</p>
+          <div id="schools-root"></div>
+        </div>
+      </section>
     </main>
 
   </div>
 
-  <script src="js/compat.js?v=2026-11-24.4"></script>
-  <script src="js/api.js?v=2026-11-24.4"></script>
-  <script src="js/saved.js?v=2026-11-24.4"></script>
-  <script src="js/pathways.js?v=2026-11-24.4"></script>
-  <script src="js/catalog.js?v=2026-11-24.4"></script>
-  <script src="js/tools.js?v=2026-11-24.4"></script>
-  <script src="js/app.js?v=2026-11-24.4"></script>
+  <script src="js/compat.js?v=2026-11-24.5"></script>
+  <script src="js/api.js?v=2026-11-24.5"></script>
+  <script src="js/saved.js?v=2026-11-24.5"></script>
+  <script src="js/pathways.js?v=2026-11-24.5"></script>
+  <script src="js/catalog.js?v=2026-11-24.5"></script>
+  <script src="js/tools.js?v=2026-11-24.5"></script>
+  <script src="js/guides.js?v=2026-11-24.5"></script>
+  <script src="js/app.js?v=2026-11-24.5"></script>
   <!-- Additive smart-TV layer + Cast sender: both self-disable off-TV
        (tv.js adds html.tv only on a TV runtime; cast-sender no-ops when the
        Cast framework never loads). See docs/TV-PLATFORMS.md. -->
-  <link rel="stylesheet" href="tv.css?v=2026-11-24.4">
-  <script src="tv.js?v=2026-11-24.4"></script>
-  <script src="js/cast-sender.js?v=2026-11-24.4"></script>
+  <link rel="stylesheet" href="tv.css?v=2026-11-24.5">
+  <script src="tv.js?v=2026-11-24.5"></script>
+  <script src="js/cast-sender.js?v=2026-11-24.5"></script>
 </body>
 </html>

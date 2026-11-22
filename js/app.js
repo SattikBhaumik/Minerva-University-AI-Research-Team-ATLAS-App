@@ -86,6 +86,10 @@
       minors: $('view-minors'),
       reflect: $('view-reflect'),
       calendar: $('view-calendar'),
+      cities: $('view-cities'),
+      faq: $('view-faq'),
+      schools: $('view-schools'),
+      week: $('view-week'),
     };
     const navBtns = {};
     document.querySelectorAll('.tool-nav').forEach((b) => { navBtns[b.dataset.view] = b; });
@@ -144,6 +148,7 @@
   // The tool views render on show, once the catalog has loaded.
   let pathwaysData = null;
   let toolsReady = false;
+  let handbookUrl = '';
   function renderTool(name) {
     if (!toolsReady) return;
     const root = $(`${name}-root`);
@@ -155,6 +160,10 @@
     if (name === 'minors') Tools.renderMinors(root, SavedPaths);
     if (name === 'reflect') Tools.renderReflect(root, SavedPaths);
     if (name === 'calendar') Tools.renderCalendar(root);
+    if (name === 'cities') Guides.renderCities(root);
+    if (name === 'faq') Guides.renderFaq(root);
+    if (name === 'schools') Guides.renderSchools(root);
+    if (name === 'week') Guides.renderWeek(root, handbookUrl);
   }
 
   async function loadPathways() {
@@ -170,8 +179,17 @@
         Tools.init(cat, data, pdf);
         toolsReady = true;
         renderTool(currentView);
-        API.getCalendar().then((cal) => { Tools.setCalendar(cal); if (currentView === 'calendar') renderTool('calendar'); })
-          .catch((err) => console.log('calendar load failed', err));
+        API.getCalendar().then((cal) => {
+          Tools.setCalendar(cal);
+          handbookUrl = (cal.sources && cal.sources.handbook && cal.sources.handbook.url) || '';
+          if (currentView === 'calendar' || currentView === 'week') renderTool(currentView);
+        }).catch((err) => console.log('calendar load failed', err));
+        API.getScholarships().then((sch) => { Tools.setScholarships(sch); if (currentView === 'calendar') renderTool('calendar'); })
+          .catch((err) => console.log('scholarships load failed', err));
+        API.getRotation().then((r) => { Guides.setData('rotation', r); if (currentView === 'cities') renderTool('cities'); })
+          .catch((err) => console.log('rotation load failed', err));
+        API.getFaq().then((f) => { Guides.setData('faq', f); if (currentView === 'faq') renderTool('faq'); })
+          .catch((err) => console.log('faq load failed', err));
       }).catch((err) => console.log('catalog load failed', err));
     } catch (err) {
       console.log('pathways load failed', err);
@@ -333,7 +351,7 @@
     $('backup-btn')?.addEventListener('click', () => {
       let reflect = null;
       try { reflect = JSON.parse(localStorage.getItem(Tools.REFLECT_KEY) || 'null'); } catch (err) { reflect = null; }
-      const blob = new Blob([JSON.stringify({ atlas: 'saved-plans', version: 2, plans: SavedPaths.list(), reflect }, null, 1)], { type: 'application/json' });
+      const blob = new Blob([JSON.stringify({ atlas: 'saved-plans', version: 3, plans: SavedPaths.list(), reflect, extras: Guides.backupData() }, null, 1)], { type: 'application/json' });
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
       a.download = `atlas-saved-plans-${new Date().toISOString().slice(0, 10)}.json`;
@@ -358,6 +376,7 @@
           };
           try { localStorage.setItem(Tools.REFLECT_KEY, JSON.stringify(merged)); } catch (err) { /* storage blocked */ }
         }
+        if (ok) Guides.restoreData(parsed.extras);
       } catch (err) { ok = false; }
       e.target.value = '';
       renderSaved();

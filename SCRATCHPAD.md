@@ -46,9 +46,19 @@
   aid pages (`data/catalog/fingerprints.json`). Cost calculator skipped
   at owner's request. Minervan needs are inferred from the handbook:
   validate with real Minervans.
+- **2026-11-22 (research ideas, round 2)**: sidebar tools grouped
+  Explore / Plan / Decide. New in `js/guides.js`: Cities (rotation.json,
+  notes per city), Minerva's answers (faq.json, 105 items verbatim),
+  Weekly workload (handbook 6.13 + EL199 cap), Compare schools (blank
+  grid). Deadlines: conflicts as bullets, 28 scholarships (no years on
+  Minerva's page, so not in the .ics). Interview kit beside stories; its
+  starter questions in editorial.json are a DRAFT until the owner
+  approves. Backups are version 3 (`extras`). Cost calculator still
+  skipped.
 - **Next actions**:
   1. Owner reviews `data/catalog/editorial.json` (the only ATLAS-written
-     words: preference questions) and the one open conflict (50% vs 43.5%)
+     words: preference questions, interview kit drafts) and the one open
+     conflict (50% vs 43.5%)
   2. Decide the platform set → DECISIONS.md (web only for now?)
   3. Fill in AGENTS.md project identity sections
   4. Manifest `start_url` is `/`; should be `./` for the Pages subpath
