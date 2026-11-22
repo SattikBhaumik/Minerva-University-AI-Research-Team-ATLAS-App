@@ -21,6 +21,8 @@ ROOT = Path(__file__).resolve().parent.parent
 CAT = json.loads((ROOT / 'data/catalog/catalog-2026.v410.json').read_text())
 OUT = json.loads((ROOT / 'data/catalog/outcomes.json').read_text())
 ED = json.loads((ROOT / 'data/catalog/editorial.json').read_text())
+RES = json.loads((ROOT / 'data/catalog/research.json').read_text())
+RESEARCH_SRC = {'label': 'Minerva: Research', 'url': RES['source']}
 
 AS_OF = '2026-11-21'
 CATALOG_URL = 'https://minerva.edu/academics/course-catalog-pdf/'
@@ -296,10 +298,19 @@ def build():
             items.append('Business Practicum (B199)')
         cap = OUT['colleges'][col]['capstones']
         cap = re.sub(r',? for example\.?$', '', cap.strip()).rstrip('.')
-        note = (f"Past capstones can involve {cap}." if col != 'B' else cap + '.') + ' What would yours chase?'
+        from_college = f"Past {name} capstones can involve {cap}." if col != 'B' else cap + '.'
         nodes[f'y4-{col}'] = {
             'kind': 'step', 'stage': y['y4'], 'prompt': 'Capstone, tutorials, Manifest',
-            'items': items, 'note': note, 'source': outcome_source(col),
+            'items': items, 'note': 'What question would your capstone chase?', 'source': CATALOG_SRC,
+            'aside': {
+                'title': 'About capstones',
+                'groups': [
+                    {'label': f'From {name}', 'items': [from_college], 'source': outcome_source(col)},
+                    {'label': 'Notable capstones at Minerva', 'items': RES['notable'], 'source': RESEARCH_SRC},
+                    {'label': 'Formats', 'items': RES['formats'], 'source': RESEARCH_SRC},
+                    {'label': 'Themes explored', 'items': RES['themes'], 'source': RESEARCH_SRC},
+                ],
+            },
             'continueLabel': 'After Minerva', 'next': f'after-{col}', 'plan': 'CP191 to CP196',
         }
 

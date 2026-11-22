@@ -924,10 +924,69 @@
         "Manifest (CP196): present your capstone",
         "Senior Tutorials listed for this major: Digital Humanities, Mission Critical or Mission Impossible? Creating Safe, Sustainable Cities, Science of Teaching and Learning"
       ],
-      "note": "Past capstones can involve analyzing how documentary film making can be used as a political weapon or even creating a fictional novel, blending creativity with practical experience. What would yours chase?",
+      "note": "What question would your capstone chase?",
       "source": {
-        "label": "Minerva brochure: AH Grads after Graduation (March 2026)",
-        "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac9a0c7d8cb75107d3_%5BMARCH%202026%5D%20AH%20Grads%20after%20Graduation.pdf"
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "aside": {
+        "title": "About capstones",
+        "groups": [
+          {
+            "label": "From Arts & Humanities",
+            "items": [
+              "Past Arts & Humanities capstones can involve analyzing how documentary film making can be used as a political weapon or even creating a fictional novel, blending creativity with practical experience."
+            ],
+            "source": {
+              "label": "Minerva brochure: AH Grads after Graduation (March 2026)",
+              "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac9a0c7d8cb75107d3_%5BMARCH%202026%5D%20AH%20Grads%20after%20Graduation.pdf"
+            }
+          },
+          {
+            "label": "Notable capstones at Minerva",
+            "items": [
+              "Framework for food retailers to incorporate ecological factors into decision-making",
+              "Analysis of gene regulatory networks",
+              "Collaboration with Bank of America computationally modeling effects of geopolitical disruptions to maritime shipping on supply chains",
+              "AI-driven medical imaging startup (Y Combinator-funded)",
+              "A stop motion documentary exploring the concept of home",
+              "Examination of Amazon's cloud computing pricing strategies using machine learning techniques"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          },
+          {
+            "label": "Formats",
+            "items": [
+              "Research studies",
+              "Policy analysis",
+              "Entrepreneurial ventures",
+              "Creative and design-based work",
+              "Data and AI applications",
+              "Sustainability and systems-focused projects"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          },
+          {
+            "label": "Themes explored",
+            "items": [
+              "Sustainable food systems and environmental resilience",
+              "AI and governance frameworks",
+              "Public health and global equity",
+              "Financial systems and institutional innovation",
+              "Civic engagement and social impact initiatives"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          }
+        ]
       },
       "continueLabel": "After Minerva",
       "next": "after-AH",
@@ -1290,10 +1349,69 @@
         "Manifest (CP196): present your capstone",
         "Business Practicum (B199)"
       ],
-      "note": "At the end of your four years at Minerva, you will write a business plan or even open your own startup as your Capstone Project. What would yours chase?",
+      "note": "What question would your capstone chase?",
       "source": {
-        "label": "Minerva brochure: B Grads after Graduation (March 2026)",
-        "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7abc1b69dd02707cc03_%5BMARCH%202026%5D%20BZ%20Grads%20after%20Graduation.pdf"
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "aside": {
+        "title": "About capstones",
+        "groups": [
+          {
+            "label": "From Business",
+            "items": [
+              "At the end of your four years at Minerva, you will write a business plan or even open your own startup as your Capstone Project."
+            ],
+            "source": {
+              "label": "Minerva brochure: B Grads after Graduation (March 2026)",
+              "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7abc1b69dd02707cc03_%5BMARCH%202026%5D%20BZ%20Grads%20after%20Graduation.pdf"
+            }
+          },
+          {
+            "label": "Notable capstones at Minerva",
+            "items": [
+              "Framework for food retailers to incorporate ecological factors into decision-making",
+              "Analysis of gene regulatory networks",
+              "Collaboration with Bank of America computationally modeling effects of geopolitical disruptions to maritime shipping on supply chains",
+              "AI-driven medical imaging startup (Y Combinator-funded)",
+              "A stop motion documentary exploring the concept of home",
+              "Examination of Amazon's cloud computing pricing strategies using machine learning techniques"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          },
+          {
+            "label": "Formats",
+            "items": [
+              "Research studies",
+              "Policy analysis",
+              "Entrepreneurial ventures",
+              "Creative and design-based work",
+              "Data and AI applications",
+              "Sustainability and systems-focused projects"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          },
+          {
+            "label": "Themes explored",
+            "items": [
+              "Sustainable food systems and environmental resilience",
+              "AI and governance frameworks",
+              "Public health and global equity",
+              "Financial systems and institutional innovation",
+              "Civic engagement and social impact initiatives"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          }
+        ]
       },
       "continueLabel": "After Minerva",
       "next": "after-B",
@@ -1657,10 +1775,69 @@
         "Manifest (CP196): present your capstone",
         "Senior Tutorials listed for this major: Digital Humanities, AI Lab, Deep Learning, Distributed Systems, Science of Teaching and Learning"
       ],
-      "note": "Past capstones can involve building a set of optimal strategies for winning a game of Monopoly, a web-based platform that uses interactive simulations to teach personal finance, or creating a 3D video game with polygon racers. What would yours chase?",
+      "note": "What question would your capstone chase?",
       "source": {
-        "label": "Minerva brochure: CS Grads after Graduation (March 2026)",
-        "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac04cc1509cd5d566b_%5BMARCH%202026%5D%20CS%20Grads%20after%20Graduation.pdf"
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "aside": {
+        "title": "About capstones",
+        "groups": [
+          {
+            "label": "From Computational Sciences",
+            "items": [
+              "Past Computational Sciences capstones can involve building a set of optimal strategies for winning a game of Monopoly, a web-based platform that uses interactive simulations to teach personal finance, or creating a 3D video game with polygon racers."
+            ],
+            "source": {
+              "label": "Minerva brochure: CS Grads after Graduation (March 2026)",
+              "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac04cc1509cd5d566b_%5BMARCH%202026%5D%20CS%20Grads%20after%20Graduation.pdf"
+            }
+          },
+          {
+            "label": "Notable capstones at Minerva",
+            "items": [
+              "Framework for food retailers to incorporate ecological factors into decision-making",
+              "Analysis of gene regulatory networks",
+              "Collaboration with Bank of America computationally modeling effects of geopolitical disruptions to maritime shipping on supply chains",
+              "AI-driven medical imaging startup (Y Combinator-funded)",
+              "A stop motion documentary exploring the concept of home",
+              "Examination of Amazon's cloud computing pricing strategies using machine learning techniques"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          },
+          {
+            "label": "Formats",
+            "items": [
+              "Research studies",
+              "Policy analysis",
+              "Entrepreneurial ventures",
+              "Creative and design-based work",
+              "Data and AI applications",
+              "Sustainability and systems-focused projects"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          },
+          {
+            "label": "Themes explored",
+            "items": [
+              "Sustainable food systems and environmental resilience",
+              "AI and governance frameworks",
+              "Public health and global equity",
+              "Financial systems and institutional innovation",
+              "Civic engagement and social impact initiatives"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          }
+        ]
       },
       "continueLabel": "After Minerva",
       "next": "after-CS",
@@ -2013,10 +2190,69 @@
         "Manifest (CP196): present your capstone",
         "Senior Tutorials listed for this major: Molecular Immunology, Science of Teaching and Learning"
       ],
-      "note": "Past capstones can involve building a computational pipeline manual for biologists, improving stem cell delivery for neural tissue repair using nanomaterial scaffolds, or formulating sustainable sunscreens. What would yours chase?",
+      "note": "What question would your capstone chase?",
       "source": {
-        "label": "Minerva brochure: NS Grads after Graduation (March 2026)",
-        "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac0e16e4cfc13618f6_%5BMARCH%202026%5D%20NS%20Grads%20after%20Graduation.pdf"
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "aside": {
+        "title": "About capstones",
+        "groups": [
+          {
+            "label": "From Natural Sciences",
+            "items": [
+              "Past Natural Sciences capstones can involve building a computational pipeline manual for biologists, improving stem cell delivery for neural tissue repair using nanomaterial scaffolds, or formulating sustainable sunscreens."
+            ],
+            "source": {
+              "label": "Minerva brochure: NS Grads after Graduation (March 2026)",
+              "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7ac0e16e4cfc13618f6_%5BMARCH%202026%5D%20NS%20Grads%20after%20Graduation.pdf"
+            }
+          },
+          {
+            "label": "Notable capstones at Minerva",
+            "items": [
+              "Framework for food retailers to incorporate ecological factors into decision-making",
+              "Analysis of gene regulatory networks",
+              "Collaboration with Bank of America computationally modeling effects of geopolitical disruptions to maritime shipping on supply chains",
+              "AI-driven medical imaging startup (Y Combinator-funded)",
+              "A stop motion documentary exploring the concept of home",
+              "Examination of Amazon's cloud computing pricing strategies using machine learning techniques"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          },
+          {
+            "label": "Formats",
+            "items": [
+              "Research studies",
+              "Policy analysis",
+              "Entrepreneurial ventures",
+              "Creative and design-based work",
+              "Data and AI applications",
+              "Sustainability and systems-focused projects"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          },
+          {
+            "label": "Themes explored",
+            "items": [
+              "Sustainable food systems and environmental resilience",
+              "AI and governance frameworks",
+              "Public health and global equity",
+              "Financial systems and institutional innovation",
+              "Civic engagement and social impact initiatives"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          }
+        ]
       },
       "continueLabel": "After Minerva",
       "next": "after-NS",
@@ -2380,10 +2616,69 @@
         "Manifest (CP196): present your capstone",
         "Senior Tutorials listed for this major: Mission Critical or Mission Impossible? Creating Safe, Sustainable Cities, Politics, Philosophy, and Economics, Science of Teaching and Learning"
       ],
-      "note": "Past capstones can involve analyzing the dynamics and complexities of global waste trade, recommending policies to mitigate Japan's fertility fall, or studying the impact of author gender, ethnicity, and university affiliation on perceived credibility. What would yours chase?",
+      "note": "What question would your capstone chase?",
       "source": {
-        "label": "Minerva brochure: SS Grads after Graduation (March 2026)",
-        "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7acc5e7e58e7c290934_%5BMARCH%202026%5D%20SS%20Grads%20after%20Graduation.pdf"
+        "label": "Course Catalog 2026.v410",
+        "url": "https://minerva.edu/academics/course-catalog-pdf/"
+      },
+      "aside": {
+        "title": "About capstones",
+        "groups": [
+          {
+            "label": "From Social Sciences",
+            "items": [
+              "Past Social Sciences capstones can involve analyzing the dynamics and complexities of global waste trade, recommending policies to mitigate Japan's fertility fall, or studying the impact of author gender, ethnicity, and university affiliation on perceived credibility."
+            ],
+            "source": {
+              "label": "Minerva brochure: SS Grads after Graduation (March 2026)",
+              "url": "https://cdn.prod.website-files.com/64ca995f0fd30a33b2fd01cc/69e1f7acc5e7e58e7c290934_%5BMARCH%202026%5D%20SS%20Grads%20after%20Graduation.pdf"
+            }
+          },
+          {
+            "label": "Notable capstones at Minerva",
+            "items": [
+              "Framework for food retailers to incorporate ecological factors into decision-making",
+              "Analysis of gene regulatory networks",
+              "Collaboration with Bank of America computationally modeling effects of geopolitical disruptions to maritime shipping on supply chains",
+              "AI-driven medical imaging startup (Y Combinator-funded)",
+              "A stop motion documentary exploring the concept of home",
+              "Examination of Amazon's cloud computing pricing strategies using machine learning techniques"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          },
+          {
+            "label": "Formats",
+            "items": [
+              "Research studies",
+              "Policy analysis",
+              "Entrepreneurial ventures",
+              "Creative and design-based work",
+              "Data and AI applications",
+              "Sustainability and systems-focused projects"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          },
+          {
+            "label": "Themes explored",
+            "items": [
+              "Sustainable food systems and environmental resilience",
+              "AI and governance frameworks",
+              "Public health and global equity",
+              "Financial systems and institutional innovation",
+              "Civic engagement and social impact initiatives"
+            ],
+            "source": {
+              "label": "Minerva: Research",
+              "url": "https://www.minerva.edu/research/"
+            }
+          }
+        ]
       },
       "continueLabel": "After Minerva",
       "next": "after-SS",
