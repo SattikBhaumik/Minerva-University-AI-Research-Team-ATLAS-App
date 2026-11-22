@@ -1,0 +1,28 @@
+{
+  "readOn": "2026-11-22",
+  "pages": [
+    {
+      "label": "Academic calendar",
+      "url": "https://www.minerva.edu/academic-calendar/",
+      "kind": "html",
+      "sha256": "4d3a8efc17b2aa48b195dc55114fcc8d6ca993fcaaccbf8c6de7b9f50a763bf9",
+      "notes": "data/catalog/calendar.json (re-extract the term dates)"
+    },
+    {
+      "label": "Financial aid and tuition",
+      "url": "https://www.minerva.edu/undergraduate/financial-aid/",
+      "kind": "html",
+      "sha256": "33a1f282a74750585ce56e829fa046369726d4c3244582f35bd6f4246b95b40e",
+      "notes": "any tuition, fee or aid figures shown in ATLAS (tuition-fees redirects here)"
+    },
+    {
+      "label": "Undergraduate Student Handbook",
+      "url": "https://cdn.prod.website-files.com/69f4c03133fa120f04215dc8/6aa2bf4b099aced44e3caac4_Undergraduate%20Student%20Handbook%202026-2027.pdf",
+      "linkedFrom": "https://www.minerva.edu/resources/undergraduate-student-handbook/",
+      "linkHint": "Undergraduate Student Handbook",
+      "kind": "pdf",
+      "sha256": "244c181ef3db4dab0cdb6e506fcb67a2f617b3c618b0d3a4d317cebf205049f8",
+      "notes": "policies derived from the handbook (the PDF URL changes on republish)"
+    }
+  ]
+}

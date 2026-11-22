@@ -162,7 +162,25 @@ const Catalog = (() => {
       return id && id.startsWith('college-') ? id.slice('college-'.length) : null;
     }
 
+    // Senior Tutorials the catalog lists for a major (Business: its practicum).
+    function majorTutorials(col) {
+      if (col === 'B') return ['B199'];
+      return major(col).courses.map((x) => x.code).filter((c) => /^IL181\d+/.test(c));
+    }
+    const CAPSTONE = ['CP191', 'CP192', 'CP193', 'CP194', 'CP196'];
+
+    // Credits, per the catalog and handbook: tuition covers 120 attempted
+    // credits; EL199 internship credit is not "attempted" (240 hours = 4
+    // credits, 120 hours = 2) and counts toward the 8-credit cap on
+    // transfer, prior learning and internship credit; a degree needs 120.
+    function creditSummary(have, elHours) {
+      const attempted = [...have].filter((c) => c !== 'EL199').reduce((s, c) => s + credits(c), 0);
+      const el = elHours >= 240 ? 4 : elHours >= 120 ? 2 : 0;
+      return { attempted, el, elCapped: Math.min(el, 8), total: attempted + Math.min(el, 8), tuitionCap: 120, degree: 120, outsideCap: 8 };
+    }
+
     return {
+      majorTutorials, CAPSTONE, creditSummary,
       course, COLLEGES, CORNERSTONES, prefixOf, prereqs, unlocks, core, concentrations, concentrationCourses,
       majorRequirements, majorProgress, openNow, missingFor, minorStatus, planCourses, planCollege, credits,
     };

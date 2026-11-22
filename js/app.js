@@ -84,6 +84,8 @@
       tracker: $('view-tracker'),
       compare: $('view-compare'),
       minors: $('view-minors'),
+      reflect: $('view-reflect'),
+      calendar: $('view-calendar'),
     };
     const navBtns = {};
     document.querySelectorAll('.tool-nav').forEach((b) => { navBtns[b.dataset.view] = b; });
@@ -151,6 +153,8 @@
     if (name === 'tracker') Tools.renderTracker(root);
     if (name === 'compare') Tools.renderCompare(root, SavedPaths);
     if (name === 'minors') Tools.renderMinors(root, SavedPaths);
+    if (name === 'reflect') Tools.renderReflect(root, SavedPaths);
+    if (name === 'calendar') Tools.renderCalendar(root);
   }
 
   async function loadPathways() {
@@ -166,6 +170,8 @@
         Tools.init(cat, data, pdf);
         toolsReady = true;
         renderTool(currentView);
+        API.getCalendar().then((cal) => { Tools.setCalendar(cal); if (currentView === 'calendar') renderTool('calendar'); })
+          .catch((err) => console.log('calendar load failed', err));
       }).catch((err) => console.log('catalog load failed', err));
     } catch (err) {
       console.log('pathways load failed', err);
@@ -325,7 +331,9 @@
     });
     // Backups: a file the visitor keeps, so clearing the browser loses nothing.
     $('backup-btn')?.addEventListener('click', () => {
-      const blob = new Blob([JSON.stringify({ atlas: 'saved-plans', version: 1, plans: SavedPaths.list() }, null, 1)], { type: 'application/json' });
+      let reflect = null;
+      try { reflect = JSON.parse(localStorage.getItem(Tools.REFLECT_KEY) || 'null'); } catch (err) { reflect = null; }
+      const blob = new Blob([JSON.stringify({ atlas: 'saved-plans', version: 2, plans: SavedPaths.list(), reflect }, null, 1)], { type: 'application/json' });
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
       a.download = `atlas-saved-plans-${new Date().toISOString().slice(0, 10)}.json`;
@@ -339,6 +347,17 @@
       try {
         const parsed = JSON.parse(await file.text());
         ({ added, ok } = SavedPaths.importAll(Array.isArray(parsed) ? parsed : parsed.plans));
+        // Reflection notes: keep what is here, add what the file has that is not.
+        if (ok && parsed.reflect && typeof parsed.reflect === 'object') {
+          let mine = {};
+          try { mine = JSON.parse(localStorage.getItem(Tools.REFLECT_KEY) || '{}'); } catch (err) { mine = {}; }
+          const merged = {
+            notes: Object.assign({}, parsed.reflect.notes || {}, mine.notes || {}),
+            criteria: (mine.criteria && mine.criteria.length) ? mine.criteria : (parsed.reflect.criteria || []).slice(0, 6),
+            ratings: Object.assign({}, parsed.reflect.ratings || {}, mine.ratings || {}),
+          };
+          try { localStorage.setItem(Tools.REFLECT_KEY, JSON.stringify(merged)); } catch (err) { /* storage blocked */ }
+        }
       } catch (err) { ok = false; }
       e.target.value = '';
       renderSaved();

@@ -1299,6 +1299,12 @@
     "after-AH": {
       "kind": "choice",
       "stage": "After Minerva",
+      "guess": {
+        "prompt": "Before you look: what share of Arts & Humanities graduates do you think were working or studying six months after graduating?",
+        "answer": 82.0,
+        "reveal": "82% of AH graduates are employed in various industries within six months of graduation",
+        "sample": "Data collected from 104 AH college graduates from 2019 to 2023"
+      },
       "prompt": "Where might you head next?",
       "note": "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
       "options": [
@@ -1832,6 +1838,12 @@
     "after-B": {
       "kind": "choice",
       "stage": "After Minerva",
+      "guess": {
+        "prompt": "Before you look: what share of Business graduates do you think were working or studying six months after graduating?",
+        "answer": 94.8,
+        "reveal": "94.8% of Business graduates are employed full-time or completing internships within six months of graduation.",
+        "sample": "Data collected from 97 BZ college graduates from 2019 to 2025"
+      },
       "prompt": "Where might you head next?",
       "note": "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
       "options": [
@@ -2370,6 +2382,12 @@
     "after-CS": {
       "kind": "choice",
       "stage": "After Minerva",
+      "guess": {
+        "prompt": "Before you look: what share of Computational Sciences graduates do you think were working or studying six months after graduating?",
+        "answer": 95.6,
+        "reveal": "95.6% of CS graduates are actively working or enrolled in advanced degree programs within six months of graduation.",
+        "sample": "Data collected from 256 CS college graduates from 2019 to 2025"
+      },
       "prompt": "Where might you head next?",
       "note": "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
       "options": [
@@ -2881,6 +2899,12 @@
     "after-NS": {
       "kind": "choice",
       "stage": "After Minerva",
+      "guess": {
+        "prompt": "Before you look: what share of Natural Sciences graduates do you think were working or studying six months after graduating?",
+        "answer": 85.0,
+        "reveal": "85% of Natural Sciences graduates are pursuing an advanced degree or employed full-time within six months of graduation.",
+        "sample": "Data collected from 46 NS college graduates from 2019 to 2025"
+      },
       "prompt": "Where might you head next?",
       "note": "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
       "options": [
@@ -3415,6 +3439,12 @@
     "after-SS": {
       "kind": "choice",
       "stage": "After Minerva",
+      "guess": {
+        "prompt": "Before you look: what share of Social Sciences graduates do you think were working or studying six months after graduating?",
+        "answer": 93.0,
+        "reveal": "93% of Social Science graduates are employed full-time or enrolled in advanced degree programs within six months of graduation.",
+        "sample": "Amoung the 105 surveryed graduates with Social Sciences as their sole major, from 2019 to 2025"
+      },
       "prompt": "Where might you head next?",
       "note": "Minerva's own figures, from its March 2026 brochures. No outside source has checked them, and each college counts its headline differently.",
       "options": [

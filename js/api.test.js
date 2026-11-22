@@ -41,6 +41,7 @@ test('API exposes the core surface', () => {
   assert(typeof API.getPathways === 'function', 'API.getPathways should be a function');
   assert(typeof API.getLatestVersion === 'function', 'API.getLatestVersion should be a function');
   assert(typeof API.getCatalog === 'function', 'API.getCatalog should be a function');
+  assert(typeof API.getCalendar === 'function', 'API.getCalendar should be a function');
 });
 
 test('shareTarget is exposed as an async function', () => {

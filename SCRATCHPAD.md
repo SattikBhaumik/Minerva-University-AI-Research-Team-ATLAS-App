@@ -38,6 +38,14 @@
   stories per college (`data/catalog/stories.json`), weekly freshness
   check (`tools/check_freshness.py`, `.github/workflows/atlas-freshness.yml`).
   Manifest start_url/scope fixed to `./`. Polish pass still to do.
+- **2026-11-22 (research round)**: report `reports/New ATLAS features
+  for students.md`. Built: guess-then-reveal outcomes, reflect on plans
+  with advisor print, deadlines calendar (.ics) from
+  `data/catalog/calendar.json`, credits and Years 3-4 planner in the
+  tracker, freshness fingerprints for handbook, calendar and financial
+  aid pages (`data/catalog/fingerprints.json`). Cost calculator skipped
+  at owner's request. Minervan needs are inferred from the handbook:
+  validate with real Minervans.
 - **Next actions**:
   1. Owner reviews `data/catalog/editorial.json` (the only ATLAS-written
      words: preference questions) and the one open conflict (50% vs 43.5%)

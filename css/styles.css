@@ -501,3 +501,33 @@ button, input, select, textarea { font: inherit; }
   .pw-card, .card { break-inside: avoid; border-color: #999; }
   .pw-tab:not(.is-selected) { display: none; }
 }
+
+/* ---- Guess then reveal, reflection, deadlines ---- */
+.pw-guess { margin: 0 0 var(--space-3); padding: var(--space-3); border: 1px dashed var(--color-border); border-radius: var(--radius-card); background: var(--color-background); }
+.pw-guess-row { display: flex; align-items: center; gap: var(--space-3); margin-top: var(--space-2); flex-wrap: wrap; }
+.pw-guess-row input[type="range"] { flex: 1 1 160px; accent-color: var(--color-primary); }
+.pw-guess-value { min-width: 3.5em; font-variant-numeric: tabular-nums; }
+.pw-guess-result { margin-top: var(--space-2); }
+.pw-guess-result[hidden] { display: none; }
+.reflect-field { margin-top: var(--space-3); }
+.reflect-field textarea { resize: vertical; }
+.reflect-table-wrap { overflow-x: auto; margin-top: var(--space-3); }
+.reflect-table { border-collapse: collapse; width: 100%; }
+.reflect-table th, .reflect-table td { border-bottom: 1px solid var(--color-border); padding: var(--space-2); text-align: left; vertical-align: middle; }
+.reflect-table select { width: auto; padding: 4px 6px; }
+.cal-month { margin-top: var(--space-4); }
+.cal-month:first-child { margin-top: 0; }
+.cal-row { display: grid; grid-template-columns: 1fr; gap: 2px; padding: var(--space-2) 0; border-bottom: 1px solid var(--color-border); }
+.cal-row > * { min-width: 0; overflow-wrap: anywhere; }
+@media (min-width: 600px) {
+  .cal-row { grid-template-columns: 9em 1fr auto; gap: var(--space-3); align-items: baseline; }
+}
+.cal-deadline .body, .cal-lottery .body { font-weight: var(--type-body-strong-weight); }
+.cal-cat { text-transform: uppercase; letter-spacing: 0.04em; }
+.advisor-sheet { display: none; }
+@media print {
+  body.printing-advisor > *:not(.advisor-sheet) { display: none !important; }
+  body.printing-advisor .advisor-sheet { display: block; padding: 0; }
+  .advisor-sheet .section-header { margin-top: var(--space-4); }
+  .advisor-questions { white-space: pre-wrap; }
+}

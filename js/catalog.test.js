@@ -4,6 +4,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const Catalog = require('./catalog.js');
+global.Catalog = Catalog;
 
 const raw = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'catalog', 'catalog-2026.v410.json'), 'utf-8'));
 const pathways = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'pathways.json'), 'utf-8'));
@@ -68,6 +69,25 @@ test('open now drops alternatives of a requirement already met', () => {
   const ah = C.openNow(has('AH110', 'AH111', 'AH112'), ['AH']);
   assert(!ah.includes('AH113'), 'AH113 drops once 3 of 4 AH core are done');
   assert(C.openNow(has('AH110', 'AH111'), ['AH']).includes('AH112'), 'with 2 of 4, the others stay open');
+});
+
+test('credits: attempted, internship hours, tutorials per major', () => {
+  const s = C.creditSummary(has('FA50', 'FA51', 'CS110', 'CP191'), 240);
+  assert(s.attempted === 14 && s.el === 4 && s.total === 18, JSON.stringify(s));
+  assert(C.creditSummary(has(), 130).el === 2 && C.creditSummary(has(), 100).el === 0, 'hour thresholds');
+  assert(C.majorTutorials('CS').includes('IL18102') && C.majorTutorials('B')[0] === 'B199', JSON.stringify(C.majorTutorials('CS')));
+});
+
+test('calendar data: real dates, valid rules, Minerva sources; rules map to the right year', () => {
+  const cal = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'catalog', 'calendar.json'), 'utf-8'));
+  const real = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s) && !Number.isNaN(Date.parse(`${s}T00:00:00Z`)) && new Date(`${s}T00:00:00Z`).toISOString().startsWith(s);
+  assert(cal.events.length > 10 && cal.events.every((e) => real(e.start) && (!e.end || (real(e.end) && e.end >= e.start)) && e.title), 'bad event');
+  assert(cal.rules.every((r) => r.month >= 1 && r.month <= 12 && r.day >= 1 && r.day <= 31 && r.years.every((y) => y >= 1 && y <= 4)), 'bad rule');
+  assert(Object.values(cal.sources).every((s) => /^https:\/\/([a-z.]+\.)?(minerva\.edu|website-files\.com)\//.test(s.url)), 'non-Minerva source');
+  const T = (() => { const m = {}; new Function('module', fs.readFileSync(path.join(__dirname, 'tools.js'), 'utf-8') + ';module.Tools=Tools;')(m); return m.Tools; })();
+  const d = T.ruleDates({ title: 'Declare', month: 1, day: 31, years: [1, 2], category: 'deadline' }, 2026);
+  assert(d[0].start === '2027-01-31' && d[1].start === '2028-01-31', JSON.stringify(d));
+  assert(T.ruleDates({ title: 'x', month: 9, day: 30, years: [4], category: 'deadline' }, 2026)[0].start === '2029-09-30', 'Sept of Year 4');
 });
 
 let failed = 0;
