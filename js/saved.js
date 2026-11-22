@@ -87,7 +87,29 @@ const SavedPaths = (() => {
     }
   }
 
-  return { list, save, rename, remove, usage, MAX_NAME, LIMIT_CHARS };
+  // Restore from a backup file: only well-formed entries, merged by path
+  // (an existing plan keeps its name), so restoring twice adds nothing.
+  function importAll(entries) {
+    if (!Array.isArray(entries)) return { added: 0, ok: false };
+    const current = list();
+    const known = new Set(current.map((e) => e.path.join('.')));
+    let added = 0;
+    entries.forEach((e) => {
+      const valid = e && Array.isArray(e.path) && e.path.length && e.path.every((x) => typeof x === 'string' && /^[\w-]+$/.test(x))
+        && typeof e.name === 'string' && ['applicant', 'minervan'].includes(e.path[0]);
+      if (!valid || known.has(e.path.join('.'))) return;
+      known.add(e.path.join('.'));
+      current.push({
+        id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`, role: e.path[0], path: e.path,
+        name: e.name.slice(0, MAX_NAME), savedAt: typeof e.savedAt === 'string' ? e.savedAt : new Date().toISOString(), renamed: Boolean(e.renamed),
+      });
+      added++;
+    });
+    current.sort((a, b) => b.savedAt.localeCompare(a.savedAt));
+    return { added, ok: write(current) };
+  }
+
+  return { list, save, rename, remove, usage, importAll, MAX_NAME, LIMIT_CHARS };
 })();
 
 if (typeof module !== 'undefined') module.exports = SavedPaths;

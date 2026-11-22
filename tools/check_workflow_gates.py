@@ -34,7 +34,7 @@ GATE = "steps.gate.outputs.go"
 
 # Workflows whose job is to LOOK and REPORT. Add an app's own dashboards and
 # auditors here.
-REPORTERS = {"workflow-health", "pulse"}
+REPORTERS = {"workflow-health", "pulse", "atlas-freshness"}
 
 # A COMMAND, not prose. Matching a bare "gh " anywhere finds "high enough" and
 # "through" in comments, which is three false alarms out of four. The repo's gh

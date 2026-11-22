@@ -23,6 +23,7 @@ OUT = json.loads((ROOT / 'data/catalog/outcomes.json').read_text())
 ED = json.loads((ROOT / 'data/catalog/editorial.json').read_text())
 RES = json.loads((ROOT / 'data/catalog/research.json').read_text())
 LINKS = json.loads((ROOT / 'data/catalog/links.json').read_text())
+STORIES = json.loads((ROOT / 'data/catalog/stories.json').read_text())
 RESEARCH_SRC = {'label': 'Minerva: Research', 'url': RES['source']}
 
 AS_OF = '2026-11-21'
@@ -194,6 +195,11 @@ def build():
             'note': 'Not your fit? Change an answer above.',
             'source': CATALOG_SRC, 'continueLabel': 'Start Year 1', 'next': f'y1-{col}',
             'plan': name, 'links': [college_link(col), {'label': 'Full course catalog (PDF)', 'url': LINKS['catalogPdf']}],
+            'aside': {'title': 'Stories from Minerva', 'groups': [{
+                'label': f'Featured by Minerva under {name}',
+                'items': [{'text': s['title'], 'url': s['url']} for s in STORIES['colleges'].get(col, [])],
+                'source': {'label': 'Majors and concentrations', 'url': STORIES['source']},
+            }]},
         }
         nodes[f'y1-{col}'] = {
             'kind': 'step', 'stage': y['y1'], 'prompt': 'Four Cornerstone courses, all year',

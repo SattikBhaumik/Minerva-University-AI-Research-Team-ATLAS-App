@@ -35,7 +35,7 @@
        data/pathways.json), and set the same value in version.json, or
        browsers can pair a new index.html with an old app.js for up to 10
        minutes. app.js reloads once when version.json is newer than this page. -->
-  <link rel="stylesheet" href="css/styles.css?v=2026-11-23.9">
+  <link rel="stylesheet" href="css/styles.css?v=2026-11-24">
 </head>
 <body>
 
@@ -77,8 +77,32 @@
           </div>
           <ul class="saved-list" id="saved-minervan" data-saved-list="minervan" hidden></ul>
         </div>
+        <p class="caption nav-heading">Tools</p>
+        <button class="sidebar-nav-item tool-nav" type="button" data-view="map">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg>
+          <span>Prerequisite map</span>
+        </button>
+        <button class="sidebar-nav-item tool-nav" type="button" data-view="tracker">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          <span>Course tracker</span>
+        </button>
+        <button class="sidebar-nav-item tool-nav" type="button" data-view="compare">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="7" height="16" rx="1"/><rect x="14" y="4" width="7" height="16" rx="1"/></svg>
+          <span>Compare plans</span>
+        </button>
+        <button class="sidebar-nav-item tool-nav" type="button" data-view="minors">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <span>Minors & double majors</span>
+        </button>
       </nav>
-      <p class="caption sidebar-footer" id="storage-note" aria-live="polite"></p>
+      <div class="sidebar-footer">
+        <p class="caption" id="storage-note" aria-live="polite"></p>
+        <div class="backup-row">
+          <button class="btn btn-ghost btn-small" type="button" id="backup-btn">Back up</button>
+          <label class="btn btn-ghost btn-small" for="restore-input">Restore</label>
+          <input type="file" id="restore-input" accept="application/json,.json" class="sr-only">
+        </div>
+      </div>
     </aside>
 
     <!-- VIEWS — one section per view, toggled by showView() -->
@@ -87,9 +111,9 @@
         <div class="view-inner">
           <div class="view-head">
             <h1 class="view-heading">Explore a Minerva pathway</h1>
-            <button class="btn btn-ghost menu-btn" type="button" id="menu-btn" aria-controls="channels-sidebar" aria-expanded="false">
+<button class="btn btn-ghost menu-btn" type="button" aria-controls="channels-sidebar" aria-expanded="false">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-              <span>Saved</span>
+              <span>Menu</span>
             </button>
           </div>
           <div id="pathways-root">
@@ -97,20 +121,74 @@
           </div>
         </div>
       </section>
+      <section id="view-map" class="view" aria-label="Prerequisite map" hidden>
+        <div class="view-inner view-wide">
+          <div class="view-head">
+            <h1 class="view-heading">Prerequisite map</h1>
+            <button class="btn btn-ghost menu-btn" type="button" aria-controls="channels-sidebar" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <span>Menu</span>
+            </button>
+          </div>
+          <p class="caption tool-intro">Pick a course to see what it needs and what it opens.</p>
+          <div id="map-root"></div>
+        </div>
+      </section>
+      <section id="view-tracker" class="view" aria-label="Course tracker" hidden>
+        <div class="view-inner view-wide">
+          <div class="view-head">
+            <h1 class="view-heading">Course tracker</h1>
+            <button class="btn btn-ghost menu-btn" type="button" aria-controls="channels-sidebar" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <span>Menu</span>
+            </button>
+          </div>
+          <p class="caption tool-intro">For Minervans: tick what you have taken and see where you stand.</p>
+          <div id="tracker-root"></div>
+        </div>
+      </section>
+      <section id="view-compare" class="view" aria-label="Compare plans" hidden>
+        <div class="view-inner view-wide">
+          <div class="view-head">
+            <h1 class="view-heading">Compare plans</h1>
+            <button class="btn btn-ghost menu-btn" type="button" aria-controls="channels-sidebar" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <span>Menu</span>
+            </button>
+          </div>
+          <p class="caption tool-intro">Two saved plans side by side.</p>
+          <div id="compare-root"></div>
+        </div>
+      </section>
+      <section id="view-minors" class="view" aria-label="Minors & double majors" hidden>
+        <div class="view-inner view-wide">
+          <div class="view-head">
+            <h1 class="view-heading">Minors & double majors</h1>
+            <button class="btn btn-ghost menu-btn" type="button" aria-controls="channels-sidebar" aria-expanded="false">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <span>Menu</span>
+            </button>
+          </div>
+          <p class="caption tool-intro">Which minors, or which second major, your courses already lean toward.</p>
+          <div id="minors-root"></div>
+        </div>
+      </section>
     </main>
 
   </div>
 
-  <script src="js/compat.js?v=2026-11-23.9"></script>
-  <script src="js/api.js?v=2026-11-23.9"></script>
-  <script src="js/saved.js?v=2026-11-23.9"></script>
-  <script src="js/pathways.js?v=2026-11-23.9"></script>
-  <script src="js/app.js?v=2026-11-23.9"></script>
+  <script src="js/compat.js?v=2026-11-24"></script>
+  <script src="js/api.js?v=2026-11-24"></script>
+  <script src="js/saved.js?v=2026-11-24"></script>
+  <script src="js/pathways.js?v=2026-11-24"></script>
+  <script src="js/catalog.js?v=2026-11-24"></script>
+  <script src="js/tools.js?v=2026-11-24"></script>
+  <script src="js/app.js?v=2026-11-24"></script>
   <!-- Additive smart-TV layer + Cast sender: both self-disable off-TV
        (tv.js adds html.tv only on a TV runtime; cast-sender no-ops when the
        Cast framework never loads). See docs/TV-PLATFORMS.md. -->
-  <link rel="stylesheet" href="tv.css?v=2026-11-23.9">
-  <script src="tv.js?v=2026-11-23.9"></script>
-  <script src="js/cast-sender.js?v=2026-11-23.9"></script>
+  <link rel="stylesheet" href="tv.css?v=2026-11-24">
+  <script src="tv.js?v=2026-11-24"></script>
+  <script src="js/cast-sender.js?v=2026-11-24"></script>
 </body>
 </html>

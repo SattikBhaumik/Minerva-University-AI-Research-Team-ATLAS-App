@@ -80,9 +80,14 @@
     // Define your views and nav buttons here:
     const views = {
       home: viewHome,
+      map: $('view-map'),
+      tracker: $('view-tracker'),
+      compare: $('view-compare'),
+      minors: $('view-minors'),
     };
-    const navBtns = {
-    };
+    const navBtns = {};
+    document.querySelectorAll('.tool-nav').forEach((b) => { navBtns[b.dataset.view] = b; });
+    if (!views[name]) name = 'home';
 
     Object.entries(views).forEach(([n, el]) => {
       if (el) { el.hidden = n !== name; }
@@ -103,6 +108,8 @@
       history.pushState({ view: name }, '', url);
       document.title = name === 'home' ? 'ATLAS' : `ATLAS — ${name}`;
     }
+
+    renderTool(name);
 
     // Stop/cleanup for views that need it when leaving:
     // if (name !== 'tv') window.tvStop?.();
@@ -132,6 +139,20 @@
      PATHWAYS
   ================================================================ */
 
+  // The tool views render on show, once the catalog has loaded.
+  let pathwaysData = null;
+  let toolsReady = false;
+  function renderTool(name) {
+    if (!toolsReady) return;
+    const root = $(`${name}-root`);
+    if (!root) return;
+    const q = new URLSearchParams(window.location.search);
+    if (name === 'map') Tools.renderMap(root, q.get('course'));
+    if (name === 'tracker') Tools.renderTracker(root);
+    if (name === 'compare') Tools.renderCompare(root, SavedPaths);
+    if (name === 'minors') Tools.renderMinors(root, SavedPaths);
+  }
+
   async function loadPathways() {
     const root = $('pathways-root');
     try {
@@ -139,6 +160,13 @@
       const errors = Pathways.validate(data);
       if (errors.length) throw new Error(errors[0]);
       pathways = Pathways.mount(root, data);
+      pathwaysData = data;
+      API.getCatalog().then((cat) => {
+        const pdf = (Object.values(data.courseInfo)[0] || { url: '' }).url.split('#')[0];
+        Tools.init(cat, data, pdf);
+        toolsReady = true;
+        renderTool(currentView);
+      }).catch((err) => console.log('catalog load failed', err));
     } catch (err) {
       console.log('pathways load failed', err);
       root.textContent = '';
@@ -173,11 +201,11 @@
   ================================================================ */
 
   const sidebar = $('channels-sidebar');
-  const menuBtn = $('menu-btn');
+  const menuBtns = document.querySelectorAll('.menu-btn');
 
   function setMenu(open) {
     sidebar?.classList.toggle('open', open);
-    menuBtn?.setAttribute('aria-expanded', String(open));
+    menuBtns.forEach((b) => b.setAttribute('aria-expanded', String(open)));
   }
 
   function setSavedOpen(role, open) {
@@ -295,22 +323,50 @@
         setSavedOpen(role, toggle.getAttribute('aria-expanded') !== 'true');
       });
     });
+    // Backups: a file the visitor keeps, so clearing the browser loses nothing.
+    $('backup-btn')?.addEventListener('click', () => {
+      const blob = new Blob([JSON.stringify({ atlas: 'saved-plans', version: 1, plans: SavedPaths.list() }, null, 1)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = `atlas-saved-plans-${new Date().toISOString().slice(0, 10)}.json`;
+      a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+    });
+    $('restore-input')?.addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      let added = 0, ok = false;
+      try {
+        const parsed = JSON.parse(await file.text());
+        ({ added, ok } = SavedPaths.importAll(Array.isArray(parsed) ? parsed : parsed.plans));
+      } catch (err) { ok = false; }
+      e.target.value = '';
+      renderSaved();
+      $('storage-note').textContent = ok ? `Restored ${added} ${added === 1 ? 'plan' : 'plans'} from the file.` : 'That file is not an ATLAS backup.';
+      setTimeout(renderStorage, 4000);
+    });
+
     window.addEventListener('pathways:save', (e) => {
       e.detail.ok = SavedPaths.save(e.detail.path, e.detail.name);
       renderSaved();
       if (e.detail.ok) setSavedOpen(e.detail.path[0], true);
     });
-    menuBtn?.addEventListener('click', () => setMenu(!sidebar.classList.contains('open')));
+    menuBtns.forEach((b) => b.addEventListener('click', () => setMenu(!sidebar.classList.contains('open'))));
     // Phones: a tap outside the open sidebar closes it.
     document.addEventListener('click', (e) => {
       // A control the click just replaced (rename) is detached: not "outside".
       if (!e.target.isConnected) return;
-      if (sidebar?.classList.contains('open') && !sidebar.contains(e.target) && !menuBtn.contains(e.target)) setMenu(false);
+      if (sidebar?.classList.contains('open') && !sidebar.contains(e.target) && ![...menuBtns].some((b) => b.contains(e.target))) setMenu(false);
     });
     checkForNewVersion();
     // Sidebar roles start a fresh path with that answer picked; the active
     // role follows whatever the first answer in the path is.
+    document.querySelectorAll('.tool-nav').forEach((btn) => btn.addEventListener('click', () => {
+      showView(btn.dataset.view);
+      setMenu(false);
+    }));
     roleBtns.forEach((btn) => btn.addEventListener('click', () => {
+      if (currentView !== 'home') showView('home');
       pathways?.startWith([btn.dataset.role], true);
       setMenu(false);
     }));
