@@ -62,7 +62,8 @@ test('every course code shown exists in the catalog', () => {
   const catalog = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'catalog', 'catalog-2026.v410.json'), 'utf-8'));
   const known = new Set(catalog.courses.map((c) => c.code));
   const shown = JSON.stringify(data.nodes).match(/\b[A-Z]{1,3}\d{2,5}[A-Z]?\b/g) || [];
-  const unknown = [...new Set(shown)].filter((c) => !known.has(c));
+  // "M27", "M28" are Minerva class-year tags in story titles, not courses.
+  const unknown = [...new Set(shown)].filter((c) => !known.has(c) && !/^M\d{2}$/.test(c));
   assert(unknown.length === 0, `not in catalog: ${unknown.join(', ')}`);
   const planted = JSON.stringify({ x: 'NS999 Imaginary Physics' }).match(/\b[A-Z]{1,3}\d{2,5}[A-Z]?\b/g);
   assert(planted.some((c) => !known.has(c)), 'negative control: an invented code should be caught');
@@ -83,6 +84,9 @@ test('every link shown is one of the verified links', () => {
   const shown = [];
   Object.values(data.nodes).forEach((n) => [n, ...(n.options || [])].forEach((h) => (h.links || []).forEach((l) => shown.push(l.url))));
   Object.values(data.courseInfo).forEach((c) => shown.push(c.url.replace(/#page=\d+$/, '')));
+  const stories = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'catalog', 'stories.json'), 'utf-8'));
+  Object.values(stories.colleges).flat().forEach((st) => verified.add(st.url));
+  Object.values(data.nodes).forEach((n) => ((n.aside || {}).groups || []).forEach((g) => g.items.forEach((it) => { if (it && it.url) shown.push(it.url); })));
   const unknown = [...new Set(shown)].filter((u) => !verified.has(u));
   assert(shown.length > 50, `expected many links, got ${shown.length}`);
   assert(unknown.length === 0, `unverified: ${unknown.join(', ')}`);

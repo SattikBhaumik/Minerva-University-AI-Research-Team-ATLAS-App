@@ -332,7 +332,15 @@ const Pathways = (() => {
         list.textContent = '';
         info.groups.forEach((g) => {
           list.append(el('li', 'caption pw-about-group', g.label));
-          g.items.forEach((t) => list.append(el('li', 'body pw-about-text', t)));
+          g.items.forEach((t) => {
+            const li = el('li', 'body pw-about-text');
+            if (t && t.url) {
+              const a = el('a', null, t.text);
+              a.href = t.url; a.target = '_blank'; a.rel = 'noopener';
+              li.append(a);
+            } else li.append(t);
+            list.append(li);
+          });
           if (g.source) {
             const li = el('li', 'pw-about-source');
             li.append(sourceLine(g.source, data.asOf));
@@ -396,7 +404,10 @@ const Pathways = (() => {
       const restart = el('button', 'btn btn-ghost', 'Start over');
       restart.type = 'button';
       restart.addEventListener('click', () => startWith([], true));
-      actions.append(save, share, restart);
+      const print = el('button', 'btn btn-ghost', 'Print this plan');
+      print.type = 'button';
+      print.addEventListener('click', () => window.print());
+      actions.append(save, share, print, restart);
       card.append(actions, el('p', 'caption', 'Saved plans stay in this browser only.'));
     }
 

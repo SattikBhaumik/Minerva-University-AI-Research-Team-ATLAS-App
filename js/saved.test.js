@@ -92,6 +92,22 @@ test('usage: blocked storage reports unavailable', () => {
   global.localStorage = real;
 });
 
+test('importAll merges a backup, skips bad entries and duplicates', () => {
+  store = {};
+  SavedPaths.save(['applicant', 'world', 'ns'], 'Mine');
+  const backup = [
+    { path: ['applicant', 'world', 'ns'], name: 'Duplicate' },
+    { path: ['minervan', 'know', 'ss'], name: 'From file', savedAt: '2026-01-01T00:00:00.000Z' },
+    { path: ['hacker', '<script>'], name: 'bad' },
+    { name: 'no path' },
+  ];
+  const r = SavedPaths.importAll(backup);
+  assert(r.ok && r.added === 1, JSON.stringify(r));
+  assert(SavedPaths.list().map((e) => e.name).sort().join() === 'From file,Mine', SavedPaths.list().map((e) => e.name).join());
+  assert(SavedPaths.importAll(backup).added === 0, 'restoring twice adds nothing');
+  assert(SavedPaths.importAll('nope').ok === false, 'non-array rejected');
+});
+
 let failed = 0;
 for (const { name, fn } of tests) {
   try { fn(); console.log(`✓ ${name}`); } catch (e) { console.error(`✗ ${name}: ${e.message}`); failed++; }

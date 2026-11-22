@@ -64,6 +64,11 @@ const API = (() => {
     : null;
 
   // Static pathway data shipped with the site; no applicant data goes out.
+  // The parsed course catalog, for the prerequisite map and planners.
+  async function getCatalog() {
+    return get('data/catalog/catalog-2026.v410.json', { v: ASSET_VERSION });
+  }
+
   async function getPathways() {
     return get('data/pathways.json', { v: ASSET_VERSION });
   }
@@ -84,6 +89,7 @@ const API = (() => {
     refreshIfNeeded,
     getPathways,
     getLatestVersion,
+    getCatalog,
     version: ASSET_VERSION,
   };
 })();

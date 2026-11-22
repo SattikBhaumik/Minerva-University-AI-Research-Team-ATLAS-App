@@ -32,6 +32,12 @@
   Minervans: "settled on a major?" -> pick a college directly, or the
   interest funnel. Course box shows shared courses once. Wording lives in
   `data/catalog/editorial.json` (role, minervan).
+- **2026-11-24**: first working versions of the seven "build next" ideas:
+  prerequisite map, Minervan course tracker, compare plans, backup and
+  print for saved plans, minors and double majors, Minerva-featured
+  stories per college (`data/catalog/stories.json`), weekly freshness
+  check (`tools/check_freshness.py`, `.github/workflows/atlas-freshness.yml`).
+  Manifest start_url/scope fixed to `./`. Polish pass still to do.
 - **Next actions**:
   1. Owner reviews `data/catalog/editorial.json` (the only ATLAS-written
      words: preference questions) and the one open conflict (50% vs 43.5%)

@@ -1,0 +1,71 @@
+name: ATLAS freshness
+
+# Weekly look at the Minerva pages ATLAS was built from. A reporter: findings
+# go to ONE self-closing issue, never to a red X (docs/CI-FLEET.md section 6).
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'   # Monday 06:17 UTC, off the hour
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: atlas-freshness
+  cancel-in-progress: true
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  ISSUE_TITLE: 'ATLAS data freshness: Minerva changed something'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Check Minerva pages against ATLAS data
+        id: check
+        run: |
+          set +e
+          python3 tools/check_freshness.py > report.md
+          rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          cat report.md
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+          if [ "$rc" -eq 1 ]; then
+            echo "::warning title=ATLAS freshness::Minerva changed something; see the issue"
+          fi
+          exit 0
+
+      - name: Raise, update or clear the freshness issue
+        if: always() && steps.check.outputs.rc != '2' && steps.check.outputs.rc != ''
+        env:
+          RC: ${{ steps.check.outputs.rc }}
+        run: |
+          num=$(gh issue list --state open --search "$ISSUE_TITLE in:title" \
+                  --json number,title --jq "map(select(.title==\"$ISSUE_TITLE\"))[0].number // empty")
+          if [ "$RC" = "1" ]; then
+            if [ -n "$num" ]; then
+              gh issue edit "$num" --body-file report.md
+            else
+              gh issue create --title "$ISSUE_TITLE" --body-file report.md
+            fi
+          elif [ -n "$num" ]; then
+            gh issue close "$num" --comment "A later run found no changes; closing. $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          fi
+
+      # The checker could not look at all (network down): not a finding, so no
+      # issue is opened or closed, but a run that checked nothing must not be green.
+      - name: Fail if the checker could not run
+        if: steps.check.outputs.rc == '2'
+        run: |
+          # reporter-may-fail: exit 2 is the checker's own mechanics (it could not reach Minerva), not a finding
+          echo "::error title=ATLAS freshness::checker could not run (all URLs unreachable)"
+          exit 1
