@@ -262,7 +262,7 @@ const Pathways = (() => {
         panel.append(ul);
       }
       const keeps = el('p', 'body pw-keeps');
-      keeps.append(el('span', 'body-strong', 'Current Status: '), opt.keepsOpen);
+      keeps.append(el('span', 'body-strong', 'Leads to: '), opt.keepsOpen);
       panel.append(keeps);
       if (opt.links && opt.links.length) panel.append(linksLine(opt.links));
       panel.append(sourceLine(opt.source, data.asOf));
