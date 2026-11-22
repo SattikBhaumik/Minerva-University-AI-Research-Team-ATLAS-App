@@ -62,6 +62,14 @@ test('a saved plan maps back to its courses and college', () => {
   assert(C.planCollege(pathways, p) === 'NS', C.planCollege(pathways, p));
 });
 
+test('open now drops alternatives of a requirement already met', () => {
+  assert(C.openNow(has('NS110U'), ['NS']).includes('NS110L') === false, 'NS110L should drop once NS110U is taken');
+  assert(C.openNow(has('NS110U'), []).includes('NS110L'), 'without a major, NS110L is still just a course');
+  const ah = C.openNow(has('AH110', 'AH111', 'AH112'), ['AH']);
+  assert(!ah.includes('AH113'), 'AH113 drops once 3 of 4 AH core are done');
+  assert(C.openNow(has('AH110', 'AH111'), ['AH']).includes('AH112'), 'with 2 of 4, the others stay open');
+});
+
 let failed = 0;
 for (const { name, fn } of tests) {
   try { fn(); console.log(`✓ ${name}`); } catch (e) { console.error(`✗ ${name}: ${e.message}`); failed++; }

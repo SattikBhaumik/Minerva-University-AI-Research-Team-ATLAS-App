@@ -436,6 +436,18 @@ button, input, select, textarea { font: inherit; }
 .tool-field { display: flex; flex-direction: column; gap: var(--space-1); min-width: 220px; flex: 1 1 220px; }
 .tool-field .caption-label { font-size: var(--type-caption-size); }
 .map-grid, .compare-grid, .tracker-grid { display: grid; gap: var(--space-3); margin-bottom: var(--space-3); }
+.map-diagram { position: relative; display: grid; gap: var(--space-4); margin-bottom: var(--space-3); }
+.map-lines { position: absolute; inset: 0; pointer-events: none; display: none; overflow: visible; }
+.map-lines path { fill: none; stroke: var(--color-primary); stroke-width: 1.5; opacity: 0.55; }
+.map-lane { display: flex; flex-direction: column; gap: var(--space-2); position: relative; z-index: 1; }
+.map-lane-label { font-size: var(--type-caption-size); text-transform: uppercase; letter-spacing: 0.04em; }
+.map-node-group { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); padding: var(--space-2); border: 1px dashed var(--color-border); border-radius: var(--radius-card); background: var(--color-surface); }
+.map-node-group .map-chip, .map-node { margin-top: 0; }
+.map-or { padding: 0 2px; }
+.compare-outcomes { margin: var(--space-3) 0; padding-top: var(--space-2); border-top: 1px solid var(--color-border); }
+.compare-outcomes .body { margin-top: var(--space-1); }
+.tracker-mark { display: inline-flex; vertical-align: -3px; margin-right: var(--space-1); color: var(--color-text-muted); }
+.tracker-mark.is-done { color: var(--color-success); }
 .map-group { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-1); margin-top: var(--space-2); }
 .map-chip {
   border: 1px solid var(--color-border); border-radius: var(--radius-control); background: var(--color-background);
@@ -453,7 +465,6 @@ button, input, select, textarea { font: inherit; }
 .tracker-side { display: flex; flex-direction: column; gap: var(--space-3); }
 .tracker-status { list-style: none; margin-top: var(--space-2); }
 .tracker-status li { margin-top: var(--space-1); color: var(--color-text-muted); }
-.tracker-mark { display: inline-block; width: 1.4em; }
 .is-done { color: var(--color-success) !important; }
 .minor-grid { display: grid; gap: var(--space-3); grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
 .minor-card.is-blocked { opacity: 0.6; }
@@ -461,6 +472,8 @@ button, input, select, textarea { font: inherit; }
 .btn-small { padding: 6px 10px; font-size: var(--type-tabular-size); }
 @media (min-width: 900px) {
   .map-grid { grid-template-columns: 1fr 1.3fr 1fr; align-items: start; }
+  .map-diagram { grid-template-columns: 1fr 1.3fr 1fr; gap: var(--space-8); align-items: center; }
+  .map-lines { display: block; }
   .compare-grid { grid-template-columns: 1fr 1fr; align-items: start; }
   .tracker-grid { grid-template-columns: 1.4fr 1fr; align-items: start; }
 }

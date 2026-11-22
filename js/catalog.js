@@ -64,7 +64,8 @@ const Catalog = (() => {
       const text = [m.description, ...m.rules].join(' ');
       const reqs = [];
       for (const r of text.matchAll(/at least (\d+) (?:of the following \d+ core classes|course from the following): ([A-Z0-9, ]+[A-Z0-9])/g)) {
-        reqs.push({ n: Number(r[1]), codes: r[2].split(/,\s*/), label: `at least ${r[1]} of ${r[2]}` });
+        const codes = r[2].match(/[A-Z]{1,3}\d{2,5}[A-Z]?/g);
+        reqs.push({ n: Number(r[1]), codes, label: `at least ${r[1]} of ${codes.join(', ')}` });
       }
       const either = text.match(/requires completion of either ([A-Z0-9]+) or ([A-Z0-9]+)/);
       if (either) reqs.push({ n: 1, codes: [either[1], either[2]], label: `${either[1]} or ${either[2]}` });
@@ -79,9 +80,16 @@ const Catalog = (() => {
 
     // Courses a student could take next: major core and concentration
     // courses in any college whose prerequisites are met.
-    function openNow(have) {
+    // With majors given, alternatives in an "n of these" requirement that is
+    // already met drop out (NS110L once NS110U is ticked; AH's fourth core
+    // course once three are done): no major needs them any more.
+    function openNow(have, majors = []) {
+      const settled = new Set();
+      majors.forEach((col) => majorRequirements(col).reqs.forEach((r) => {
+        if (r.codes.length > 1 && r.codes.filter((c) => have.has(c)).length >= r.n) r.codes.forEach((c) => settled.add(c));
+      }));
       return raw.courses
-        .filter((c) => (c.type === 'Major Core' || c.type === 'Concentration') && !have.has(c.code) && satisfied(c.code, have))
+        .filter((c) => (c.type === 'Major Core' || c.type === 'Concentration') && !have.has(c.code) && !settled.has(c.code) && satisfied(c.code, have))
         .map((c) => c.code);
     }
 

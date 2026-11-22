@@ -40,6 +40,15 @@ const Tools = (() => {
     wrap.append(s);
     return { wrap, s };
   }
+  // Status marks as inline SVG icons (done: check in a circle; to do: circle).
+  function mark(ok) {
+    const span = el('span', `tracker-mark ${ok ? 'is-done' : ''}`);
+    span.setAttribute('aria-label', ok ? 'done' : 'not yet');
+    span.innerHTML = ok
+      ? '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg>'
+      : '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/></svg>';
+    return span;
+  }
   const title = (code) => (C.course[code] ? `${code} ${C.course[code].title}` : code);
   const pageUrl = (code) => `${catalogPdf}#page=${C.course[code].page}`;
   const relevantCourses = (col) => [...C.core(col), ...C.concentrationCourses(col).filter((c) => !C.core(col).includes(c))];
@@ -69,31 +78,60 @@ const Tools = (() => {
       b.addEventListener('click', () => renderMap(root, c));
       return b;
     };
-    const grid = el('div', 'map-grid');
-    const needs = el('div', 'card map-col');
-    needs.append(el('h3', 'section-header', 'Needs'));
+    // A drawn diagram: needs on the left, the course in the middle, what it
+    // opens on the right. Nodes are real buttons; the lines are an SVG
+    // overlay measured from where the nodes actually landed.
+    const diagram = el('div', 'map-diagram');
+    const lane = (label) => { const l = el('div', 'map-lane'); l.append(el('p', 'caption-label map-lane-label', label)); return l; };
+    const needs = lane('Needs');
     const groups = C.prereqs(start);
+    const fromNodes = [];
     if (!groups.length) needs.append(el('p', 'caption', 'Only the Year 1 Cornerstones.'));
     groups.forEach((g) => {
-      const row = el('div', 'map-group');
-      g.codes.forEach((c, i) => { if (i) row.append(el('span', 'caption', 'or')); row.append(chip(c)); });
-      if (g.coreq) row.append(el('span', 'caption', '(can be taken together)'));
-      needs.append(row);
+      const box = el('div', 'map-node-group');
+      g.codes.forEach((c, i) => { if (i) box.append(el('span', 'caption map-or', 'or')); box.append(chip(c)); });
+      if (g.coreq) box.append(el('span', 'caption', 'can be taken together'));
+      needs.append(box);
+      fromNodes.push(box);
     });
-    const mid = el('div', 'card map-col map-center');
+    const mid = el('div', 'map-lane map-lane-center');
+    const centerCard = el('div', 'card map-center');
     const c = C.course[start];
-    mid.append(el('p', 'caption', C.COLLEGES[col] ? C.COLLEGES[col].name : ''), el('h3', 'section-header', title(start)),
+    centerCard.append(el('p', 'caption', C.COLLEGES[col] ? C.COLLEGES[col].name : ''), el('h3', 'section-header', title(start)),
       el('p', 'body', c.description.split(/(?<=[.!?])\s+/).slice(0, 2).join(' ')));
     const a = el('a', 'caption pw-about-link', `Full description in the catalog, p. ${c.page}`);
     a.href = pageUrl(start); a.target = '_blank'; a.rel = 'noopener';
-    mid.append(a);
-    const opens = el('div', 'card map-col');
-    opens.append(el('h3', 'section-header', 'Opens'));
+    centerCard.append(a);
+    mid.append(centerCard);
+    const opens = lane('Opens');
     const un = C.unlocks(start).filter((x) => ['Major Core', 'Concentration'].includes(C.course[x].type));
+    const toNodes = [];
     if (!un.length) opens.append(el('p', 'caption', 'No other course lists it as a prerequisite.'));
-    un.forEach((x) => opens.append(chip(x)));
-    grid.append(needs, mid, opens);
-    root.append(grid);
+    un.forEach((x) => { const n = chip(x); n.classList.add('map-node'); opens.append(n); toNodes.push(n); });
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('class', 'map-lines');
+    svg.setAttribute('aria-hidden', 'true');
+    diagram.append(svg, needs, mid, opens);
+    root.append(diagram);
+
+    const draw = () => {
+      const box = diagram.getBoundingClientRect();
+      svg.setAttribute('width', box.width);
+      svg.setAttribute('height', box.height);
+      svg.textContent = '';
+      const cr = centerCard.getBoundingClientRect();
+      const line = (x1, y1, x2, y2) => {
+        const p = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        const mx = (x1 + x2) / 2;
+        p.setAttribute('d', `M${x1},${y1} C${mx},${y1} ${mx},${y2} ${x2},${y2}`);
+        svg.append(p);
+      };
+      const cy = cr.top + cr.height / 2 - box.top;
+      fromNodes.forEach((n) => { const r = n.getBoundingClientRect(); line(r.right - box.left, r.top + r.height / 2 - box.top, cr.left - box.left, cy); });
+      toNodes.forEach((n) => { const r = n.getBoundingClientRect(); line(cr.right - box.left, cy, r.left - box.left, r.top + r.height / 2 - box.top); });
+    };
+    requestAnimationFrame(draw);
+    if (window.ResizeObserver) new ResizeObserver(draw).observe(diagram);
 
     // The whole chain back to Year 1, as nested lists.
     const chain = el('div', 'card map-chain');
@@ -176,7 +214,7 @@ const Tools = (() => {
       const ul = el('ul', 'tracker-status');
       C.majorProgress(col, have).forEach((r) => {
         const li = el('li', `body ${r.ok ? 'is-done' : ''}`);
-        li.append(el('span', 'tracker-mark', r.ok ? '✓' : '○'), `${r.label}: ${r.done}/${r.need}`);
+        li.append(mark(r.ok), `${r.label}: ${r.done}/${r.need}`);
         ul.append(li);
       });
       card.append(ul);
@@ -184,7 +222,7 @@ const Tools = (() => {
     });
     const open = el('div', 'card');
     open.append(el('h3', 'section-header', 'Open to you now'));
-    const nowOpen = C.openNow(have).filter((c) => t.majors.includes(C.prefixOf(c)));
+    const nowOpen = C.openNow(have, t.majors).filter((c) => t.majors.includes(C.prefixOf(c)));
     if (!nowOpen.length) open.append(el('p', 'caption', 'Tick the courses you have taken to see what opens.'));
     nowOpen.slice(0, 12).forEach((c) => open.append(el('p', 'body', title(c))));
     if (nowOpen.length > 12) open.append(el('p', 'caption', `${nowOpen.length - 12} more`));
@@ -240,7 +278,22 @@ const Tools = (() => {
       card.append(el('h3', 'section-header', entry.name));
       const ul = el('ul', 'pw-summary');
       planSummary(entry).forEach(([stage, label]) => { const li = el('li', 'body'); li.append(el('span', 'caption', `${stage}: `), label); ul.append(li); });
-      card.append(ul, el('p', 'caption-label', `Only in this plan (${only.length})`));
+      card.append(ul);
+      const col = C.planCollege(P, entry.path);
+      const after = col && P.nodes[`after-${col}`];
+      if (after) {
+        const facts = (after.options.find((o) => o.id === 'undecided') || after.options[0]).facts;
+        const out = el('div', 'compare-outcomes');
+        out.append(el('p', 'caption-label', `After Minerva: ${C.COLLEGES[col].name} (Minerva's figures)`));
+        facts.forEach((f) => out.append(el('p', 'body', f)));
+        const chosen = after.options.find((o) => entry.path.includes(o.id) && o.id !== 'undecided');
+        if (chosen) chosen.facts.filter((f) => /%/.test(f)).forEach((f) => out.append(el('p', 'body', f)));
+        const src = el('a', 'caption pw-about-link', after.options[0].source.label);
+        src.href = after.options[0].source.url; src.target = '_blank'; src.rel = 'noopener';
+        out.append(src);
+        card.append(out);
+      }
+      card.append(el('p', 'caption-label', `Only in this plan (${only.length})`));
       only.forEach((c) => card.append(el('p', 'body', title(c))));
       return card;
     };
@@ -275,7 +328,9 @@ const Tools = (() => {
     if (second) {
       const card = el('div', 'card');
       card.append(el('h3', 'section-header', `${C.COLLEGES[second].name} as a second major`));
-      C.majorProgress(second, have).forEach((r) => card.append(el('p', `body ${r.ok ? 'is-done' : ''}`, `${r.ok ? '✓' : '○'} ${r.label}: ${r.done}/${r.need}`)));
+      const ul = el('ul', 'tracker-status');
+      C.majorProgress(second, have).forEach((r) => { const li = el('li', `body ${r.ok ? 'is-done' : ''}`); li.append(mark(r.ok), `${r.label}: ${r.done}/${r.need}`); ul.append(li); });
+      card.append(ul);
       root.append(card);
     }
     const list = el('div', 'minor-grid');
