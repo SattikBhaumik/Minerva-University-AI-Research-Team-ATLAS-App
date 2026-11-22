@@ -49,6 +49,26 @@ test('corrupt or blocked storage: empty list, save reports failure', () => {
   global.localStorage = real;
 });
 
+test('rename changes the name, trims it, and survives a re-save', () => {
+  store = {};
+  SavedPaths.save(['applicant', 'world', 'ns'], 'Natural Sciences');
+  const id = SavedPaths.list()[0].id;
+  assert(SavedPaths.rename(id, '   My   physics plan  '), 'rename should succeed');
+  assert(SavedPaths.list()[0].name === 'My physics plan', `got "${SavedPaths.list()[0].name}"`);
+  SavedPaths.save(['applicant', 'world', 'ns'], 'Natural Sciences');
+  assert(SavedPaths.list()[0].name === 'My physics plan', 'a re-save must not undo a rename');
+});
+
+test('rename refuses a blank name and caps the length', () => {
+  store = {};
+  SavedPaths.save(['minervan', 'know', 'ss'], 'Social Sciences');
+  const id = SavedPaths.list()[0].id;
+  assert(SavedPaths.rename(id, '   ') === false && SavedPaths.list()[0].name === 'Social Sciences', 'blank should keep the old name');
+  SavedPaths.rename(id, 'x'.repeat(200));
+  assert(SavedPaths.list()[0].name.length === SavedPaths.MAX_NAME, 'name should be capped');
+  assert(SavedPaths.rename('no-such-id', 'y') === false, 'unknown id should fail');
+});
+
 let failed = 0;
 for (const { name, fn } of tests) {
   try { fn(); console.log(`✓ ${name}`); } catch (e) { console.error(`✗ ${name}: ${e.message}`); failed++; }

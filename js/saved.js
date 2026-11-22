@@ -6,12 +6,13 @@
  * because storage can be blocked (private windows, cleared site data);
  * then the list is simply empty and saving reports that it failed.
  *
- * Entry: { id, role, path: [option ids], name, savedAt (ISO date) }
+ * Entry: { id, role, path: [option ids], name, savedAt (ISO date), renamed? }
  */
 const SavedPaths = (() => {
   'use strict';
 
   const KEY = 'atlas_saved_paths';
+  const MAX_NAME = 80;
 
   function list() {
     try {
@@ -39,7 +40,7 @@ const SavedPaths = (() => {
     const existing = entries.find((e) => e.path.join('.') === key);
     if (existing) {
       existing.savedAt = now;
-      existing.name = name;
+      if (!existing.renamed) existing.name = name;
     } else {
       entries.unshift({ id: `${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}`, role: path[0], path, name, savedAt: now });
     }
@@ -47,11 +48,22 @@ const SavedPaths = (() => {
     return write(entries);
   }
 
+  // A blank name keeps the old one; a name the person chose survives re-saves.
+  function rename(id, name) {
+    const clean = String(name || '').replace(/\s+/g, ' ').trim().slice(0, MAX_NAME);
+    const entries = list();
+    const entry = entries.find((e) => e.id === id);
+    if (!entry || !clean) return false;
+    entry.name = clean;
+    entry.renamed = true;
+    return write(entries);
+  }
+
   function remove(id) {
     return write(list().filter((e) => e.id !== id));
   }
 
-  return { list, save, remove };
+  return { list, save, rename, remove, MAX_NAME };
 })();
 
 if (typeof module !== 'undefined') module.exports = SavedPaths;
