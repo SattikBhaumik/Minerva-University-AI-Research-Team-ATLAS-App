@@ -23,20 +23,21 @@ test('shipped pathway data passes every check', () => {
 
 test('negative control: a fourth option is rejected', () => {
   const bad = clone(data);
-  const opts = bad.nodes['y3-NS-1'].options;
+  const opts = bad.nodes['after-NS'].options;
   opts.push({ ...opts[0], id: 'extra' });
   assert(Pathways.validate(bad).some((e) => e.includes('must be 2 to 3')), 'four options slipped through');
 });
 
-test('only an owner-approved choice may exceed three, and never more than five', () => {
+test('only an owner-approved choice may exceed three, and never more than six', () => {
   const wide = Object.entries(data.nodes).filter(([, n]) => n.kind === 'choice' && n.options.length > 3);
   assert(wide.every(([, n]) => n.ownerException), `unapproved: ${wide.map(([k]) => k).join(', ')}`);
   const bad = clone(data);
   delete bad.nodes['m-college-1'].ownerException;
   assert(Pathways.validate(bad).some((e) => e.includes('m-college-1') && e.includes('must be 2 to 3')), 'removing the exception should fail');
-  const six = clone(data);
-  six.nodes['m-college-1'].options.push({ ...six.nodes['m-college-1'].options[0], id: 'sixth' });
-  assert(Pathways.validate(six).some((e) => e.includes('must be 2 to 5')), 'six options should fail even with the exception');
+  const seven = clone(data);
+  const opts = seven.nodes['y3-CS-1'].options;
+  while (opts.length < 7) opts.push({ ...opts[0], id: `extra${opts.length}` });
+  assert(Pathways.validate(seven).some((e) => e.includes('must be 2 to 6')), 'seven options should fail even with the exception');
 });
 
 test('negative control: an option without a source is rejected', () => {

@@ -111,5 +111,6 @@
     "collegePrompt": "Which college is your major in?",
     "collegeException": "2026-11-22, owner: \"display all five options instead of this branching here\" (Minervans already know Minerva's five colleges by name)."
   },
-  "electivesException": "2026-11-23, owner: \"please remove this option of 'More Colleges' that is present anywhere and just give all the options in that row, if there is no space, you can expand the row to the next line\"."
+  "electivesException": "2026-11-23, owner: \"please remove this option of 'More Colleges' that is present anywhere and just give all the options in that row, if there is no space, you can expand the row to the next line\".",
+  "concentrationsException": "2026-11-22, owner: \"Do the same thing for 'More Concentrations' as you did for 'more Colleges', do it across anywhere where 'More Concentration' is available\"."
 }

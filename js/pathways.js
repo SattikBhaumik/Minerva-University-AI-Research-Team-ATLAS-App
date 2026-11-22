@@ -15,8 +15,8 @@ const Pathways = (() => {
   'use strict';
 
   const MAX_OPTIONS = 3;
-  // A choice the owner approved by name may show up to five (ownerException).
-  const MAX_WITH_EXCEPTION = 5;
+  // A choice the owner approved by name may show up to six (ownerException).
+  const MAX_WITH_EXCEPTION = 6;
   const MIN_OPTIONS = 2;
   const CONTINUE = 'ok';
 

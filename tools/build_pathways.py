@@ -116,28 +116,6 @@ def depends_on(col, other):
     return hits
 
 
-def staged(items, make_option, more_label, more_what, node_base, next_more_prompt):
-    """Split a list into layers of at most 3 options: two items plus a More tab."""
-    layers, i, n = [], 0, 1
-    while i < len(items):
-        rest = items[i:]
-        if len(rest) <= 3:
-            layers.append([make_option(x) for x in rest])
-            break
-        chunk, after = rest[:2], rest[2:]
-        names = ', '.join(o['name'] for o in after[:-1]) + ' and ' + after[-1]['name'] if len(after) > 1 else after[0]['name']
-        layers.append([make_option(x) for x in chunk] + [{
-            'id': 'more', 'label': more_label,
-            'whatYouDo': f"{len(after)} more: {names}.",
-            'keepsOpen': more_what,
-            'source': CATALOG_SRC,
-            'next': f"{node_base}-{n + 1}",
-        }])
-        i += 2
-        n += 1
-    return layers
-
-
 def build():
     nodes = {}
     y = ED['years']
@@ -296,18 +274,17 @@ def build():
                     'whatYouDo': first_sentence(c['description']) or 'The catalog gives no description; its three courses are below.',
                     'facts': [course_line(x) for x in codes], 'keepsOpen': keeps,
                     'source': CATALOG_SRC, 'next': f'y4-{col}', 'plan': ', '.join(codes)}
-        layers = staged(concs, conc, 'More concentrations',
-                        'Students may also design a custom concentration with faculty guidance.', f'y3-{col}', None)
         if col == 'AH':
-            first_prompt = 'Pick a track to lean into. Every AH major takes at least one course from Arts and Literature, Historical Forces, and Philosophy, Ethics, and the Law.'
+            prompt = 'Pick a track to lean into. Every AH major takes at least one course from Arts and Literature, Historical Forces, and Philosophy, Ethics, and the Law.'
         else:
-            first_prompt = 'Pick a concentration. Declaring one is optional: every major takes 3 concentration courses either way.'
-        for i, opts in enumerate(layers, 1):
-            for o in opts:
-                o.pop('name', None)
-            nodes[f'y3-{col}-{i}'] = {'kind': 'choice', 'stage': y['y3'],
-                                      'prompt': first_prompt if i == 1 else f'More {name} concentrations',
-                                      'options': opts}
+            prompt = 'Pick a concentration. Declaring one is optional: every major takes 3 concentration courses either way.'
+        # Owner exception to the three-tab rule: every concentration in one row.
+        opts = [conc(c) for c in concs]
+        for o in opts:
+            o.pop('name', None)
+        nodes[f'y3-{col}-1'] = {'kind': 'choice', 'stage': y['y3'], 'prompt': prompt,
+                                'note': 'Students may also design a custom concentration with faculty guidance.',
+                                'ownerException': ED['concentrationsException'], 'options': opts}
 
         # Year 4
         tutorials = [COURSE[x['code']]['title'].replace('Senior Tutorial: ', '') for x in major['courses'] if x['code'].startswith('IL181')]
