@@ -187,7 +187,29 @@
     list.hidden = !open;
   }
 
+  // Rounded to two significant figures: the limit itself is an estimate.
+  function roughly(n) {
+    if (n < 100) return String(n);
+    const p = 10 ** (String(Math.floor(n)).length - 2);
+    return (Math.floor(n / p) * p).toLocaleString();
+  }
+
+  function renderStorage() {
+    const note = $('storage-note');
+    if (!note) return;
+    const u = SavedPaths.usage();
+    if (!u.available) {
+      note.textContent = 'Saving is unavailable in this browser.';
+      return;
+    }
+    const saved = `${u.count} ${u.count === 1 ? 'plan' : 'plans'} saved`;
+    note.textContent = u.plansLeft > 0
+      ? `${saved} · room for about ${roughly(u.plansLeft)} more · this browser only`
+      : `${saved} · storage full: delete a plan to save another`;
+  }
+
   function renderSaved() {
+    renderStorage();
     const entries = SavedPaths.list();
     ['applicant', 'minervan'].forEach((role) => {
       const mine = entries.filter((e) => e.role === role);
