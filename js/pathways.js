@@ -255,7 +255,8 @@ const Pathways = (() => {
       const box = el('details', 'pw-about');
       box.open = wide.matches;
       box.hidden = true;
-      box.append(el('summary', 'body-strong', 'About these courses'));
+      const summary = el('summary', 'body-strong', 'About these courses');
+      box.append(summary);
       const list = el('ul', 'pw-about-list');
       box.append(list);
       const known = (codes) => (codes || []).filter((c) => data.courseInfo && data.courseInfo[c]);
@@ -301,10 +302,26 @@ const Pathways = (() => {
         });
         reveal(animate, any);
       }
-      return { box, show, preview };
+      // Text groups instead of courses (Year 4: capstones), each with its source.
+      function aside(info) {
+        summary.textContent = info.title;
+        list.textContent = '';
+        info.groups.forEach((g) => {
+          list.append(el('li', 'caption pw-about-group', g.label));
+          g.items.forEach((t) => list.append(el('li', 'body pw-about-text', t)));
+          if (g.source) {
+            const li = el('li', 'pw-about-source');
+            li.append(sourceLine(g.source, data.asOf));
+            list.append(li);
+          }
+        });
+        reveal(false, info.groups.length > 0);
+      }
+      return { box, show, preview, aside };
     }
 
     function buildStep(card, node, index) {
+      if (node.aside) layers[index].about.aside(node.aside);
       const ul = el('ul', 'pw-facts');
       node.items.forEach((t) => ul.append(el('li', 'body', t)));
       card.append(ul);

@@ -1,0 +1,28 @@
+{
+  "source": "https://www.minerva.edu/research/",
+  "readOn": "2026-11-22",
+  "note": "Transcribed verbatim from Minerva's research page. The page does not say which college each notable capstone came from, so ATLAS shows them as Minerva-wide examples. Student names are left out.",
+  "formats": [
+    "Research studies",
+    "Policy analysis",
+    "Entrepreneurial ventures",
+    "Creative and design-based work",
+    "Data and AI applications",
+    "Sustainability and systems-focused projects"
+  ],
+  "themes": [
+    "Sustainable food systems and environmental resilience",
+    "AI and governance frameworks",
+    "Public health and global equity",
+    "Financial systems and institutional innovation",
+    "Civic engagement and social impact initiatives"
+  ],
+  "notable": [
+    "Framework for food retailers to incorporate ecological factors into decision-making",
+    "Analysis of gene regulatory networks",
+    "Collaboration with Bank of America computationally modeling effects of geopolitical disruptions to maritime shipping on supply chains",
+    "AI-driven medical imaging startup (Y Combinator-funded)",
+    "A stop motion documentary exploring the concept of home",
+    "Examination of Amazon's cloud computing pricing strategies using machine learning techniques"
+  ]
+}
