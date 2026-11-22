@@ -98,7 +98,7 @@ const Pathways = (() => {
 
   function sourceLine(source, asOf) {
     const p = el('p', 'caption pw-source');
-    p.append('Source: ');
+    p.append(el('span', 'pw-label', 'Source:'), ' ');
     const a = el('a', null, source.label);
     a.href = source.url;
     a.target = '_blank';
@@ -110,7 +110,7 @@ const Pathways = (() => {
   // "Learn more" links to Minerva's own pages; they open in a new tab.
   function linksLine(links) {
     const p = el('p', 'caption pw-links');
-    p.append('Learn more: ');
+    p.append(el('span', 'pw-label', 'Learn more:'), ' ');
     links.forEach((l, i) => {
       if (i) p.append(' · ');
       const a = el('a', null, l.label);
@@ -262,7 +262,7 @@ const Pathways = (() => {
         panel.append(ul);
       }
       const keeps = el('p', 'body pw-keeps');
-      keeps.append(el('span', 'body-strong', 'Keeps open: '), opt.keepsOpen);
+      keeps.append(el('span', 'body-strong', 'Current Status: '), opt.keepsOpen);
       panel.append(keeps);
       if (opt.links && opt.links.length) panel.append(linksLine(opt.links));
       panel.append(sourceLine(opt.source, data.asOf));
