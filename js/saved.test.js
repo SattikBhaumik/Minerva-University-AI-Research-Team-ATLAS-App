@@ -7,6 +7,8 @@ let store = {};
 global.localStorage = {
   getItem: (k) => (k in store ? store[k] : null),
   setItem: (k, v) => { store[k] = String(v); },
+  key: (i) => Object.keys(store)[i] ?? null,
+  get length() { return Object.keys(store).length; },
 };
 const SavedPaths = require('./saved.js');
 
@@ -67,6 +69,27 @@ test('rename refuses a blank name and caps the length', () => {
   SavedPaths.rename(id, 'x'.repeat(200));
   assert(SavedPaths.list()[0].name.length === SavedPaths.MAX_NAME, 'name should be capped');
   assert(SavedPaths.rename('no-such-id', 'y') === false, 'unknown id should fail');
+});
+
+test('usage: counts every key on the site and estimates plans left', () => {
+  store = {};
+  const empty = SavedPaths.usage();
+  assert(empty.available && empty.count === 0 && empty.plansLeft > 20000, JSON.stringify(empty));
+  SavedPaths.save(['applicant', 'world', 'ns'], 'Natural Sciences');
+  const one = SavedPaths.usage();
+  assert(one.count === 1 && one.plansLeft < empty.plansLeft, 'saving should reduce room');
+  store['another-project'] = 'x'.repeat(4990000);
+  const crowded = SavedPaths.usage();
+  assert(crowded.plansLeft < 50, `another project's data should count: ${crowded.plansLeft}`);
+  store['another-project'] = 'x'.repeat(SavedPaths.LIMIT_CHARS);
+  assert(SavedPaths.usage().plansLeft === 0, 'full storage should leave no room');
+});
+
+test('usage: blocked storage reports unavailable', () => {
+  const real = global.localStorage;
+  global.localStorage = { getItem: () => { throw new Error('blocked'); }, setItem: () => { throw new Error('blocked'); }, key: () => { throw new Error('blocked'); }, get length() { throw new Error('blocked'); } };
+  assert(SavedPaths.usage().available === false, 'should be unavailable');
+  global.localStorage = real;
 });
 
 let failed = 0;

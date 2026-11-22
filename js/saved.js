@@ -13,6 +13,12 @@ const SavedPaths = (() => {
 
   const KEY = 'atlas_saved_paths';
   const MAX_NAME = 80;
+  // Browsers do not report the localStorage limit. Chrome, Edge, Firefox
+  // and Safari all allow about 5 MB per site, so estimate with 5,000,000
+  // characters. The site is sattikbhaumik.github.io, shared by every
+  // GitHub Pages project there, so usage counts every key, not just ours.
+  const LIMIT_CHARS = 5000000;
+  const TYPICAL_PLAN_CHARS = 230;
 
   function list() {
     try {
@@ -63,7 +69,25 @@ const SavedPaths = (() => {
     return write(list().filter((e) => e.id !== id));
   }
 
-  return { list, save, rename, remove, MAX_NAME };
+  // Room left, as plans: free characters / the average size of a saved plan.
+  function usage() {
+    try {
+      let used = 0;
+      for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        used += k.length + (localStorage.getItem(k) || '').length;
+      }
+      const entries = list();
+      const ours = (localStorage.getItem(KEY) || '').length;
+      const perPlan = entries.length ? Math.max(TYPICAL_PLAN_CHARS, Math.ceil(ours / entries.length)) : TYPICAL_PLAN_CHARS;
+      const freeChars = Math.max(0, LIMIT_CHARS - used);
+      return { available: true, count: entries.length, usedChars: used, freeChars, plansLeft: Math.floor(freeChars / perPlan) };
+    } catch (e) {
+      return { available: false, count: 0, usedChars: 0, freeChars: 0, plansLeft: 0 };
+    }
+  }
+
+  return { list, save, rename, remove, usage, MAX_NAME, LIMIT_CHARS };
 })();
 
 if (typeof module !== 'undefined') module.exports = SavedPaths;
