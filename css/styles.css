@@ -316,10 +316,9 @@ button, input, select, textarea { font: inherit; }
 .pw-tab.is-selected::after { transform: scaleX(1); }
 @media (min-width: 600px) {
   .pw-tab { padding: var(--space-3) var(--space-4); }
-  /* The owner-approved five-tab row (Minervan college pick) fits on one line. */
-  .pw-tabs:has(> :nth-child(4)) .pw-tab { flex-basis: 15%; padding: var(--space-3) var(--space-2); }
-  /* Six (all concentrations): two rows of three keep long names readable. */
-  .pw-tabs:has(> :nth-child(6)) .pw-tab { flex-basis: 30%; }
+  /* Owner-approved wide rows (4 to 6 tabs): each tab is as wide as its
+     name on one line, and a tab that no longer fits moves to the next row. */
+  .pw-tabs:has(> :nth-child(4)) .pw-tab { flex: 1 1 auto; white-space: nowrap; padding: var(--space-3) var(--space-4); }
 }
 
 .pw-panel { margin-top: var(--space-3); padding-top: var(--space-3); border-top: 1px solid var(--color-border); }
