@@ -1,4 +1,4 @@
-# Project Scratchpad: [APP NAME]
+# Project Scratchpad: ATLAS
 
 > Active working notes, loaded into every session, so keep it small.
 > Keep only the two most recent session-log entries; roll older ones
@@ -61,7 +61,6 @@
      conflict (50% vs 43.5%)
   2. Decide the platform set → DECISIONS.md (web only for now?)
   3. Fill in AGENTS.md project identity sections
-  4. Manifest `start_url` is `/`; should be `./` for the Pages subpath
 - **Open questions**: launch with Natural and Computational Sciences
   only, or all five majors?
 

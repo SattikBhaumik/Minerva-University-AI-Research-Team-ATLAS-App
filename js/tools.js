@@ -525,6 +525,18 @@ const Tools = (() => {
     });
   }
 
+  // Fall runs Aug to Dec, Spring Jan to Apr, Summer May to Aug 20. The
+  // study year counts from the class's first fall.
+  function semesterOf(e, startYear) {
+    const y = Number(e.start.slice(0, 4)), m = Number(e.start.slice(5, 7));
+    const endOfYear = /End of Academic Year/.test(e.title);
+    const sem = endOfYear || (m >= 5 && m <= 7) ? 'Summer' : m >= 8 ? 'Fall' : 'Spring';
+    const fallYear = m >= 8 && !endOfYear ? y : y - 1;
+    const n = fallYear - startYear + 1;
+    const label = `${sem} semester`;
+    return { key: `${fallYear}-${sem}`, label: n >= 1 && n <= 4 ? `Year ${n}: ${label}` : label };
+  }
+
   function icsFor(events) {
     const esc = (t) => String(t || '').replace(/[\\;,]/g, (m) => `\\${m}`).replace(/\n/g, '\\n');
     const day = (s) => s.replace(/-/g, '');
@@ -562,16 +574,27 @@ const Tools = (() => {
     });
     const acts = el('div', 'pw-actions'); acts.append(dl);
     root.append(acts, el('p', 'caption', 'All-day events from Minerva\'s academic calendar and Undergraduate Student Handbook. Dates marked "about" are approximate in the handbook itself. Minerva\'s own pages win if anything differs.'));
-    let month = '';
+    const today = iso(new Date());
+    const upcoming = all.filter((e) => (e.end || e.start) >= today);
+    const showAll = root.dataset.showEarlier === '1';
+    const shown = showAll ? all : upcoming;
+    const earlier = all.length - upcoming.length;
+    let group = '';
     const list = el('div', 'card cal-list');
-    all.forEach((e) => {
-      const m = e.start.slice(0, 7);
-      if (m !== month) { month = m; list.append(el('h3', 'section-header cal-month', new Date(`${m}-01T12:00:00`).toLocaleDateString(undefined, { month: 'long', year: 'numeric' }))); }
+    shown.forEach((e) => {
+      const g = semesterOf(e, startYear);
+      if (g.key !== group) { group = g.key; list.append(el('h3', 'section-header cal-month', g.label)); }
       const row = el('div', `cal-row cal-${e.category || 'other'}`);
       const when = new Date(`${e.start}T12:00:00`).toLocaleDateString(undefined, { day: 'numeric', month: 'short' }) + (e.end ? ` to ${new Date(`${e.end}T12:00:00`).toLocaleDateString(undefined, { day: 'numeric', month: 'short' })}` : '');
       row.append(el('span', 'caption cal-when', (e.approximate ? 'about ' : '') + when), el('span', 'body', e.title), el('span', 'caption cal-cat', e.category || ''));
       list.append(row);
     });
+    if (!shown.length) list.append(el('p', 'body', 'No dates ahead for this class in the data ATLAS has.'));
+    if (earlier > 0) {
+      const t = el('button', 'btn', showAll ? 'Hide dates already past' : `Show ${earlier} earlier ${earlier === 1 ? 'date' : 'dates'}`); t.type = 'button';
+      t.addEventListener('click', () => { root.dataset.showEarlier = showAll ? '0' : '1'; renderCalendar(root); });
+      list.prepend(t);
+    }
     root.append(list);
     if ((CAL.conflicts || []).length) {
       const cf = el('div', 'card');

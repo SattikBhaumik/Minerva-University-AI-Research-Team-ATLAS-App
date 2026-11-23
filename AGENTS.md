@@ -1,4 +1,4 @@
-# [APP NAME]: Agent Project Context
+# ATLAS: Agent Project Context
 
 ## Why we build
 

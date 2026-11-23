@@ -1,4 +1,4 @@
-# [APP NAME]: Cross-Platform Feature Parity
+# ATLAS: Cross-Platform Feature Parity
 
 > **Single source of truth** for what's shipping where. Updated in
 > the SAME change set as any user-facing feature.
